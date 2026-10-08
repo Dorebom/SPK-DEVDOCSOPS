@@ -1,0 +1,265 @@
+{
+  "status": "PASS",
+  "revision": "R4",
+  "scope": "DOCUMENT_TEMPLATE_AND_SYNTHETIC_DATA_RULES_ONLY",
+  "templates_checked": 2,
+  "design_routes_checked": 2,
+  "synthetic_cases": 25,
+  "results": [
+    {
+      "case": "valid_synthetic_el_shape",
+      "passed": true,
+      "expected_error_codes": [],
+      "observed_errors": []
+    },
+    {
+      "case": "valid_synthetic_rs_shape",
+      "passed": true,
+      "expected_error_codes": [],
+      "observed_errors": []
+    },
+    {
+      "case": "unknown_mode",
+      "passed": true,
+      "expected_error_codes": [
+        "UNKNOWN_MODE"
+      ],
+      "observed_errors": [
+        "CONNECTION_MODE_NOT_ELIGIBLE",
+        "MODE_NOT_SUPPORTED",
+        "UNKNOWN_MODE",
+        "WRONG_OWNER_DOMAIN",
+        "WRONG_REQUEST_ENDPOINTS"
+      ]
+    },
+    {
+      "case": "rs_pcs_self_fetch",
+      "passed": true,
+      "expected_error_codes": [
+        "CONNECTION_MODE_NOT_ELIGIBLE"
+      ],
+      "observed_errors": [
+        "CONNECTION_MODE_NOT_ELIGIBLE",
+        "SUPPORTED_MODES_EXCEED_R4_POLICY"
+      ]
+    },
+    {
+      "case": "el_pcs_gw_managed",
+      "passed": true,
+      "expected_error_codes": [
+        "CONNECTION_MODE_NOT_ELIGIBLE"
+      ],
+      "observed_errors": [
+        "CONNECTION_MODE_NOT_ELIGIBLE",
+        "SUPPORTED_MODES_EXCEED_R4_POLICY"
+      ]
+    },
+    {
+      "case": "non_pcs",
+      "passed": true,
+      "expected_error_codes": [
+        "PCS_REQUIRED"
+      ],
+      "observed_errors": [
+        "PCS_REQUIRED"
+      ]
+    },
+    {
+      "case": "virtual_echonet_proxy",
+      "passed": true,
+      "expected_error_codes": [
+        "PHYSICAL_PCS_NOT_VIRTUAL_PROXY_REQUIRED"
+      ],
+      "observed_errors": [
+        "PHYSICAL_PCS_NOT_VIRTUAL_PROXY_REQUIRED"
+      ]
+    },
+    {
+      "case": "dual_modes_without_binding",
+      "passed": true,
+      "expected_error_codes": [
+        "SUPPORTED_MODES_EXCEED_R4_POLICY"
+      ],
+      "observed_errors": [
+        "SUPPORTED_MODES_EXCEED_R4_POLICY"
+      ]
+    },
+    {
+      "case": "router_omitted",
+      "passed": true,
+      "expected_error_codes": [
+        "HOME_ROUTER_REQUIRED_BOTH_DIRECTIONS"
+      ],
+      "observed_errors": [
+        "HOME_ROUTER_REQUIRED_BOTH_DIRECTIONS"
+      ]
+    },
+    {
+      "case": "response_omits_router",
+      "passed": true,
+      "expected_error_codes": [
+        "HOME_ROUTER_REQUIRED_BOTH_DIRECTIONS"
+      ],
+      "observed_errors": [
+        "HOME_ROUTER_REQUIRED_BOTH_DIRECTIONS",
+        "RESPONSE_PATH_MUST_REVERSE_DECLARED_REQUEST"
+      ]
+    },
+    {
+      "case": "gw_ip_forwarding",
+      "passed": true,
+      "expected_error_codes": [
+        "GW_IN_PCS_FETCH_PATH_PROHIBITED"
+      ],
+      "observed_errors": [
+        "GW_IN_PCS_FETCH_PATH_PROHIBITED"
+      ]
+    },
+    {
+      "case": "hems_proxy",
+      "passed": true,
+      "expected_error_codes": [
+        "HEMS_PROXY_PROHIBITED"
+      ],
+      "observed_errors": [
+        "HEMS_PROXY_PROHIBITED",
+        "RESPONSE_PATH_MUST_REVERSE_DECLARED_REQUEST"
+      ]
+    },
+    {
+      "case": "no_independent_fetch_evidence",
+      "passed": true,
+      "expected_error_codes": [
+        "PCS_FETCH_CAPABILITY_CONFIRMATION_REQUIRED"
+      ],
+      "observed_errors": [
+        "PCS_FETCH_CAPABILITY_CONFIRMATION_REQUIRED"
+      ]
+    },
+    {
+      "case": "wrong_wire",
+      "passed": true,
+      "expected_error_codes": [
+        "RS485_REQUIRED"
+      ],
+      "observed_errors": [
+        "RS485_REQUIRED"
+      ]
+    },
+    {
+      "case": "unknown_scope",
+      "passed": true,
+      "expected_error_codes": [
+        "PHYSICAL_SCOPE_REQUIRED"
+      ],
+      "observed_errors": [
+        "PHYSICAL_SCOPE_REQUIRED"
+      ]
+    },
+    {
+      "case": "two_owners",
+      "passed": true,
+      "expected_error_codes": [
+        "EXACTLY_ONE_ACTIVE_OWNER_REQUIRED"
+      ],
+      "observed_errors": [
+        "EXACTLY_ONE_ACTIVE_OWNER_REQUIRED"
+      ]
+    },
+    {
+      "case": "wrong_owner",
+      "passed": true,
+      "expected_error_codes": [
+        "WRONG_OWNER_DOMAIN"
+      ],
+      "observed_errors": [
+        "WRONG_OWNER_DOMAIN"
+      ]
+    },
+    {
+      "case": "auto_fallback",
+      "passed": true,
+      "expected_error_codes": [
+        "AUTOMATIC_MODE_FALLBACK_NOT_SUPPORTED"
+      ],
+      "observed_errors": [
+        "AUTOMATIC_MODE_FALLBACK_NOT_SUPPORTED"
+      ]
+    },
+    {
+      "case": "no_approval",
+      "passed": true,
+      "expected_error_codes": [
+        "APPROVAL_RECORD_REQUIRED"
+      ],
+      "observed_errors": [
+        "APPROVAL_RECORD_REQUIRED"
+      ]
+    },
+    {
+      "case": "accepted_not_verified",
+      "passed": true,
+      "expected_error_codes": [
+        "PHYSICAL_CONFIRMATION_REQUIRED"
+      ],
+      "observed_errors": [
+        "PHYSICAL_CONFIRMATION_REQUIRED"
+      ]
+    },
+    {
+      "case": "hems_dependency",
+      "passed": true,
+      "expected_error_codes": [
+        "HEMS_DEPENDENCY_PROHIBITED"
+      ],
+      "observed_errors": [
+        "HEMS_DEPENDENCY_PROHIBITED"
+      ]
+    },
+    {
+      "case": "no_link_fault_contract",
+      "passed": true,
+      "expected_error_codes": [
+        "REQUIRED_LINK_FAULT_PROFILE_REQUIRED"
+      ],
+      "observed_errors": [
+        "REQUIRED_LINK_FAULT_PROFILE_REQUIRED"
+      ]
+    },
+    {
+      "case": "legacy_without_revalidation",
+      "passed": true,
+      "expected_error_codes": [
+        "R4_REVALIDATION_REQUIRED"
+      ],
+      "observed_errors": [
+        "R4_REVALIDATION_REQUIRED"
+      ]
+    },
+    {
+      "case": "router_profile_missing",
+      "passed": true,
+      "expected_error_codes": [
+        "ROUTER_PROFILE_REQUIRED"
+      ],
+      "observed_errors": [
+        "ROUTER_PROFILE_REQUIRED"
+      ]
+    },
+    {
+      "case": "server_contract_missing",
+      "passed": true,
+      "expected_error_codes": [
+        "SERVER_PROTOCOL_PROFILE_REQUIRED"
+      ],
+      "observed_errors": [
+        "SERVER_PROTOCOL_PROFILE_REQUIRED"
+      ]
+    }
+  ],
+  "errors": [],
+  "no_device_operations": true,
+  "network_access": false,
+  "not_a_switch_or_certification_test": true,
+  "does_not_verify_real_approval_or_capability": true
+}

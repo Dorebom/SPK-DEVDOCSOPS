@@ -1,0 +1,26 @@
+{
+  "id": "SYS-IMPORT-001",
+  "title": "原資料確認後に記入",
+  "requirement": "原資料の対象・条件・振る舞いを確認して記入する。",
+  "chapter": "II-04",
+  "allocation": "H側DPC／構造設計",
+  "verification_ids": [],
+  "verification_review": "受入条件は原資料確認後に記入",
+  "source_ids": [
+    "SRC-REPLACE"
+  ],
+  "basis": "SOURCE_EXTRACTED",
+  "source_arch_ids": [],
+  "applicability": "対象型式・FW・構成を確認後に記入",
+  "status": "DRAFT_FOR_REVIEW",
+  "usdm_id": null,
+  "usdm_status": "TBD_FORMAL_MAPPING",
+  "legacy_chapter": 3,
+  "related_current_notes": [
+    "chapters/II_GW/II-04_DER_Load_Control.md",
+    "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+    "chapters/II_GW/II-01_GW_Architecture.md",
+    "chapters/I_System/I-04_System_Context.md"
+  ],
+  "primary_note": "chapters/II_GW/II-04_DER_Load_Control.md"
+}

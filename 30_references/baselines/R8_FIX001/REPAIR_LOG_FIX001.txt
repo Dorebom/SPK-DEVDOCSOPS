@@ -1,0 +1,34 @@
+SPK-GW_HEMS R8-FIX001 配布物補修記録
+補修日: 2026-10-08
+対象: R8配布ZIP。仕様本文、機能、要件、試験、Open Questionsの変更なし。
+入力R8 ZIP SHA-256: e8c2debc3024ea3d6f2e7ee66c23f2d8229c684193a748303f69e0820277741a
+参照R7 ZIP SHA-256: 5cec752e86b5f20aef7da4d98f4ba476b5c9b9806bd278784a04d6db800ca53c
+
+【判定】削除ではなく、原本からの復元を選択
+R8のdata/input_manifest.jsonはR7の非ZIP 175件を保持すると宣言している。
+欠落2件はその保存台帳にハッシュ付きで存在し、かつ検証・監査文書から参照される。
+さらに現行sources/architecture/DOCUMENT_QA.mdが参照する同一ハッシュ一覧も欠落していた。
+そのため利用者の「他文書参照のない不一致は削除可」の条件に該当せず、3件を復元した。
+
+【復元対象】
+1: sources/r7_snapshot/MANIFEST_SHA256.txt
+  元: R7/MANIFEST_SHA256.txt
+  18065 bytes SHA-256=3a89090b4c8022374a8f80057cadfed28f0035ccab8d32aee090c047eccefbf0
+2: sources/r7_snapshot/sources/architecture/MANIFEST_SHA256.txt
+  元: R7/sources/architecture/MANIFEST_SHA256.txt
+  1653 bytes SHA-256=1f43ce06abb740c66509858ea45d5a3bb8f478fffe82777b8f0db38964cd58e1
+3: sources/architecture/MANIFEST_SHA256.txt
+  元: R7/sources/architecture/MANIFEST_SHA256.txt
+  1653 bytes SHA-256=1f43ce06abb740c66509858ea45d5a3bb8f478fffe82777b8f0db38964cd58e1
+
+【変更履歴・検証】
+・R7の非ZIP 175件は保存台帳上のサイズ・SHA-256とすべて一致。
+・sources/architectureの19件は復元した原典ManifestのSHA-256と一致。
+・R7の入れ子旧版ZIP6件は従来どおり意図的に非同梱（ハッシュを記録）。
+・歴史的R7 root Manifestは旧版ZIPを含む原本の記録であり、復元後R8の完全配布Manifestではない。
+・本補修で更新する現行ファイル: package_info.json / README.md / DOCUMENT_QA.md / data/document_validation_r8.json / MANIFEST_SHA256.txt
+・追加: tools/verify_distribution_fix001.py / REPAIR_LOG_FIX001.txt。
+・現行システム仕様の本文・既存JSON管理データ・既存図資産は非変更。
+・元R8は不変保存。再配布ZIPの完全性は配布ZIP検証スクリプトで確認。
+
+配布ZIP検証: python tools/verify_distribution_fix001.py path/to/SPK-GW_HEMS_System_Spec_20261007_R8_FIX001.zip

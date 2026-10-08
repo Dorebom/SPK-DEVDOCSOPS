@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "scope": "CURRENT_UTILITY_DIAGRAM_ROUTER_LABELS_ONLY",
+  "diagrams": [
+    {
+      "file": "chapters/02_System_Context.md",
+      "diagram_in_file": 1,
+      "home_router_label_present": true
+    },
+    {
+      "file": "chapters/06_Usecases.md",
+      "diagram_in_file": 1,
+      "home_router_label_present": true
+    },
+    {
+      "file": "chapters/21_Grid_Connection_Selection.md",
+      "diagram_in_file": 1,
+      "home_router_label_present": true
+    },
+    {
+      "file": "chapters/21_Grid_Connection_Selection.md",
+      "diagram_in_file": 2,
+      "home_router_label_present": true
+    },
+    {
+      "file": "chapters/21_Grid_Connection_Selection.md",
+      "diagram_in_file": 3,
+      "home_router_label_present": true
+    },
+    {
+      "file": "chapters/21_Grid_Connection_Selection.md",
+      "diagram_in_file": 4,
+      "home_router_label_present": true
+    }
+  ],
+  "full_mermaid_parser_or_render": false,
+  "graph_model_routes_checked_elsewhere": 2
+}

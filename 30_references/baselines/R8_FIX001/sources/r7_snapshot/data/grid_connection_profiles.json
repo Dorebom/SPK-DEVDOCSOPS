@@ -1,0 +1,161 @@
+{
+  "schema": "spkgw.grid-connection-profiles/v2",
+  "revision": "R4",
+  "supported_mode_values": [
+    "PCS_DIRECT",
+    "GW_MANAGED"
+  ],
+  "default_mode": null,
+  "selection_policy": "DEVICE_CONNECTION_BOUND_CONFIGURATION_NOT_FREE_MODE_SWITCH",
+  "profiles": [
+    {
+      "profile_id": "TEMPLATE_PCS_DIRECT",
+      "mode": "PCS_DIRECT",
+      "status": "TEMPLATE_NOT_DEPLOYABLE",
+      "schedule_owner_domain": "PCS_GRID_DOMAIN",
+      "schedule_receiver": "PCS_INTERNAL_OCU",
+      "source_server_role": "GENERAL_TRANSMISSION_DISTRIBUTION_OUTPUT_CONTROL",
+      "scope": {
+        "id": null,
+        "kind": null,
+        "physical_pcs_ids": [],
+        "connection_point_id": null
+      },
+      "authority": {
+        "configured_mode": "PCS_DIRECT",
+        "active_mode": null,
+        "activation_state": "UNCONFIGURED",
+        "grid_control_epoch": null
+      },
+      "pcs_link": {
+        "required_for_grid_control": false,
+        "protocol_profile_id": null,
+        "transport": "ECHONET_LITE",
+        "normal_command_coexistence_profile": null,
+        "role": "NORMAL_OPERATION_ONLY"
+      },
+      "deployment_profile_id": null,
+      "device_profile_id": null,
+      "certification_profile_id": null,
+      "utility_connection_profile_id": null,
+      "time_storage_fault_profile_id": null,
+      "handover_profile_id": null,
+      "maintenance_authorization_profile_id": null,
+      "validated_for_activation": false,
+      "evidence_refs": [],
+      "display_name": "PCS自律取得方式（宅内ルータ経由・GW非経由）",
+      "normal_connection_class": "ECHONET_LITE_PCS",
+      "device_kind": "PCS",
+      "network": {
+        "router_required": true,
+        "router_profile_id": null,
+        "request_path": [
+          "PCS_GRID_CLIENT",
+          "HOME_ROUTER",
+          "INTERNET",
+          "GRID_SERVER"
+        ],
+        "response_path": [
+          "GRID_SERVER",
+          "INTERNET",
+          "HOME_ROUTER",
+          "PCS_GRID_CLIENT"
+        ],
+        "gw_forwarding_for_pcs_fetch": false,
+        "gw_hems_proxy_required": false,
+        "router_to_client_medium": null,
+        "server_protocol_profile_id": null,
+        "normal_lan_profile_id": null
+      },
+      "pcs_self_fetch_capability_confirmed": null,
+      "r4_eligibility_checked": false
+    },
+    {
+      "profile_id": "TEMPLATE_GW_MANAGED",
+      "mode": "GW_MANAGED",
+      "status": "TEMPLATE_NOT_DEPLOYABLE",
+      "schedule_owner_domain": "GW_GRID_DOMAIN",
+      "schedule_receiver": "GW_GRID_CONTROL_UNIT",
+      "source_server_role": "GENERAL_TRANSMISSION_DISTRIBUTION_OUTPUT_CONTROL",
+      "scope": {
+        "id": null,
+        "kind": null,
+        "physical_pcs_ids": [],
+        "connection_point_id": null
+      },
+      "authority": {
+        "configured_mode": "GW_MANAGED",
+        "active_mode": null,
+        "activation_state": "UNCONFIGURED",
+        "grid_control_epoch": null
+      },
+      "pcs_link": {
+        "required_for_grid_control": true,
+        "protocol_profile_id": null,
+        "transport": "RS485",
+        "normal_command_coexistence_profile": null,
+        "role": "GRID_CONTROL_REQUIRED_WITH_NORMAL_COEXISTENCE"
+      },
+      "deployment_profile_id": null,
+      "device_profile_id": null,
+      "certification_profile_id": null,
+      "utility_connection_profile_id": null,
+      "time_storage_fault_profile_id": null,
+      "handover_profile_id": null,
+      "maintenance_authorization_profile_id": null,
+      "validated_for_activation": false,
+      "evidence_refs": [],
+      "display_name": "GW管理方式（宅内ルータ経由・RS-485指示）",
+      "normal_connection_class": "RS485_PCS",
+      "device_kind": "PCS",
+      "network": {
+        "router_required": true,
+        "router_profile_id": null,
+        "request_path": [
+          "GW_GRID_CLIENT",
+          "HOME_ROUTER",
+          "INTERNET",
+          "GRID_SERVER"
+        ],
+        "response_path": [
+          "GRID_SERVER",
+          "INTERNET",
+          "HOME_ROUTER",
+          "GW_GRID_CLIENT"
+        ],
+        "gw_forwarding_for_pcs_fetch": false,
+        "gw_hems_proxy_required": false,
+        "router_to_client_medium": null,
+        "server_protocol_profile_id": null,
+        "normal_lan_profile_id": null
+      },
+      "pcs_self_fetch_capability_confirmed": false,
+      "r4_eligibility_checked": false
+    }
+  ],
+  "note": "R4の対応表を表す未記入テンプレート。どれもTEMPLATE_NOT_DEPLOYABLE／UNCONFIGUREDであり、実機設定を作成・変更しない。CPU配置、通信詳細、認証・機器能力は未確認。",
+  "router_required": true,
+  "mode_display_names": {
+    "PCS_DIRECT": "PCS自律取得方式（宅内ルータ経由・GW非経由）",
+    "GW_MANAGED": "GW管理方式（宅内ルータ経由・RS-485指示）"
+  },
+  "compatibility_note": "PCS_DIRECTはR3識別子を保持する。物理的直結や全PCSへの自由な適用を意味しない。R3データは配備前にR4適用条件を再検証する。",
+  "eligibility_rules": [
+    {
+      "normal_connection_class": "ECHONET_LITE_PCS",
+      "device_kind": "PCS",
+      "allowed_modes": [
+        "PCS_DIRECT"
+      ],
+      "schedule_fetcher": "PCS_GRID_CLIENT"
+    },
+    {
+      "normal_connection_class": "RS485_PCS",
+      "device_kind": "PCS",
+      "allowed_modes": [
+        "GW_MANAGED"
+      ],
+      "schedule_fetcher": "GW_GRID_CLIENT"
+    }
+  ]
+}

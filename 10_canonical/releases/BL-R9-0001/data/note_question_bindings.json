@@ -1,0 +1,415 @@
+{
+  "revision": "R9",
+  "source": "current_note_footers",
+  "note_bindings": {
+    "00_MOC.md": [
+      "OQ-R6-01-01",
+      "OQ-R6-04-01",
+      "OQ-R6-04-02",
+      "OQ-R6-17-01",
+      "OQ-R6-19-02"
+    ],
+    "01_Completion_Guide.md": [],
+    "90_All_In_One.md": [],
+    "appendices/Chapter_Migration_Map.md": [
+      "OQ-R6-19-03"
+    ],
+    "appendices/Configuration_Patterns.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Configuration_Register.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Coverage_Completion_Map.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Data_Dictionary.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Deployment_Binding.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Device_Profile_Extended.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/External_Interface_Register.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Functional_Allocation.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-17-01"
+    ],
+    "appendices/Grid_Connection_Profile.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Import_Merge_Decisions.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-17-01"
+    ],
+    "appendices/Interface_Contract_Detail.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Normative_References_Glossary.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Northbound_Operation_Catalog.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Open_Issues.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Open_Question_Register.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Parameter_Register.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Product_Function_Matrix.md": [
+      "OQ-R6-04-01",
+      "OQ-R6-05-01",
+      "OQ-R6-07-02",
+      "OQ-R6-07-03",
+      "OQ-R6-08-01",
+      "OQ-R6-08-02",
+      "OQ-R6-08-03",
+      "OQ-R6-09-01",
+      "OQ-R6-09-02",
+      "OQ-R6-12-02",
+      "OQ-R6-20-01",
+      "OQ-R6-20-02",
+      "OQ-R6-20-03",
+      "OQ-R6-20-04",
+      "OQ-R6-21-01",
+      "OQ-R6-26-01",
+      "OQ-R6-26-05",
+      "OQ-R6-27-01"
+    ],
+    "appendices/Quality_Acceptance_Profiles.md": [
+      "OQ-R6-17-03"
+    ],
+    "appendices/R8_Structure_Decisions.md": [
+      "OQ-R6-01-04",
+      "OQ-R6-19-03"
+    ],
+    "appendices/Release_Impact_Addendum.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Requirements_Catalog.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-17-01"
+    ],
+    "appendices/Role_Function_Access.md": [
+      "OQ-R6-01-01"
+    ],
+    "appendices/Source_Register.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-17-01"
+    ],
+    "appendices/State_Permission_Matrix.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/Test_Profiles.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-17-01"
+    ],
+    "appendices/Traceability.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-17-01"
+    ],
+    "appendices/UI_Alarm_Register.md": [
+      "OQ-R6-19-02"
+    ],
+    "appendices/USDM_Traceability.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-17-01"
+    ],
+    "chapters/III_Interfaces/III-01_Boundary_Contracts.md": [
+      "OQ-R6-03-02"
+    ],
+    "chapters/III_Interfaces/III-02_Cloud_GW.md": [
+      "OQ-R6-20-01",
+      "OQ-R6-20-05"
+    ],
+    "chapters/III_Interfaces/III-03_FW_Server.md": [
+      "OQ-R6-14-02",
+      "OQ-R6-20-04",
+      "OQ-R6-27-04"
+    ],
+    "chapters/III_Interfaces/III-04_Local_Web.md": [
+      "OQ-R6-02-02",
+      "OQ-R6-20-02",
+      "OQ-R6-27-03"
+    ],
+    "chapters/III_Interfaces/III-05_Remote_App.md": [
+      "OQ-R6-20-01",
+      "OQ-R6-20-02",
+      "OQ-R6-20-05",
+      "OQ-R6-27-06"
+    ],
+    "chapters/III_Interfaces/III-06_ECHONET_Lite.md": [
+      "OQ-R6-07-02"
+    ],
+    "chapters/III_Interfaces/III-07_RS485_PCS.md": [
+      "OQ-R6-07-01"
+    ],
+    "chapters/III_Interfaces/III-08_Utility_Server.md": [
+      "OQ-R6-10-01",
+      "OQ-R6-15-02",
+      "OQ-R6-21-01"
+    ],
+    "chapters/III_Interfaces/III-09_Network_Peripherals.md": [
+      "OQ-R6-07-03"
+    ],
+    "chapters/III_Interfaces/III-10_Maintenance_Interfaces.md": [
+      "OQ-R6-01-01",
+      "OQ-R6-21-02",
+      "OQ-R6-26-01",
+      "OQ-R6-27-04"
+    ],
+    "chapters/II_GW/II-01_GW_Architecture.md": [
+      "OQ-R6-03-01",
+      "OQ-R6-15-01"
+    ],
+    "chapters/II_GW/II-02_GW_Functions.md": [
+      "OQ-R6-04-01",
+      "OQ-R6-02-02",
+      "OQ-R6-03-02",
+      "OQ-R6-04-02",
+      "OQ-R6-04-03",
+      "OQ-R6-05-01",
+      "OQ-R6-05-02",
+      "OQ-R6-06-01",
+      "OQ-R6-06-02",
+      "OQ-R6-07-01",
+      "OQ-R6-07-02",
+      "OQ-R6-07-03",
+      "OQ-R6-08-01",
+      "OQ-R6-08-02",
+      "OQ-R6-08-03",
+      "OQ-R6-09-01",
+      "OQ-R6-09-02",
+      "OQ-R6-09-03",
+      "OQ-R6-10-01",
+      "OQ-R6-10-02",
+      "OQ-R6-11-01",
+      "OQ-R6-12-01",
+      "OQ-R6-12-02",
+      "OQ-R6-12-03",
+      "OQ-R6-12-04",
+      "OQ-R6-13-01",
+      "OQ-R6-13-02",
+      "OQ-R6-15-01",
+      "OQ-R6-15-02",
+      "OQ-R6-18-01",
+      "OQ-R6-20-01",
+      "OQ-R6-20-02",
+      "OQ-R6-20-03",
+      "OQ-R6-20-04",
+      "OQ-R6-20-05",
+      "OQ-R6-21-01",
+      "OQ-R6-26-01",
+      "OQ-R6-26-02",
+      "OQ-R6-26-03",
+      "OQ-R6-26-04",
+      "OQ-R6-26-05",
+      "OQ-R6-26-06",
+      "OQ-R6-27-01",
+      "OQ-R6-27-02",
+      "OQ-R6-27-03",
+      "OQ-R6-27-04"
+    ],
+    "chapters/II_GW/II-03_Control_Execution.md": [
+      "OQ-R6-05-01",
+      "OQ-R6-05-02",
+      "OQ-R6-03-01"
+    ],
+    "chapters/II_GW/II-04_DER_Load_Control.md": [
+      "OQ-R6-08-03"
+    ],
+    "chapters/II_GW/II-05_Advanced_EMS.md": [
+      "OQ-R6-08-01",
+      "OQ-R6-08-02"
+    ],
+    "chapters/II_GW/II-06_Device_Management.md": [
+      "OQ-R6-04-03"
+    ],
+    "chapters/II_GW/II-07_Measurement_Data.md": [
+      "OQ-R6-09-01",
+      "OQ-R6-09-03"
+    ],
+    "chapters/II_GW/II-08_GW_Grid_Control.md": [
+      "OQ-R6-10-01",
+      "OQ-R6-10-02",
+      "OQ-R6-15-01",
+      "OQ-R6-21-01"
+    ],
+    "chapters/II_GW/II-09_Settings_Lifecycle.md": [
+      "OQ-R6-12-01",
+      "OQ-R6-12-02",
+      "OQ-R6-12-03",
+      "OQ-R6-12-04"
+    ],
+    "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md": [
+      "OQ-R6-13-01",
+      "OQ-R6-20-03"
+    ],
+    "chapters/II_GW/II-11_Firmware_Update.md": [
+      "OQ-R6-13-02",
+      "OQ-R6-20-04"
+    ],
+    "chapters/IV_Quality/IV-01_Performance_Capacity.md": [
+      "OQ-R6-14-01",
+      "OQ-R6-14-02"
+    ],
+    "chapters/IV_Quality/IV-02_Reliability_Availability.md": [
+      "OQ-R6-25-01",
+      "OQ-R6-25-02",
+      "OQ-R6-25-03",
+      "OQ-R6-25-04"
+    ],
+    "chapters/IV_Quality/IV-03_Security_Privacy.md": [
+      "OQ-R6-27-01",
+      "OQ-R6-27-02",
+      "OQ-R6-27-03",
+      "OQ-R6-27-04",
+      "OQ-R6-27-06"
+    ],
+    "chapters/IV_Quality/IV-04_Product_Safety.md": [
+      "OQ-R6-24-01",
+      "OQ-R6-24-02",
+      "OQ-R6-24-03",
+      "OQ-R6-24-04"
+    ],
+    "chapters/IV_Quality/IV-05_Physical_Electrical.md": [
+      "OQ-R6-22-01",
+      "OQ-R6-22-02",
+      "OQ-R6-22-03",
+      "OQ-R6-22-04",
+      "OQ-R6-22-05"
+    ],
+    "chapters/IV_Quality/IV-06_Environment_EMC.md": [
+      "OQ-R6-23-01",
+      "OQ-R6-23-02",
+      "OQ-R6-23-03",
+      "OQ-R6-23-04"
+    ],
+    "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md": [
+      "OQ-R6-15-02"
+    ],
+    "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md": [
+      "OQ-R6-09-02",
+      "OQ-R6-20-02"
+    ],
+    "chapters/I_System/I-01_Purpose_Scope.md": [
+      "OQ-R6-01-02",
+      "OQ-R6-01-03",
+      "OQ-R6-01-04"
+    ],
+    "chapters/I_System/I-02_Actors_Roles.md": [
+      "OQ-R6-01-01"
+    ],
+    "chapters/I_System/I-03_System_Functions.md": [
+      "OQ-R6-01-01",
+      "OQ-R6-01-02",
+      "OQ-R6-02-02",
+      "OQ-R6-04-01",
+      "OQ-R6-04-02",
+      "OQ-R6-04-03",
+      "OQ-R6-05-01",
+      "OQ-R6-07-01",
+      "OQ-R6-07-02",
+      "OQ-R6-07-03",
+      "OQ-R6-08-01",
+      "OQ-R6-08-02",
+      "OQ-R6-08-03",
+      "OQ-R6-09-01",
+      "OQ-R6-09-02",
+      "OQ-R6-09-03",
+      "OQ-R6-10-01",
+      "OQ-R6-10-02",
+      "OQ-R6-12-02",
+      "OQ-R6-12-03",
+      "OQ-R6-12-04",
+      "OQ-R6-13-01",
+      "OQ-R6-17-02",
+      "OQ-R6-19-01",
+      "OQ-R6-20-01",
+      "OQ-R6-20-02",
+      "OQ-R6-20-03",
+      "OQ-R6-20-04",
+      "OQ-R6-21-01",
+      "OQ-R6-26-01",
+      "OQ-R6-26-05",
+      "OQ-R6-26-06",
+      "OQ-R6-27-02"
+    ],
+    "chapters/I_System/I-04_System_Context.md": [
+      "OQ-R6-02-01",
+      "OQ-R6-02-02"
+    ],
+    "chapters/I_System/I-05_Configurations.md": [
+      "OQ-R6-04-02",
+      "OQ-R6-21-01"
+    ],
+    "chapters/I_System/I-06_Usecases.md": [
+      "OQ-R6-06-01",
+      "OQ-R6-06-02"
+    ],
+    "chapters/I_System/I-07_Responsibilities_Constraints.md": [
+      "OQ-R6-10-02",
+      "OQ-R6-11-01",
+      "OQ-R6-11-02"
+    ],
+    "chapters/I_System/I-08_System_States.md": [
+      "OQ-R6-12-01",
+      "OQ-R6-13-01",
+      "OQ-R6-21-02",
+      "OQ-R6-25-01"
+    ],
+    "chapters/V_Lifecycle/V-01_Manufacturing_Shipping.md": [
+      "OQ-R6-26-01",
+      "OQ-R6-26-02"
+    ],
+    "chapters/V_Lifecycle/V-02_Commissioning_Handover.md": [
+      "OQ-R6-21-02",
+      "OQ-R6-26-03",
+      "OQ-R6-26-04"
+    ],
+    "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md": [
+      "OQ-R6-26-05",
+      "OQ-R6-26-06",
+      "OQ-R6-26-07",
+      "OQ-R6-27-05"
+    ],
+    "chapters/V_Lifecycle/V-04_Compliance.md": [
+      "OQ-R6-10-01",
+      "OQ-R6-16-01"
+    ],
+    "chapters/V_Lifecycle/V-05_Change_Migration_Release.md": [
+      "OQ-R6-16-02",
+      "OQ-R6-18-01",
+      "OQ-R6-18-02",
+      "OQ-R6-19-03",
+      "OQ-R9-IMP-03"
+    ],
+    "chapters/V_Lifecycle/V-06_Verification_Validation.md": [
+      "OQ-R6-17-01",
+      "OQ-R6-17-02",
+      "OQ-R6-17-03",
+      "OQ-R9-IMP-06"
+    ],
+    "chapters/V_Lifecycle/V-07_Trace_Open_Questions.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-19-02",
+      "OQ-R9-IMP-01",
+      "OQ-R6-18-01",
+      "OQ-R9-IMP-02",
+      "OQ-R9-IMP-04",
+      "OQ-R9-IMP-05"
+    ],
+    "diagrams/README.md": [
+      "OQ-R6-02-01",
+      "OQ-R6-07-02"
+    ]
+  }
+}

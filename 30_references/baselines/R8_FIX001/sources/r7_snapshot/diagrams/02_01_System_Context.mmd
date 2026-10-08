@@ -1,0 +1,70 @@
+flowchart TB
+    subgraph CLOUDS["上位・外部サービス"]
+        GRID["一般送配電事業者<br/>出力制御サーバ"]
+        MGMT["上位管理・監視サーバ"]
+        FW["FW配信サーバ"]
+        APP["スマートフォン<br/>リモートアプリ"]
+        APP <-->|"監視・操作"| MGMT
+    end
+    NET["インターネット"]
+    GRID <-->|"出力制御情報の取得要求・応答"| NET
+    MGMT <--> NET
+    FW <--> NET
+
+    subgraph ROUTER["共通宅内ルータ・無線AP"]
+        WAN["WAN側<br/>サーバ通信"]
+        LAN["LAN側・無線AP／スイッチ<br/>宅内ECHONET Lite通信"]
+        WAN <--> LAN
+    end
+    NET <--> WAN
+    LOCAL["宅内ブラウザ<br/>ルータ経由Web UI"] <--> LAN
+    DIRECT["宅内ブラウザ<br/>直接無線Web UI"]
+
+    subgraph GW["SPK-GW筐体"]
+        subgraph H["H側：通常HEMS・管理"]
+            HNET["H側ネットワーク接続<br/>宅内LAN・直接Web"]
+            API["上位・Web・FWの用途別API"]
+            NORMAL["高度エネマネ・Arbiter・Orchestrator<br/>DPC／FLCの通常運転"]
+            EL["ECHONET Lite Controller<br/>機器別Adapter・通信処理"]
+            OBS["Measurement／Device State Service<br/>観測・品質・公開状態"]
+            HNET <-->|"上位・Web・FW"| API
+            API --> NORMAL
+            NORMAL <-->|"許可操作・結果"| EL
+            OBS <-->|"読出要求・応答／通知の取り込み"| EL
+            API <--> OBS
+            EL <-->|"ECHONET Lite要求・応答・通知"| HNET
+        end
+        subgraph G["G側：RS-485出力制御"]
+            GC["出力制御クライアント<br/>取得・検証・保存・時刻適用"]
+            LINK["PCS指示・必須監視<br/>固定された通常要求受付"]
+            GC --> LINK
+        end
+        NORMAL -->|"RS-485対象の通常要求"| LINK
+        GC -.->|"読取コピー"| OBS
+        LINK -.->|"状態・結果"| OBS
+    end
+    LAN <-->|"宅内EL・上位・Web・FW"| HNET
+    DIRECT <-->|"直接無線Web：方式・同時利用は未確定"| HNET
+    LAN <-->|"GW G側によるサーバ取得通信"| GC
+    LINK <-->|"RS-485指示・応答・必須監視"| RSPCS["RS-485接続PCS<br/>指令適用・独立保護"]
+
+    subgraph ELDEV["宅内ECHONET Lite機器"]
+        AC["空調<br/>EL機器IF"]
+        HW["給湯<br/>EL機器IF"]
+        METER["計測器<br/>EL機器IF：取得・通知"]
+    end
+    LAN <-->|"EL通常操作・応答・状態"| AC
+    LAN <-->|"EL通常操作・応答・状態"| HW
+    LAN <-->|"EL読出要求・計測応答／通知"| METER
+
+    subgraph ELPCS["ECHONET Lite接続PCS"]
+        PN["PCSの宅内LAN接続<br/>有線／無線は機器別"]
+        EI["ECHONET Lite機器IF<br/>住宅用太陽光発電・蓄電池クラス等"]
+        PC["PCS内出力制御クライアント<br/>取得・保存・時刻適用"]
+        PF["機器内の運転・制約整合<br/>電力変換・独立保護"]
+        PN <-->|"通常EL要求・応答・通知"| EI
+        PN <-->|"サーバ取得要求・応答：ELとは別契約"| PC
+        EI <--> PF
+        PC --> PF
+    end
+    LAN <-->|"宅内ELとPCS自身のサーバ通信を共用"| PN

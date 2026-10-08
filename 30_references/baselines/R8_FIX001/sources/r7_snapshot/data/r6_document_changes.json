@@ -1,0 +1,20 @@
+{
+  "revision": "R6",
+  "changes": [
+    {
+      "id": "R6-CHG-001",
+      "file": "chapters/04_Configurations_Profiles.md",
+      "section": "4.5",
+      "basis": "A1 AUD-12 / C34",
+      "before": "PCS_DIRECTの通常専用経路でH側Adapterを候補にできる。相手機器の非迂回と共通資源影響は別途確認",
+      "after": "RS-485接続PCSはGW_MANAGEDに限定する。機器が通常専用チャネルと必須系統チャネルを独立提供する場合だけ、通常チャネルの分離配置を第15.7節に従って評価する。必須経路全体を通常専用に分類しない",
+      "status": "TEXT_CORRECTED_PENDING_REVIEW",
+      "meaning": "既にR5第15.4/15.7節で示す現行対応を第4.5節へ反映。新構成の採用ではない。"
+    },
+    {
+      "id": "R6-CHG-002",
+      "basis": "C01-C34 / AUD-01..12",
+      "meaning": "不足項目を章節項へ展開し、各ノート末尾へ回答未記入のOpen Questionsを追加。既存124 SYS/69試験/48未決/50パラメータ/16IFと原典・図は変更しない。"
+    }
+  ]
+}

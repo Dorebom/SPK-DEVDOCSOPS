@@ -1,0 +1,18 @@
+{
+  "revision": "R8",
+  "gates_proposed": {
+    "G0": "製品スコープ・機能採否・要求Baselineの承認前",
+    "G1": "該当するアーキテクチャ・HW・安全境界の設計固定前",
+    "G2": "該当するIF・データ・操作等の詳細契約確定前",
+    "G3": "該当する検証仕様・受入プロファイルの確定前",
+    "G4": "該当製品のリリース・施工引渡し・サービス運用開始前"
+  },
+  "dates": "TBD_NOT_INVENTED",
+  "owners": "UNASSIGNED_ROLE_CANDIDATES_ONLY",
+  "sources_immutable": true,
+  "new_sys_requirements": 0,
+  "tests_executed": false,
+  "standard_compliance_claimed": false,
+  "source_record_revision": "R6",
+  "question_answer_owner": "current_chapter_footer"
+}

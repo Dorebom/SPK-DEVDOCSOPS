@@ -1,0 +1,150 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "requirement": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "chapter": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "allocation": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "verification_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+            },
+            "uniqueItems": true
+          },
+          "verification_review": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "basis": {
+            "enum": [
+              "SOURCE_DERIVED",
+              "USER_CONTEXT_DERIVED",
+              "SYSTEM_SPEC_PROPOSAL",
+              "SOURCE_EXTRACTED",
+              "HUMAN_CONFIRMED"
+            ]
+          },
+          "source_arch_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+            },
+            "uniqueItems": true
+          },
+          "applicability": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "status": {
+            "enum": [
+              "DRAFT_FOR_REVIEW",
+              "PROPOSED",
+              "IN_REVIEW",
+              "APPROVED",
+              "REJECTED",
+              "SUPERSEDED",
+              "RETIRED"
+            ]
+          },
+          "usdm_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "usdm_status": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "primary_note": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "related_current_notes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "requirement",
+          "chapter",
+          "allocation",
+          "verification_ids",
+          "source_ids",
+          "basis",
+          "applicability",
+          "status",
+          "usdm_id",
+          "primary_note",
+          "related_current_notes"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "requirements"
+  ],
+  "additionalProperties": true,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "requirements"
+}

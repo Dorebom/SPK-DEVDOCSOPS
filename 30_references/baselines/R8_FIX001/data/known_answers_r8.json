@@ -1,0 +1,21 @@
+{
+  "revision": "R8",
+  "items": [
+    {
+      "topic": "structure",
+      "answer": "5部を1冊のMOCにまとめ、本文をその下の章ノートへ再配賦",
+      "basis": "USER_CURRENT_REQUEST"
+    },
+    {
+      "topic": "human_roles",
+      "answer": [
+        "ユーザ",
+        "メンテナンス",
+        "メーカー",
+        "開発者"
+      ],
+      "unresolved": "個別権限・委任・環境・承認は未確定",
+      "basis": "USER_CONFIRMED"
+    }
+  ]
+}

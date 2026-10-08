@@ -1,0 +1,77 @@
+{
+  "schema": "spkgw.management-report/v1",
+  "as_of": "2026-10-08",
+  "document_baseline": "BL-R9-0001",
+  "plan_id": null,
+  "budget_id": null,
+  "task_states": {
+    "PROPOSED": 4,
+    "READY": 0,
+    "IN_PROGRESS": 0,
+    "BLOCKED": 0,
+    "ON_HOLD": 0,
+    "IN_REVIEW": 0,
+    "DONE": 0,
+    "CANCELLED": 0
+  },
+  "leaf_task_count": 4,
+  "loe_task_count": 0,
+  "weighted_accepted_progress": null,
+  "baseline_weight_hours": null,
+  "unbaselined_tasks": [
+    "TASK-SPKGW-000001",
+    "TASK-SPKGW-000002",
+    "TASK-SPKGW-000003",
+    "TASK-SPKGW-000004"
+  ],
+  "unestimated_tasks": [
+    "TASK-SPKGW-000001",
+    "TASK-SPKGW-000002",
+    "TASK-SPKGW-000003",
+    "TASK-SPKGW-000004"
+  ],
+  "remaining_hours": 0,
+  "remaining_hours_complete": false,
+  "recorded_effort_hours": "0",
+  "currency": null,
+  "tax_basis": null,
+  "BAC": null,
+  "recorded_AC": "0",
+  "actuals_complete": false,
+  "outstanding_commitments": "0",
+  "recorded_ETC_including_commitments": "0",
+  "missing_forecast_tasks": [
+    "TASK-SPKGW-000001",
+    "TASK-SPKGW-000002",
+    "TASK-SPKGW-000003",
+    "TASK-SPKGW-000004"
+  ],
+  "EAC": null,
+  "VAC": null,
+  "warnings": [
+    "TASK-SPKGW-000001: owner/estimate not assigned; not ready",
+    "TASK-SPKGW-000002: owner/estimate not assigned; not ready",
+    "TASK-SPKGW-000003: owner/estimate not assigned; not ready",
+    "TASK-SPKGW-000004: owner/estimate not assigned; not ready",
+    "PLAN_NOT_APPROVED: weighted progress unavailable",
+    "BUDGET_NOT_APPROVED: budget variance unavailable",
+    "ACTUALS_NOT_CONFIRMED: empty ledger is not proof of zero cost"
+  ],
+  "inputs": {
+    "20_work/analysis/project/control.json": "0b858af8de21330f691b7ab7778e5957f82a6312c735068b66ac29e226d2ddbc",
+    "10_canonical/CURRENT.json": "79151b7535716ba03e2156ec2059d5e53b4d22810d9dc3dd68c0a3b1e772cd6a",
+    "tools/govcheck.py": "9afc4923f1b1759890ea138e56151f2986917f11851780dd1960c8bab71f3244",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000001.md": "703f9bd9222839df8a73ced661973fef86f6d18c17c8fbd81d642d41a3fd9083",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000002.md": "2d3b67fa5b8908b6219f3928bc1f923a306f78d5c3a7ee8a283dc1566091675e",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000003.md": "04190c8730bc7d4d54ba323467b5844b848da42aa4cde4ad153cfcaf009f56e2",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000004.md": "9d00e98bc05bfe9d7d56c49b816a012d6c6519120a5a19cdac6a62bfc46f0fb1",
+    "00_governance/schemas/frontmatter.schema.json": "c0ee3d682c54bfda6db8bebce8a109a069e7beb8373e3f6ad5c34433c54164af",
+    "00_governance/schemas/project-control.schema.json": "91cc8b8e2e6a99454b9bf752a8e27d28af3c1020a32668aa5e78ab1dfe54e33e",
+    "00_governance/schemas/task.schema.json": "1629fe9c0b500b0f76f6764fa74c64b9be4f1c0aa5906d82758f6555e05b12ec"
+  },
+  "limitations": [
+    "Ledger totals are recorded amounts, not proof of accounting completeness.",
+    "No CPM/automatic schedule optimization, EVM, FX conversion, identity authorization or product conformity judgment.",
+    "Approved baselines are declarative control records; content/authority are manually reviewed."
+  ]
+}

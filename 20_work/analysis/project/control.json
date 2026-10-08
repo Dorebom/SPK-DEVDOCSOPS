@@ -1,0 +1,36 @@
+{
+  "schema": "spkgw.project-control/v1",
+  "project": "SPK-GW_HEMS",
+  "actors": [],
+  "traces": [
+    {
+      "id": "THR-SPKGW-GOV-000001",
+      "title": "開発プロセス管理ガバナンス整備と導入",
+      "source_path": "30_references/decisions/CTX-R10-GOV.md"
+    }
+  ],
+  "work_packages": [
+    {
+      "id": "WBS-SPKGW-BOOT",
+      "title": "ガバナンス導入準備",
+      "parent_id": null
+    }
+  ],
+  "plan": null,
+  "budget": null,
+  "effort": [],
+  "costs": [],
+  "commitments": [],
+  "forecasts": [],
+  "evidence": [],
+  "runs": [],
+  "decisions": [],
+  "edges": [],
+  "actuals_complete_through": null,
+  "cost_basis": {
+    "currency": null,
+    "tax_basis": null
+  },
+  "notes": "未設定は未承認・未計測。空台帳を0円実績・全作業網羅としない。",
+  "actuals_confirmation": null
+}

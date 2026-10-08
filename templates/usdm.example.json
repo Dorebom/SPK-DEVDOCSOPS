@@ -1,0 +1,17 @@
+{
+  "id": "USDM-REQ-001",
+  "kind": "REQUIREMENT",
+  "text": "確認した要求候補を記入する。",
+  "reason": {
+    "text": null,
+    "state": "UNKNOWN",
+    "fragment_ids": [],
+    "confirmed_by": null
+  },
+  "parent_ids": [],
+  "source_fragment_ids": [],
+  "applicability": "要確認",
+  "status": "DRAFT_FOR_REVIEW",
+  "approved_by": null,
+  "approval_record": null
+}

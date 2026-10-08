@@ -1,0 +1,819 @@
+{
+  "revision": "R6",
+  "coverage": [
+    {
+      "id": "C01",
+      "title": "文書目的・システム境界・対象外",
+      "baseline_assessment": "主要項目あり",
+      "baseline_location": "第1・2章",
+      "finding": "GW、接続機器、設置システム、外部サービスを区分している。製品価値の成功基準はC05/C32で別評価。",
+      "completion_items": [
+        "SLOT-R6-01-01",
+        "SLOT-R6-01-02"
+      ],
+      "question_ids": [
+        "OQ-R6-01-01",
+        "OQ-R6-01-02"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C02",
+      "title": "利用者・施工者・運用者・保守者と利用環境",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第1・6・20・21章",
+      "finding": "人の役割は現れるが、利用者特性・責任・操作範囲・利用局面を一式にした運用概念が不足。",
+      "completion_items": [
+        "SLOT-R6-01-01",
+        "SLOT-R6-02-02",
+        "SLOT-R6-06-02",
+        "SLOT-R6-17-02",
+        "SLOT-R6-20-02",
+        "SLOT-R6-26-04"
+      ],
+      "question_ids": [
+        "OQ-R6-01-01",
+        "OQ-R6-02-02",
+        "OQ-R6-06-02",
+        "OQ-R6-17-02",
+        "OQ-R6-20-02",
+        "OQ-R6-26-04"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C03",
+      "title": "用語・略語・規範参照・関連文書の優先関係",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第1・19章、sources",
+      "finding": "入力優先順位・出典はある。製品用語集、適用文書の版・条項・適用状態、別冊契約への確定参照を補う。",
+      "completion_items": [
+        "SLOT-R6-01-03",
+        "SLOT-R6-01-04",
+        "SLOT-R6-16-01",
+        "SLOT-R6-19-01",
+        "SLOT-R6-19-03"
+      ],
+      "question_ids": [
+        "OQ-R6-01-03",
+        "OQ-R6-01-04",
+        "OQ-R6-16-01",
+        "OQ-R6-19-01",
+        "OQ-R6-19-03"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C04",
+      "title": "製品構成・対応機器・機能適用範囲",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第4・21章、Device_Profile_Extended",
+      "finding": "分類軸と接続方式はあるが、型式/FW/対象機能/上限の実プロファイルは未記入。",
+      "completion_items": [
+        "SLOT-R6-02-01",
+        "SLOT-R6-04-01",
+        "SLOT-R6-04-02",
+        "SLOT-R6-18-01",
+        "SLOT-R6-21-01"
+      ],
+      "question_ids": [
+        "OQ-R6-02-01",
+        "OQ-R6-04-01",
+        "OQ-R6-04-02",
+        "OQ-R6-18-01",
+        "OQ-R6-21-01"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C05",
+      "title": "既存・追加・将来・対象外を含む全機能一覧",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第6・8・18・20章",
+      "finding": "主な機能候補はあるが、製品全体の全機能を母集団として採否・対象リリースを決める表が不足。",
+      "completion_items": [
+        "SLOT-R6-01-02",
+        "SLOT-R6-04-01",
+        "SLOT-R6-06-01",
+        "SLOT-R6-08-01",
+        "SLOT-R6-17-02",
+        "SLOT-R6-18-01"
+      ],
+      "question_ids": [
+        "OQ-R6-01-02",
+        "OQ-R6-04-01",
+        "OQ-R6-06-01",
+        "OQ-R6-08-01",
+        "OQ-R6-17-02",
+        "OQ-R6-18-01"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C06",
+      "title": "論理構成・責務・状態正本・配賦",
+      "baseline_assessment": "主要項目あり",
+      "baseline_location": "第2・3・15章",
+      "finding": "H/G、Arbiter、Orchestrator、DPC/FLC、観測・設定・更新の責務を区別。配置の未確定は明示。",
+      "completion_items": [
+        "SLOT-R6-03-01",
+        "SLOT-R6-15-01"
+      ],
+      "question_ids": [
+        "OQ-R6-03-01",
+        "OQ-R6-15-01"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C07",
+      "title": "通常要求・権限・競合・並行実行・結果",
+      "baseline_assessment": "主要項目あり",
+      "baseline_location": "第5・6・20章",
+      "finding": "世代、期限、重複、部分実行、受理/達成/不明を扱う。個別優先表と数値は今後確定。",
+      "completion_items": [
+        "SLOT-R6-05-01",
+        "SLOT-R6-05-02"
+      ],
+      "question_ids": [
+        "OQ-R6-05-01",
+        "OQ-R6-05-02"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C08",
+      "title": "ユースケース・代替系・異常系・横断動作",
+      "baseline_assessment": "主要項目あり",
+      "baseline_location": "第6・20・21章",
+      "finding": "代表UCとシーケンスがある。全製品機能との網羅対応はC05/C32で要追補。",
+      "completion_items": [
+        "SLOT-R6-06-01",
+        "SLOT-R6-06-02"
+      ],
+      "question_ids": [
+        "OQ-R6-06-01",
+        "OQ-R6-06-02"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C09",
+      "title": "起動・終了・状態遷移・運転許可条件",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第12・13章、20.12、21.7",
+      "finding": "個別の更新/構成状態はある。GW/H/G/通信/機器状態を横断する起動完了・許可・タイムアウト表が不足。",
+      "completion_items": [
+        "SLOT-R6-06-02",
+        "SLOT-R6-12-01",
+        "SLOT-R6-12-03",
+        "SLOT-R6-21-02",
+        "SLOT-R6-22-02"
+      ],
+      "question_ids": [
+        "OQ-R6-06-02",
+        "OQ-R6-12-01",
+        "OQ-R6-12-03",
+        "OQ-R6-21-02",
+        "OQ-R6-22-02"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C10",
+      "title": "機器探索・登録・交換・識別管理",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第4・7・20・21章",
+      "finding": "識別原則はある。探索周期、登録/再登録/解除手順、対象数、競合処理を接続プロファイルへ具体化。",
+      "completion_items": [
+        "SLOT-R6-04-02",
+        "SLOT-R6-04-03",
+        "SLOT-R6-07-01",
+        "SLOT-R6-07-02",
+        "SLOT-R6-21-01",
+        "SLOT-R6-24-03",
+        "SLOT-R6-26-03"
+      ],
+      "question_ids": [
+        "OQ-R6-04-02",
+        "OQ-R6-04-03",
+        "OQ-R6-07-01",
+        "OQ-R6-07-02",
+        "OQ-R6-21-01",
+        "OQ-R6-24-03",
+        "OQ-R6-26-03"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C11",
+      "title": "高度エネマネ・DER・負荷の機能別動作",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第7・8・11章",
+      "finding": "能力ベースの枠組みと制約はある。採用戦略ごとの入力・出力・開始終了・縮退・評価条件は未確定。",
+      "completion_items": [
+        "SLOT-R6-08-01",
+        "SLOT-R6-08-02",
+        "SLOT-R6-08-03"
+      ],
+      "question_ids": [
+        "OQ-R6-08-01",
+        "OQ-R6-08-02",
+        "OQ-R6-08-03"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C12",
+      "title": "外部通信インターフェース",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第2・7・20・21章、External_Interface_Register",
+      "finding": "16の論理契約があるが、通信/電文/schema/数値/認証/実プロファイルを確定する必要がある。",
+      "completion_items": [
+        "SLOT-R6-02-01",
+        "SLOT-R6-02-02",
+        "SLOT-R6-07-01",
+        "SLOT-R6-07-02",
+        "SLOT-R6-07-03",
+        "SLOT-R6-20-01",
+        "SLOT-R6-22-03",
+        "SLOT-R6-27-03"
+      ],
+      "question_ids": [
+        "OQ-R6-02-01",
+        "OQ-R6-02-02",
+        "OQ-R6-07-01",
+        "OQ-R6-07-02",
+        "OQ-R6-07-03",
+        "OQ-R6-20-01",
+        "OQ-R6-22-03",
+        "OQ-R6-27-03"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C13",
+      "title": "内部境界・H/G間契約",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第3・5・15章",
+      "finding": "責務と禁止事項はある。機械可読例は契約案であり、必須項目・エラー・互換性・資源上限の規範契約が未確定。",
+      "completion_items": [
+        "SLOT-R6-03-01",
+        "SLOT-R6-03-02",
+        "SLOT-R6-05-01",
+        "SLOT-R6-07-01",
+        "SLOT-R6-12-02",
+        "SLOT-R6-15-01",
+        "SLOT-R6-20-01"
+      ],
+      "question_ids": [
+        "OQ-R6-03-01",
+        "OQ-R6-03-02",
+        "OQ-R6-05-01",
+        "OQ-R6-07-01",
+        "OQ-R6-12-02",
+        "OQ-R6-15-01",
+        "OQ-R6-20-01"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C14",
+      "title": "計測・状態のデータ辞書",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第9・11章",
+      "finding": "符号・単位・品質・正本・計測点の原則はある。実項目一覧と型・値域・欠測・算出規則が不足。",
+      "completion_items": [
+        "SLOT-R6-09-01",
+        "SLOT-R6-11-01"
+      ],
+      "question_ids": [
+        "OQ-R6-09-01",
+        "OQ-R6-11-01"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C15",
+      "title": "保存・履歴・エクスポート・データ完全性",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第9・12・20章、PAR-DATA",
+      "finding": "用途分離と抽出方針はある。保持/容量/電断時保証/許容損失/削除/復元条件が未確定。",
+      "completion_items": [
+        "SLOT-R6-09-02",
+        "SLOT-R6-09-03",
+        "SLOT-R6-20-05",
+        "SLOT-R6-25-04",
+        "SLOT-R6-27-06"
+      ],
+      "question_ids": [
+        "OQ-R6-09-02",
+        "OQ-R6-09-03",
+        "OQ-R6-20-05",
+        "OQ-R6-25-04",
+        "OQ-R6-27-06"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C16",
+      "title": "設定項目・既定値・反映・復元",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第12・20章",
+      "finding": "競合と世代・部分反映は詳しい。全設定キー・型・値域・既定値・権限・適用状態の一覧が不足。",
+      "completion_items": [
+        "SLOT-R6-12-02",
+        "SLOT-R6-12-03",
+        "SLOT-R6-12-04",
+        "SLOT-R6-20-01",
+        "SLOT-R6-26-05"
+      ],
+      "question_ids": [
+        "OQ-R6-12-02",
+        "OQ-R6-12-03",
+        "OQ-R6-12-04",
+        "OQ-R6-20-01",
+        "OQ-R6-26-05"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C17",
+      "title": "出力制御・保護・通常制御との分離",
+      "baseline_assessment": "主要項目あり",
+      "baseline_location": "第10・11・15・16・21章",
+      "finding": "取得責任、ルータ経由、非干渉、共有故障を明記。個別適合と物理配置は未確認。製品一般安全はC26で別評価。",
+      "completion_items": [
+        "SLOT-R6-10-01",
+        "SLOT-R6-10-02",
+        "SLOT-R6-11-01",
+        "SLOT-R6-11-02",
+        "SLOT-R6-15-01",
+        "SLOT-R6-15-02",
+        "SLOT-R6-21-01"
+      ],
+      "question_ids": [
+        "OQ-R6-10-01",
+        "OQ-R6-10-02",
+        "OQ-R6-11-01",
+        "OQ-R6-11-02",
+        "OQ-R6-15-01",
+        "OQ-R6-15-02",
+        "OQ-R6-21-01"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C18",
+      "title": "障害検出・縮退・復旧",
+      "baseline_assessment": "主要項目あり",
+      "baseline_location": "第13・20・21章",
+      "finding": "障害位置別の影響を整理済み。検出閾値・全故障コード/通知条件・正常復帰条件をさらに確定。",
+      "completion_items": [
+        "SLOT-R6-13-01",
+        "SLOT-R6-13-02",
+        "SLOT-R6-24-02"
+      ],
+      "question_ids": [
+        "OQ-R6-13-01",
+        "OQ-R6-13-02",
+        "OQ-R6-24-02"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C19",
+      "title": "警報・通知・運用診断",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第9・13・20章",
+      "finding": "ログ/状態/品質/診断はあるが、警報ID・重大度・通知・復旧・再通知・確認/抑止の横断表が不足。",
+      "completion_items": [
+        "SLOT-R6-13-01",
+        "SLOT-R6-20-03",
+        "SLOT-R6-25-03"
+      ],
+      "question_ids": [
+        "OQ-R6-13-01",
+        "OQ-R6-20-03",
+        "OQ-R6-25-03"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C20",
+      "title": "FW配信・更新・保守・互換性",
+      "baseline_assessment": "主要項目あり",
+      "baseline_location": "第13・16・20章",
+      "finding": "配信/承認/適用、H/G、復旧、互換性を分ける。量産更新/復旧の具体条件は未確定。",
+      "completion_items": [
+        "SLOT-R6-13-02",
+        "SLOT-R6-16-02",
+        "SLOT-R6-18-02",
+        "SLOT-R6-20-04",
+        "SLOT-R6-27-04",
+        "SLOT-R6-27-05"
+      ],
+      "question_ids": [
+        "OQ-R6-13-02",
+        "OQ-R6-16-02",
+        "OQ-R6-18-02",
+        "OQ-R6-20-04",
+        "OQ-R6-27-04",
+        "OQ-R6-27-05"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C21",
+      "title": "セキュリティ・プライバシー",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第14・20章、PAR-SEC",
+      "finding": "認可・署名・秘密除去・失効等はある。脅威/資産/対策/検証の対応、鍵ライフサイクル、データ削除条件が不足。",
+      "completion_items": [
+        "SLOT-R6-09-03",
+        "SLOT-R6-20-05",
+        "SLOT-R6-26-01",
+        "SLOT-R6-26-06",
+        "SLOT-R6-27-01",
+        "SLOT-R6-27-02",
+        "SLOT-R6-27-03",
+        "SLOT-R6-27-04",
+        "SLOT-R6-27-05",
+        "SLOT-R6-27-06"
+      ],
+      "question_ids": [
+        "OQ-R6-09-03",
+        "OQ-R6-20-05",
+        "OQ-R6-26-01",
+        "OQ-R6-26-06",
+        "OQ-R6-27-01",
+        "OQ-R6-27-02",
+        "OQ-R6-27-03",
+        "OQ-R6-27-04",
+        "OQ-R6-27-05",
+        "OQ-R6-27-06"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C22",
+      "title": "性能・時間・精度・容量の定量契約",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第14章、Parameter_Register",
+      "finding": "管理枠はあるが50パラメータすべて未確定。必要数値を創作せず、基準と判断責任を確定する。",
+      "completion_items": [
+        "SLOT-R6-05-02",
+        "SLOT-R6-08-02",
+        "SLOT-R6-09-01",
+        "SLOT-R6-09-02",
+        "SLOT-R6-11-02",
+        "SLOT-R6-14-01",
+        "SLOT-R6-14-02",
+        "SLOT-R6-17-01",
+        "SLOT-R6-25-01"
+      ],
+      "question_ids": [
+        "OQ-R6-05-02",
+        "OQ-R6-08-02",
+        "OQ-R6-09-01",
+        "OQ-R6-09-02",
+        "OQ-R6-11-02",
+        "OQ-R6-14-01",
+        "OQ-R6-14-02",
+        "OQ-R6-17-01",
+        "OQ-R6-25-01"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C23",
+      "title": "信頼性・可用性・保守性・耐久性",
+      "baseline_assessment": "不足",
+      "baseline_location": "第13～15章の関連断片、PAR-DATA/PAR-ISO",
+      "finding": "障害分離だけでは不足。機能別の許容停止/復旧、連続稼働、故障後の保守、製品/書込寿命の契約が未整備。",
+      "completion_items": [
+        "SLOT-R6-09-02",
+        "SLOT-R6-13-02",
+        "SLOT-R6-14-02",
+        "SLOT-R6-15-02",
+        "SLOT-R6-17-03",
+        "SLOT-R6-22-02",
+        "SLOT-R6-25-01",
+        "SLOT-R6-25-02",
+        "SLOT-R6-25-03",
+        "SLOT-R6-25-04",
+        "SLOT-R6-26-07"
+      ],
+      "question_ids": [
+        "OQ-R6-09-02",
+        "OQ-R6-13-02",
+        "OQ-R6-14-02",
+        "OQ-R6-15-02",
+        "OQ-R6-17-03",
+        "OQ-R6-22-02",
+        "OQ-R6-25-01",
+        "OQ-R6-25-02",
+        "OQ-R6-25-03",
+        "OQ-R6-25-04",
+        "OQ-R6-26-07"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C24",
+      "title": "画面・操作性・人間工学・対応端末",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第20章",
+      "finding": "接続と結果表示はある。画面/表示項目/単位/丸め/更新/操作確認/権限/互換/利用容易性の受入条件を補う。",
+      "completion_items": [
+        "SLOT-R6-02-02",
+        "SLOT-R6-20-02",
+        "SLOT-R6-20-03",
+        "SLOT-R6-20-05",
+        "SLOT-R6-22-05",
+        "SLOT-R6-24-03"
+      ],
+      "question_ids": [
+        "OQ-R6-02-02",
+        "OQ-R6-20-02",
+        "OQ-R6-20-03",
+        "OQ-R6-20-05",
+        "OQ-R6-22-05",
+        "OQ-R6-24-03"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C25",
+      "title": "物理・電気・機構・取付",
+      "baseline_assessment": "不足",
+      "baseline_location": "14.4、PAR-ENV-01のみの包括的扱い",
+      "finding": "外形、電源範囲、消費、端子/配線、設置姿勢/空間、表示器・ボタン等の適用項目と規範参照が未整備。",
+      "completion_items": [
+        "SLOT-R6-17-03",
+        "SLOT-R6-22-01",
+        "SLOT-R6-22-02",
+        "SLOT-R6-22-03",
+        "SLOT-R6-22-04",
+        "SLOT-R6-22-05",
+        "SLOT-R6-23-02",
+        "SLOT-R6-26-02"
+      ],
+      "question_ids": [
+        "OQ-R6-17-03",
+        "OQ-R6-22-01",
+        "OQ-R6-22-02",
+        "OQ-R6-22-03",
+        "OQ-R6-22-04",
+        "OQ-R6-22-05",
+        "OQ-R6-23-02",
+        "OQ-R6-26-02"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C26",
+      "title": "製品安全・遠隔操作安全・誤操作",
+      "baseline_assessment": "不足",
+      "baseline_location": "8.3・10・15章、原典04_JET_Isolation",
+      "finding": "機器保護尊重はある。GW/負荷/利用者を含む危険源・安全状態・防護・残留リスクの体系が不足。",
+      "completion_items": [
+        "SLOT-R6-08-03",
+        "SLOT-R6-10-02",
+        "SLOT-R6-17-03",
+        "SLOT-R6-24-01",
+        "SLOT-R6-24-02",
+        "SLOT-R6-24-03",
+        "SLOT-R6-24-04"
+      ],
+      "question_ids": [
+        "OQ-R6-08-03",
+        "OQ-R6-10-02",
+        "OQ-R6-17-03",
+        "OQ-R6-24-01",
+        "OQ-R6-24-02",
+        "OQ-R6-24-03",
+        "OQ-R6-24-04"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C27",
+      "title": "環境・EMC・静電気・輸送保管条件",
+      "baseline_assessment": "不足",
+      "baseline_location": "14.4、15.3、PAR-ENV-01",
+      "finding": "温度/電源/共有熱は言及あり。湿度/結露/防塵防水/EMC等の適用判定と条件表が不足。値や規格の適用を断定しない。",
+      "completion_items": [
+        "SLOT-R6-17-03",
+        "SLOT-R6-23-01",
+        "SLOT-R6-23-02",
+        "SLOT-R6-23-03",
+        "SLOT-R6-23-04"
+      ],
+      "question_ids": [
+        "OQ-R6-17-03",
+        "OQ-R6-23-01",
+        "OQ-R6-23-02",
+        "OQ-R6-23-03",
+        "OQ-R6-23-04"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C28",
+      "title": "製造・個体識別・初期書込・出荷",
+      "baseline_assessment": "不足",
+      "baseline_location": "12.6の製造への言及、FW関連",
+      "finding": "製造初期化、鍵/個体ID注入、製造モード閉鎖、出荷状態/検査、表示・梱包・保管のシステム契約が不足。",
+      "completion_items": [
+        "SLOT-R6-17-03",
+        "SLOT-R6-22-05",
+        "SLOT-R6-23-04",
+        "SLOT-R6-26-01",
+        "SLOT-R6-26-02",
+        "SLOT-R6-27-02",
+        "SLOT-R6-27-04"
+      ],
+      "question_ids": [
+        "OQ-R6-17-03",
+        "OQ-R6-22-05",
+        "OQ-R6-23-04",
+        "OQ-R6-26-01",
+        "OQ-R6-26-02",
+        "OQ-R6-27-02",
+        "OQ-R6-27-04"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C29",
+      "title": "施工・初期設定・試運転・引渡し",
+      "baseline_assessment": "部分的",
+      "baseline_location": "20.3、21.6、Device_Profile_Extended",
+      "finding": "系統構成選択と初回登録の言及はあるが、宅内ネットワークから全機器/計測対応・試運転/引渡しまでの完結UCが不足。",
+      "completion_items": [
+        "SLOT-R6-12-01",
+        "SLOT-R6-17-03",
+        "SLOT-R6-21-02",
+        "SLOT-R6-24-04",
+        "SLOT-R6-26-03",
+        "SLOT-R6-26-04"
+      ],
+      "question_ids": [
+        "OQ-R6-12-01",
+        "OQ-R6-17-03",
+        "OQ-R6-21-02",
+        "OQ-R6-24-04",
+        "OQ-R6-26-03",
+        "OQ-R6-26-04"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C30",
+      "title": "修理交換・移設・廃棄・サービス終了",
+      "baseline_assessment": "部分的",
+      "baseline_location": "12.4、20.10、21章、18章",
+      "finding": "機器交換/所属失効はある。消去、証明書失効、廃棄モード、サーバ終了後の動作/支援期限の体系が不足。",
+      "completion_items": [
+        "SLOT-R6-12-04",
+        "SLOT-R6-17-03",
+        "SLOT-R6-18-02",
+        "SLOT-R6-25-03",
+        "SLOT-R6-26-05",
+        "SLOT-R6-26-06",
+        "SLOT-R6-26-07",
+        "SLOT-R6-27-02",
+        "SLOT-R6-27-05",
+        "SLOT-R6-27-06"
+      ],
+      "question_ids": [
+        "OQ-R6-12-04",
+        "OQ-R6-17-03",
+        "OQ-R6-18-02",
+        "OQ-R6-25-03",
+        "OQ-R6-26-05",
+        "OQ-R6-26-06",
+        "OQ-R6-26-07",
+        "OQ-R6-27-02",
+        "OQ-R6-27-05",
+        "OQ-R6-27-06"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C31",
+      "title": "適用規格・制度・認証への要件対応",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第16・19章、14.4、機器プロファイル",
+      "finding": "JET/AIF/JC-STARの区別はある。全適用規格/制度/版/条項/要求/証拠の対応表は未完成。",
+      "completion_items": [
+        "SLOT-R6-01-04",
+        "SLOT-R6-10-01",
+        "SLOT-R6-15-02",
+        "SLOT-R6-16-01",
+        "SLOT-R6-16-02",
+        "SLOT-R6-17-03",
+        "SLOT-R6-23-03",
+        "SLOT-R6-24-01",
+        "SLOT-R6-27-01",
+        "SLOT-R6-27-05"
+      ],
+      "question_ids": [
+        "OQ-R6-01-04",
+        "OQ-R6-10-01",
+        "OQ-R6-15-02",
+        "OQ-R6-16-01",
+        "OQ-R6-16-02",
+        "OQ-R6-17-03",
+        "OQ-R6-23-03",
+        "OQ-R6-24-01",
+        "OQ-R6-27-01",
+        "OQ-R6-27-05"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C32",
+      "title": "要求検証・利用目的の妥当性確認・受入",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第17章、Test_Profiles",
+      "finding": "69の試験計画がある。受入プロファイルは全件TBD。ユーザー目的/エネマネ成果と機能網羅のValidationを補う。",
+      "completion_items": [
+        "SLOT-R6-01-02",
+        "SLOT-R6-06-01",
+        "SLOT-R6-08-02",
+        "SLOT-R6-11-02",
+        "SLOT-R6-17-01",
+        "SLOT-R6-17-02",
+        "SLOT-R6-17-03",
+        "SLOT-R6-24-04",
+        "SLOT-R6-26-04"
+      ],
+      "question_ids": [
+        "OQ-R6-01-02",
+        "OQ-R6-06-01",
+        "OQ-R6-08-02",
+        "OQ-R6-11-02",
+        "OQ-R6-17-01",
+        "OQ-R6-17-02",
+        "OQ-R6-17-03",
+        "OQ-R6-24-04",
+        "OQ-R6-26-04"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C33",
+      "title": "要求属性・双方向トレース・未決管理",
+      "baseline_assessment": "部分的",
+      "baseline_location": "要求/試験/未決台帳、第1・17・19章",
+      "finding": "IDと配賦はあるが、124件のusdm_idがnull。未決台帳に期限や決定ゲートの専用欄はなく追加を推奨。",
+      "completion_items": [
+        "SLOT-R6-01-04",
+        "SLOT-R6-17-01",
+        "SLOT-R6-19-01",
+        "SLOT-R6-19-02"
+      ],
+      "question_ids": [
+        "OQ-R6-01-04",
+        "OQ-R6-17-01",
+        "OQ-R6-19-01",
+        "OQ-R6-19-02"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    },
+    {
+      "id": "C34",
+      "title": "変更整合・新旧互換・拡張・持越し要求",
+      "baseline_assessment": "部分的",
+      "baseline_location": "第4・7・14・18章、変更台帳",
+      "finding": "移行原則はある。4.5の旧RS-485/PCS_DIRECT例が15.4と不整合。USB/Wi-SUN等は実仕様又は正式対象外への対応を閉じる。",
+      "completion_items": [
+        "SLOT-R6-04-03",
+        "SLOT-R6-07-03",
+        "SLOT-R6-12-04",
+        "SLOT-R6-16-02",
+        "SLOT-R6-18-01",
+        "SLOT-R6-18-02",
+        "SLOT-R6-19-03",
+        "SLOT-R6-20-04",
+        "SLOT-R6-21-02",
+        "SLOT-R6-26-05"
+      ],
+      "question_ids": [
+        "OQ-R6-04-03",
+        "OQ-R6-07-03",
+        "OQ-R6-12-04",
+        "OQ-R6-16-02",
+        "OQ-R6-18-01",
+        "OQ-R6-18-02",
+        "OQ-R6-19-03",
+        "OQ-R6-20-04",
+        "OQ-R6-21-02",
+        "OQ-R6-26-05"
+      ],
+      "r6_status": "STRUCTURE_PRESENT_CONTENT_OPEN"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "spkgw.build-manifest/v1",
+  "toolchain_sha256": "3afd3c03060da77f27f9cc12d539f2ad731a827a7692646bd8fd0f8daf88c8fb",
+  "counts": {
+    "chapters": 44,
+    "system_functions": 21,
+    "gw_functions": 32,
+    "requirements": 124,
+    "tests": 69,
+    "questions": 91,
+    "usdm_elements": 0,
+    "typed_links": 0,
+    "import_bindings": 0,
+    "local_links": 7558
+  },
+  "outputs": {
+    "data/completion_items.json": "d5f59af8ffcd89427ba705eed2dee154aff77ca2bffc07f44835f90cde547536",
+    "data/note_question_bindings.json": "1a10dd033fbcfba62b8b95ac43380cae404efe8fa2ac7ba98ed14b85803bd307",
+    "data/view_generation.json": "1db10c0515a68e073e4647b6e998950e6da2a0d51f99779e659d4760398080d3",
+    "data/source_bindings.json": "8fbbfc28ba47292364f4d4f6ec4c08dcfdb76c7c8611cba88b3fe0ff46cebedb",
+    "appendices/Requirements_Catalog.md": "3421fd8f21e1c6fb9b2bf68a441559a1f807e9708f44c74a7e7c2079a5c6cce4",
+    "appendices/Open_Question_Register.md": "712ea8f677b1ab0d612ccf1ef266a3b4ca2dec632ce7640a4fb63e0cd46e48a2",
+    "appendices/Test_Profiles.md": "ea73ebc1b0a29e439b58aedfc4b1773470d75e5c8fbc16f96494cc190b75006f",
+    "appendices/Traceability.md": "07c8993c47eecdc1d9c56512849116135279db7add0e80529636957e099414d4",
+    "appendices/Functional_Allocation.md": "3b72890ca2cea59ddcab5a351ba4c12b5b0b1bb571a9e44644894fa5b334b869",
+    "appendices/Source_Register.md": "3c71ef213119457d593e4434918749a9b88b63b5b2ed120b9d77ced517500161",
+    "appendices/Import_Merge_Decisions.md": "b6492b740d9da0ace6ed2154dd0ba09ace101dd8c3144a7bd87c13f093b6e0e5",
+    "appendices/USDM_Traceability.md": "0fcfebc9fc10bd6f13ce957152e3820a895ab707a32a5cf54a21a0ed9dce841f",
+    "90_All_In_One.md": "7240407b3e6f69608b82493d3042b8e13c2cbd1056ed4c697d2bff00cc6bfaee",
+    "chapters/I_System/I-03_System_Functions.md": "db8bd2e4579363934cfaf3d59c4fc02a9fc50b4d2b018174c4a4e74ba0aa84a9",
+    "chapters/II_GW/II-02_GW_Functions.md": "a6ef1b70e2003d84828d8081ea4a5dded012953ca968ee9bc873c1cf2d8f68ef"
+  },
+  "note": "Initial R9 document-management migration; product status preserved."
+}

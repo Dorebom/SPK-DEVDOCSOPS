@@ -1,0 +1,267 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.import-provenance/v1"
+    },
+    "fragments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fragment_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "locator": {
+            "type": "object",
+            "minProperties": 1
+          },
+          "raw_text": {
+            "type": "string"
+          },
+          "context": {
+            "type": "object"
+          },
+          "extraction_status": {
+            "enum": [
+              "EXTRACTED",
+              "NEEDS_REVIEW",
+              "BLOCKED"
+            ]
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "verified_by": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "review_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "fragment_id",
+          "source_id",
+          "source_sha256",
+          "locator",
+          "raw_text",
+          "context",
+          "extraction_status",
+          "features",
+          "verified_by",
+          "review_note"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "fragment_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "target_kind": {
+            "enum": [
+              "SYS",
+              "USDM"
+            ]
+          },
+          "target_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "interpretation": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "classification": {
+            "enum": [
+              "UNCLASSIFIED",
+              "EQUAL",
+              "ADDITION",
+              "DETAIL",
+              "SCOPE_VARIANT",
+              "CONFLICT",
+              "OBSOLETE",
+              "INSUFFICIENT"
+            ]
+          },
+          "scope": {
+            "type": "object",
+            "minProperties": 1
+          },
+          "status": {
+            "enum": [
+              "DRAFT",
+              "IN_REVIEW",
+              "READY",
+              "CONFLICT"
+            ]
+          },
+          "resolution_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "candidate_id",
+          "fragment_ids",
+          "target_kind",
+          "target_ids",
+          "interpretation",
+          "classification",
+          "scope",
+          "status",
+          "resolution_note"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "decision_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "candidate_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "action": {
+            "enum": [
+              "ADOPT",
+              "EQUIVALENT",
+              "DEFER",
+              "REJECT",
+              "REFERENCE_ONLY"
+            ]
+          },
+          "decided_by": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "decided_at": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "unresolved_conflict": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "decision_id",
+          "candidate_id",
+          "action",
+          "decided_by",
+          "decided_at",
+          "rationale",
+          "unresolved_conflict"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target_kind": {
+            "enum": [
+              "SYS",
+              "USDM"
+            ]
+          },
+          "target_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "fragment_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "decision_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "record_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "target_kind",
+          "target_id",
+          "fragment_ids",
+          "decision_id",
+          "record_sha256"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "fragments",
+    "candidates",
+    "decisions",
+    "bindings"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "import_provenance"
+}

@@ -1,0 +1,16 @@
+{
+  "revision": "R9",
+  "basis": "CTX-R9 + SRC-IMPORT-REVIEW",
+  "product_specification_changed": false,
+  "management_scope": "原資料・作業・正本の分離、取り込み・マージ・USDM・増分検証・pointer-last公開",
+  "source_baseline": "R8-FIX001",
+  "historical_data": [
+    "input_manifest.json",
+    "section_migration.json",
+    "role_access_r7.json",
+    "configuration_patterns_r7.json",
+    "known_answers_r7.json",
+    "known_answers_r8.json"
+  ],
+  "note": "上記履歴データは当時の記録。新フローでの採用根拠・権限・実行結果を自動上書きしない。"
+}

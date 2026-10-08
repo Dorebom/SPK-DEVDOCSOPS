@@ -1,0 +1,39 @@
+{
+  "schema": "spkgw.adoption-receipt/v1",
+  "adopted_on": "2026-10-08",
+  "basis": "CTX-R9",
+  "scope": "DOCUMENT_MANAGEMENT_FLOW_AND_TOOLING",
+  "product_requirements_approved": false,
+  "base_original_sha256": "ff984bda9214c9d874640cf078087da40674b0eb379babb5c597fed8085481e2",
+  "selected_tree_sha256": "dccc9efd3413b2c43ce807be2cffc36cc3c9b001757ad8f9934c730c176124b1",
+  "validation": {
+    "result": "PASS",
+    "checks": [
+      "JSON schema/type/nonempty/enum",
+      "IDs and dynamic chapter allocation",
+      "source/USDM/test/function references and bidirectionality",
+      "generic OQ ownership and closure",
+      "import provenance and explicit merge decisions",
+      "USDM rationale, hierarchy, typed multi-to-multi links",
+      "Markdown paths, anchors, footers and no work authority",
+      "all managed generated views are fresh"
+    ],
+    "counts": {
+      "chapters": 44,
+      "system_functions": 21,
+      "gw_functions": 32,
+      "requirements": 124,
+      "tests": 69,
+      "questions": 91,
+      "usdm_elements": 0,
+      "typed_links": 0,
+      "import_bindings": 0,
+      "local_links": 7558
+    },
+    "warnings": [
+      "文書・管理ツールの検査。抽出内容の意味・原資料承認・製品試験・認証は別。",
+      "詳細表のうち手編集正本は自動同期対象ではなくレビューを要する。",
+      "ローカル実行者はOS権限でファイルを変更可能。承認JSONは署名・本人認証サービスの代替ではない。"
+    ]
+  }
+}

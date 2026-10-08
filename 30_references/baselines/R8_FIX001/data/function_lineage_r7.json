@@ -1,0 +1,148 @@
+{
+  "rows": [
+    {
+      "r6_inventory_id": "FN-DRAFT-01",
+      "gw_function_ids": [
+        "GW-FN-011"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-02",
+      "gw_function_ids": [
+        "GW-FN-004",
+        "GW-FN-012"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-03",
+      "gw_function_ids": [
+        "GW-FN-005",
+        "GW-FN-012"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-04",
+      "gw_function_ids": [
+        "GW-FN-008",
+        "GW-FN-012"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-05",
+      "gw_function_ids": [
+        "GW-FN-013"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-06",
+      "gw_function_ids": [
+        "GW-FN-001",
+        "GW-FN-002",
+        "GW-FN-003",
+        "GW-FN-004"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-07",
+      "gw_function_ids": [
+        "GW-FN-006"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-08",
+      "gw_function_ids": [
+        "GW-FN-007"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-09",
+      "gw_function_ids": [
+        "GW-FN-014",
+        "GW-FN-015"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-10",
+      "gw_function_ids": [
+        "GW-FN-016"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-11",
+      "gw_function_ids": [
+        "GW-FN-001",
+        "GW-FN-017",
+        "GW-FN-020",
+        "GW-FN-022"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-12",
+      "gw_function_ids": [
+        "GW-FN-018"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-13",
+      "gw_function_ids": [
+        "GW-FN-019"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-14",
+      "gw_function_ids": [
+        "GW-FN-023",
+        "GW-FN-024"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-15",
+      "gw_function_ids": [
+        "GW-FN-020",
+        "GW-FN-021",
+        "GW-FN-030"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-16",
+      "gw_function_ids": [
+        "GW-FN-009",
+        "GW-FN-025"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-17",
+      "gw_function_ids": [
+        "GW-FN-025",
+        "GW-FN-026"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-18",
+      "gw_function_ids": [
+        "GW-FN-031"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-19",
+      "gw_function_ids": [
+        "GW-FN-029"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-20",
+      "gw_function_ids": [
+        "GW-FN-030",
+        "GW-FN-032"
+      ]
+    },
+    {
+      "r6_inventory_id": "FN-DRAFT-21",
+      "gw_function_ids": [
+        "GW-FN-001",
+        "GW-FN-027",
+        "GW-FN-028"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "spkgw.r12-qa/v1",
+  "result": "PASS",
+  "tests": {
+    "total": 167,
+    "by_module": {
+      "test_governance": 45,
+      "test_trace_identity": 35,
+      "test_specflow": 47,
+      "test_traceability": 40
+    },
+    "all_pass": true
+  },
+  "registry": {
+    "documents": 155,
+    "document_versions": 155,
+    "items": 341,
+    "item_versions": 341,
+    "document_edges": 4,
+    "warnings": [
+      {
+        "code": "ITEM_PHASE_UNASSIGNED",
+        "count": 164
+      },
+      {
+        "code": "ITEM_THREAD_UNASSIGNED",
+        "count": 337
+      },
+      {
+        "code": "ITEM_RELATION_REVIEW_PENDING",
+        "count": 341
+      }
+    ]
+  },
+  "item_edges": 741,
+  "authoring_scope_markdown": 123,
+  "links_checked": 8520,
+  "link_errors": [],
+  "preserved_original_files": {
+    "10_canonical": 122,
+    "30_references": 354
+  },
+  "canonical_pointer_unchanged": true,
+  "product_tree_sha256": "dccc9efd3413b2c43ce807be2cffc36cc3c9b001757ad8f9934c730c176124b1",
+  "business_ledgers_unchanged_except_theme_id": true,
+  "input_r11_sha256": "c965cefbf8fdd9651687dab3934f948b1b769fd36a6317c33852a896219dc89d",
+  "limitations": [
+    "Source-controlled document and item inventory only; no manufactured implementation or test PASS.",
+    "Actual code commits, Office clause extraction and assigning all tests to UT/IT/ST/NFT remain unconfirmed.",
+    "Linux synthetic verification; Windows, network file share, crash durability, product/PCS/JET tests not performed.",
+    "Current R9 specflow trace_links and runtime trace_id remain separate contracts."
+  ]
+}

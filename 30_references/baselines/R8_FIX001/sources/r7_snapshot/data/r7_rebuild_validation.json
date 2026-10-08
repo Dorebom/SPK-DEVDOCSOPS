@@ -1,0 +1,8 @@
+{
+  "revision": "R7",
+  "test": "REBUILD_TWICE_IDENTICAL_BYTES",
+  "result": "PASS",
+  "compared_files": 180,
+  "changed_files": [],
+  "scope": "DOCUMENT_GENERATION_ONLY"
+}

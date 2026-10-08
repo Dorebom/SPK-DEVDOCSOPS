@@ -1,0 +1,241 @@
+{
+  "schema": "spkgw.document-changes/v1",
+  "from_revision": "R2",
+  "to_revision": "R3",
+  "changes": [
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GRID-001",
+      "before": {
+        "id": "SYS-GRID-001",
+        "title": "独立した出力制御経路",
+        "requirement": "一般送配電事業者のスケジュール実行をHEMSのArbiter／Orchestrator／通常更新に依存させないこと。案Aでは機器側依存契約、案BではG側実装要求へ配賦すること。",
+        "chapter": 10,
+        "allocation": "機器側OCU／案BのG側",
+        "verification_ids": [
+          "T01",
+          "T02"
+        ],
+        "verification_review": "T01、T02",
+        "source_ids": [
+          "A01",
+          "A03",
+          "A08"
+        ],
+        "basis": "SOURCE_DERIVED",
+        "source_arch_ids": [
+          "ARCH-002"
+        ],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "source_requirement_text": "電力会社のスケジュール実行経路をHEMSのArbiter／Orchestratorに依存させない"
+      },
+      "after": {
+        "id": "SYS-GRID-001",
+        "title": "独立した出力制御経路",
+        "requirement": "一般送配電事業者のスケジュール実行をHEMSのArbiter／Orchestrator／通常更新に依存させないこと。PCS_DIRECTではPCS内出力制御機能への依存契約、GW_MANAGEDではGW G側の取得・管理・PCS指示の実装要求へ配賦すること。",
+        "chapter": 10,
+        "allocation": "PCS内OCU／GW G側（選択プロファイルによる）",
+        "verification_ids": [
+          "T01",
+          "T02"
+        ],
+        "verification_review": "T01、T02",
+        "source_ids": [
+          "A01",
+          "A03",
+          "A08",
+          "CTX-R3"
+        ],
+        "basis": "SOURCE_DERIVED",
+        "source_arch_ids": [
+          "ARCH-002"
+        ],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "source_requirement_text": "電力会社のスケジュール実行経路をHEMSのArbiter／Orchestratorに依存させない"
+      },
+      "reason": "二方式選択に伴う現行方針・配賦の明確化。原典ARCHの独立性目標は維持。",
+      "source": "CTX-R3",
+      "revision": "R3"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GRID-003",
+      "before": {
+        "id": "SYS-GRID-003",
+        "title": "必須計測・時刻・保存の独立性",
+        "requirement": "系統制御に必要な計測・時刻・保存・復旧をHEMSの停止・更新時にも適用プロファイル内で成立させ、HEMS用観測の欠損を無断代替しないこと。",
+        "chapter": 10,
+        "allocation": "機器側／案BのG側",
+        "verification_ids": [
+          "T01",
+          "T06"
+        ],
+        "verification_review": "T01、T06",
+        "source_ids": [
+          "A04",
+          "A08"
+        ],
+        "basis": "SOURCE_DERIVED",
+        "source_arch_ids": [
+          "ARCH-005"
+        ],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "source_requirement_text": "系統制御に必要な計測・保存・時刻・復旧はHEMS停止時にも成立する"
+      },
+      "after": {
+        "id": "SYS-GRID-003",
+        "title": "必須計測・時刻・保存の独立性",
+        "requirement": "系統制御に必要な計測・時刻・保存・復旧をHEMSの停止・更新時にも適用プロファイル内で成立させ、HEMS用観測の欠損を無断代替しないこと。",
+        "chapter": 10,
+        "allocation": "PCS側／GW G側（選択プロファイルによる）",
+        "verification_ids": [
+          "T01",
+          "T06"
+        ],
+        "verification_review": "T01、T06",
+        "source_ids": [
+          "A04",
+          "A08"
+        ],
+        "basis": "SOURCE_DERIVED",
+        "source_arch_ids": [
+          "ARCH-005"
+        ],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "source_requirement_text": "系統制御に必要な計測・保存・時刻・復旧はHEMS停止時にも成立する"
+      },
+      "reason": "二方式選択に伴う現行方針・配賦の明確化。原典ARCHの独立性目標は維持。",
+      "source": "CTX-R3",
+      "revision": "R3"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-DEPLOY-001",
+      "before": {
+        "id": "SYS-DEPLOY-001",
+        "title": "配置案A／Bの状態",
+        "requirement": "配置案Aを添付の推奨基準、Bを製品要件依存候補として扱い、現行の型式・通信役割・共有資源確認なしに配置承認済みとしないこと。",
+        "chapter": 15,
+        "allocation": "アーキテクチャレビュー",
+        "verification_ids": [
+          "T01",
+          "SYS-T05"
+        ],
+        "verification_review": "仕様・契約レビュー",
+        "source_ids": [
+          "A01",
+          "A08",
+          "A11"
+        ],
+        "basis": "SOURCE_DERIVED",
+        "source_arch_ids": [],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING"
+      },
+      "after": {
+        "id": "SYS-DEPLOY-001",
+        "title": "出力制御二方式の選択と配備確認",
+        "requirement": "PCS_DIRECTとGW_MANAGEDの両方を選択可能な構成として定義し、機器・HW/FW・通信役割・共有資源・接続／認証プロファイルを確認した範囲で有効化すること。原典の案A優先を全製品共通の既定とせず、実配備の成立確認を省略しないこと。",
+        "chapter": 15,
+        "allocation": "アーキテクチャレビュー",
+        "verification_ids": [
+          "T01",
+          "SYS-T05"
+        ],
+        "verification_review": "仕様・契約レビュー",
+        "source_ids": [
+          "A01",
+          "A08",
+          "A11",
+          "CTX-R3"
+        ],
+        "basis": "USER_CONTEXT_DERIVED",
+        "source_arch_ids": [],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING"
+      },
+      "reason": "二方式選択に伴う現行方針・配賦の明確化。原典ARCHの独立性目標は維持。",
+      "source": "CTX-R3",
+      "revision": "R3"
+    },
+    {
+      "file": "data/open_issues.json",
+      "id": "SYS-TBD-003",
+      "before": {
+        "id": "SYS-TBD-003",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "subject": "既存RS-485構成が配置案Aを成立させるか",
+        "resolution": "非迂回・独立計測・スケジュール・通信を確認し、案A継続又はB等への変更をレビューする",
+        "status": "OPEN",
+        "owner_role": "アーキテクチャ・認証主体",
+        "source_id": "SP"
+      },
+      "after": {
+        "id": "SYS-TBD-003",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "subject": "既存RS-485構成が各選択方式の独立性を成立させるか",
+        "resolution": "PCS_DIRECTでは通常経路の非迂回とPCS側独立性、GW_MANAGEDではG側取得・管理・必須PCS通信とH側停止／更新の非干渉を確認して、対応可能なプロファイルを記録する",
+        "status": "OPEN",
+        "owner_role": "アーキテクチャ・認証主体",
+        "source_id": "SP"
+      },
+      "reason": "R2の案A単独確認を両方式の成立確認へ更新。実機未確認のためOPENは維持。",
+      "source": "CTX-R3",
+      "revision": "R3"
+    },
+    {
+      "file": "data/external_interfaces.json",
+      "id": "IF-GRID-01",
+      "before": {
+        "id": "IF-GRID-01",
+        "introduced_revision": "R1",
+        "name": "出力制御取得",
+        "actor": "OCU",
+        "peer": "一般送配電事業者",
+        "information": "スケジュール等の取得・応答",
+        "conditions": "案Aの機器側依存。HEMSを経由しない",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD"
+      },
+      "after": {
+        "id": "IF-GRID-01",
+        "introduced_revision": "R1",
+        "name": "出力制御取得",
+        "actor": "選択されたPCS内OCU又はGW G側",
+        "peer": "一般送配電事業者",
+        "information": "スケジュール等の取得・応答",
+        "conditions": "PCS_DIRECT／GW_MANAGEDの該当主体が取得。同一scopeで二重に能動適用しない。H側を必須中継としない",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD"
+      },
+      "reason": "取得主体を両方式へ配賦する。",
+      "source": "CTX-R3",
+      "revision": "R3"
+    }
+  ],
+  "note": "変更した既存レコードを旧文・新文で記録。新規追加はintroduced_revision=R3で識別。原典sources/architectureは変更しない。"
+}

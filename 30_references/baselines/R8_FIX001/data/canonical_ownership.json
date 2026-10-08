@@ -1,0 +1,17 @@
+{
+  "revision": "R8",
+  "moc": "00_MOC.md",
+  "narrative": "chapters/**.md",
+  "functional_inventory": "data/function_catalog.json",
+  "system_requirement_statements": "data/requirements.json",
+  "open_question_answers": "各担当章末尾（data/open_question_bindings.jsonで特定）",
+  "permission_detail": "appendices/Role_Function_Access.md（JSONは継承スナップショット）",
+  "configuration_detail": "appendices/Configuration_Patterns.md＋各機器プロファイル（JSONは継承スナップショット）",
+  "generated_views": [
+    "90_All_In_One.md",
+    "appendices/Open_Question_Register.md",
+    "I-03 / II-02 の機能表・カード",
+    "appendices/Requirements_Catalog.md"
+  ],
+  "scope": "自動同期対象以外の詳細表は本文・根拠・採用値・関連索引の整合を明示レビューする"
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "spkgw.decision-overrides/v1",
+  "revision": "R4",
+  "decisions": [
+    {
+      "id": "R3-DEC-001",
+      "status": "USER_REQUIREMENT_CONFIRMED",
+      "subject": "PCS直接方式とGW管理方式を両方選択対象にする",
+      "source": "CTX-R3",
+      "supersedes_current_policy": [
+        "DEC-004",
+        "R2.governing_deployment"
+      ],
+      "does_not_approve": [
+        "特定機種の対応",
+        "G側の物理実装",
+        "無停止切替",
+        "認証承認・試験免除"
+      ]
+    },
+    {
+      "id": "R3-DEC-002",
+      "status": "PROPOSED_FOR_REVIEW",
+      "subject": "scopeごとに一つの有効スケジュール適用主体とし、保守時に管理切替する",
+      "source": "SP-R3"
+    },
+    {
+      "id": "R3-DEC-003",
+      "status": "PROPOSED_FOR_REVIEW",
+      "subject": "通信断時の自動方式切替は既定で不採用",
+      "source": "SP-R3"
+    },
+    {
+      "id": "R3-DEC-004",
+      "status": "UNRESOLVED",
+      "subject": "GW_MANAGEDの別CPU／同一CPU等の実配置は独立性評価により確定",
+      "preserves": [
+        "DEC-009",
+        "TBD-011"
+      ],
+      "source": "SP-R3"
+    },
+    {
+      "id": "R4-DEC-001",
+      "status": "USER_REQUIREMENT_CONFIRMED",
+      "subject": "出力制御サーバとの通信はすべて宅内ルータ経由",
+      "source": "CTX-R4",
+      "supersedes_current_policy": [
+        "R3.router_optional_in_context_diagrams"
+      ]
+    },
+    {
+      "id": "R4-DEC-002",
+      "status": "USER_REQUIREMENT_CONFIRMED",
+      "subject": "GW非経由取得の対象はECHONET Lite機器のPCSに限定",
+      "source": "CTX-R4",
+      "supersedes_current_policy": [
+        "R3-DEC-001.unrestricted_device_mode_combinations"
+      ]
+    },
+    {
+      "id": "R4-DEC-003",
+      "status": "PROPOSED_FOR_REVIEW",
+      "subject": "先行要求と今回限定を合わせ、EL接続PCS=PCS自律取得、RS-485接続PCS=GW管理の適用表を採用する",
+      "source": "CTX-R4 + CTX-R3",
+      "does_not_approve": [
+        "特定型式対応",
+        "物理CPU配置",
+        "自由な方式切替",
+        "サーバ通信プロトコル",
+        "JET承認"
+      ]
+    },
+    {
+      "id": "R4-DEC-004",
+      "status": "PROPOSED_FOR_REVIEW",
+      "subject": "PCS_DIRECT識別子を互換保持し、表示名と有効化条件を改訂。R3構成を再検証する",
+      "source": "SP-R4"
+    }
+  ]
+}

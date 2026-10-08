@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "scope": "DOCUMENT_SELECTION_AND_PRESERVATION_ONLY",
+  "checks": [
+    "source package, 37 original files, 36 original manifest entries, per-file dispositions",
+    "selected product baseline, tasks, control, prior references, tools and schemas unchanged",
+    "previous registries stored; existing 341 items and 741 edges preserved exactly",
+    "DTR revisions retained; changed current documents have separate immutable R12 versions",
+    "26 adapted rule anchors, exact source spans and item-level cites with no inferred approval",
+    "six optional entry files use current paths and codes, not old path/weight/ordinal authority"
+  ],
+  "counts": {
+    "source_files": 37,
+    "rule_groups": 26,
+    "source_fragments": 26,
+    "prior_items": 341,
+    "items": 396,
+    "document_versions": 239,
+    "logical_documents": 217,
+    "old_document_versions_preserved": 22,
+    "protected_files": 593
+  },
+  "limits": [
+    "No actual IDE/Copilot loading tested",
+    "No production C/Yocto build or hardware test",
+    "No supplier acceptance, actual budget, security or certification approval",
+    "Reference citations do not prove complete semantic equivalence"
+  ]
+}

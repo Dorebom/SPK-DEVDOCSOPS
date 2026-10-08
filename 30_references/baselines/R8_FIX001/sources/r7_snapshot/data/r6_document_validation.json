@@ -1,0 +1,44 @@
+{
+  "revision": "R6",
+  "status": "PASS",
+  "scope": "DOCUMENT_STRUCTURE_AND_BASELINE_INTEGRITY_ONLY",
+  "checks": {
+    "current_markdown_notes": 62,
+    "all_current_notes_end_with_open_questions": true,
+    "chapters": 27,
+    "appendices": 29,
+    "completion_items": 85,
+    "open_questions": 85,
+    "coverage_rows": 34,
+    "question_status_counts": {
+      "OPEN": 85
+    },
+    "existing_TBDs_linked": 48,
+    "existing_parameters_linked": 50,
+    "r5_input_sha256": "705176fb6918ead9523aee9adbf5bb893a42d24be19706d3caa9f422b15f3cfe",
+    "source_files_preserved": 37,
+    "r5_diagram_assets_preserved": 6,
+    "baseline_record_counts_preserved": {
+      "requirements.json": 124,
+      "test_catalog.json": 69,
+      "open_issues.json": 48,
+      "parameters.json": 50,
+      "external_interfaces.json": 16
+    },
+    "existing_chapters_preserved_except_logged_correction": 21,
+    "review_input_sha256": "496a7b0737cd75974f66632266116d372a0948a319bf1e27d9173911c483e27e",
+    "json_files_parsed": 30,
+    "link_parser": "markdown-it-py",
+    "local_links_checked": 3236,
+    "markdown_anchor_links_checked": 2545,
+    "el_route_document_model": "PASS",
+    "grid_connection_document_model": "PASS",
+    "rebuild_checked_files": 92,
+    "deterministic_rebuild": true
+  },
+  "errors": [],
+  "system_tests": "NOT_RUN",
+  "new_rendering": "NOT_PERFORMED_R5_IMAGES_PRESERVED",
+  "external_standards_reverified": false,
+  "product_specification_complete": false
+}

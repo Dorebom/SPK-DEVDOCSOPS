@@ -1,0 +1,33 @@
+{
+  "scope": "R5_CHAPTER_02_TWO_CHANGED_MERMAID_DIAGRAMS_ONLY",
+  "parse_and_render": "PASS",
+  "visual_review": "PASS",
+  "renderer": "Local Gradio-bundled Mermaid module; browser JS modules loaded from local asset bytes; Vite preload helper replaced only for local loading",
+  "renderer_core_sha256": "f29411cc713285cf6d3135c185b75da39ab7916c8fffc28af33a56bbccef1e10",
+  "browser": "144.0.7559.96",
+  "diagrams": [
+    {
+      "source": "diagrams/02_01_EL_Connections.mmd",
+      "status": "PASS",
+      "width": 1003.046875,
+      "height": 1404,
+      "nodes": 12,
+      "svg": "diagrams/02_01_EL_Connections.svg",
+      "png": "diagrams/02_01_EL_Connections.png",
+      "source_sha256": "07ad3b417bc0a6518e30f567f5fa6b87a3dfb39ccbf25d1d69671021aa78c9bf"
+    },
+    {
+      "source": "diagrams/02_01_System_Context.mmd",
+      "status": "PASS",
+      "width": 2626.34375,
+      "height": 2274,
+      "nodes": 24,
+      "svg": "diagrams/02_01_System_Context.svg",
+      "png": "diagrams/02_01_System_Context.png",
+      "source_sha256": "1fdbc59c0ecef3d6a180e36cc78858f42557bf22bbaf7f073df448539307c536"
+    }
+  ],
+  "other_diagrams": "NOT_RENDERED_IN_THIS_REVISION",
+  "hardware_tests": "NOT_RUN",
+  "visual_review_scope": "Both changed diagrams inspected after final rendering; Japanese labels, group boundaries and bidirectional paths reviewed. Other diagrams not rendered."
+}

@@ -1,0 +1,1229 @@
+{
+  "revision": "R8",
+  "sections": [
+    {
+      "id": "SLOT-R6-01-01",
+      "question_id": "OQ-R6-01-01",
+      "note": "chapters/I_System/I-02_Actors_Roles.md",
+      "section": "I-02.1",
+      "title": "利用者・施工者・運用者・保守者の役割",
+      "coverage_ids": [
+        "C01",
+        "C02"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/01_Scope_Baseline.md",
+      "legacy_section": "1.9.1"
+    },
+    {
+      "id": "SLOT-R6-01-02",
+      "question_id": "OQ-R6-01-02",
+      "note": "chapters/I_System/I-01_Purpose_Scope.md",
+      "section": "I-01.9",
+      "title": "製品価値と対象外の判定",
+      "coverage_ids": [
+        "C01",
+        "C05",
+        "C32"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/01_Scope_Baseline.md",
+      "legacy_section": "1.9.2"
+    },
+    {
+      "id": "SLOT-R6-01-03",
+      "question_id": "OQ-R6-01-03",
+      "note": "chapters/I_System/I-01_Purpose_Scope.md",
+      "section": "I-01.10",
+      "title": "用語・略語・数値表記",
+      "coverage_ids": [
+        "C03"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/01_Scope_Baseline.md",
+      "legacy_section": "1.10.1"
+    },
+    {
+      "id": "SLOT-R6-01-04",
+      "question_id": "OQ-R6-01-04",
+      "note": "chapters/I_System/I-01_Purpose_Scope.md",
+      "section": "I-01.11",
+      "title": "規範別冊の版と仕様完成条件",
+      "coverage_ids": [
+        "C03",
+        "C31",
+        "C33"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/01_Scope_Baseline.md",
+      "legacy_section": "1.10.2"
+    },
+    {
+      "id": "SLOT-R6-02-01",
+      "question_id": "OQ-R6-02-01",
+      "note": "chapters/I_System/I-04_System_Context.md",
+      "section": "I-04.4",
+      "title": "実ネットワークと接続先の実体",
+      "coverage_ids": [
+        "C04",
+        "C12"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/02_System_Context.md",
+      "legacy_section": "2.8.1"
+    },
+    {
+      "id": "SLOT-R6-02-02",
+      "question_id": "OQ-R6-02-02",
+      "note": "chapters/I_System/I-04_System_Context.md",
+      "section": "I-04.5",
+      "title": "宅内直接Webとルータ接続の成立条件",
+      "coverage_ids": [
+        "C02",
+        "C12",
+        "C24"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/02_System_Context.md",
+      "legacy_section": "2.8.2"
+    },
+    {
+      "id": "SLOT-R6-03-01",
+      "question_id": "OQ-R6-03-01",
+      "note": "chapters/II_GW/II-01_GW_Architecture.md",
+      "section": "II-01.11",
+      "title": "実装配賦・状態所有者一覧",
+      "coverage_ids": [
+        "C06",
+        "C13"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/03_Responsibilities.md",
+      "legacy_section": "3.10.1"
+    },
+    {
+      "id": "SLOT-R6-03-02",
+      "question_id": "OQ-R6-03-02",
+      "note": "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+      "section": "III-01.2",
+      "title": "H内・H/G境界契約の具体項目",
+      "coverage_ids": [
+        "C13"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/03_Responsibilities.md",
+      "legacy_section": "3.10.2"
+    },
+    {
+      "id": "SLOT-R6-04-01",
+      "question_id": "OQ-R6-04-01",
+      "note": "chapters/II_GW/II-02_GW_Functions.md",
+      "section": "II-02.1",
+      "title": "既存・追加・変更・廃止機能の母集団",
+      "coverage_ids": [
+        "C04",
+        "C05"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/04_Configurations_Profiles.md",
+      "legacy_section": "4.10.1"
+    },
+    {
+      "id": "SLOT-R6-04-02",
+      "question_id": "OQ-R6-04-02",
+      "note": "chapters/I_System/I-05_Configurations.md",
+      "section": "I-05.9",
+      "title": "機器・ソフトウェア・接続の対応組合せ",
+      "coverage_ids": [
+        "C04",
+        "C10"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/04_Configurations_Profiles.md",
+      "legacy_section": "4.10.2"
+    },
+    {
+      "id": "SLOT-R6-04-03",
+      "question_id": "OQ-R6-04-03",
+      "note": "chapters/II_GW/II-06_Device_Management.md",
+      "section": "II-06.1",
+      "title": "探索・登録・解除・交換・同一性",
+      "coverage_ids": [
+        "C10",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/04_Configurations_Profiles.md",
+      "legacy_section": "4.11.1"
+    },
+    {
+      "id": "SLOT-R6-05-01",
+      "question_id": "OQ-R6-05-01",
+      "note": "chapters/II_GW/II-03_Control_Execution.md",
+      "section": "II-03.6",
+      "title": "優先関係・同順位・取消し・並行実行",
+      "coverage_ids": [
+        "C07",
+        "C13"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/05_Control_Contracts.md",
+      "legacy_section": "5.11.1"
+    },
+    {
+      "id": "SLOT-R6-05-02",
+      "question_id": "OQ-R6-05-02",
+      "note": "chapters/II_GW/II-03_Control_Execution.md",
+      "section": "II-03.7",
+      "title": "結果・確認窓・不明状態の終端",
+      "coverage_ids": [
+        "C07",
+        "C22"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/05_Control_Contracts.md",
+      "legacy_section": "5.11.2"
+    },
+    {
+      "id": "SLOT-R6-06-01",
+      "question_id": "OQ-R6-06-01",
+      "note": "chapters/I_System/I-06_Usecases.md",
+      "section": "I-06.8",
+      "title": "機能とUCの双方向対応",
+      "coverage_ids": [
+        "C05",
+        "C08",
+        "C32"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/06_Usecases.md",
+      "legacy_section": "6.11.1"
+    },
+    {
+      "id": "SLOT-R6-06-02",
+      "question_id": "OQ-R6-06-02",
+      "note": "chapters/I_System/I-06_Usecases.md",
+      "section": "I-06.9",
+      "title": "横断条件・同時事象・利用場面",
+      "coverage_ids": [
+        "C02",
+        "C08",
+        "C09"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/06_Usecases.md",
+      "legacy_section": "6.11.2"
+    },
+    {
+      "id": "SLOT-R6-07-01",
+      "question_id": "OQ-R6-07-01",
+      "note": "chapters/III_Interfaces/III-07_RS485_PCS.md",
+      "section": "III-07.3",
+      "title": "RS-485電文・接続条件・送信所有権",
+      "coverage_ids": [
+        "C10",
+        "C12",
+        "C13"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/07_DER_Connections.md",
+      "legacy_section": "7.12.1"
+    },
+    {
+      "id": "SLOT-R6-07-02",
+      "question_id": "OQ-R6-07-02",
+      "note": "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+      "section": "III-06.6",
+      "title": "ECHONET Lite Controller/Deviceの対象能力",
+      "coverage_ids": [
+        "C10",
+        "C12"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/07_DER_Connections.md",
+      "legacy_section": "7.12.2"
+    },
+    {
+      "id": "SLOT-R6-07-03",
+      "question_id": "OQ-R6-07-03",
+      "note": "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+      "section": "III-09.1",
+      "title": "IPv4/IPv6・Wi-SUN・USB等の持越し要求",
+      "coverage_ids": [
+        "C12",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/07_DER_Connections.md",
+      "legacy_section": "7.12.3"
+    },
+    {
+      "id": "SLOT-R6-08-01",
+      "question_id": "OQ-R6-08-01",
+      "note": "chapters/II_GW/II-05_Advanced_EMS.md",
+      "section": "II-05.5",
+      "title": "高度エネマネ戦略の採否・適用・解除",
+      "coverage_ids": [
+        "C05",
+        "C11"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/08_Advanced_EMS_Loads.md",
+      "legacy_section": "8.6.1"
+    },
+    {
+      "id": "SLOT-R6-08-02",
+      "question_id": "OQ-R6-08-02",
+      "note": "chapters/II_GW/II-05_Advanced_EMS.md",
+      "section": "II-05.6",
+      "title": "予測・計画・目標未達の扱い",
+      "coverage_ids": [
+        "C11",
+        "C22",
+        "C32"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/08_Advanced_EMS_Loads.md",
+      "legacy_section": "8.6.2"
+    },
+    {
+      "id": "SLOT-R6-08-03",
+      "question_id": "OQ-R6-08-03",
+      "note": "chapters/II_GW/II-04_DER_Load_Control.md",
+      "section": "II-04.4",
+      "title": "DER/負荷の個別操作と快適性条件",
+      "coverage_ids": [
+        "C11",
+        "C26"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/08_Advanced_EMS_Loads.md",
+      "legacy_section": "8.6.3"
+    },
+    {
+      "id": "SLOT-R6-09-01",
+      "question_id": "OQ-R6-09-01",
+      "note": "chapters/II_GW/II-07_Measurement_Data.md",
+      "section": "II-07.9",
+      "title": "実項目・型・単位・品質・計測点",
+      "coverage_ids": [
+        "C14",
+        "C22"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/09_Measurement_Data.md",
+      "legacy_section": "9.12.1"
+    },
+    {
+      "id": "SLOT-R6-09-02",
+      "question_id": "OQ-R6-09-02",
+      "note": "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+      "section": "IV-08.2",
+      "title": "保存容量・集計・電断時完全性",
+      "coverage_ids": [
+        "C15",
+        "C22",
+        "C23"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/09_Measurement_Data.md",
+      "legacy_section": "9.13.1"
+    },
+    {
+      "id": "SLOT-R6-09-03",
+      "question_id": "OQ-R6-09-03",
+      "note": "chapters/II_GW/II-07_Measurement_Data.md",
+      "section": "II-07.10",
+      "title": "上位同期・履歴エクスポート・削除",
+      "coverage_ids": [
+        "C15",
+        "C21"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/09_Measurement_Data.md",
+      "legacy_section": "9.13.2"
+    },
+    {
+      "id": "SLOT-R6-10-01",
+      "question_id": "OQ-R6-10-01",
+      "note": "chapters/V_Lifecycle/V-04_Compliance.md",
+      "section": "V-04.1",
+      "title": "エリア・契約・スケジュール仕様の版",
+      "coverage_ids": [
+        "C17",
+        "C31"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/10_Grid_Protection.md",
+      "legacy_section": "10.8.1"
+    },
+    {
+      "id": "SLOT-R6-10-02",
+      "question_id": "OQ-R6-10-02",
+      "note": "chapters/I_System/I-07_Responsibilities_Constraints.md",
+      "section": "I-07.6",
+      "title": "通常API非迂回・保護・復帰の確認",
+      "coverage_ids": [
+        "C17",
+        "C26"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/10_Grid_Protection.md",
+      "legacy_section": "10.8.2"
+    },
+    {
+      "id": "SLOT-R6-11-01",
+      "question_id": "OQ-R6-11-01",
+      "note": "chapters/I_System/I-07_Responsibilities_Constraints.md",
+      "section": "I-07.13",
+      "title": "基準点・容量・変換グループの対応",
+      "coverage_ids": [
+        "C14",
+        "C17"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/11_Power_Constraints.md",
+      "legacy_section": "11.7.1"
+    },
+    {
+      "id": "SLOT-R6-11-02",
+      "question_id": "OQ-R6-11-02",
+      "note": "chapters/I_System/I-07_Responsibilities_Constraints.md",
+      "section": "I-07.14",
+      "title": "混在設備・過渡・実出力の合否",
+      "coverage_ids": [
+        "C17",
+        "C22",
+        "C32"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/11_Power_Constraints.md",
+      "legacy_section": "11.7.2"
+    },
+    {
+      "id": "SLOT-R6-12-01",
+      "question_id": "OQ-R6-12-01",
+      "note": "chapters/II_GW/II-09_Settings_Lifecycle.md",
+      "section": "II-09.6",
+      "title": "起動完了・未登録・縮退・停止",
+      "coverage_ids": [
+        "C09",
+        "C29"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/12_Configuration_Lifecycle.md",
+      "legacy_section": "12.8.1"
+    },
+    {
+      "id": "SLOT-R6-12-02",
+      "question_id": "OQ-R6-12-02",
+      "note": "chapters/II_GW/II-09_Settings_Lifecycle.md",
+      "section": "II-09.7",
+      "title": "設定キー・型・範囲・既定値・権限",
+      "coverage_ids": [
+        "C16",
+        "C13"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/12_Configuration_Lifecycle.md",
+      "legacy_section": "12.9.1"
+    },
+    {
+      "id": "SLOT-R6-12-03",
+      "question_id": "OQ-R6-12-03",
+      "note": "chapters/II_GW/II-09_Settings_Lifecycle.md",
+      "section": "II-09.8",
+      "title": "同時変更・部分反映・緊急変更",
+      "coverage_ids": [
+        "C09",
+        "C16"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/12_Configuration_Lifecycle.md",
+      "legacy_section": "12.9.2"
+    },
+    {
+      "id": "SLOT-R6-12-04",
+      "question_id": "OQ-R6-12-04",
+      "note": "chapters/II_GW/II-09_Settings_Lifecycle.md",
+      "section": "II-09.9",
+      "title": "バックアップ・工場初期化・移行",
+      "coverage_ids": [
+        "C16",
+        "C30",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/12_Configuration_Lifecycle.md",
+      "legacy_section": "12.9.3"
+    },
+    {
+      "id": "SLOT-R6-13-01",
+      "question_id": "OQ-R6-13-01",
+      "note": "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+      "section": "II-10.6",
+      "title": "検出閾値・重大度・復帰・再発",
+      "coverage_ids": [
+        "C18",
+        "C19"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/13_Fault_Recovery_OTA.md",
+      "legacy_section": "13.9.1"
+    },
+    {
+      "id": "SLOT-R6-13-02",
+      "question_id": "OQ-R6-13-02",
+      "note": "chapters/II_GW/II-11_Firmware_Update.md",
+      "section": "II-11.2",
+      "title": "更新中断・起動不能・実機残留要求",
+      "coverage_ids": [
+        "C18",
+        "C20",
+        "C23"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/13_Fault_Recovery_OTA.md",
+      "legacy_section": "13.9.2"
+    },
+    {
+      "id": "SLOT-R6-14-01",
+      "question_id": "OQ-R6-14-01",
+      "note": "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+      "section": "IV-01.5",
+      "title": "機能別の時間・精度・容量プロファイル",
+      "coverage_ids": [
+        "C22"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/14_Performance_Security.md",
+      "legacy_section": "14.11.1"
+    },
+    {
+      "id": "SLOT-R6-14-02",
+      "question_id": "OQ-R6-14-02",
+      "note": "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+      "section": "IV-01.6",
+      "title": "同時最大負荷・上限・飽和動作",
+      "coverage_ids": [
+        "C22",
+        "C23"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/14_Performance_Security.md",
+      "legacy_section": "14.11.2"
+    },
+    {
+      "id": "SLOT-R6-15-01",
+      "question_id": "OQ-R6-15-01",
+      "note": "chapters/II_GW/II-01_GW_Architecture.md",
+      "section": "II-01.16",
+      "title": "G側実装と共有資源の依存表",
+      "coverage_ids": [
+        "C06",
+        "C13",
+        "C17"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/15_Deployment_Isolation.md",
+      "legacy_section": "15.9.1"
+    },
+    {
+      "id": "SLOT-R6-15-02",
+      "question_id": "OQ-R6-15-02",
+      "note": "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+      "section": "IV-07.5",
+      "title": "非干渉評価の範囲と根拠文書",
+      "coverage_ids": [
+        "C17",
+        "C23",
+        "C31"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/15_Deployment_Isolation.md",
+      "legacy_section": "15.9.2"
+    },
+    {
+      "id": "SLOT-R6-16-01",
+      "question_id": "OQ-R6-16-01",
+      "note": "chapters/V_Lifecycle/V-04_Compliance.md",
+      "section": "V-04.5",
+      "title": "文書版・条項・要求・証拠の対応",
+      "coverage_ids": [
+        "C03",
+        "C31"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/16_Certification_Change.md",
+      "legacy_section": "16.10.1"
+    },
+    {
+      "id": "SLOT-R6-16-02",
+      "question_id": "OQ-R6-16-02",
+      "note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+      "section": "V-05.6",
+      "title": "変更手続きと社内リリース判定",
+      "coverage_ids": [
+        "C20",
+        "C31",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/16_Certification_Change.md",
+      "legacy_section": "16.10.2"
+    },
+    {
+      "id": "SLOT-R6-17-01",
+      "question_id": "OQ-R6-17-01",
+      "note": "chapters/V_Lifecycle/V-06_Verification_Validation.md",
+      "section": "V-06.10",
+      "title": "全要求の検証方法と受入プロファイル",
+      "coverage_ids": [
+        "C22",
+        "C32",
+        "C33"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/17_Verification.md",
+      "legacy_section": "17.10.1"
+    },
+    {
+      "id": "SLOT-R6-17-02",
+      "question_id": "OQ-R6-17-02",
+      "note": "chapters/V_Lifecycle/V-06_Verification_Validation.md",
+      "section": "V-06.11",
+      "title": "利用者目的に対するValidation",
+      "coverage_ids": [
+        "C02",
+        "C05",
+        "C32"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/17_Verification.md",
+      "legacy_section": "17.10.2"
+    },
+    {
+      "id": "SLOT-R6-17-03",
+      "question_id": "OQ-R6-17-03",
+      "note": "chapters/V_Lifecycle/V-06_Verification_Validation.md",
+      "section": "V-06.12",
+      "title": "補完項目の評価配賦と適用除外",
+      "coverage_ids": [
+        "C23",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/17_Verification.md",
+      "legacy_section": "17.10.3"
+    },
+    {
+      "id": "SLOT-R6-18-01",
+      "question_id": "OQ-R6-18-01",
+      "note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+      "section": "V-05.14",
+      "title": "As-Is確認と新旧製品への機能配賦",
+      "coverage_ids": [
+        "C04",
+        "C05",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/18_Migration.md",
+      "legacy_section": "18.10.1"
+    },
+    {
+      "id": "SLOT-R6-18-02",
+      "question_id": "OQ-R6-18-02",
+      "note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+      "section": "V-05.15",
+      "title": "版互換・設定移行・旧経路停止",
+      "coverage_ids": [
+        "C20",
+        "C30",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/18_Migration.md",
+      "legacy_section": "18.10.2"
+    },
+    {
+      "id": "SLOT-R6-19-01",
+      "question_id": "OQ-R6-19-01",
+      "note": "chapters/V_Lifecycle/V-07_Trace_Open_Questions.md",
+      "section": "V-07.8",
+      "title": "上位USDMと双方向トレーサビリティ",
+      "coverage_ids": [
+        "C03",
+        "C33"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/19_Open_Issues_Sources.md",
+      "legacy_section": "19.10.1"
+    },
+    {
+      "id": "SLOT-R6-19-02",
+      "question_id": "OQ-R6-19-02",
+      "note": "chapters/V_Lifecycle/V-07_Trace_Open_Questions.md",
+      "section": "V-07.9",
+      "title": "OQの責任者・期限・決定ゲート",
+      "coverage_ids": [
+        "C33"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/19_Open_Issues_Sources.md",
+      "legacy_section": "19.10.2"
+    },
+    {
+      "id": "SLOT-R6-19-03",
+      "question_id": "OQ-R6-19-03",
+      "note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+      "section": "V-05.16",
+      "title": "現行仕様と履歴の意味的整合",
+      "coverage_ids": [
+        "C03",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/19_Open_Issues_Sources.md",
+      "legacy_section": "19.10.3"
+    },
+    {
+      "id": "SLOT-R6-20-01",
+      "question_id": "OQ-R6-20-01",
+      "note": "chapters/III_Interfaces/III-02_Cloud_GW.md",
+      "section": "III-02.8",
+      "title": "上位プロトコルとGW内部機能の公開一覧",
+      "coverage_ids": [
+        "C12",
+        "C13",
+        "C16"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/20_Northbound_Monitoring_FW.md",
+      "legacy_section": "20.22.1"
+    },
+    {
+      "id": "SLOT-R6-20-04",
+      "question_id": "OQ-R6-20-04",
+      "note": "chapters/II_GW/II-11_Firmware_Update.md",
+      "section": "II-11.6",
+      "title": "FW対象・配信・適用・互換・復旧",
+      "coverage_ids": [
+        "C20",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/20_Northbound_Monitoring_FW.md",
+      "legacy_section": "20.22.2"
+    },
+    {
+      "id": "SLOT-R6-20-05",
+      "question_id": "OQ-R6-20-05",
+      "note": "chapters/III_Interfaces/III-02_Cloud_GW.md",
+      "section": "III-02.9",
+      "title": "オフライン・通知・認可失効の契約",
+      "coverage_ids": [
+        "C15",
+        "C21",
+        "C24"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/20_Northbound_Monitoring_FW.md",
+      "legacy_section": "20.22.3"
+    },
+    {
+      "id": "SLOT-R6-20-02",
+      "question_id": "OQ-R6-20-02",
+      "note": "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+      "section": "IV-08.3",
+      "title": "画面・表示項目・対応端末・操作確認",
+      "coverage_ids": [
+        "C02",
+        "C24"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/20_Northbound_Monitoring_FW.md",
+      "legacy_section": "20.23.1"
+    },
+    {
+      "id": "SLOT-R6-20-03",
+      "question_id": "OQ-R6-20-03",
+      "note": "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+      "section": "II-10.7",
+      "title": "警報・通知・確認・抑止・解除",
+      "coverage_ids": [
+        "C19",
+        "C24"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/20_Northbound_Monitoring_FW.md",
+      "legacy_section": "20.23.2"
+    },
+    {
+      "id": "SLOT-R6-21-01",
+      "question_id": "OQ-R6-21-01",
+      "note": "chapters/I_System/I-05_Configurations.md",
+      "section": "I-05.14",
+      "title": "機種別取得主体・公開状態・実経路",
+      "coverage_ids": [
+        "C04",
+        "C10",
+        "C17"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/21_Grid_Connection_Selection.md",
+      "legacy_section": "21.13.1"
+    },
+    {
+      "id": "SLOT-R6-21-02",
+      "question_id": "OQ-R6-21-02",
+      "note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+      "section": "V-02.5",
+      "title": "施工・保守の構成変更と故障時復旧",
+      "coverage_ids": [
+        "C09",
+        "C29",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/21_Grid_Connection_Selection.md",
+      "legacy_section": "21.13.2"
+    },
+    {
+      "id": "SLOT-R6-22-01",
+      "question_id": "OQ-R6-22-01",
+      "note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "section": "IV-05.1",
+      "title": "電源入力・定格・許容変動",
+      "coverage_ids": [
+        "C25"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/22_Physical_Electrical_Installation.md",
+      "legacy_section": "22.1.1"
+    },
+    {
+      "id": "SLOT-R6-22-02",
+      "question_id": "OQ-R6-22-02",
+      "note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "section": "IV-05.2",
+      "title": "投入・瞬断・電圧低下・復電・停止",
+      "coverage_ids": [
+        "C09",
+        "C23",
+        "C25"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/22_Physical_Electrical_Installation.md",
+      "legacy_section": "22.1.2"
+    },
+    {
+      "id": "SLOT-R6-22-03",
+      "question_id": "OQ-R6-22-03",
+      "note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "section": "IV-05.3",
+      "title": "端子・コネクタ・ケーブル・USB",
+      "coverage_ids": [
+        "C12",
+        "C25"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/22_Physical_Electrical_Installation.md",
+      "legacy_section": "22.2.1"
+    },
+    {
+      "id": "SLOT-R6-22-04",
+      "question_id": "OQ-R6-22-04",
+      "note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "section": "IV-05.4",
+      "title": "外形・取付・放熱・保守空間",
+      "coverage_ids": [
+        "C25"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/22_Physical_Electrical_Installation.md",
+      "legacy_section": "22.3.1"
+    },
+    {
+      "id": "SLOT-R6-22-05",
+      "question_id": "OQ-R6-22-05",
+      "note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "section": "IV-05.5",
+      "title": "表示器・LED・ボタン・ラベル",
+      "coverage_ids": [
+        "C24",
+        "C25",
+        "C28"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/22_Physical_Electrical_Installation.md",
+      "legacy_section": "22.3.2"
+    },
+    {
+      "id": "SLOT-R6-23-01",
+      "question_id": "OQ-R6-23-01",
+      "note": "chapters/IV_Quality/IV-06_Environment_EMC.md",
+      "section": "IV-06.1",
+      "title": "温湿度・結露・標高・汚損等の適用",
+      "coverage_ids": [
+        "C27"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/23_Environment_EMC_Transport.md",
+      "legacy_section": "23.1.1"
+    },
+    {
+      "id": "SLOT-R6-23-02",
+      "question_id": "OQ-R6-23-02",
+      "note": "chapters/IV_Quality/IV-06_Environment_EMC.md",
+      "section": "IV-06.2",
+      "title": "屋外・防塵防水・日射・腐食・放熱",
+      "coverage_ids": [
+        "C25",
+        "C27"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/23_Environment_EMC_Transport.md",
+      "legacy_section": "23.1.2"
+    },
+    {
+      "id": "SLOT-R6-23-03",
+      "question_id": "OQ-R6-23-03",
+      "note": "chapters/IV_Quality/IV-06_Environment_EMC.md",
+      "section": "IV-06.3",
+      "title": "EMC・ESD・サージ等の評価対象",
+      "coverage_ids": [
+        "C27",
+        "C31"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/23_Environment_EMC_Transport.md",
+      "legacy_section": "23.2.1"
+    },
+    {
+      "id": "SLOT-R6-23-04",
+      "question_id": "OQ-R6-23-04",
+      "note": "chapters/IV_Quality/IV-06_Environment_EMC.md",
+      "section": "IV-06.4",
+      "title": "振動・衝撃・保管・輸送後受入",
+      "coverage_ids": [
+        "C27",
+        "C28"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/23_Environment_EMC_Transport.md",
+      "legacy_section": "23.3.1"
+    },
+    {
+      "id": "SLOT-R6-24-01",
+      "question_id": "OQ-R6-24-01",
+      "note": "chapters/IV_Quality/IV-04_Product_Safety.md",
+      "section": "IV-04.1",
+      "title": "GW・PCS・負荷・利用者の危険源一覧",
+      "coverage_ids": [
+        "C26",
+        "C31"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/24_Product_Remote_Safety.md",
+      "legacy_section": "24.1.1"
+    },
+    {
+      "id": "SLOT-R6-24-02",
+      "question_id": "OQ-R6-24-02",
+      "note": "chapters/IV_Quality/IV-04_Product_Safety.md",
+      "section": "IV-04.2",
+      "title": "故障・誤操作・通信断時の安全状態",
+      "coverage_ids": [
+        "C18",
+        "C26"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/24_Product_Remote_Safety.md",
+      "legacy_section": "24.2.1"
+    },
+    {
+      "id": "SLOT-R6-24-03",
+      "question_id": "OQ-R6-24-03",
+      "note": "chapters/IV_Quality/IV-04_Product_Safety.md",
+      "section": "IV-04.3",
+      "title": "遠隔操作・登録・変更の誤り防止",
+      "coverage_ids": [
+        "C10",
+        "C24",
+        "C26"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/24_Product_Remote_Safety.md",
+      "legacy_section": "24.2.2"
+    },
+    {
+      "id": "SLOT-R6-24-04",
+      "question_id": "OQ-R6-24-04",
+      "note": "chapters/IV_Quality/IV-04_Product_Safety.md",
+      "section": "IV-04.4",
+      "title": "安全検証・注意表示・残留リスク承認",
+      "coverage_ids": [
+        "C26",
+        "C29",
+        "C32"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/24_Product_Remote_Safety.md",
+      "legacy_section": "24.3.1"
+    },
+    {
+      "id": "SLOT-R6-25-01",
+      "question_id": "OQ-R6-25-01",
+      "note": "chapters/IV_Quality/IV-02_Reliability_Availability.md",
+      "section": "IV-02.1",
+      "title": "可用性・許容停止・復旧・データ損失",
+      "coverage_ids": [
+        "C22",
+        "C23"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/25_Reliability_Availability_Maintainability.md",
+      "legacy_section": "25.1.1"
+    },
+    {
+      "id": "SLOT-R6-25-02",
+      "question_id": "OQ-R6-25-02",
+      "note": "chapters/IV_Quality/IV-02_Reliability_Availability.md",
+      "section": "IV-02.2",
+      "title": "連続稼働・劣化・資源枯渇",
+      "coverage_ids": [
+        "C23"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/25_Reliability_Availability_Maintainability.md",
+      "legacy_section": "25.1.2"
+    },
+    {
+      "id": "SLOT-R6-25-03",
+      "question_id": "OQ-R6-25-03",
+      "note": "chapters/IV_Quality/IV-02_Reliability_Availability.md",
+      "section": "IV-02.3",
+      "title": "故障切分けと許可保守",
+      "coverage_ids": [
+        "C19",
+        "C23",
+        "C30"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/25_Reliability_Availability_Maintainability.md",
+      "legacy_section": "25.2.1"
+    },
+    {
+      "id": "SLOT-R6-25-04",
+      "question_id": "OQ-R6-25-04",
+      "note": "chapters/IV_Quality/IV-02_Reliability_Availability.md",
+      "section": "IV-02.4",
+      "title": "使用寿命・書込み寿命・消耗部品",
+      "coverage_ids": [
+        "C15",
+        "C23"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/25_Reliability_Availability_Maintainability.md",
+      "legacy_section": "25.3.1"
+    },
+    {
+      "id": "SLOT-R6-26-01",
+      "question_id": "OQ-R6-26-01",
+      "note": "chapters/V_Lifecycle/V-01_Manufacturing_Shipping.md",
+      "section": "V-01.1",
+      "title": "個体識別・鍵投入・製造モード",
+      "coverage_ids": [
+        "C28",
+        "C21"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "legacy_section": "26.1.1"
+    },
+    {
+      "id": "SLOT-R6-26-02",
+      "question_id": "OQ-R6-26-02",
+      "note": "chapters/V_Lifecycle/V-01_Manufacturing_Shipping.md",
+      "section": "V-01.2",
+      "title": "出荷状態・検査・校正・梱包",
+      "coverage_ids": [
+        "C25",
+        "C28"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "legacy_section": "26.1.2"
+    },
+    {
+      "id": "SLOT-R6-26-03",
+      "question_id": "OQ-R6-26-03",
+      "note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+      "section": "V-02.6",
+      "title": "ネットワーク・機器・計測点の初期設定",
+      "coverage_ids": [
+        "C10",
+        "C29"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "legacy_section": "26.2.1"
+    },
+    {
+      "id": "SLOT-R6-26-04",
+      "question_id": "OQ-R6-26-04",
+      "note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+      "section": "V-02.7",
+      "title": "試運転・利用者引渡し・教育",
+      "coverage_ids": [
+        "C02",
+        "C29",
+        "C32"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "legacy_section": "26.2.2"
+    },
+    {
+      "id": "SLOT-R6-26-05",
+      "question_id": "OQ-R6-26-05",
+      "note": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md",
+      "section": "V-03.1",
+      "title": "本体/機器交換と所有者変更",
+      "coverage_ids": [
+        "C16",
+        "C30",
+        "C34"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "legacy_section": "26.3.1"
+    },
+    {
+      "id": "SLOT-R6-26-06",
+      "question_id": "OQ-R6-26-06",
+      "note": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md",
+      "section": "V-03.2",
+      "title": "秘密・履歴の消去と廃止状態",
+      "coverage_ids": [
+        "C21",
+        "C30"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "legacy_section": "26.4.1"
+    },
+    {
+      "id": "SLOT-R6-26-07",
+      "question_id": "OQ-R6-26-07",
+      "note": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md",
+      "section": "V-03.3",
+      "title": "支援期間・クラウド終了後の機能",
+      "coverage_ids": [
+        "C23",
+        "C30"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "legacy_section": "26.4.2"
+    },
+    {
+      "id": "SLOT-R6-27-01",
+      "question_id": "OQ-R6-27-01",
+      "note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "section": "IV-03.4",
+      "title": "脅威分析と要求・検証の対応",
+      "coverage_ids": [
+        "C21",
+        "C31"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "legacy_section": "27.1.1"
+    },
+    {
+      "id": "SLOT-R6-27-02",
+      "question_id": "OQ-R6-27-02",
+      "note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "section": "IV-03.5",
+      "title": "生成・配布・更新・失効・漏えい復旧",
+      "coverage_ids": [
+        "C21",
+        "C28",
+        "C30"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "legacy_section": "27.2.1"
+    },
+    {
+      "id": "SLOT-R6-27-03",
+      "question_id": "OQ-R6-27-03",
+      "note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "section": "IV-03.6",
+      "title": "通信保護・Webセッション・機器混在",
+      "coverage_ids": [
+        "C12",
+        "C21"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "legacy_section": "27.2.2"
+    },
+    {
+      "id": "SLOT-R6-27-04",
+      "question_id": "OQ-R6-27-04",
+      "note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "section": "IV-03.7",
+      "title": "保守経路・製造アクセス・更新認証",
+      "coverage_ids": [
+        "C20",
+        "C21",
+        "C28"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "legacy_section": "27.3.1"
+    },
+    {
+      "id": "SLOT-R6-27-05",
+      "question_id": "OQ-R6-27-05",
+      "note": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md",
+      "section": "V-03.4",
+      "title": "SBOM・脆弱性対応と機器の支援機能",
+      "coverage_ids": [
+        "C20",
+        "C21",
+        "C30",
+        "C31"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "legacy_section": "27.3.2"
+    },
+    {
+      "id": "SLOT-R6-27-06",
+      "question_id": "OQ-R6-27-06",
+      "note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "section": "IV-03.8",
+      "title": "個人/住宅データの収集・利用・公開・消去",
+      "coverage_ids": [
+        "C15",
+        "C21",
+        "C30"
+      ],
+      "content_status": "OPEN_NOT_PRODUCT_APPROVED",
+      "legacy_note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "legacy_section": "27.4.1"
+    }
+  ],
+  "source_record_revision": "R6"
+}

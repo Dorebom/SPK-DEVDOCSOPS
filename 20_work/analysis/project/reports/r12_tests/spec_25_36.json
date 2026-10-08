@@ -1,0 +1,26 @@
+{
+  "module": "test_specflow",
+  "requested_slice": [
+    25,
+    36
+  ],
+  "tests_run": 12,
+  "total_module_tests": 47,
+  "success": true,
+  "errors": [],
+  "failures": [],
+  "test_ids": [
+    "test_specflow.WorkflowTests.test_25_unreviewed_fragment_cannot_be_applied",
+    "test_specflow.WorkflowTests.test_26_125th_requirement_end_to_end",
+    "test_specflow.WorkflowTests.test_27_unbound_addition_cannot_prepare",
+    "test_specflow.WorkflowTests.test_28_deleting_old_id_is_rejected",
+    "test_specflow.WorkflowTests.test_29_usdm_unknown_reason_not_approved",
+    "test_specflow.WorkflowTests.test_30_usdm_cycle_rejected",
+    "test_specflow.WorkflowTests.test_31_bad_typed_endpoint_rejected",
+    "test_specflow.WorkflowTests.test_32_new_function_groups_have_no_fixed_count",
+    "test_specflow.WorkflowTests.test_33_new_interface_parameter_and_test_no_fixed_count",
+    "test_specflow.WorkflowTests.test_34_new_oq_id_is_not_r6_bound",
+    "test_specflow.WorkflowTests.test_35_compare_revision_detects_move_not_auto_delete",
+    "test_specflow.WorkflowTests.test_36_approved_binding_text_tampering_rejected"
+  ]
+}

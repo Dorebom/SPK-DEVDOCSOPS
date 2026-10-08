@@ -1,0 +1,188 @@
+{
+  "schema": "spkgw.ai-std-trace-map/v1",
+  "rule_links": [
+    {
+      "rule_id": "AIM-01",
+      "rule_item": "ITR-SPKGW-IMPROVE-000001",
+      "source_item": "ITR-SPKGW-REF-000001",
+      "fragment_id": "AISTD1-FRAG-000001",
+      "document_version_id": "DTR-SPKGW-GOV-000008_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-02",
+      "rule_item": "ITR-SPKGW-IMPROVE-000002",
+      "source_item": "ITR-SPKGW-REF-000002",
+      "fragment_id": "AISTD1-FRAG-000002",
+      "document_version_id": "DTR-SPKGW-GOV-000011_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-03",
+      "rule_item": "ITR-SPKGW-IMPROVE-000003",
+      "source_item": "ITR-SPKGW-REF-000003",
+      "fragment_id": "AISTD1-FRAG-000003",
+      "document_version_id": "DTR-SPKGW-GOV-000011_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-04",
+      "rule_item": "ITR-SPKGW-IMPROVE-000004",
+      "source_item": "ITR-SPKGW-REF-000004",
+      "fragment_id": "AISTD1-FRAG-000004",
+      "document_version_id": "DTR-SPKGW-GOV-000013_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-05",
+      "rule_item": "ITR-SPKGW-IMPROVE-000005",
+      "source_item": "ITR-SPKGW-REF-000005",
+      "fragment_id": "AISTD1-FRAG-000005",
+      "document_version_id": "DTR-SPKGW-GOV-000013_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-06",
+      "rule_item": "ITR-SPKGW-IMPROVE-000006",
+      "source_item": "ITR-SPKGW-REF-000006",
+      "fragment_id": "AISTD1-FRAG-000006",
+      "document_version_id": "DTR-SPKGW-GOV-000014_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-07",
+      "rule_item": "ITR-SPKGW-IMPROVE-000007",
+      "source_item": "ITR-SPKGW-REF-000007",
+      "fragment_id": "AISTD1-FRAG-000007",
+      "document_version_id": "DTR-SPKGW-GOV-000015_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-08",
+      "rule_item": "ITR-SPKGW-IMPROVE-000008",
+      "source_item": "ITR-SPKGW-REF-000008",
+      "fragment_id": "AISTD1-FRAG-000008",
+      "document_version_id": "DTR-SPKGW-GOV-000016_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-09",
+      "rule_item": "ITR-SPKGW-IMPROVE-000009",
+      "source_item": "ITR-SPKGW-REF-000009",
+      "fragment_id": "AISTD1-FRAG-000009",
+      "document_version_id": "DTR-SPKGW-GOV-000016_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-10",
+      "rule_item": "ITR-SPKGW-IMPROVE-000010",
+      "source_item": "ITR-SPKGW-REF-000010",
+      "fragment_id": "AISTD1-FRAG-000010",
+      "document_version_id": "DTR-SPKGW-GOV-000017_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-11",
+      "rule_item": "ITR-SPKGW-IMPROVE-000011",
+      "source_item": "ITR-SPKGW-REF-000011",
+      "fragment_id": "AISTD1-FRAG-000011",
+      "document_version_id": "DTR-SPKGW-GOV-000018_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-12",
+      "rule_item": "ITR-SPKGW-IMPROVE-000012",
+      "source_item": "ITR-SPKGW-REF-000012",
+      "fragment_id": "AISTD1-FRAG-000012",
+      "document_version_id": "DTR-SPKGW-GOV-000019_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-13",
+      "rule_item": "ITR-SPKGW-IMPROVE-000013",
+      "source_item": "ITR-SPKGW-REF-000013",
+      "fragment_id": "AISTD1-FRAG-000013",
+      "document_version_id": "DTR-SPKGW-GOV-000027_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-14",
+      "rule_item": "ITR-SPKGW-IMPROVE-000014",
+      "source_item": "ITR-SPKGW-REF-000014",
+      "fragment_id": "AISTD1-FRAG-000014",
+      "document_version_id": "DTR-SPKGW-GOV-000027_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-15",
+      "rule_item": "ITR-SPKGW-IMPROVE-000015",
+      "source_item": "ITR-SPKGW-REF-000015",
+      "fragment_id": "AISTD1-FRAG-000015",
+      "document_version_id": "DTR-SPKGW-GOV-000027_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-16",
+      "rule_item": "ITR-SPKGW-IMPROVE-000016",
+      "source_item": "ITR-SPKGW-REF-000016",
+      "fragment_id": "AISTD1-FRAG-000016",
+      "document_version_id": "DTR-SPKGW-GOV-000028_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-17",
+      "rule_item": "ITR-SPKGW-IMPROVE-000017",
+      "source_item": "ITR-SPKGW-REF-000017",
+      "fragment_id": "AISTD1-FRAG-000017",
+      "document_version_id": "DTR-SPKGW-GOV-000028_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-18",
+      "rule_item": "ITR-SPKGW-IMPROVE-000018",
+      "source_item": "ITR-SPKGW-REF-000018",
+      "fragment_id": "AISTD1-FRAG-000018",
+      "document_version_id": "DTR-SPKGW-GOV-000028_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-19",
+      "rule_item": "ITR-SPKGW-IMPROVE-000019",
+      "source_item": "ITR-SPKGW-REF-000019",
+      "fragment_id": "AISTD1-FRAG-000019",
+      "document_version_id": "DTR-SPKGW-GOV-000029_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-20",
+      "rule_item": "ITR-SPKGW-IMPROVE-000020",
+      "source_item": "ITR-SPKGW-REF-000020",
+      "fragment_id": "AISTD1-FRAG-000020",
+      "document_version_id": "DTR-SPKGW-GOV-000029_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-21",
+      "rule_item": "ITR-SPKGW-IMPROVE-000021",
+      "source_item": "ITR-SPKGW-REF-000021",
+      "fragment_id": "AISTD1-FRAG-000021",
+      "document_version_id": "DTR-SPKGW-GOV-000029_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-22",
+      "rule_item": "ITR-SPKGW-IMPROVE-000022",
+      "source_item": "ITR-SPKGW-REF-000022",
+      "fragment_id": "AISTD1-FRAG-000022",
+      "document_version_id": "DTR-SPKGW-GOV-000030_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-23",
+      "rule_item": "ITR-SPKGW-IMPROVE-000023",
+      "source_item": "ITR-SPKGW-REF-000023",
+      "fragment_id": "AISTD1-FRAG-000023",
+      "document_version_id": "DTR-SPKGW-GOV-000030_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-24",
+      "rule_item": "ITR-SPKGW-IMPROVE-000024",
+      "source_item": "ITR-SPKGW-REF-000024",
+      "fragment_id": "AISTD1-FRAG-000024",
+      "document_version_id": "DTR-SPKGW-GOV-000030_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-25",
+      "rule_item": "ITR-SPKGW-IMPROVE-000025",
+      "source_item": "ITR-SPKGW-REF-000025",
+      "fragment_id": "AISTD1-FRAG-000025",
+      "document_version_id": "DTR-SPKGW-GOV-000031_V_1_3_0"
+    },
+    {
+      "rule_id": "AIM-26",
+      "rule_item": "ITR-SPKGW-IMPROVE-000026",
+      "source_item": "ITR-SPKGW-REF-000026",
+      "fragment_id": "AISTD1-FRAG-000026",
+      "document_version_id": "DTR-SPKGW-GOV-000031_V_1_3_0"
+    }
+  ],
+  "new_oq_count": 3
+}

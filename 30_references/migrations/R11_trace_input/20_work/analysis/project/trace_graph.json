@@ -1,0 +1,134 @@
+{
+  "schema": "spkgw.lifecycle-trace/v1",
+  "profiles": [
+    {
+      "trace_id": "TRC-SPKGW-000001",
+      "assessment_scope": "ガバナンス整備の工程適用未整理。製品全体のTraceではない。",
+      "root_node_ids": [],
+      "phase_plan": [
+        {
+          "phase_id": "P01",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P02",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P03",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P04",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P05",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P06",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P07",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P08",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P09",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P10",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P11",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P12",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P13",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P14",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P15",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P16",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        },
+        {
+          "phase_id": "P17",
+          "applicability": "TBD",
+          "required_kinds": [],
+          "rationale": null,
+          "review": null
+        }
+      ]
+    }
+  ],
+  "nodes": [],
+  "edges": [],
+  "trace_relations": []
+}

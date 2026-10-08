@@ -1,0 +1,95 @@
+{
+  "schema": "spkgw.trace-check/v1",
+  "result": "PASS",
+  "scope": "STRUCTURAL_RECORD_CHECK_NOT_PRODUCT_APPROVAL",
+  "trace_profiles": 1,
+  "nodes": 341,
+  "edges": 741,
+  "warnings": [
+    {
+      "code": "ITEM_PHASE_UNASSIGNED",
+      "count": 164
+    },
+    {
+      "code": "ITEM_THREAD_UNASSIGNED",
+      "count": 337
+    },
+    {
+      "code": "ITEM_RELATION_REVIEW_PENDING",
+      "count": 341
+    }
+  ],
+  "inputs": {
+    "20_work/analysis/project/trace_graph.json": "99b0c91b6b2fd7bcf137787a13a522143d832f80ea2a917fd34563bc95a9038f",
+    "00_governance/lifecycle_profile.json": "3e146f0309a646e178b0841b9dcdbc9837fcec49c1dec27ec2b273f377670c84",
+    "00_governance/schemas/lifecycle-trace.schema.json": "f4c8b3e686e68e0da6029f6df06a0bffb42bbd37b201aaf2af4dbafd922325a6",
+    "20_work/analysis/project/control.json": "f59758d585a39d7b45d37049aec1cf814682627d93abe1d7267a0b859483b5b3",
+    "tools/tracecheck.py": "41df9612319caa2f0bbf61ffa0a9e6dd06a12b6d06793993891feeb2ef7ad7b8"
+  },
+  "checked_local_evidence": {
+    "20_work/drafts/project/tasks/TASK-SPKGW-000001.md": "ea10bfa4c593bfe12fae47f0cf65c1e443489ba3f6084efc908e7cbc50df8a31",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000002.md": "0bb647b72d83e0090664bd392e8e10c43a5429f9857df62ef207114f4efa7673",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000003.md": "4bfc0c52d340b550278d6ec8a9bb7df4ce2576d1ae68f769fadf46b2d7c17486",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000004.md": "e10a5cb55bb87278895e16394613ed0030e6834442e1cd5c895ec58c5821e35f",
+    "10_canonical/releases/BL-R9-0001/data/requirements.json": "1027ba3e92fd37d6b479038e7c827178c0404b77075beda96a894097c24e9150",
+    "10_canonical/releases/BL-R9-0001/data/function_catalog.json": "6c90ffab3bf7219606910e17101d37aad48edeb655ef77d8d13ba776251ddf80",
+    "10_canonical/releases/BL-R9-0001/data/test_catalog.json": "2cc515c2f457d2d422496d4a284391e7dfa04f762ae4d71a3ee02f3babf38f86",
+    "10_canonical/releases/BL-R9-0001/chapters/I_System/I-02_Actors_Roles.md": "bcb26c6c2516a4383b3219defdcd752440a9cde8f59519a134718791280d3152",
+    "10_canonical/releases/BL-R9-0001/chapters/I_System/I-01_Purpose_Scope.md": "eb983027f59e5b42103a097d882cb938c481313e39200067ea2278a6c0874f4f",
+    "10_canonical/releases/BL-R9-0001/chapters/I_System/I-04_System_Context.md": "5c7930d6fe6bd7bc7ff8b29d88c6853abe11185c927650602dfd365bd6f88edb",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-01_GW_Architecture.md": "c1e3f7dcc6856984c2a23f46a9dd933b3ce9c2a322a3d6682440f89b4a9524f2",
+    "10_canonical/releases/BL-R9-0001/chapters/III_Interfaces/III-01_Boundary_Contracts.md": "49a292383cf4ed318cd563a5f2100374c456a1a89551cf0352f9347d175e6606",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-02_GW_Functions.md": "a6ef1b70e2003d84828d8081ea4a5dded012953ca968ee9bc873c1cf2d8f68ef",
+    "10_canonical/releases/BL-R9-0001/chapters/I_System/I-05_Configurations.md": "fd202bc9f0aecc02cf10d60713b4ee73e314e913c1d303d84ffe1c73f90bf868",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-06_Device_Management.md": "14ae9ab12bbf01b69077373ec6e055c60440b2f8feb4da59a6a737b9296009ce",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-03_Control_Execution.md": "c736215e3512ea87fa607540ebf6f03dcba3482e036cddd9200fcab3e24b860e",
+    "10_canonical/releases/BL-R9-0001/chapters/I_System/I-06_Usecases.md": "fe4bafee7e37c7ac9ad3fe91f0659c092fb9c72e346226127410514f747aa1a6",
+    "10_canonical/releases/BL-R9-0001/chapters/III_Interfaces/III-07_RS485_PCS.md": "b7bcd27f7e883879b9309387a1d38a6e799fa345681d006c3e25143654decf36",
+    "10_canonical/releases/BL-R9-0001/chapters/III_Interfaces/III-06_ECHONET_Lite.md": "aa565d6d804f0615579de18051782cada9ae4f1a23dc1a57af2b16785dfce79b",
+    "10_canonical/releases/BL-R9-0001/chapters/III_Interfaces/III-09_Network_Peripherals.md": "becb8db31714f01a2c11126d47764fa35a679df3636f75bb535e1e49aba36d72",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-05_Advanced_EMS.md": "ee488a599450b31a46aa2f442268c681d23f7bb9dc81f245efeb0c9d31df711e",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-04_DER_Load_Control.md": "1486ff0bc07389eb6f2fd62a2b3fb93c70a136cc43282a91590b14c7bd763e27",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-07_Measurement_Data.md": "eeaf32507d3c2f0b0d3f05339bd3b1bb881c78d3e0975b28ce207364c5b01b3d",
+    "10_canonical/releases/BL-R9-0001/chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md": "95fb55971d775f7484320c046b2cdae8ae8bbf49e51032b5826af0d18f3cdafa",
+    "10_canonical/releases/BL-R9-0001/chapters/V_Lifecycle/V-04_Compliance.md": "f5b3bcd473a348edd9c339911a6d237944ffe944ec4cf5e04a139bc32c81f3a7",
+    "10_canonical/releases/BL-R9-0001/chapters/I_System/I-07_Responsibilities_Constraints.md": "f90db58adb28fc9c42c6d7da650d9b1b8cd8d564bcb8789418c15cc9294dc9c2",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-09_Settings_Lifecycle.md": "c17c6721abcd59144a5f7ed36fa695fd5db4cb383ff0293df9f5ed10871cd354",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md": "194295a4863a53efe399e7326418b4a776d981c11d8b17c3c7e248e5204839ed",
+    "10_canonical/releases/BL-R9-0001/chapters/II_GW/II-11_Firmware_Update.md": "9fa962a17ac4a1659064f18844196d1b309fcabf19e16e03205da676c4f4ed2a",
+    "10_canonical/releases/BL-R9-0001/chapters/IV_Quality/IV-01_Performance_Capacity.md": "205600a04748c6e3c1766eac7597079df92996f65fd94f85e6021c8e56a28f05",
+    "10_canonical/releases/BL-R9-0001/chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md": "79e7714d743e5e34b3752c92533f656113e6b13020f7e0f8ca2b580684b83586",
+    "10_canonical/releases/BL-R9-0001/chapters/V_Lifecycle/V-05_Change_Migration_Release.md": "7e5edf77582806198bef25493931a94980a32f952200c0af9860d57268b0a782",
+    "10_canonical/releases/BL-R9-0001/chapters/V_Lifecycle/V-06_Verification_Validation.md": "e39362db56e202a4fafd8ded4e58b67adcb0705db3a7163815603af3b45f483c",
+    "10_canonical/releases/BL-R9-0001/chapters/V_Lifecycle/V-07_Trace_Open_Questions.md": "6f1ad5984918f9811b767331506700b7384d742de7e35fd72987c4c6d1238743",
+    "10_canonical/releases/BL-R9-0001/chapters/III_Interfaces/III-02_Cloud_GW.md": "c96f88a5a9da40e7fec3183e03502991e8795150a7ab23318dc6cd7abcce78bf",
+    "10_canonical/releases/BL-R9-0001/chapters/V_Lifecycle/V-02_Commissioning_Handover.md": "628b1151ac10cc444ae6221eed940c5635b9d090a6d5af9eec96c16eb9333a65",
+    "10_canonical/releases/BL-R9-0001/chapters/IV_Quality/IV-05_Physical_Electrical.md": "e073f288fb986ebcea44c8c286c121fdd83a222ff94dc21ac2c69f47e76515e1",
+    "10_canonical/releases/BL-R9-0001/chapters/IV_Quality/IV-06_Environment_EMC.md": "c24b1b1ab99a6d72ca398c0b44d96e52c295a8ef7137d8e389ff12c46ff8abf8",
+    "10_canonical/releases/BL-R9-0001/chapters/IV_Quality/IV-04_Product_Safety.md": "1e23a7c136cfe84fddb1d53ab160cd0b10ccad5983f99cb1714f1f6f8626c33e",
+    "10_canonical/releases/BL-R9-0001/chapters/IV_Quality/IV-02_Reliability_Availability.md": "26f0e0981a2387522ac814feeae573b099a0d2dac1444331b9edc42280cc7dd4",
+    "10_canonical/releases/BL-R9-0001/chapters/V_Lifecycle/V-01_Manufacturing_Shipping.md": "f50f6067b50c70855f6474fe90630d3f0f0b8843d2e632fd30da81dab9dcc952",
+    "10_canonical/releases/BL-R9-0001/chapters/V_Lifecycle/V-03_Maintenance_Retirement.md": "4bf92e54088893400ce457bda12c18f71b78e77c6ac34a2c747f63516001ad0d",
+    "10_canonical/releases/BL-R9-0001/chapters/IV_Quality/IV-03_Security_Privacy.md": "64bd7813a3e0b3f6ce9562964cd225a3db990090b351415bd275cb11dac0225f"
+  },
+  "identity_check": {
+    "documents": 155,
+    "document_versions": 155,
+    "items": 341,
+    "item_versions": 341,
+    "document_edges": 4,
+    "warnings": [
+      {
+        "code": "ITEM_PHASE_UNASSIGNED",
+        "count": 164
+      },
+      {
+        "code": "ITEM_THREAD_UNASSIGNED",
+        "count": 337
+      },
+      {
+        "code": "ITEM_RELATION_REVIEW_PENDING",
+        "count": 341
+      }
+    ]
+  }
+}

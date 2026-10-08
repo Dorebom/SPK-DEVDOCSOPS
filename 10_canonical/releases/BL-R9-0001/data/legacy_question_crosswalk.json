@@ -1,0 +1,927 @@
+{
+  "revision": "R6",
+  "crosswalk": [
+    {
+      "legacy_id": "TBD-001",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-04-02",
+        "OQ-R6-08-01",
+        "OQ-R6-08-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-002",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-03-02",
+        "OQ-R6-10-02",
+        "OQ-R6-24-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-003",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-10-01",
+        "OQ-R6-11-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-004",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-10-01",
+        "OQ-R6-16-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-005",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-11-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-006",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-09-01",
+        "OQ-R6-10-02",
+        "OQ-R6-11-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-007",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-05-01",
+        "OQ-R6-08-03",
+        "OQ-R6-13-02",
+        "OQ-R6-24-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-008",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-05-02",
+        "OQ-R6-07-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-009",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-05-01",
+        "OQ-R6-08-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-010",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-03-01",
+        "OQ-R6-04-01",
+        "OQ-R6-18-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-011",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-03-02",
+        "OQ-R6-14-02",
+        "OQ-R6-15-01",
+        "OQ-R6-22-02",
+        "OQ-R6-23-01",
+        "OQ-R6-23-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-012",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-07-03",
+        "OQ-R6-27-01",
+        "OQ-R6-27-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-013",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-15-02",
+        "OQ-R6-16-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "TBD-014",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-09-02",
+        "OQ-R6-09-03",
+        "OQ-R6-25-03",
+        "OQ-R6-26-06",
+        "OQ-R6-27-06"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-001",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-03-01",
+        "OQ-R6-07-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-002",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-07-01",
+        "OQ-R6-22-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-003",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-10-02",
+        "OQ-R6-15-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-004",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-04-03",
+        "OQ-R6-07-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-005",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-01-02",
+        "OQ-R6-04-01",
+        "OQ-R6-08-01",
+        "OQ-R6-12-01",
+        "OQ-R6-17-02",
+        "OQ-R6-18-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-006",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-04-02",
+        "OQ-R6-07-03",
+        "OQ-R6-08-02",
+        "OQ-R6-14-01",
+        "OQ-R6-17-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-007",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-04-03",
+        "OQ-R6-18-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-008",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-05-02",
+        "OQ-R6-13-01",
+        "OQ-R6-20-03",
+        "OQ-R6-24-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-009",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-06-02",
+        "OQ-R6-12-02",
+        "OQ-R6-12-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-010",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-07-03",
+        "OQ-R6-08-01",
+        "OQ-R6-09-01",
+        "OQ-R6-09-02",
+        "OQ-R6-16-01",
+        "OQ-R6-18-01",
+        "OQ-R6-26-07",
+        "OQ-R6-27-01",
+        "OQ-R6-27-05"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-011",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-01-02",
+        "OQ-R6-01-04",
+        "OQ-R6-04-01",
+        "OQ-R6-06-01",
+        "OQ-R6-17-01",
+        "OQ-R6-17-02",
+        "OQ-R6-19-01",
+        "OQ-R6-19-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-012",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-01-01",
+        "OQ-R6-02-01",
+        "OQ-R6-26-07"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-013",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-20-01",
+        "OQ-R6-27-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-014",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-02-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-015",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-02-02",
+        "OQ-R6-20-02",
+        "OQ-R6-27-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-016",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-01-01",
+        "OQ-R6-20-05",
+        "OQ-R6-26-05",
+        "OQ-R6-26-06",
+        "OQ-R6-27-02",
+        "OQ-R6-27-06"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-017",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-12-02",
+        "OQ-R6-20-01",
+        "OQ-R6-22-05",
+        "OQ-R6-24-03",
+        "OQ-R6-25-03",
+        "OQ-R6-26-02",
+        "OQ-R6-27-04"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-018",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-06-02",
+        "OQ-R6-12-04",
+        "OQ-R6-13-02",
+        "OQ-R6-20-04",
+        "OQ-R6-27-02",
+        "OQ-R6-27-04"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-019",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-09-03",
+        "OQ-R6-20-05"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-020",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-14-01",
+        "OQ-R6-25-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-021",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-12-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-022",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-20-02",
+        "OQ-R6-20-03",
+        "OQ-R6-20-05"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-023",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-09-03",
+        "OQ-R6-12-04",
+        "OQ-R6-16-02",
+        "OQ-R6-18-02",
+        "OQ-R6-20-04",
+        "OQ-R6-26-05",
+        "OQ-R6-26-07",
+        "OQ-R6-27-05",
+        "OQ-R6-27-06"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-024",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-04-02",
+        "OQ-R6-21-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-025",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-03-02",
+        "OQ-R6-12-01",
+        "OQ-R6-15-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-026",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-12-02",
+        "OQ-R6-21-02",
+        "OQ-R6-26-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-027",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-16-01",
+        "OQ-R6-16-02",
+        "OQ-R6-21-02",
+        "OQ-R6-26-04"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-028",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-21-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-029",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-20-03",
+        "OQ-R6-21-01",
+        "OQ-R6-26-04"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-030",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-11-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-031",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-02-01",
+        "OQ-R6-26-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-032",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-06-02",
+        "OQ-R6-13-01",
+        "OQ-R6-14-02",
+        "OQ-R6-15-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-033",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-21-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "SYS-TBD-034",
+      "source": "data/open_issues.json",
+      "question_ids": [
+        "OQ-R6-04-03",
+        "OQ-R6-12-04",
+        "OQ-R6-18-02",
+        "OQ-R6-24-03",
+        "OQ-R6-26-03",
+        "OQ-R6-26-05"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-PLAN-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-08-02",
+        "OQ-R6-14-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-MEAS-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-09-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-MEAS-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-08-02",
+        "OQ-R6-09-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-CMD-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-14-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-CMD-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-14-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-CMD-03",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-07-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-CMD-04",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-13-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-RESULT-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-05-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-RESULT-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-05-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-AUTH-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-05-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-RS-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-07-01",
+        "OQ-R6-22-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-RS-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-07-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-EL-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-07-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GRID-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-10-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GRID-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-10-01",
+        "OQ-R6-25-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GRID-03",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-10-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GRID-04",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-11-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GRID-05",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-11-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-CFG-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-12-01",
+        "OQ-R6-12-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-DATA-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-09-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-DATA-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-09-02",
+        "OQ-R6-22-02",
+        "OQ-R6-25-01",
+        "OQ-R6-25-04"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-ISO-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-03-02",
+        "OQ-R6-14-02",
+        "OQ-R6-25-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-ENV-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-22-01",
+        "OQ-R6-22-02",
+        "OQ-R6-22-03",
+        "OQ-R6-22-04",
+        "OQ-R6-22-05",
+        "OQ-R6-23-01",
+        "OQ-R6-23-02",
+        "OQ-R6-23-03",
+        "OQ-R6-23-04",
+        "OQ-R6-26-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-SEC-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-27-01",
+        "OQ-R6-27-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-20-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-20-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-03",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-20-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-04",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-20-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-05",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-20-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-06",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-09-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-07",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-09-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-08",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-02-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-09",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-12-03"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-10",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-13-02",
+        "OQ-R6-20-04",
+        "OQ-R6-25-04"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-11",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-14-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-12",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-13-02",
+        "OQ-R6-20-04",
+        "OQ-R6-25-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-13",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-20-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-14",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-20-05",
+        "OQ-R6-27-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-15",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-27-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-UP-16",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-18-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GSEL-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-21-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GSEL-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-10-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GSEL-03",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-10-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GSEL-04",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-21-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GSEL-05",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-15-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GSEL-06",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-21-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GNET-01",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-02-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GNET-02",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-13-01"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GNET-03",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-14-02"
+      ],
+      "legacy_status_unchanged": true
+    },
+    {
+      "legacy_id": "PAR-GNET-04",
+      "source": "data/parameters.json",
+      "question_ids": [
+        "OQ-R6-21-01"
+      ],
+      "legacy_status_unchanged": true
+    }
+  ]
+}

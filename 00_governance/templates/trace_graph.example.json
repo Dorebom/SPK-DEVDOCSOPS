@@ -1,0 +1,10 @@
+{
+  "schema": "spkgw.lifecycle-trace/v2",
+  "registry_scope": "TEMPLATE_NOT_OPERATIONAL; add pinned documents, individual items and reviewed typed edges",
+  "profiles": [],
+  "documents": [],
+  "nodes": [],
+  "edges": [],
+  "document_edges": [],
+  "trace_relations": []
+}

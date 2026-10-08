@@ -1,0 +1,455 @@
+{
+  "schema": "spkgw.source-register/v1",
+  "sources": [
+    {
+      "source_id": "A01",
+      "document_id": "A01",
+      "revision": "architecture-v1.0",
+      "sha256": "55138a4c1096e51fac8f643788376764ef33441a759a2621b174adbcdd9b78a0",
+      "bytes": 8155,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/01_Architecture.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A02",
+      "document_id": "A02",
+      "revision": "architecture-v1.0",
+      "sha256": "6f440c20a367881f789471f36aff84378d6b73d458666077b1df9f9def0e558c",
+      "bytes": 7247,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/02_Responsibilities.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A03",
+      "document_id": "A03",
+      "revision": "architecture-v1.0",
+      "sha256": "e67e4cadffc38368b75006adca99e24b31c3f5faf78cc4d4426918327528f279",
+      "bytes": 9482,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/03_Command_Flows.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A04",
+      "document_id": "A04",
+      "revision": "architecture-v1.0",
+      "sha256": "b0c0e0726b4673af28b29e810550d66df9f42210b39db707807e88883aa5c0ec",
+      "bytes": 7342,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/04_JET_Isolation.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A05",
+      "document_id": "A05",
+      "revision": "architecture-v1.0",
+      "sha256": "0457152061071b8041907e8e483ba52dfad93f056e18fe4f3fb4fbb0bee463a4",
+      "bytes": 8525,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/05_Device_Classes.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A06",
+      "document_id": "A06",
+      "revision": "architecture-v1.0",
+      "sha256": "d1b1d577b60fcb0815bb42ae6430eb68cfe3304e505afe928db3b32861669375",
+      "bytes": 8646,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/06_Contracts.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A07",
+      "document_id": "A07",
+      "revision": "architecture-v1.0",
+      "sha256": "9acc7aade76f1a3e0d1b888243ddcb2b388ec505fbecbc1b65b10d7134f6a963",
+      "bytes": 6779,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/07_Power_Constraints.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A08",
+      "document_id": "A08",
+      "revision": "architecture-v1.0",
+      "sha256": "3147b8ada99b580b06624434818dcbc798e78a467bbdb7630b382fb03ac43644",
+      "bytes": 8450,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/08_Deployment_Failures_OTA.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A09",
+      "document_id": "A09",
+      "revision": "architecture-v1.0",
+      "sha256": "f2c0d290d4a07ee31f5451b58c39ad4d1eb10f426915c4c3a7e4476b6333f96f",
+      "bytes": 6547,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/09_Risks_Alternatives.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A10",
+      "document_id": "A10",
+      "revision": "architecture-v1.0",
+      "sha256": "20d698a0074adf587688d4198f4c687e3cc58b4c508afbf313f74af9debf77f4",
+      "bytes": 8490,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/10_Requirements_Tests.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A11",
+      "document_id": "A11",
+      "revision": "architecture-v1.0",
+      "sha256": "ceba5762f9c34bad38805b7d5715621395bca407ae9516b43227ae12707f006a",
+      "bytes": 6750,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/11_Migration_Decisions.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A12",
+      "document_id": "A12",
+      "revision": "architecture-v1.0",
+      "sha256": "2f08ee33dfea0e5bb84e14be6eb32bdd64e03bd33ff8cbe52bcdab26f0322da3",
+      "bytes": 10985,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/12_Sources.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "CTX",
+      "document_id": "CTX",
+      "revision": "CTX",
+      "sha256": "95579e8917f9bb446bc451909782a43d82080637b069883b82fb545feb1af7ea",
+      "bytes": 2396,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R2",
+      "document_id": "CTX-R2",
+      "revision": "CTX-R2",
+      "sha256": "34b547e3c6f5d5c3c1768cced897fce744ae20383118ef0b5e29dde95437717f",
+      "bytes": 1877,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R2.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R3",
+      "document_id": "CTX-R3",
+      "revision": "CTX-R3",
+      "sha256": "b43e3c0424634546d7057ca7a989c886d02a8c3320c5f1876d6720e0cc8937c2",
+      "bytes": 1625,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R3.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R4",
+      "document_id": "CTX-R4",
+      "revision": "CTX-R4",
+      "sha256": "e4f680b55ec096e5071c18484aa817950fba20c46d99ed7f598320d1f7e27e2f",
+      "bytes": 2153,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R4.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "SP",
+      "document_id": "SP",
+      "revision": "R8-FIX001",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "bytes": 50677,
+      "path": "30_references/baselines/R8_FIX001/data/revision_changes.json",
+      "format": "json",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧SYS台帳の提案由来IDをR8の改訂台帳へ接続した継承エイリアス。独立原資料ではなく当時の提案識別子。"
+    },
+    {
+      "source_id": "SP-R2",
+      "document_id": "SP-R2",
+      "revision": "R8-FIX001",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "bytes": 50677,
+      "path": "30_references/baselines/R8_FIX001/data/revision_changes.json",
+      "format": "json",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧SYS台帳の提案由来IDをR8の改訂台帳へ接続した継承エイリアス。独立原資料ではなく当時の提案識別子。"
+    },
+    {
+      "source_id": "SP-R3",
+      "document_id": "SP-R3",
+      "revision": "R8-FIX001",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "bytes": 50677,
+      "path": "30_references/baselines/R8_FIX001/data/revision_changes.json",
+      "format": "json",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧SYS台帳の提案由来IDをR8の改訂台帳へ接続した継承エイリアス。独立原資料ではなく当時の提案識別子。"
+    },
+    {
+      "source_id": "SP-R4",
+      "document_id": "SP-R4",
+      "revision": "R8-FIX001",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "bytes": 50677,
+      "path": "30_references/baselines/R8_FIX001/data/revision_changes.json",
+      "format": "json",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧SYS台帳の提案由来IDをR8の改訂台帳へ接続した継承エイリアス。独立原資料ではなく当時の提案識別子。"
+    },
+    {
+      "source_id": "EXT-FW-01",
+      "document_id": "EXT-FW-01",
+      "revision": "R8-FIX001",
+      "sha256": "0c3f60699fe1f3f9ec1dfb509ec5472a335aa0fa4a187eb2f3f6d064d50390d3",
+      "bytes": 1717,
+      "path": "30_references/baselines/R8_FIX001/sources/R2_External_References.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧参考資料の保存記録。外部サイトの再取得・規格適合確認ではない。"
+    },
+    {
+      "source_id": "EXT-FW-02",
+      "document_id": "EXT-FW-02",
+      "revision": "R8-FIX001",
+      "sha256": "0c3f60699fe1f3f9ec1dfb509ec5472a335aa0fa4a187eb2f3f6d064d50390d3",
+      "bytes": 1717,
+      "path": "30_references/baselines/R8_FIX001/sources/R2_External_References.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧参考資料の保存記録。外部サイトの再取得・規格適合確認ではない。"
+    },
+    {
+      "source_id": "SRC-BASE-R8-FIX001",
+      "document_id": "SRC-BASE-R8-FIX001",
+      "revision": "R8-FIX001",
+      "sha256": "ff984bda9214c9d874640cf078087da40674b0eb379babb5c597fed8085481e2",
+      "bytes": 2483880,
+      "path": "30_references/originals/R8_FIX001.zip",
+      "format": "zip",
+      "basis": "BASELINE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": ""
+    },
+    {
+      "source_id": "SRC-IMPORT-REVIEW",
+      "document_id": "SRC-IMPORT-REVIEW",
+      "revision": "A1",
+      "sha256": "17d6031c759b23ae59f5313e6dfce29a2a6591f5d7037d417212bcbb39e98790",
+      "bytes": 28930,
+      "path": "30_references/reviews/SPK-GW_HEMS_R8_FIX001_Import_USDM_Review_20261008.md",
+      "format": "md",
+      "basis": "REVIEW",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": ""
+    },
+    {
+      "source_id": "CTX-R9",
+      "document_id": "CTX-R9",
+      "revision": "2026-10-08",
+      "sha256": "c13ebd899b68d48471732a1d37befacf8394623def13c08ecb8f40be2e3a5150",
+      "bytes": 667,
+      "path": "30_references/decisions/CTX-R9.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "DOCUMENT_FLOW_CONFIRMED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": ""
+    }
+  ]
+}

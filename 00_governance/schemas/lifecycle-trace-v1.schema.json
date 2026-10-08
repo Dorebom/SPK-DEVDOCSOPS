@@ -1,0 +1,564 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.lifecycle-trace/v1"
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "trace_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "assessment_scope": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "root_node_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+            },
+            "uniqueItems": true
+          },
+          "phase_plan": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "phase_id": {
+                  "enum": [
+                    "CONCEPT",
+                    "REQAN",
+                    "REQSPEC",
+                    "SYSDES",
+                    "ARCH",
+                    "BASIC",
+                    "DETAIL",
+                    "IMPL",
+                    "UT",
+                    "IT",
+                    "ST",
+                    "NFT",
+                    "VALID",
+                    "RELPREP",
+                    "RELEASE",
+                    "OPS",
+                    "IMPROVE"
+                  ]
+                },
+                "applicability": {
+                  "enum": [
+                    "TBD",
+                    "APPLICABLE",
+                    "NOT_APPLICABLE"
+                  ]
+                },
+                "required_kinds": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "CONCEPT",
+                      "REQUIREMENT_ANALYSIS",
+                      "REQUIREMENT",
+                      "SPECIFICATION",
+                      "SYSTEM_DESIGN",
+                      "ARCHITECTURE",
+                      "STRUCTURAL_DESIGN",
+                      "DETAIL_DESIGN",
+                      "IMPLEMENTATION",
+                      "TEST_CASE",
+                      "TEST_RESULT",
+                      "VALIDATION",
+                      "RELEASE_PLAN",
+                      "RELEASE",
+                      "DEPLOYMENT",
+                      "OPERATION",
+                      "INCIDENT",
+                      "IMPROVEMENT",
+                      "RESEARCH",
+                      "MEETING",
+                      "AGENDA_ITEM",
+                      "DECISION",
+                      "TASK",
+                      "EXECUTION",
+                      "EVIDENCE",
+                      "CHANGE",
+                      "QUESTION",
+                      "BASELINE",
+                      "OTHER"
+                    ]
+                  },
+                  "uniqueItems": true
+                },
+                "rationale": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "review": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/$defs/review"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "phase_id",
+                "applicability",
+                "required_kinds",
+                "rationale",
+                "review"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "trace_id",
+          "assessment_scope",
+          "root_node_ids",
+          "phase_plan"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "node_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "artifact_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "revision": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "kind": {
+            "enum": [
+              "CONCEPT",
+              "REQUIREMENT_ANALYSIS",
+              "REQUIREMENT",
+              "SPECIFICATION",
+              "SYSTEM_DESIGN",
+              "ARCHITECTURE",
+              "STRUCTURAL_DESIGN",
+              "DETAIL_DESIGN",
+              "IMPLEMENTATION",
+              "TEST_CASE",
+              "TEST_RESULT",
+              "VALIDATION",
+              "RELEASE_PLAN",
+              "RELEASE",
+              "DEPLOYMENT",
+              "OPERATION",
+              "INCIDENT",
+              "IMPROVEMENT",
+              "RESEARCH",
+              "MEETING",
+              "AGENDA_ITEM",
+              "DECISION",
+              "TASK",
+              "EXECUTION",
+              "EVIDENCE",
+              "CHANGE",
+              "QUESTION",
+              "BASELINE",
+              "OTHER"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "trace_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "related_trace_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+            },
+            "uniqueItems": true
+          },
+          "phase_ids": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "CONCEPT",
+                "REQAN",
+                "REQSPEC",
+                "SYSDES",
+                "ARCH",
+                "BASIC",
+                "DETAIL",
+                "IMPL",
+                "UT",
+                "IT",
+                "ST",
+                "NFT",
+                "VALID",
+                "RELPREP",
+                "RELEASE",
+                "OPS",
+                "IMPROVE"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "record_state": {
+            "enum": [
+              "PLANNED",
+              "RECORDED"
+            ]
+          },
+          "selected": {
+            "type": "boolean"
+          },
+          "locator": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/locator"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "review": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/review"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "node_id",
+          "artifact_id",
+          "revision",
+          "kind",
+          "title",
+          "trace_id",
+          "related_trace_ids",
+          "phase_ids",
+          "record_state",
+          "selected",
+          "locator",
+          "review"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "record_state": {
+                  "const": "RECORDED"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "locator": {
+                  "$ref": "#/$defs/locator"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "edge_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "from_node": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "to_node": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "relation": {
+            "enum": [
+              "derives_from",
+              "refines",
+              "allocated_from",
+              "implements",
+              "verifies",
+              "validates",
+              "result_of",
+              "evidence_for",
+              "reviews",
+              "decides_on",
+              "investigates",
+              "discusses",
+              "action_from",
+              "fixes",
+              "includes",
+              "deployment_of",
+              "observed_in",
+              "supersedes",
+              "related_to"
+            ]
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "review": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/review"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "edge_id",
+          "from_node",
+          "to_node",
+          "relation",
+          "active",
+          "basis",
+          "review"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "trace_relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "from_trace": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "to_trace": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+          },
+          "relation": {
+            "enum": [
+              "split_from",
+              "merged_from",
+              "follow_up_to"
+            ]
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "id",
+          "from_trace",
+          "to_trace",
+          "relation",
+          "basis"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "profiles",
+    "nodes",
+    "edges",
+    "trace_relations"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "locator": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "selector": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "PENDING",
+            "CONFIRMED"
+          ]
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/locator"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "subject_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "state",
+        "reviewer",
+        "reviewed_at",
+        "evidence",
+        "rationale",
+        "subject_sha256"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "CONFIRMED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "reviewer": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,120}$"
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "evidence": {
+                "$ref": "#/$defs/locator"
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "subject_sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

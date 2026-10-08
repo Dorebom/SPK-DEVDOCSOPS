@@ -1,0 +1,41 @@
+{
+  "schema": "spkgw.governance-legacy/v1",
+  "documents": [
+    {
+      "path": "00_governance/STD_Import_Merge.md",
+      "document_id": "STD-IMP-001",
+      "policy": "PRESERVE_R9_BYTES; FRONTMATTER_MIGRATION_ON_NEXT_APPROVED_EDIT",
+      "sha256": "ec2606af20bf51e13089d4222707dad3c6fc757d2d140d7e9534b3d885082910"
+    },
+    {
+      "path": "00_governance/Tool_Operations.md",
+      "document_id": "R9-TOOL-OPS",
+      "policy": "PRESERVE_R9_BYTES; FRONTMATTER_MIGRATION_ON_NEXT_APPROVED_EDIT",
+      "sha256": "489366dd9def16a6a0849de8dcdc36d8a57c3cfe44c72cbd7c679b39230c4607"
+    },
+    {
+      "path": "00_governance/Extraction_Capability.md",
+      "document_id": "R9-EXTRACTION",
+      "policy": "PRESERVE_R9_BYTES; FRONTMATTER_MIGRATION_ON_NEXT_APPROVED_EDIT",
+      "sha256": "3f64677beaa412771ba626184361050e316a914f353702c519697f3ef4181811"
+    },
+    {
+      "path": "00_governance/R9_Change_Log.md",
+      "document_id": "R9-CHANGE-LOG",
+      "policy": "PRESERVE_R9_BYTES; FRONTMATTER_MIGRATION_ON_NEXT_APPROVED_EDIT",
+      "sha256": "ca94d87afe9b7f81f38ac3939e89a10b007405ceaf43257f1a819ea7e510c5a6"
+    },
+    {
+      "document_id": "GOV-CHANGE-001",
+      "path": "00_governance/R10_Change_Log.md",
+      "sha256": "6427d79c8feffcaa28c7b4cccf2866d4cd8be63539dd408103d8eea221f99ff4",
+      "reason": "Historical changelog retained byte-identically; old Trace/phase naming is not current policy."
+    },
+    {
+      "document_id": "GOV-CHANGE-R11",
+      "path": "00_governance/R11_Change_Log.md",
+      "sha256": "41d0bbd3a9ccf373a369d28bc6a00f39f2d22162bee51a48d7f5c0a9bbd4bdf5",
+      "reason": "Historical changelog retained byte-identically; old Trace/phase naming is not current policy."
+    }
+  ]
+}

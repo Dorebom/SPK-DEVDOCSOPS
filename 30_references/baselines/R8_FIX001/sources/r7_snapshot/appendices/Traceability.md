@@ -1,0 +1,123 @@
+# 原典要求・システム仕様・試験の対応
+
+原典[10_Requirements_Tests.md](../sources/architecture/10_Requirements_Tests.md)のARCH番号と意味を保持する。下表は要求の継承・展開状況であり、試験合格・認証承認の対応表ではない。
+
+| 原典ARCH | 原典の要求案 | SYS要求 | 主な章 | 検証 |
+|---|---|---|---|---|
+| ARCH-001 | HEMS側のDER操作実行責務をDER Power Controllerとして定義する | SYS-RESP-001 | [第03章](../chapters/03_Responsibilities.md#ch-03) | 責務・依存図レビュー |
+| ARCH-002 | 電力会社のスケジュール実行経路をHEMSのArbiter／Orchestratorに依存させない | SYS-GRID-001 | [第10章](../chapters/10_Grid_Protection.md#ch-10) | T01、T02 |
+| ARCH-003 | 系統連系保護はHEMSの動作・応答・承認に依存しない | SYS-GRID-002 | [第10章](../chapters/10_Grid_Protection.md#ch-10) | T03 |
+| ARCH-004 | 通常運転APIから系統制約・保護設定・G側時刻等を書き換えられない | SYS-BOUND-001 | [第05章](../chapters/05_Control_Contracts.md#ch-05) | T04、T05 |
+| ARCH-005 | 系統制御に必要な計測・保存・時刻・復旧はHEMS停止時にも成立する | SYS-GRID-003 | [第10章](../chapters/10_Grid_Protection.md#ch-10) | T01、T06 |
+| ARCH-006 | 通常運転の制御権を対象資源と変換グループに結び付ける | SYS-AUTH-001 | [第03章](../chapters/03_Responsibilities.md#ch-03) | T07、T08 |
+| ARCH-007 | 送信時に要求期限と権威世代を検査し、古い待ち要求を破棄する | SYS-AUTH-002 | [第05章](../chapters/05_Control_Contracts.md#ch-05) | T07 |
+| ARCH-008 | 複数機器計画のWorkflow ownerと部分失敗時の動作を定める | SYS-ORCH-001 | [第06章](../chapters/06_Usecases.md#ch-06) | T09 |
+| ARCH-009 | ECHONET Lite Adapterが独自の運転優先度を持たない | SYS-ADAPT-001 | [第03章](../chapters/03_Responsibilities.md#ch-03) | コード・契約レビュー、T07 |
+| ARCH-010 | 機器能力・操作頻度・対応するモードを機器プロファイルで管理する | SYS-CAP-001 | [第04章](../chapters/04_Configurations_Profiles.md#ch-04) | T10、T11 |
+| ARCH-011 | 受理・物理動作・目標達成・不明を区別して通知する | SYS-RESULT-001 | [第05章](../chapters/05_Control_Contracts.md#ch-05) | T12 |
+| ARCH-012 | 機器単体・変換グループ・連系点制約を別のscopeで扱う | SYS-TOPO-001 | [第11章](../chapters/11_Power_Constraints.md#ch-11) | T08、T13 |
+| ARCH-013 | 制約情報の欠損・期限切れを無制限として扱わない | SYS-CONST-001 | [第08章](../chapters/08_Advanced_EMS_Loads.md#ch-08) | T06、T14 |
+| ARCH-014 | 負荷の急変・EV離脱でも、適用する系統条件を満たす構成を採用する | SYS-CONST-002 | [第11章](../chapters/11_Power_Constraints.md#ch-11) | T13 |
+| ARCH-015 | HEMSのCPU・通信・メモリ等の負荷でG側の性能を破らない | SYS-ISO-001 | [第15章](../chapters/15_Deployment_Isolation.md#ch-15) | T15 |
+| ARCH-016 | HEMS OTAの署名・権限・イメージからG側を書き換えられない | SYS-OTA-001 | [第13章](../chapters/13_Fault_Recovery_OTA.md#ch-13) | T04、T16 |
+| ARCH-017 | HEMS再起動後に旧要求を盲目的に再送しない | SYS-OTA-002 | [第13章](../chapters/13_Fault_Recovery_OTA.md#ch-13) | T16、T17 |
+| ARCH-018 | 通常要求の機器側保持・失効を仕様として明示する | SYS-EXPIRY-001 | [第13章](../chapters/13_Fault_Recovery_OTA.md#ch-13) | T17 |
+| ARCH-019 | 本体操作・別制御元との共存を定義し、無条件な設定綱引きを防ぐ | SYS-COEX-001 | [第13章](../chapters/13_Fault_Recovery_OTA.md#ch-13) | T18 |
+| ARCH-020 | JET・接続条件・AIF・ソフトウェア版の対応を構成台帳で追跡する | SYS-CERT-001 | [第16章](../chapters/16_Certification_Change.md#ch-16) | T19 |
+| ARCH-021 | HEMS／G側の共通電源・reset・通信・熱の影響を評価する | SYS-ISO-002 | [第15章](../chapters/15_Deployment_Isolation.md#ch-15) | T15、T16 |
+| ARCH-022 | HEMSの変更について、境界内の契約と動作前提を逸脱しないことを確認する | SYS-CHG-001 | [第16章](../chapters/16_Certification_Change.md#ch-16) | T19、変更影響評価 |
+| ARCH-023 | 保護動作と遠隔出力制御の時間条件を別々に定義する | SYS-TIME-001 | [第14章](../chapters/14_Performance_Security.md#ch-14) | T02、T03、T13 |
+| ARCH-024 | ログに要求ID、権威世代、計測品質、時刻、対象scopeを残す | SYS-LOG-001 | [第09章](../chapters/09_Measurement_Data.md#ch-09) | T12、T19 |
+
+## 検証シナリオと要求の逆引き
+
+原典T01〜T19とSYS-T01〜50を別名前空間で管理する。R1〜R3を継承し、R4で8件を追加、既存5件の条件を明示改訂。作成時は全件NOT_RUN。個別の状態は管理データを参照。受入条件の詳細は[Test Profiles](Test_Profiles.md)を参照。
+
+| 試験ID | 来歴 | 対応SYS要求 | 実行状態 |
+|---|---|---|---|
+| T01 | SOURCE_INHERITED | SYS-GRID-001, SYS-GRID-003, SYS-DEPLOY-001, SYS-RS-004 | NOT_RUN |
+| T02 | SOURCE_INHERITED | SYS-GRID-001, SYS-TIME-001, SYS-FAULT-001 | NOT_RUN |
+| T03 | SOURCE_INHERITED | SYS-GRID-002, SYS-TIME-001 | NOT_RUN |
+| T04 | SOURCE_INHERITED | SYS-BOUND-001, SYS-OTA-001, SYS-RS-005, SYS-CFG-002, SYS-SEC-001 | NOT_RUN |
+| T05 | SOURCE_INHERITED | SYS-BOUND-001, SYS-PERF-002 | NOT_RUN |
+| T06 | SOURCE_INHERITED | SYS-GRID-003, SYS-CONST-001, SYS-MEAS-001, SYS-FAULT-001 | NOT_RUN |
+| T07 | SOURCE_INHERITED | SYS-AUTH-001, SYS-AUTH-002, SYS-ADAPT-001, SYS-RS-005, SYS-MIG-001 | NOT_RUN |
+| T08 | SOURCE_INHERITED | SYS-AUTH-001, SYS-TOPO-001, SYS-MEAS-002 | NOT_RUN |
+| T09 | SOURCE_INHERITED | SYS-ORCH-001, SYS-RETRY-001 | NOT_RUN |
+| T10 | SOURCE_INHERITED | SYS-CAP-001, SYS-CAP-002, SYS-EMS-001 | NOT_RUN |
+| T11 | SOURCE_INHERITED | SYS-CAP-001, SYS-PERF-001, SYS-PERF-002 | NOT_RUN |
+| T12 | SOURCE_INHERITED | SYS-RESULT-001, SYS-LOG-001, SYS-EL-002, SYS-RESULT-002, SYS-RESULT-003, SYS-RETRY-001, SYS-MEAS-001 | NOT_RUN |
+| T13 | SOURCE_INHERITED | SYS-TOPO-001, SYS-CONST-002, SYS-TIME-001, SYS-LOAD-001 | NOT_RUN |
+| T14 | SOURCE_INHERITED | SYS-CONST-001, SYS-CAP-002, SYS-EMS-001 | NOT_RUN |
+| T15 | SOURCE_INHERITED | SYS-ISO-001, SYS-ISO-002, SYS-RS-006, SYS-PERF-002 | NOT_RUN |
+| T16 | SOURCE_INHERITED | SYS-OTA-001, SYS-OTA-002, SYS-ISO-002, SYS-CFG-003 | NOT_RUN |
+| T17 | SOURCE_INHERITED | SYS-OTA-002, SYS-EXPIRY-001, SYS-ROUTE-001 | NOT_RUN |
+| T18 | SOURCE_INHERITED | SYS-COEX-001, SYS-RESULT-002 | NOT_RUN |
+| T19 | SOURCE_INHERITED | SYS-CERT-001, SYS-CHG-001, SYS-LOG-001, SYS-VERIFY-001 | NOT_RUN |
+| SYS-T01 | SYSTEM_SPEC_ADDITION | SYS-RS-001, SYS-RS-002, SYS-RS-005, SYS-MIG-001 | NOT_RUN |
+| SYS-T02 | SYSTEM_SPEC_ADDITION | SYS-RS-002, SYS-SEM-001, SYS-RESULT-003 | NOT_RUN |
+| SYS-T03 | SYSTEM_SPEC_ADDITION | SYS-EL-001, SYS-EL-002 | NOT_RUN |
+| SYS-T04 | SYSTEM_SPEC_ADDITION | SYS-RS-006, SYS-MEAS-002, SYS-PERF-001 | NOT_RUN |
+| SYS-T05 | SYSTEM_SPEC_ADDITION | SYS-DEPLOY-001, SYS-RS-003, SYS-RS-004, SYS-RS-006, SYS-FAULT-001 | NOT_RUN |
+| SYS-T06 | SYSTEM_SPEC_ADDITION | SYS-CFG-001, SYS-CFG-002, SYS-CFG-003 | NOT_RUN |
+| SYS-T07 | SYSTEM_SPEC_ADDITION | SYS-ROUTE-001 | NOT_RUN |
+| SYS-T08 | SYSTEM_SPEC_ADDITION | SYS-MEAS-001, SYS-MEAS-002, SYS-DATA-001, SYS-DATA-002 | NOT_RUN |
+| SYS-T09 | SYSTEM_SPEC_ADDITION | SYS-SEC-001 | NOT_RUN |
+| SYS-T10 | SYSTEM_SPEC_ADDITION | SYS-REQ-001, SYS-LOAD-001, SYS-EMS-001 | NOT_RUN |
+| SYS-T11 | SYSTEM_SPEC_ADDITION | SYS-CTX-001, SYS-CTX-002, SYS-NORTH-001, SYS-FW-001 | NOT_RUN |
+| SYS-T12 | SYSTEM_SPEC_ADDITION | SYS-UI-001, SYS-UI-003, SYS-UI-004 | NOT_RUN |
+| SYS-T13 | SYSTEM_SPEC_ADDITION | SYS-CTX-002, SYS-CFG-006, SYS-UI-002, SYS-UI-003 | NOT_RUN |
+| SYS-T14 | SYSTEM_SPEC_ADDITION | SYS-NORTH-002, SYS-NORTH-007, SYS-APP-001, SYS-APP-003 | NOT_RUN |
+| SYS-T15 | SYSTEM_SPEC_ADDITION | SYS-NORTH-007, SYS-CFG-004, SYS-CFG-005 | NOT_RUN |
+| SYS-T16 | SYSTEM_SPEC_ADDITION | SYS-NORTH-002, SYS-NORTH-003, SYS-NORTH-004 | NOT_RUN |
+| SYS-T17 | SYSTEM_SPEC_ADDITION | SYS-NORTH-001, SYS-GWOP-001, SYS-GWOP-002 | NOT_RUN |
+| SYS-T18 | SYSTEM_SPEC_ADDITION | SYS-NORTH-005, SYS-FW-005, SYS-STATE-001, SYS-ISO-003 | NOT_RUN |
+| SYS-T19 | SYSTEM_SPEC_ADDITION | SYS-FW-001, SYS-FW-002, SYS-FW-003 | NOT_RUN |
+| SYS-T20 | SYSTEM_SPEC_ADDITION | SYS-GWOP-002, SYS-FW-001, SYS-FW-003, SYS-FW-004 | NOT_RUN |
+| SYS-T21 | SYSTEM_SPEC_ADDITION | SYS-NORTH-004, SYS-NORTH-006, SYS-NORTH-007, SYS-APP-002, SYS-FW-004, SYS-STATE-002 | NOT_RUN |
+| SYS-T22 | SYSTEM_SPEC_ADDITION | SYS-CFG-006, SYS-GWOP-002, SYS-UI-003, SYS-ISO-003 | NOT_RUN |
+| SYS-T23 | SYSTEM_SPEC_ADDITION | SYS-GWOP-001, SYS-UI-004, SYS-UI-005, SYS-STATE-001 | NOT_RUN |
+| SYS-T24 | SYSTEM_SPEC_ADDITION | SYS-NORTH-003, SYS-UI-004, SYS-APP-001, SYS-APP-002 | NOT_RUN |
+| SYS-T25 | SYSTEM_SPEC_ADDITION | SYS-NORTH-005, SYS-FW-005, SYS-ISO-003 | NOT_RUN |
+| SYS-T26 | SYSTEM_SPEC_ADDITION | SYS-APP-003 | NOT_RUN |
+| SYS-T27 | SYSTEM_SPEC_ADDITION | SYS-UI-005, SYS-SVC-001, SYS-CHG-002 | NOT_RUN |
+| SYS-T28 | SYSTEM_SPEC_ADDITION | SYS-NORTH-006, SYS-CFG-005, SYS-STATE-002 | NOT_RUN |
+| SYS-T29 | SYSTEM_SPEC_ADDITION | SYS-GSEL-001, SYS-GSEL-004, SYS-GSEL-006 | NOT_RUN |
+| SYS-T30 | SYSTEM_SPEC_ADDITION | SYS-GSEL-001, SYS-GSEL-004, SYS-GSEL-005, SYS-GSEL-006 | NOT_RUN |
+| SYS-T31 | SYSTEM_SPEC_ADDITION | SYS-GSEL-002, SYS-GSEL-007, SYS-GSEL-019 | NOT_RUN |
+| SYS-T32 | SYSTEM_SPEC_ADDITION | SYS-GSEL-003, SYS-GSEL-009 | NOT_RUN |
+| SYS-T33 | SYSTEM_SPEC_ADDITION | SYS-GSEL-007, SYS-GSEL-008, SYS-GSEL-020 | NOT_RUN |
+| SYS-T34 | SYSTEM_SPEC_ADDITION | SYS-GSEL-008, SYS-GSEL-009, SYS-GSEL-018 | NOT_RUN |
+| SYS-T35 | SYSTEM_SPEC_ADDITION | SYS-GSEL-005, SYS-GSEL-011 | NOT_RUN |
+| SYS-T36 | SYSTEM_SPEC_ADDITION | SYS-GSEL-010, SYS-GSEL-011 | NOT_RUN |
+| SYS-T37 | SYSTEM_SPEC_ADDITION | SYS-GSEL-006, SYS-GSEL-015 | NOT_RUN |
+| SYS-T38 | SYSTEM_SPEC_ADDITION | SYS-GSEL-006, SYS-GSEL-013, SYS-GSEL-014, SYS-GSEL-020 | NOT_RUN |
+| SYS-T39 | SYSTEM_SPEC_ADDITION | SYS-GSEL-004, SYS-GSEL-005, SYS-GSEL-012 | NOT_RUN |
+| SYS-T40 | SYSTEM_SPEC_ADDITION | SYS-GSEL-007, SYS-GSEL-015, SYS-GSEL-016, SYS-GSEL-020 | NOT_RUN |
+| SYS-T41 | SYSTEM_SPEC_ADDITION | SYS-GSEL-003, SYS-GSEL-017 | NOT_RUN |
+| SYS-T42 | SYSTEM_SPEC_ADDITION | SYS-GSEL-009, SYS-GSEL-018, SYS-GSEL-019, SYS-GSEL-020 | NOT_RUN |
+| SYS-T43 | SYSTEM_SPEC_ADDITION | SYS-GNET-001, SYS-GNET-002, SYS-GNET-004, SYS-GNET-009 | NOT_RUN |
+| SYS-T44 | SYSTEM_SPEC_ADDITION | SYS-GNET-001, SYS-GNET-003, SYS-GNET-009 | NOT_RUN |
+| SYS-T45 | SYSTEM_SPEC_ADDITION | SYS-GNET-002, SYS-GNET-004, SYS-GNET-008, SYS-GNET-012 | NOT_RUN |
+| SYS-T46 | SYSTEM_SPEC_ADDITION | SYS-GNET-005, SYS-GNET-009 | NOT_RUN |
+| SYS-T47 | SYSTEM_SPEC_ADDITION | SYS-GNET-006, SYS-GNET-010, SYS-GNET-011 | NOT_RUN |
+| SYS-T48 | SYSTEM_SPEC_ADDITION | SYS-GNET-003, SYS-GNET-005, SYS-GNET-006, SYS-GNET-011 | NOT_RUN |
+| SYS-T49 | SYSTEM_SPEC_ADDITION | SYS-GNET-004, SYS-GNET-007 | NOT_RUN |
+| SYS-T50 | SYSTEM_SPEC_ADDITION | SYS-GNET-002, SYS-GNET-008, SYS-GNET-012 | NOT_RUN |
+
+## 対応関係の限界
+
+本表の全件対応は、要求が書面上どこへ展開されたかを示すだけである。閾値の確定、実装の存在、実機・保護動作、変更手続きの完了は別の証拠を要する。
+
+<!-- R6:OPEN_QUESTIONS -->
+<a id="oq-list-appendices-traceability-md"></a>
+## Open Questions — 本ノートを完成させるための未決事項
+
+本ノートに関係する質問を、下表の正本章で管理する。同じ質問を別IDで重複起票せず、回答・採用値・決定記録を参照元にも反映する。履歴本文は当時の状態であり、現在の未決事項が解消した証拠にはしない。
+
+| Open Question・正本章 | 具体的に不足する判断 | 解消時に必要な成果物 |
+|---|---|---|
+| [OQ-R6-19-01](../chapters/19_Open_Issues_Sources.md#oq-r6-19-01) | 正式USDMの正本・IDは何か。124件のSYSと今回の補完項目を誰が要求へ対応付け、重複・不足・対象外を承認するか。 | USDM→機能→SYS/補完項目→設計→検証の対応を版付きで完成し、未記入を適合扱いしない。 |
+| [OQ-R6-17-03](../chapters/17_Verification.md#oq-r6-17-03) | 新設章の各項を試験、解析、文書検査のどれで確認するか。社外評価・施工確認・寿命根拠の担当と対象外承認をどう定めるか。 | 新規受入計画を既存69件と重複なく配賦し、方法・環境・安全前提・対象外理由を登録する。実行手順の危険な代用はしない。 |
+
+担当者・期限・状態はリンク先を正本とする。新たな数値や認証判断を本参照表だけで確定しない。

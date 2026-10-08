@@ -1,0 +1,7 @@
+{
+  "product_model": "REPLACE_WITH_CONFIRMED_MODEL",
+  "firmware": "REPLACE_WITH_CONFIRMED_VERSION",
+  "basis": "AS_IS",
+  "route": "REPLACE_WITH_ROUTE",
+  "time_or_unit_basis": "REPLACE_WITH_SOURCE_CONTEXT"
+}

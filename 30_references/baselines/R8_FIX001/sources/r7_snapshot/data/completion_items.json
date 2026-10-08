@@ -1,0 +1,2905 @@
+{
+  "schema": "spkgw.spec-completion/v1",
+  "revision": "R6",
+  "basis": "Coverage_Review_A1 + CTX-R6",
+  "items": [
+    {
+      "id": "SLOT-R6-01-01",
+      "question_id": "OQ-R6-01-01",
+      "chapter": 1,
+      "note": "chapters/01_Scope_Baseline.md",
+      "group": "運用概念・利用者・成功条件",
+      "title": "利用者・施工者・運用者・保守者の役割",
+      "coverage_ids": [
+        "C01",
+        "C02"
+      ],
+      "fields": [
+        "住宅所有者・居住者・設置業者・運用担当・認証側保守の識別",
+        "利用場所・知識前提・操作チャネル",
+        "委譲範囲・責任分界・契約主体"
+      ],
+      "question": "初回製品で誰が利用・施工・管理・保守するか。各ロールの操作権限、本人確認、委譲と責任をどこまで分けるか。",
+      "closure": "ロール×利用局面×操作範囲表を承認し、第20・26・27章へ対応付ける。",
+      "proposed_owner_role": "製品企画・運用・セキュリティ",
+      "decision_gate": "G0",
+      "related_ids": [
+        "SYS-TBD-016",
+        "SYS-TBD-012"
+      ],
+      "impact": "「利用者・施工者・運用者・保守者の役割」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-01-02",
+      "question_id": "OQ-R6-01-02",
+      "chapter": 1,
+      "note": "chapters/01_Scope_Baseline.md",
+      "group": "運用概念・利用者・成功条件",
+      "title": "製品価値と対象外の判定",
+      "coverage_ids": [
+        "C01",
+        "C05",
+        "C32"
+      ],
+      "fields": [
+        "既存PCS制御維持・監視・高度エネマネの目的",
+        "適用住宅と設備条件",
+        "成功指標・利用者への約束・対象外"
+      ],
+      "question": "既存運転維持、宅内監視、リモート操作、高度エネマネについて、どの条件で何を達成すれば商品として合格とするか。非対応用途は何か。",
+      "closure": "目的→機能→成功シナリオの対応表を作り、条件なしの省エネ率等を保証しない成功基準を第17章へ登録する。",
+      "proposed_owner_role": "製品企画・要求責任者",
+      "decision_gate": "G0",
+      "related_ids": [
+        "SYS-TBD-005",
+        "SYS-TBD-011"
+      ],
+      "impact": "「製品価値と対象外の判定」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-01-03",
+      "question_id": "OQ-R6-01-03",
+      "chapter": 1,
+      "note": "chapters/01_Scope_Baseline.md",
+      "group": "用語・規範文書と情報の優先関係",
+      "title": "用語・略語・数値表記",
+      "coverage_ids": [
+        "C03"
+      ],
+      "fields": [
+        "H/G・PCS_DIRECT・GW_MANAGED・DPC/FLC等の定義",
+        "物理IDと論理ID・scopeの区別",
+        "単位・丸め・用語の別名"
+      ],
+      "question": "製品で使う用語、画面名、通信名、単位表記をどの辞書に統一するか。既存製品との同義語や禁止する曖昧語は何か。",
+      "closure": "用語集の版と責任者を決定し、本文・画面・IFで異なる意味の同語がないことをレビューする。",
+      "proposed_owner_role": "システム設計・製品企画",
+      "decision_gate": "G1",
+      "related_ids": [],
+      "impact": "「用語・略語・数値表記」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-01-04",
+      "question_id": "OQ-R6-01-04",
+      "chapter": 1,
+      "note": "chapters/01_Scope_Baseline.md",
+      "group": "用語・規範文書と情報の優先関係",
+      "title": "規範別冊の版と仕様完成条件",
+      "coverage_ids": [
+        "C03",
+        "C31",
+        "C33"
+      ],
+      "fields": [
+        "文書ID・版・適用製品・条項",
+        "要求と参考・提案の区別",
+        "承認主体・変更手順・対象外の根拠"
+      ],
+      "question": "HW仕様、通信仕様、運用手順、USDMなど、完成時に参照する正本のID・版・承認者は何か。未決を残せる文書ゲートはどこか。",
+      "closure": "関連文書台帳に規範/参考を明示し、各項の採用・対象外・保留と、対応OQの判断記録をそろえる。",
+      "proposed_owner_role": "要求責任者・品質保証",
+      "decision_gate": "G0",
+      "related_ids": [
+        "SYS-TBD-011"
+      ],
+      "impact": "「規範別冊の版と仕様完成条件」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-02-01",
+      "question_id": "OQ-R6-02-01",
+      "chapter": 2,
+      "note": "chapters/02_System_Context.md",
+      "group": "設置コンテキストの適用条件",
+      "title": "実ネットワークと接続先の実体",
+      "coverage_ids": [
+        "C04",
+        "C12"
+      ],
+      "fields": [
+        "宅内ルータLAN/WANとGW H/G・PCSの接続",
+        "有線/無線・同一LAN・発見条件",
+        "上位とFW配信の事業主体・停止範囲"
+      ],
+      "question": "対象住宅のGW H/G、EL接続PCS、通常EL機器はどのLAN・AP・有線ポートへ接続するか。ルータの必要条件と外部サービスの運用責任は何か。",
+      "closure": "設置配線・ネットワークプロファイルとサービス責任表を確定し、R5の図の各端点を実接続先に対応付ける。",
+      "proposed_owner_role": "ネットワーク・製品運用・施工設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "SYS-TBD-012",
+        "SYS-TBD-031",
+        "PAR-GNET-01"
+      ],
+      "impact": "「実ネットワークと接続先の実体」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "全出力制御サーバ通信は宅内ルータ経由。EL接続PCSは自律取得、RS-485接続PCSはGW G側管理というR5条件を維持する。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-02-02",
+      "question_id": "OQ-R6-02-02",
+      "chapter": 2,
+      "note": "chapters/02_System_Context.md",
+      "group": "設置コンテキストの適用条件",
+      "title": "宅内直接Webとルータ接続の成立条件",
+      "coverage_ids": [
+        "C02",
+        "C12",
+        "C24"
+      ],
+      "fields": [
+        "直接無線方式・AP/STA能力",
+        "Web資産の配置・名前解決",
+        "同時稼働・WAN断・LAN断の利用可能範囲"
+      ],
+      "question": "直接無線Webはどの無線方式を使うか。ルータ接続と同時利用できるか。クラウド断でも利用できる画面と認証条件は何か。",
+      "closure": "直接接続/宅内ルータ/リモートの構成別機能表と到達・再接続の確認方法を定義する。",
+      "proposed_owner_role": "無線・Web・セキュリティ設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "SYS-TBD-014",
+        "SYS-TBD-015",
+        "PAR-UP-08"
+      ],
+      "impact": "「宅内直接Webとルータ接続の成立条件」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-03-01",
+      "question_id": "OQ-R6-03-01",
+      "chapter": 3,
+      "note": "chapters/03_Responsibilities.md",
+      "group": "責務の規範配賦と内部IF",
+      "title": "実装配賦・状態所有者一覧",
+      "coverage_ids": [
+        "C06",
+        "C13"
+      ],
+      "fields": [
+        "論理責務→既存プロセス/新規モジュール",
+        "正本の更新主体・参照先",
+        "起動依存・故障/再起動範囲"
+      ],
+      "question": "Arbiter、Orchestrator、DPC/FLC、Measurement、設定・更新・G側を誰が実装し、どの状態の唯一の更新者となるか。既存Core以外の処理はどこへ配賦するか。",
+      "closure": "論理責務・状態正本・実装配賦表と全実機書込点の対応をレビューする。全責務のCore集約は前提にしない。",
+      "proposed_owner_role": "システム・ソフト構造設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-010",
+        "SYS-TBD-001"
+      ],
+      "impact": "「実装配賦・状態所有者一覧」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-03-02",
+      "question_id": "OQ-R6-03-02",
+      "chapter": 3,
+      "note": "chapters/03_Responsibilities.md",
+      "group": "責務の規範配賦と内部IF",
+      "title": "H内・H/G境界契約の具体項目",
+      "coverage_ids": [
+        "C13"
+      ],
+      "fields": [
+        "メッセージの必須/任意・型・世代",
+        "認可・期限・エラー・互換性",
+        "キュー・応答・再起動中の扱い"
+      ],
+      "question": "H内及びH/G APIの必須項目、エラー体系、旧版互換、頻度・キュー上限をどの契約に固定するか。G側が受ける通常要求の許可リストは何か。",
+      "closure": "Internal IF契約を操作単位で埋め、正規/不正/過負荷/再起動の契約試験条件を定義する。",
+      "proposed_owner_role": "ソフトIF設計・G側設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "TBD-002",
+        "TBD-011",
+        "SYS-TBD-025",
+        "PAR-ISO-01"
+      ],
+      "impact": "「H内・H/G境界契約の具体項目」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-04-01",
+      "question_id": "OQ-R6-04-01",
+      "chapter": 4,
+      "note": "chapters/04_Configurations_Profiles.md",
+      "group": "製品全機能・対応構成マトリクス",
+      "title": "既存・追加・変更・廃止機能の母集団",
+      "coverage_ids": [
+        "C04",
+        "C05"
+      ],
+      "fields": [
+        "機能ID・目的・根拠USDM",
+        "変更区分と採用区分",
+        "Legacy/Next・HW/FW・機器・通信の適用"
+      ],
+      "question": "既存GWの全機能は何か。高度エネマネ追加後に維持・変更・廃止する機能と初回採用機能はどれか。候補ではなく採用済みとできる根拠は何か。",
+      "closure": "機能一覧を既存仕様・コード調査と突合し、候補機能の採否・対象リリース・非対応理由を機能表で承認する。",
+      "proposed_owner_role": "製品企画・既存製品担当",
+      "decision_gate": "G0",
+      "related_ids": [
+        "SYS-TBD-005",
+        "SYS-TBD-011",
+        "TBD-010"
+      ],
+      "impact": "「既存・追加・変更・廃止機能の母集団」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-04-02",
+      "question_id": "OQ-R6-04-02",
+      "chapter": 4,
+      "note": "chapters/04_Configurations_Profiles.md",
+      "group": "製品全機能・対応構成マトリクス",
+      "title": "機器・ソフトウェア・接続の対応組合せ",
+      "coverage_ids": [
+        "C04",
+        "C10"
+      ],
+      "fields": [
+        "メーカー・型式・HW/FW",
+        "読み書き能力・台数・必要計測",
+        "認証構成と対象外組合せ"
+      ],
+      "question": "初回対応するPCS・空調・給湯・計測器・USB機器はどの型式/版か。全機能対応、観測のみ、非対応をどの組合せで保証するか。",
+      "closure": "機器プロファイルと製品構成表に実型式・版・操作・制限・確認資料を登録する。",
+      "proposed_owner_role": "機器接続・製品企画",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-001",
+        "SYS-TBD-024",
+        "SYS-TBD-006"
+      ],
+      "impact": "「機器・ソフトウェア・接続の対応組合せ」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-04-03",
+      "question_id": "OQ-R6-04-03",
+      "chapter": 4,
+      "note": "chapters/04_Configurations_Profiles.md",
+      "group": "探索・登録・接続能力のライフサイクル",
+      "title": "探索・登録・解除・交換・同一性",
+      "coverage_ids": [
+        "C10",
+        "C34"
+      ],
+      "fields": [
+        "探索契機・周期・登録承認",
+        "局番/EOJ変化・重複・多重IF",
+        "交換・解除時の権威/履歴/接続の処理"
+      ],
+      "question": "探索した機器をいつ登録し、書込を許すか。交換・アドレス変更・多重IF・GW仮想EL公開をどう識別し、旧要求と履歴を扱うか。",
+      "closure": "探索/登録/交換/解除のUCと重複判定・書込解禁条件を定義し、旧設定移行の判定例を用意する。",
+      "proposed_owner_role": "機器接続・施工・データ設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-007",
+        "SYS-TBD-034",
+        "SYS-TBD-004"
+      ],
+      "impact": "「探索・登録・解除・交換・同一性」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-05-01",
+      "question_id": "OQ-R6-05-01",
+      "chapter": 5,
+      "note": "chapters/05_Control_Contracts.md",
+      "group": "操作別の調停と実行確定条件",
+      "title": "優先関係・同順位・取消し・並行実行",
+      "coverage_ids": [
+        "C07",
+        "C13"
+      ],
+      "fields": [
+        "主体×操作×競合scope",
+        "同順位・部分許可・Lease",
+        "取消し・補償・最後の送信境界"
+      ],
+      "question": "利用者、本体操作、各クラウド、既存運転、高度エネマネが競合するとき、操作別の優先順位と同順位処理をどう決めるか。途中実行の取消しをどこまで保証するか。",
+      "closure": "通常操作の優先表、同時実行許可表、要求失効と補償の決定表を機器能力と対応付ける。",
+      "proposed_owner_role": "制御設計・製品企画",
+      "decision_gate": "G2",
+      "related_ids": [
+        "TBD-009",
+        "TBD-007",
+        "PAR-AUTH-01"
+      ],
+      "impact": "「優先関係・同順位・取消し・並行実行」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-05-02",
+      "question_id": "OQ-R6-05-02",
+      "chapter": 5,
+      "note": "chapters/05_Control_Contracts.md",
+      "group": "操作別の調停と実行確定条件",
+      "title": "結果・確認窓・不明状態の終端",
+      "coverage_ids": [
+        "C07",
+        "C22"
+      ],
+      "fields": [
+        "受理/送信/機器受理/達成の条件",
+        "許容差・評価窓・理由の根拠",
+        "Unknownの再確認・終端・通知"
+      ],
+      "question": "各操作の達成をどの計測点・許容差・確認時間で判定するか。応答や観測がない場合にUnknownを何時まで保持し、何を利用者へ返すか。",
+      "closure": "操作別結果判定表とUnknownの再照合・終端方針を定義し、APIとUIの同一意味を確認する。",
+      "proposed_owner_role": "制御・測定・UI設計",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-008",
+        "TBD-008",
+        "PAR-RESULT-01",
+        "PAR-RESULT-02"
+      ],
+      "impact": "「結果・確認窓・不明状態の終端」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-06-01",
+      "question_id": "OQ-R6-06-01",
+      "chapter": 6,
+      "note": "chapters/06_Usecases.md",
+      "group": "全機能の正常・代替・異常シナリオ",
+      "title": "機能とUCの双方向対応",
+      "coverage_ids": [
+        "C05",
+        "C08",
+        "C32"
+      ],
+      "fields": [
+        "機能IDとUC ID",
+        "入力・トリガー・開始/終了・前後状態",
+        "正常/代替/異常/取消しと結果通知"
+      ],
+      "question": "採用した全機能に代表UCがあるか。既存RS-485監視、内部操作、設定、FW、各EMS戦略に未記載の正常・異常系列はないか。",
+      "closure": "機能→UC→SYS→確認方法の双方向表を完成し、各UCに前提・結果・例外を記載する。",
+      "proposed_owner_role": "要求・システム設計・テスト設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-011"
+      ],
+      "impact": "「機能とUCの双方向対応」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-06-02",
+      "question_id": "OQ-R6-06-02",
+      "chapter": 6,
+      "note": "chapters/06_Usecases.md",
+      "group": "全機能の正常・代替・異常シナリオ",
+      "title": "横断条件・同時事象・利用場面",
+      "coverage_ids": [
+        "C02",
+        "C08",
+        "C09"
+      ],
+      "fields": [
+        "更新中の出力制御と設定変更",
+        "初回起動・施工と監視",
+        "通信断・権威交代・再接続の順序"
+      ],
+      "question": "クラウド設定と宅内操作、FW更新と系統スケジュール切替、機器離脱と再計画が同時に発生したとき、どの系列を受入対象にするか。",
+      "closure": "横断シナリオ表を作成し、担当・順序・観測・タイムアウト・失敗後状態を指定する。",
+      "proposed_owner_role": "システム・結合テスト設計",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-009",
+        "SYS-TBD-018",
+        "SYS-TBD-032"
+      ],
+      "impact": "「横断条件・同時事象・利用場面」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-07-01",
+      "question_id": "OQ-R6-07-01",
+      "chapter": 7,
+      "note": "chapters/07_DER_Connections.md",
+      "group": "方式別の規範接続仕様",
+      "title": "RS-485電文・接続条件・送信所有権",
+      "coverage_ids": [
+        "C10",
+        "C12",
+        "C13"
+      ],
+      "fields": [
+        "PCS仕様名/版・電気条件・局番",
+        "電文・応答意味・操作順序",
+        "必須系統通信との共存・再試行"
+      ],
+      "question": "既存PCSの実プロトコル、電文/レジスタ、応答の意味、局数・配線条件は何か。通常操作とG側必須通信をどの送信者・予算で管理するか。",
+      "closure": "PCS別接続仕様の版と電文対応を確定し、RS-485全書込点・最終送信境界・通信負荷表を登録する。",
+      "proposed_owner_role": "PCSメーカー・GW通信設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-001",
+        "SYS-TBD-002",
+        "PAR-RS-01",
+        "PAR-RS-02",
+        "PAR-CMD-03"
+      ],
+      "impact": "「RS-485電文・接続条件・送信所有権」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-07-02",
+      "question_id": "OQ-R6-07-02",
+      "chapter": 7,
+      "note": "chapters/07_DER_Connections.md",
+      "group": "方式別の規範接続仕様",
+      "title": "ECHONET Lite Controller/Deviceの対象能力",
+      "coverage_ids": [
+        "C10",
+        "C12"
+      ],
+      "fields": [
+        "機器クラス/EOJ・採用版・プロパティマップ",
+        "Set/Get/通知と確認系列",
+        "仮想公開と実機資源の対応"
+      ],
+      "question": "機器ごとのEL/AIF版・実装プロパティ・更新間隔は何か。GWのDevice側は何を公開し、RS-485資源や他社PCSとの対応と不可応答をどう定義するか。",
+      "closure": "対応するEL機器と操作・観測表を埋め、Controller/Device共存、公開能力の上限、未対応応答を確認する。",
+      "proposed_owner_role": "ECHONET Lite・機器接続設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-004",
+        "TBD-008",
+        "PAR-EL-01"
+      ],
+      "impact": "「ECHONET Lite Controller/Deviceの対象能力」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-07-03",
+      "question_id": "OQ-R6-07-03",
+      "chapter": 7,
+      "note": "chapters/07_DER_Connections.md",
+      "group": "方式別の規範接続仕様",
+      "title": "IPv4/IPv6・Wi-SUN・USB等の持越し要求",
+      "coverage_ids": [
+        "C12",
+        "C34"
+      ],
+      "fields": [
+        "採用媒体・USBドングル型式と利用目的",
+        "経路バインド・認証文脈・優先度",
+        "抜去・ハング・再挿入・復旧"
+      ],
+      "question": "IPv4/IPv6、Wi-SUN、USB通信ドングル、USBバックアップ等をどの製品で採用するか。経路優先度、抜去・ハング時動作、認証あり/なし混在をどう規定するか。",
+      "closure": "持越し要求を採用/対象外へ仕分け、採用品の媒体・型式・状態遷移・資源上限を接続プロファイルへ登録する。",
+      "proposed_owner_role": "通信・組込み・製品企画",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-012",
+        "SYS-TBD-006",
+        "SYS-TBD-010"
+      ],
+      "impact": "「IPv4/IPv6・Wi-SUN・USB等の持越し要求」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-08-01",
+      "question_id": "OQ-R6-08-01",
+      "chapter": 8,
+      "note": "chapters/08_Advanced_EMS_Loads.md",
+      "group": "採用戦略の機能別仕様",
+      "title": "高度エネマネ戦略の採否・適用・解除",
+      "coverage_ids": [
+        "C05",
+        "C11"
+      ],
+      "fields": [
+        "自家消費・購入電力・料金・期限の候補",
+        "必要Capability・入力品質",
+        "開始・停止・手動介入・再開"
+      ],
+      "question": "自家消費、料金、ピーク、充電期限のどの戦略を初回採用するか。機器構成・入力欠損・手動変更に応じた開始/解除/再開条件は何か。",
+      "closure": "戦略ごとの採否と機能仕様を機能表・UCへ展開し、入力/結果/異常分岐の未定を除く。",
+      "proposed_owner_role": "エネルギーマネジメント・製品企画",
+      "decision_gate": "G0",
+      "related_ids": [
+        "SYS-TBD-005",
+        "SYS-TBD-010",
+        "TBD-001"
+      ],
+      "impact": "「高度エネマネ戦略の採否・適用・解除」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-08-02",
+      "question_id": "OQ-R6-08-02",
+      "chapter": 8,
+      "note": "chapters/08_Advanced_EMS_Loads.md",
+      "group": "採用戦略の機能別仕様",
+      "title": "予測・計画・目標未達の扱い",
+      "coverage_ids": [
+        "C11",
+        "C22",
+        "C32"
+      ],
+      "fields": [
+        "料金/発電/需要予測の供給元と鮮度",
+        "目的・制約・計画期間",
+        "解なし・期限超過・再計画・評価"
+      ],
+      "question": "採用戦略の予測データ・料金データはどこから取得し、どの品質まで使うか。最適解が得られない/期限に間に合わない場合、どの代替動作と通知にするか。",
+      "closure": "戦略入力辞書、計画・再計画条件、未達時動作、評価シナリオと受入指標を確定する。",
+      "proposed_owner_role": "EMS・データ・テスト設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "PAR-PLAN-01",
+        "PAR-MEAS-02",
+        "SYS-TBD-006"
+      ],
+      "impact": "「予測・計画・目標未達の扱い」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-08-03",
+      "question_id": "OQ-R6-08-03",
+      "chapter": 8,
+      "note": "chapters/08_Advanced_EMS_Loads.md",
+      "group": "採用戦略の機能別仕様",
+      "title": "DER/負荷の個別操作と快適性条件",
+      "coverage_ids": [
+        "C11",
+        "C26"
+      ],
+      "fields": [
+        "蓄電池/PV/給湯/空調/充電の採用操作",
+        "機器側安全・本体設定・温度/SoC",
+        "不在機器・残留操作・利用者優先"
+      ],
+      "question": "空調・給湯・蓄電池等の何を操作するか。設定範囲、快適性、終了時の運転残留、本体操作尊重を機種別にどう制約するか。",
+      "closure": "DPC/FLCの操作別機能表を機器プロファイルと安全評価へ対応付け、未対応機能を実装済みと扱わない。",
+      "proposed_owner_role": "機器制御・製品安全",
+      "decision_gate": "G2",
+      "related_ids": [
+        "TBD-007",
+        "TBD-009",
+        "TBD-001"
+      ],
+      "impact": "「DER/負荷の個別操作と快適性条件」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-09-01",
+      "question_id": "OQ-R6-09-01",
+      "chapter": 9,
+      "note": "chapters/09_Measurement_Data.md",
+      "group": "計測・状態のデータ辞書",
+      "title": "実項目・型・単位・品質・計測点",
+      "coverage_ids": [
+        "C14",
+        "C22"
+      ],
+      "fields": [
+        "取得/算出/推定の別と元データ",
+        "型・値域・符号・精度・丸め",
+        "更新時刻・鮮度・欠測・Unknown"
+      ],
+      "question": "公開・保存・制御利用する全データ項目は何か。AC/DC、電力/電力量、符号・精度・時刻・欠測・推定の表現をどう統一するか。",
+      "closure": "実項目ごとの辞書に型・単位・基準点・所有者・品質・利用先を記入し、二重計上をレビューする。",
+      "proposed_owner_role": "計測・データ・制御設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "TBD-006",
+        "SYS-TBD-010",
+        "PAR-MEAS-01",
+        "PAR-MEAS-02"
+      ],
+      "impact": "「実項目・型・単位・品質・計測点」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-09-02",
+      "question_id": "OQ-R6-09-02",
+      "chapter": 9,
+      "note": "chapters/09_Measurement_Data.md",
+      "group": "保存・同期・抽出の規範契約",
+      "title": "保存容量・集計・電断時完全性",
+      "coverage_ids": [
+        "C15",
+        "C22",
+        "C23"
+      ],
+      "fields": [
+        "短期/長期/監査の集合と保持期間",
+        "集計境界・積算リセット・欠測補間",
+        "電断損失・書込み寿命・満杯時"
+      ],
+      "question": "どの項目をどの粒度/期間保存するか。電断で許す損失、積算リセット・機器交換、容量枯渇時の削除・警報はどうするか。",
+      "closure": "用途別保持表、容量・寿命計算、電断/満杯/時刻補正の期待結果を定義する。",
+      "proposed_owner_role": "データ・組込み・製品運用",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-010",
+        "TBD-014",
+        "PAR-DATA-01",
+        "PAR-DATA-02"
+      ],
+      "impact": "「保存容量・集計・電断時完全性」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-09-03",
+      "question_id": "OQ-R6-09-03",
+      "chapter": 9,
+      "note": "chapters/09_Measurement_Data.md",
+      "group": "保存・同期・抽出の規範契約",
+      "title": "上位同期・履歴エクスポート・削除",
+      "coverage_ids": [
+        "C15",
+        "C21"
+      ],
+      "fields": [
+        "上位/端末/GWの正本と参照",
+        "順序・重複・再同期・ページング",
+        "抽出形式・アクセス・削除・匿名化適用"
+      ],
+      "question": "オフライン中の履歴を何件/期間保持し、上位とどう整合するか。利用者へ出せる項目・形式と、修理/所有者変更で消す範囲は何か。",
+      "closure": "同期・抽出・消去仕様をデータ項目単位で確定し、欠測と取得不能をデータ0としないテストを定める。",
+      "proposed_owner_role": "クラウド・データ・プライバシー担当",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-019",
+        "SYS-TBD-023",
+        "TBD-014",
+        "PAR-UP-06",
+        "PAR-UP-07"
+      ],
+      "impact": "「上位同期・履歴エクスポート・削除」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-10-01",
+      "question_id": "OQ-R6-10-01",
+      "chapter": 10,
+      "note": "chapters/10_Grid_Protection.md",
+      "group": "適用する系統接続契約の具体化",
+      "title": "エリア・契約・スケジュール仕様の版",
+      "coverage_ids": [
+        "C17",
+        "C31"
+      ],
+      "fields": [
+        "一般送配電事業者・設備scope・容量基準",
+        "正式伝送仕様・取得/保持/時刻",
+        "期限切れと必須通信異常"
+      ],
+      "question": "対象エリア・連系契約・設備範囲・正式仕様の版は何か。取得・保持・適用・期限切れ・通信異常時の値と条件は何か。",
+      "closure": "選択方式ごとの系統接続プロファイルに正式資料・適用範囲・値・確認者を登録する。",
+      "proposed_owner_role": "系統連系担当・PCSメーカー",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-003",
+        "TBD-004",
+        "PAR-GRID-01",
+        "PAR-GRID-02",
+        "PAR-GSEL-02"
+      ],
+      "impact": "「エリア・契約・スケジュール仕様の版」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-10-02",
+      "question_id": "OQ-R6-10-02",
+      "chapter": 10,
+      "note": "chapters/10_Grid_Protection.md",
+      "group": "適用する系統接続契約の具体化",
+      "title": "通常API非迂回・保護・復帰の確認",
+      "coverage_ids": [
+        "C17",
+        "C26"
+      ],
+      "fields": [
+        "許可通常モードと禁止操作",
+        "制約強制・独立計測・保護の主体",
+        "H停止/G停止/WAN断時の成立条件"
+      ],
+      "question": "対象PCSの通常操作で出力制約や保護を上書きできない根拠は何か。独立計測・保護復帰・必要通信を誰が担い、H停止時に何を維持するか。",
+      "closure": "メーカー説明・機能分担・許可操作・適用評価の記録をそろえ、必要な受入条件を第17章へ配賦する。",
+      "proposed_owner_role": "PCSメーカー・G側・安全設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-002",
+        "TBD-006",
+        "SYS-TBD-003",
+        "PAR-GRID-03",
+        "PAR-GSEL-03"
+      ],
+      "impact": "「通常API非迂回・保護・復帰の確認」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-11-01",
+      "question_id": "OQ-R6-11-01",
+      "chapter": 11,
+      "note": "chapters/11_Power_Constraints.md",
+      "group": "電力モデルの適用プロファイル",
+      "title": "基準点・容量・変換グループの対応",
+      "coverage_ids": [
+        "C14",
+        "C17"
+      ],
+      "fields": [
+        "物理配線・計測点・AC/DC",
+        "機器定格/契約容量/PCS共用容量",
+        "量・符号・scope・損失"
+      ],
+      "question": "制約と計測の基準点はどこか。PV/蓄電池/Hybrid PCSの共有容量と契約容量をどの配線図・機器仕様へ対応付けるか。",
+      "closure": "配線図、制約表、データ辞書を同じ資源ID・基準点で突合し、合算/非合算の対象を確定する。",
+      "proposed_owner_role": "電力・計測・施工設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-003",
+        "TBD-006",
+        "PAR-GRID-05"
+      ],
+      "impact": "「基準点・容量・変換グループの対応」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-11-02",
+      "question_id": "OQ-R6-11-02",
+      "chapter": 11,
+      "note": "chapters/11_Power_Constraints.md",
+      "group": "電力モデルの適用プロファイル",
+      "title": "混在設備・過渡・実出力の合否",
+      "coverage_ids": [
+        "C17",
+        "C22",
+        "C32"
+      ],
+      "fields": [
+        "複数PCS・取得主体・連系点全体",
+        "負荷離脱・通信遅延・応動",
+        "許容差・評価窓・独立強制"
+      ],
+      "question": "異なる取得主体のPCSが同じ連系点にある場合、誰が全体制約を強制するか。負荷急変時に使う評価窓・許容差・応答条件と対応外組合せは何か。",
+      "closure": "混在構成の成立/非対応表、過渡評価プロファイル、必要な計測・強制経路を確定する。",
+      "proposed_owner_role": "電力制御・PCSメーカー・評価担当",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-030",
+        "TBD-005",
+        "PAR-GRID-04"
+      ],
+      "impact": "「混在設備・過渡・実出力の合否」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-12-01",
+      "question_id": "OQ-R6-12-01",
+      "chapter": 12,
+      "note": "chapters/12_Configuration_Lifecycle.md",
+      "group": "全体状態遷移と機能許可",
+      "title": "起動完了・未登録・縮退・停止",
+      "coverage_ids": [
+        "C09",
+        "C29"
+      ],
+      "fields": [
+        "電源投入・H/G・時計・設定・機器の状態軸",
+        "状態別の表示/観測/設定/制御許可",
+        "ガード・タイムアウト・失敗後状態"
+      ],
+      "question": "工場初期、未登録、時刻無効、PCS不在、H/G片側未起動で、各機能をいつ開始してよいか。起動完了条件と待ち期限・失敗後の動作は何か。",
+      "closure": "状態遷移表と状態×操作許可表を埋め、初回/通常/縮退起動・停止系列をレビューする。",
+      "proposed_owner_role": "システム・起動/復旧設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-005",
+        "SYS-TBD-025",
+        "PAR-CFG-01"
+      ],
+      "impact": "「起動完了・未登録・縮退・停止」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-12-02",
+      "question_id": "OQ-R6-12-02",
+      "chapter": 12,
+      "note": "chapters/12_Configuration_Lifecycle.md",
+      "group": "設定項目・反映・復元の規範一覧",
+      "title": "設定キー・型・範囲・既定値・権限",
+      "coverage_ids": [
+        "C16",
+        "C13"
+      ],
+      "fields": [
+        "設定項目ID・名称・型・単位・範囲",
+        "工場既定/ユーザー値/保存値/有効値",
+        "権限・機種条件・再起動要否"
+      ],
+      "question": "製品が管理する全設定キーと既定値は何か。製造/施工/通常/系統保守の変更権限と、機能・機種別の有効条件は何か。",
+      "closure": "設定項目一覧へ実キー・型・範囲・既定値・保存先・変更条件を登録し、G側項目を一般H設定から区別する。",
+      "proposed_owner_role": "設定・製品企画・セキュリティ",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-009",
+        "SYS-TBD-017",
+        "SYS-TBD-026"
+      ],
+      "impact": "「設定キー・型・範囲・既定値・権限」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-12-03",
+      "question_id": "OQ-R6-12-03",
+      "chapter": 12,
+      "note": "chapters/12_Configuration_Lifecycle.md",
+      "group": "設定項目・反映・復元の規範一覧",
+      "title": "同時変更・部分反映・緊急変更",
+      "coverage_ids": [
+        "C09",
+        "C16"
+      ],
+      "fields": [
+        "期待世代・変更scope・所有者",
+        "保留/拒否/反映時点・緊急復旧",
+        "部分適用・再起動・不一致表示"
+      ],
+      "question": "同時変更や高優先度運転中の設定を、何秒/どの状態まで保留するか。緊急復旧で割り込める操作と部分反映の回復手順は何か。",
+      "closure": "操作別の反映条件、世代競合、保留期限、部分反映・緊急変更の決定表と確認方法を確定する。",
+      "proposed_owner_role": "設定・制御・運用設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-009",
+        "SYS-TBD-021",
+        "PAR-CFG-01",
+        "PAR-UP-09"
+      ],
+      "impact": "「同時変更・部分反映・緊急変更」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-12-04",
+      "question_id": "OQ-R6-12-04",
+      "chapter": 12,
+      "note": "chapters/12_Configuration_Lifecycle.md",
+      "group": "設定項目・反映・復元の規範一覧",
+      "title": "バックアップ・工場初期化・移行",
+      "coverage_ids": [
+        "C16",
+        "C30",
+        "C34"
+      ],
+      "fields": [
+        "バックアップ対象/除外・形式・版",
+        "工場初期化/設定リセット/秘密消去の区別",
+        "交換・旧版復元・失敗時ロールバック"
+      ],
+      "question": "一般設定バックアップと初期化で何を保存・削除するか。G側FW/時計/設定/資格情報をどう除外し、異機種・旧版への復元をどう判定するか。",
+      "closure": "対象項目と版互換表、初期化種別、復元前検査・失敗後状態を定義し、製造・廃棄と整合させる。",
+      "proposed_owner_role": "設定・更新・保守設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-018",
+        "SYS-TBD-023",
+        "SYS-TBD-034"
+      ],
+      "impact": "「バックアップ・工場初期化・移行」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-13-01",
+      "question_id": "OQ-R6-13-01",
+      "chapter": 13,
+      "note": "chapters/13_Fault_Recovery_OTA.md",
+      "group": "障害コードと復旧の完了条件",
+      "title": "検出閾値・重大度・復帰・再発",
+      "coverage_ids": [
+        "C18",
+        "C19"
+      ],
+      "fields": [
+        "障害ID・位置・検出条件",
+        "H/G・LAN/WAN・PCS・上位の影響",
+        "再試行・復帰ガード・再発時抑止"
+      ],
+      "question": "全故障の検出条件・復帰条件・再試行の上限は何か。同じ故障の頻発、正常応答の一時回復、遅延応答をどう扱うか。",
+      "closure": "故障・警報対応表と復旧の決定表を作り、各閾値と通知・試験IDを結び付ける。",
+      "proposed_owner_role": "信頼性・組込み・運用設計",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-008",
+        "SYS-TBD-032",
+        "PAR-CMD-04",
+        "PAR-GNET-02"
+      ],
+      "impact": "「検出閾値・重大度・復帰・再発」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-13-02",
+      "question_id": "OQ-R6-13-02",
+      "chapter": 13,
+      "note": "chapters/13_Fault_Recovery_OTA.md",
+      "group": "障害コードと復旧の完了条件",
+      "title": "更新中断・起動不能・実機残留要求",
+      "coverage_ids": [
+        "C18",
+        "C20",
+        "C23"
+      ],
+      "fields": [
+        "更新の段階と停止範囲",
+        "電断・破損・旧版復帰・起動確認",
+        "通常要求の機器内保持と再認可"
+      ],
+      "question": "FW適用中断や起動不能から何を条件に復旧するか。H/G更新範囲、復帰先版、残る機器指令と保存データの処置は何か。",
+      "closure": "更新・復旧プロファイルと各障害点の期待状態を確定する。A/B領域等の方式は資料確認なく採用しない。",
+      "proposed_owner_role": "更新・G側・保守設計",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-018",
+        "TBD-007",
+        "PAR-UP-10",
+        "PAR-UP-12"
+      ],
+      "impact": "「更新中断・起動不能・実機残留要求」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-14-01",
+      "question_id": "OQ-R6-14-01",
+      "chapter": 14,
+      "note": "chapters/14_Performance_Security.md",
+      "group": "定量保証の測定条件",
+      "title": "機能別の時間・精度・容量プロファイル",
+      "coverage_ids": [
+        "C22"
+      ],
+      "fields": [
+        "測定開始/終了・対象操作・同時台数",
+        "平均/最大/分位と測定窓の採否",
+        "閾値・根拠・測定設備・判定"
+      ],
+      "question": "1秒要求の対象と保証段階、接続台数、最悪負荷、遅延・精度・許容差は何か。どの測定点・統計条件で合否を判定するか。",
+      "closure": "50件の既存パラメータを必要な個別値へ展開し、構成・閾値・根拠・測定・判定を同じプロファイルへ固定する。",
+      "proposed_owner_role": "性能・制御・品質保証",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-006",
+        "SYS-TBD-020",
+        "PAR-PLAN-01",
+        "PAR-CMD-01",
+        "PAR-CMD-02"
+      ],
+      "impact": "「機能別の時間・精度・容量プロファイル」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-14-02",
+      "question_id": "OQ-R6-14-02",
+      "chapter": 14,
+      "note": "chapters/14_Performance_Security.md",
+      "group": "定量保証の測定条件",
+      "title": "同時最大負荷・上限・飽和動作",
+      "coverage_ids": [
+        "C22",
+        "C23"
+      ],
+      "fields": [
+        "Web/クラウド/診断/FW/EL/RS-485負荷",
+        "CPU/メモリ/バス/保存/ルータ予算",
+        "制限・棄却・復旧・G側期限"
+      ],
+      "question": "監視、FW取得、再接続、履歴抽出、通常EL操作を同時実行する最大条件は何か。予算超過時に何を制限し、どのG側期限を守るか。",
+      "closure": "資源予算と過負荷時動作表を作成し、対象ルータ条件を含めた合成負荷試験の受入条件を定義する。",
+      "proposed_owner_role": "性能・ネットワーク・G側設計",
+      "decision_gate": "G3",
+      "related_ids": [
+        "TBD-011",
+        "SYS-TBD-032",
+        "PAR-ISO-01",
+        "PAR-UP-11",
+        "PAR-GNET-03"
+      ],
+      "impact": "「同時最大負荷・上限・飽和動作」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-15-01",
+      "question_id": "OQ-R6-15-01",
+      "chapter": 15,
+      "note": "chapters/15_Deployment_Isolation.md",
+      "group": "分離配置と非干渉根拠の確定",
+      "title": "G側実装と共有資源の依存表",
+      "coverage_ids": [
+        "C06",
+        "C13",
+        "C17"
+      ],
+      "fields": [
+        "CPU/OS/NIC/電源/reset/時計/保存/driver",
+        "PCS必須指令・計測・ポート所有",
+        "H限定停止とGW電断の区別"
+      ],
+      "question": "GW_MANAGEDのG側を実際にどこへ配置するか。H側停止・更新に共倒れする資源は何か。独立通常チャネルを採用するなら非迂回を何で確認するか。",
+      "closure": "配備・依存・更新単位・故障注入点の台帳を実HW/OS/PCS資料で埋め、成立と未達を分類する。",
+      "proposed_owner_role": "HW・OS・G側・既存製品担当",
+      "decision_gate": "G1",
+      "related_ids": [
+        "SYS-TBD-003",
+        "SYS-TBD-025",
+        "TBD-011"
+      ],
+      "impact": "「G側実装と共有資源の依存表」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-15-02",
+      "question_id": "OQ-R6-15-02",
+      "chapter": 15,
+      "note": "chapters/15_Deployment_Isolation.md",
+      "group": "分離配置と非干渉根拠の確定",
+      "title": "非干渉評価の範囲と根拠文書",
+      "coverage_ids": [
+        "C17",
+        "C23",
+        "C31"
+      ],
+      "fields": [
+        "通常要求の許可入力集合",
+        "停止/過負荷/更新/共有故障",
+        "基準構成・比較対象・説明責任"
+      ],
+      "question": "非干渉を説明する入力・負荷・故障条件と比較Baselineは何か。共有ルータ・電源・OS変更をどの評価へ含め、誰が判断するか。",
+      "closure": "前提条件、各変更区分、必要な資料と試験の一覧をメーカー/評価担当と整理する。試験免除の確約にはしない。",
+      "proposed_owner_role": "品質・認証担当・G側設計",
+      "decision_gate": "G3",
+      "related_ids": [
+        "TBD-013",
+        "SYS-TBD-032",
+        "PAR-GSEL-05"
+      ],
+      "impact": "「非干渉評価の範囲と根拠文書」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-16-01",
+      "question_id": "OQ-R6-16-01",
+      "chapter": 16,
+      "note": "chapters/16_Certification_Change.md",
+      "group": "適用規格・制度・認証の体系",
+      "title": "文書版・条項・要求・証拠の対応",
+      "coverage_ids": [
+        "C03",
+        "C31"
+      ],
+      "fields": [
+        "JET・EL/AIF・JC-STAR・高度エネマネ制度",
+        "製品安全/無線/EMC等の適用判定",
+        "条項・要求・評価証拠・変更条件"
+      ],
+      "question": "対象製品の規格・制度・地域・適用版・条項は何か。採用、対象外、未確認を誰がどの資料で判断し、SYS要求と証拠をどう対応付けるか。",
+      "closure": "適用文書表と条項→SYS→評価証拠の対応を承認する。公開最新版を既設適用版へ自動転記しない。",
+      "proposed_owner_role": "品質・認証・製品企画",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-004",
+        "SYS-TBD-010",
+        "SYS-TBD-027"
+      ],
+      "impact": "「文書版・条項・要求・証拠の対応」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-16-02",
+      "question_id": "OQ-R6-16-02",
+      "chapter": 16,
+      "note": "chapters/16_Certification_Change.md",
+      "group": "適用規格・制度・認証の体系",
+      "title": "変更手続きと社内リリース判定",
+      "coverage_ids": [
+        "C20",
+        "C31",
+        "C34"
+      ],
+      "fields": [
+        "申請主体・メーカー・社内承認者",
+        "通常/境界/認証影響変更",
+        "必要手続き・証拠・未解決時保留"
+      ],
+      "question": "H/G、機器FW、ルータ条件、外部API変更をどの基準で分類するか。メーカー・JET等への相談要否と製品リリースの承認者・必要証拠は何か。",
+      "closure": "製品別の変更判定表と承認経路を記録し、社内合格・認証判断・配布承認を独立に追跡する。",
+      "proposed_owner_role": "品質保証・認証申請主体・リリース担当",
+      "decision_gate": "G4",
+      "related_ids": [
+        "TBD-013",
+        "SYS-TBD-027",
+        "SYS-TBD-023"
+      ],
+      "impact": "「変更手続きと社内リリース判定」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-17-01",
+      "question_id": "OQ-R6-17-01",
+      "chapter": 17,
+      "note": "chapters/17_Verification.md",
+      "group": "仕様検証と利用目的の妥当性確認",
+      "title": "全要求の検証方法と受入プロファイル",
+      "coverage_ids": [
+        "C22",
+        "C32",
+        "C33"
+      ],
+      "fields": [
+        "試験/解析/検査/実演・割当",
+        "対象版・状態・測定・数値・許容差",
+        "PASS/FAIL/対象外/不明の基準"
+      ],
+      "question": "既存69試験と追加項目を、どの構成と数値で判定するか。試験以外の確認方法を含め、要求ごとの合否基準と評価責任者は誰か。",
+      "closure": "受入プロファイルを実条件で記入し、各SYS/補完項目→方法→成果物の対応を完成する。実施状態はNOT_RUNと別管理する。",
+      "proposed_owner_role": "品質保証・試験設計・要求責任者",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-011",
+        "SYS-TBD-006"
+      ],
+      "impact": "「全要求の検証方法と受入プロファイル」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-17-02",
+      "question_id": "OQ-R6-17-02",
+      "chapter": 17,
+      "note": "chapters/17_Verification.md",
+      "group": "仕様検証と利用目的の妥当性確認",
+      "title": "利用者目的に対するValidation",
+      "coverage_ids": [
+        "C02",
+        "C05",
+        "C32"
+      ],
+      "fields": [
+        "利用場面と期待成果",
+        "入力住宅条件・機器能力・失敗の説明",
+        "省エネ/快適性/監視操作の成功指標"
+      ],
+      "question": "自家消費、充電期限、快適性、監視・操作について、どの住宅条件とシナリオで利用目的の達成を確認するか。未達や制限の説明が適切なことをどう判定するか。",
+      "closure": "目的別Validationシナリオを製品企画・利用者代表の確認へ回し、指標・条件・受入者を決める。",
+      "proposed_owner_role": "製品企画・利用者代表・QA",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-005",
+        "SYS-TBD-011"
+      ],
+      "impact": "「利用者目的に対するValidation」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-17-03",
+      "question_id": "OQ-R6-17-03",
+      "chapter": 17,
+      "note": "chapters/17_Verification.md",
+      "group": "仕様検証と利用目的の妥当性確認",
+      "title": "補完項目の評価配賦と適用除外",
+      "coverage_ids": [
+        "C23",
+        "C25",
+        "C26",
+        "C27",
+        "C28",
+        "C29",
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "fields": [
+        "新設HW/環境/安全/製造/保守の確認方法",
+        "安全設備/試験体/参照証拠",
+        "対象外の理由・承認・残留課題"
+      ],
+      "question": "新設章の各項を試験、解析、文書検査のどれで確認するか。社外評価・施工確認・寿命根拠の担当と対象外承認をどう定めるか。",
+      "closure": "新規受入計画を既存69件と重複なく配賦し、方法・環境・安全前提・対象外理由を登録する。実行手順の危険な代用はしない。",
+      "proposed_owner_role": "QA・製品安全・製造/施工担当",
+      "decision_gate": "G3",
+      "related_ids": [],
+      "impact": "「補完項目の評価配賦と適用除外」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-18-01",
+      "question_id": "OQ-R6-18-01",
+      "chapter": 18,
+      "note": "chapters/18_Migration.md",
+      "group": "既存仕様・持越し・互換性の閉鎖",
+      "title": "As-Is確認と新旧製品への機能配賦",
+      "coverage_ids": [
+        "C04",
+        "C05",
+        "C34"
+      ],
+      "fields": [
+        "既存仕様/コード/機能と変更点",
+        "Legacy/Next別の制限",
+        "USB/Wi-SUN/Device役割等の持越し"
+      ],
+      "question": "As-Isのどの機能・通信・設定・挙動を維持するか。Legacyへ戻せない機能や、未確認の持越し項目をどの製品で対象外にするか。",
+      "closure": "既存機能母集団と完全なTo-Beの適用表を突合し、差分だけを正本にしない移行方針を確定する。",
+      "proposed_owner_role": "既存製品・移行設計・製品企画",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-010",
+        "SYS-TBD-005",
+        "SYS-TBD-010"
+      ],
+      "impact": "「As-Is確認と新旧製品への機能配賦」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-18-02",
+      "question_id": "OQ-R6-18-02",
+      "chapter": 18,
+      "note": "chapters/18_Migration.md",
+      "group": "既存仕様・持越し・互換性の閉鎖",
+      "title": "版互換・設定移行・旧経路停止",
+      "coverage_ids": [
+        "C20",
+        "C30",
+        "C34"
+      ],
+      "fields": [
+        "GW/Web/API/クラウド/アプリ/PCS版",
+        "設定/履歴/ID/所有者情報の移行",
+        "切戻し・不互換・多重書込の排除"
+      ],
+      "question": "どの新旧版の組合せとデータ移行をサポートするか。旧Pollerと新経路の書込権移譲、旧R3 mode設定、切戻し時の適合をどう確認するか。",
+      "closure": "版互換表、移行前条件、変換/拒否規則、旧経路停止確認と復帰手順を定義する。",
+      "proposed_owner_role": "移行・更新・クラウド/機器IF設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-023",
+        "SYS-TBD-034",
+        "SYS-TBD-007",
+        "PAR-UP-16"
+      ],
+      "impact": "「版互換・設定移行・旧経路停止」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-19-01",
+      "question_id": "OQ-R6-19-01",
+      "chapter": 19,
+      "note": "chapters/19_Open_Issues_Sources.md",
+      "group": "要求属性とOpen Questionの解消管理",
+      "title": "上位USDMと双方向トレーサビリティ",
+      "coverage_ids": [
+        "C03",
+        "C33"
+      ],
+      "fields": [
+        "上位要求ID・理由・優先度・配賦",
+        "SYS/項目/設計/検証の対応",
+        "対象外・承認状態・版"
+      ],
+      "question": "正式USDMの正本・IDは何か。124件のSYSと今回の補完項目を誰が要求へ対応付け、重複・不足・対象外を承認するか。",
+      "closure": "USDM→機能→SYS/補完項目→設計→検証の対応を版付きで完成し、未記入を適合扱いしない。",
+      "proposed_owner_role": "要求責任者・製品承認者",
+      "decision_gate": "G0",
+      "related_ids": [
+        "SYS-TBD-011"
+      ],
+      "impact": "「上位USDMと双方向トレーサビリティ」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-19-02",
+      "question_id": "OQ-R6-19-02",
+      "chapter": 19,
+      "note": "chapters/19_Open_Issues_Sources.md",
+      "group": "要求属性とOpen Questionの解消管理",
+      "title": "OQの責任者・期限・決定ゲート",
+      "coverage_ids": [
+        "C33"
+      ],
+      "fields": [
+        "担当者と協議相手",
+        "実日付/相対ゲート/判断待ち依存",
+        "回答・根拠・決定・本文反映・再レビュー"
+      ],
+      "question": "各OQの実担当者、回答期限、提案G0〜G4の採否と正式レビュー日をどう定めるか。未決のまま許される作業と停止する判断はどこか。",
+      "closure": "OQへ担当・期限・決定者を記入し、回答→根拠確認→承認→本文/台帳/テスト反映の閉鎖手順を合意する。",
+      "proposed_owner_role": "PM・要求責任者・各領域担当",
+      "decision_gate": "G0",
+      "related_ids": [
+        "SYS-TBD-011"
+      ],
+      "impact": "「OQの責任者・期限・決定ゲート」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-19-03",
+      "question_id": "OQ-R6-19-03",
+      "chapter": 19,
+      "note": "chapters/19_Open_Issues_Sources.md",
+      "group": "要求属性とOpen Questionの解消管理",
+      "title": "現行仕様と履歴の意味的整合",
+      "coverage_ids": [
+        "C03",
+        "C34"
+      ],
+      "fields": [
+        "正本/生成ビュー/履歴の区別",
+        "旧構成例・優先順位・用語",
+        "変更前後・判断・レビュー範囲"
+      ],
+      "question": "第4.5節の明示補正以外に、履歴由来の構成・用語・保証が現行方針と競合していないか。誰が意味的整合レビューを完了判定するか。",
+      "closure": "現行章をR5の接続・責務・用語と突合し、差分記録を承認する。リンク検査だけで意味的合格にしない。",
+      "proposed_owner_role": "システム設計・レビュー担当",
+      "decision_gate": "G1",
+      "related_ids": [],
+      "impact": "「現行仕様と履歴の意味的整合」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-20-01",
+      "question_id": "OQ-R6-20-01",
+      "chapter": 20,
+      "note": "chapters/20_Northbound_Monitoring_FW.md",
+      "group": "公開IFの操作別確定",
+      "title": "上位プロトコルとGW内部機能の公開一覧",
+      "coverage_ids": [
+        "C12",
+        "C13",
+        "C16"
+      ],
+      "fields": [
+        "接続開始側・ネットワーク・schema",
+        "読取/設定/内部操作/制御/更新の実操作",
+        "認可・結果・並行・エラー・期限"
+      ],
+      "question": "上位管理が読み書きする実項目と内部操作はどれか。プロトコル、公開schema、役割権限、完了通知・エラーをどう固定するか。",
+      "closure": "16件の論理IFを実契約へ展開し、公開操作台帳を実項目・権限・状態・結果へ対応付ける。",
+      "proposed_owner_role": "クラウド/GW IF・セキュリティ設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-013",
+        "SYS-TBD-017",
+        "PAR-UP-01",
+        "PAR-UP-02",
+        "PAR-UP-03",
+        "PAR-UP-13"
+      ],
+      "impact": "「上位プロトコルとGW内部機能の公開一覧」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-20-02",
+      "question_id": "OQ-R6-20-02",
+      "chapter": 20,
+      "note": "chapters/20_Northbound_Monitoring_FW.md",
+      "group": "UI・警報・操作性の製品契約",
+      "title": "画面・表示項目・対応端末・操作確認",
+      "coverage_ids": [
+        "C02",
+        "C24"
+      ],
+      "fields": [
+        "画面ID・ロール・対象状態",
+        "表示項目/単位/丸め/鮮度/欠測",
+        "確認/取消し/結果不明・ブラウザ/OS"
+      ],
+      "question": "宅内Web・スマートフォン・本体表示で提供する画面と項目は何か。対応端末、更新周期、色以外の区別、重要操作確認、多言語等の適用をどう決めるか。",
+      "closure": "画面×項目×操作×ロール表と対応端末表、利用者タスクの受入条件を確定する。ピクセル設計はUI詳細へ配賦する。",
+      "proposed_owner_role": "UI/UX・製品企画・QA",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-015",
+        "SYS-TBD-022",
+        "PAR-UP-04",
+        "PAR-UP-05"
+      ],
+      "impact": "「画面・表示項目・対応端末・操作確認」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-20-03",
+      "question_id": "OQ-R6-20-03",
+      "chapter": 20,
+      "note": "chapters/20_Northbound_Monitoring_FW.md",
+      "group": "UI・警報・操作性の製品契約",
+      "title": "警報・通知・確認・抑止・解除",
+      "coverage_ids": [
+        "C19",
+        "C24"
+      ],
+      "fields": [
+        "警報ID・重大度・発生/解除条件",
+        "通知先・再通知・時刻・鮮度",
+        "確認済み/原因解消・抑止権限"
+      ],
+      "question": "通信断、出力制限、Unknown、更新失敗、保存異常等をどの警報として誰へ通知するか。確認・抑止・再通知・解除の条件と優先順位は何か。",
+      "closure": "警報台帳を故障ID・UI・上位イベントへ対応付け、確認済みが制約解除を意味しない条件を明記する。",
+      "proposed_owner_role": "運用・UI・故障設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-008",
+        "SYS-TBD-022",
+        "SYS-TBD-029"
+      ],
+      "impact": "「警報・通知・確認・抑止・解除」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-20-04",
+      "question_id": "OQ-R6-20-04",
+      "chapter": 20,
+      "note": "chapters/20_Northbound_Monitoring_FW.md",
+      "group": "公開IFの操作別確定",
+      "title": "FW対象・配信・適用・互換・復旧",
+      "coverage_ids": [
+        "C20",
+        "C34"
+      ],
+      "fields": [
+        "画像種別・HW/FW対象・H/G範囲",
+        "署名/承認・互換・容量・適用条件",
+        "中断・起動確認・復旧・通知"
+      ],
+      "question": "FW配信が扱う対象はH側のみか、独立G保守を含む別配布か。画像形式・検証・適用条件・旧版復帰と各画面の成功判定をどう定めるか。",
+      "closure": "更新プロファイルを画像/対象/版/認可/段階/復旧条件で確定し、一般H更新からG変更を除外する。",
+      "proposed_owner_role": "FW更新・セキュリティ・運用設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-018",
+        "SYS-TBD-023",
+        "PAR-UP-10",
+        "PAR-UP-12"
+      ],
+      "impact": "「FW対象・配信・適用・互換・復旧」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-20-05",
+      "question_id": "OQ-R6-20-05",
+      "chapter": 20,
+      "note": "chapters/20_Northbound_Monitoring_FW.md",
+      "group": "公開IFの操作別確定",
+      "title": "オフライン・通知・認可失効の契約",
+      "coverage_ids": [
+        "C15",
+        "C21",
+        "C24"
+      ],
+      "fields": [
+        "要求TTL/重複/結果照会",
+        "オフライン画面とキャッシュ",
+        "所属・失効・端末紛失・再接続"
+      ],
+      "question": "上位断中にどの要求を保留し、何時まで同一要求と判断するか。オフライン認可の寿命と、アプリが表示できる過去状態の条件は何か。",
+      "closure": "操作別キュー/TTL/冪等保持、再同期、端末・所有者変更時の失効と表示規則を確定する。",
+      "proposed_owner_role": "クラウド・アプリ・セキュリティ",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-016",
+        "SYS-TBD-019",
+        "SYS-TBD-022",
+        "PAR-UP-14"
+      ],
+      "impact": "「オフライン・通知・認可失効の契約」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-21-01",
+      "question_id": "OQ-R6-21-01",
+      "chapter": 21,
+      "note": "chapters/21_Grid_Connection_Selection.md",
+      "group": "現行対応表に基づく設置承認",
+      "title": "機種別取得主体・公開状態・実経路",
+      "coverage_ids": [
+        "C04",
+        "C10",
+        "C17"
+      ],
+      "fields": [
+        "EL PCS自律/GW G側管理の型式",
+        "ルータ・取得プロトコル・資格情報",
+        "公開/非公開と可否確認"
+      ],
+      "question": "EL接続PCSの自律取得能力・プロトコル・資格情報の管理仕様は何か。RS-485のGW管理と併せて、どの型式/版で実経路・公開状態を確認できるか。",
+      "closure": "機器接続別の取得プロファイルと管理主体、公開項目の根拠を登録する。非公開はNOT_EXPOSEDと明記する。",
+      "proposed_owner_role": "PCSメーカー・G側・ネットワーク設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "SYS-TBD-024",
+        "SYS-TBD-029",
+        "SYS-TBD-033",
+        "PAR-GNET-04",
+        "PAR-GSEL-06"
+      ],
+      "impact": "「機種別取得主体・公開状態・実経路」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-21-02",
+      "question_id": "OQ-R6-21-02",
+      "chapter": 21,
+      "note": "chapters/21_Grid_Connection_Selection.md",
+      "group": "現行対応表に基づく設置承認",
+      "title": "施工・保守の構成変更と故障時復旧",
+      "coverage_ids": [
+        "C09",
+        "C29",
+        "C34"
+      ],
+      "fields": [
+        "許可された機器接続の変更・scope一意性",
+        "旧主体停止/新主体適用・途中電断",
+        "必要手続き・復旧・実機確認"
+      ],
+      "question": "構成変更をどの施工・保守手順で認可し、新旧主体の停止/適用を何で確認するか。中断時の保持状態・時間条件・ロールバック条件は何か。",
+      "closure": "機器別変更プロファイル、必要手続き、途中失敗の回復表を確定する。自由なmode切替・自動フェイルオーバーは追加しない。",
+      "proposed_owner_role": "施工・G側・認証/保守担当",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-026",
+        "SYS-TBD-027",
+        "SYS-TBD-028",
+        "PAR-GSEL-01",
+        "PAR-GSEL-04"
+      ],
+      "impact": "「施工・保守の構成変更と故障時復旧」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-22-01",
+      "question_id": "OQ-R6-22-01",
+      "chapter": 22,
+      "note": "chapters/22_Physical_Electrical_Installation.md",
+      "group": "電源・消費電力・電源事象",
+      "title": "電源入力・定格・許容変動",
+      "coverage_ids": [
+        "C25"
+      ],
+      "fields": [
+        "電源方式・供給元・定格/範囲",
+        "電流・起動電流・消費電力の測定条件",
+        "付属/指定電源・保護・接地の要否"
+      ],
+      "question": "GWの電源方式、定格・許容変動・最大電流/消費電力は何か。外付け電源、接地、接続保護をどのHW仕様に委ねるか。",
+      "closure": "製品型式別電源条件表を既存HW仕様のID/版へ結び付け、測定状態と受入基準を記入する。",
+      "proposed_owner_role": "HW・電源・製品安全担当",
+      "decision_gate": "G1",
+      "related_ids": [
+        "PAR-ENV-01"
+      ],
+      "impact": "「電源入力・定格・許容変動」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5では温度・電源・reset・設置条件をPAR-ENV-01で包括的に留保している。具体的な電源値は未提供。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-22-02",
+      "question_id": "OQ-R6-22-02",
+      "chapter": 22,
+      "note": "chapters/22_Physical_Electrical_Installation.md",
+      "group": "電源・消費電力・電源事象",
+      "title": "投入・瞬断・電圧低下・復電・停止",
+      "coverage_ids": [
+        "C09",
+        "C23",
+        "C25"
+      ],
+      "fields": [
+        "投入順序・起動許可・電断検出",
+        "H/Gのreset・brownout・保持範囲",
+        "瞬断時間・再起動・データ完全性"
+      ],
+      "question": "瞬断・電圧低下・復電時にH側/G側/PCS指令/保存データをどう扱うか。独立電源や保持機能は存在するか、どこまで保証するか。",
+      "closure": "電源事象×H/G/通信/データの期待状態表と条件値をHW・起動・保存仕様で整合させる。",
+      "proposed_owner_role": "HW・起動復旧・G側設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-011",
+        "PAR-ENV-01",
+        "PAR-DATA-02"
+      ],
+      "impact": "「投入・瞬断・電圧低下・復電・停止」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-22-03",
+      "question_id": "OQ-R6-22-03",
+      "chapter": 22,
+      "note": "chapters/22_Physical_Electrical_Installation.md",
+      "group": "物理インターフェース・配線",
+      "title": "端子・コネクタ・ケーブル・USB",
+      "coverage_ids": [
+        "C12",
+        "C25"
+      ],
+      "fields": [
+        "端子/コネクタ・ピン・極性・定格",
+        "ケーブル長/線種/終端/絶縁の適用",
+        "USB給電/ドングル/抜去・保守接続"
+      ],
+      "question": "RS-485、LAN、USB等の実コネクタと電気・配線条件は何か。USB給電・接続可能機器、RS-485終端・接地等はどの規範資料に従うか。",
+      "closure": "端子・配線表と参照図面の版を確定し、誤接続防止、給電上限、設置検査項目へ配賦する。",
+      "proposed_owner_role": "HW・通信・機構設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "SYS-TBD-002",
+        "PAR-RS-01",
+        "PAR-ENV-01"
+      ],
+      "impact": "「端子・コネクタ・ケーブル・USB」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-22-04",
+      "question_id": "OQ-R6-22-04",
+      "chapter": 22,
+      "note": "chapters/22_Physical_Electrical_Installation.md",
+      "group": "機構・設置・本体操作",
+      "title": "外形・取付・放熱・保守空間",
+      "coverage_ids": [
+        "C25"
+      ],
+      "fields": [
+        "外形・質量・取付方向/方法",
+        "周辺空間・放熱・アンテナ条件",
+        "屋内/屋外設置・付属品・保守アクセス"
+      ],
+      "question": "外形、質量、取付方法・姿勢、放熱/保守空間、アンテナ・設置場所の制約は何か。既存筐体仕様のどこを参照するか。",
+      "closure": "製品構成別の機構・設置条件と図面参照を確定し、施工・温度評価・安全要求へ対応付ける。",
+      "proposed_owner_role": "機構・HW・施工設計",
+      "decision_gate": "G1",
+      "related_ids": [
+        "PAR-ENV-01"
+      ],
+      "impact": "「外形・取付・放熱・保守空間」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-22-05",
+      "question_id": "OQ-R6-22-05",
+      "chapter": 22,
+      "note": "chapters/22_Physical_Electrical_Installation.md",
+      "group": "機構・設置・本体操作",
+      "title": "表示器・LED・ボタン・ラベル",
+      "coverage_ids": [
+        "C24",
+        "C25",
+        "C28"
+      ],
+      "fields": [
+        "本体I/Oの有無・意味・操作条件",
+        "長押し/初期化/再起動・誤操作",
+        "製品個体表示・注意・出荷表示"
+      ],
+      "question": "GWにあるLED、ボタン、表示器、ラベルは何か。状態表示とボタン操作は何を意味し、工場初期化やG側再起動へどう影響するか。",
+      "closure": "本体表示/操作表とラベル項目を実HWへ対応付け、UI・安全・製造出荷の表と整合する。",
+      "proposed_owner_role": "機構・UI・製品安全・製造",
+      "decision_gate": "G2",
+      "related_ids": [
+        "PAR-ENV-01",
+        "SYS-TBD-017"
+      ],
+      "impact": "「表示器・LED・ボタン・ラベル」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-23-01",
+      "question_id": "OQ-R6-23-01",
+      "chapter": 23,
+      "note": "chapters/23_Environment_EMC_Transport.md",
+      "group": "使用・保管環境",
+      "title": "温湿度・結露・標高・汚損等の適用",
+      "coverage_ids": [
+        "C27"
+      ],
+      "fields": [
+        "動作/非動作/保管の区分",
+        "温度・湿度・結露・必要な環境条件",
+        "構成/負荷・評価基準・故障後動作"
+      ],
+      "question": "動作・保管の温湿度や結露条件は何か。標高・汚損等を適用対象にするか。H/G最大負荷と同居条件で何を保証するか。",
+      "closure": "環境適用表へ対象/対象外と根拠、試験条件・合否・参照規格を登録する。数値はHW仕様と使用環境から決める。",
+      "proposed_owner_role": "HW・環境試験・製品企画",
+      "decision_gate": "G1",
+      "related_ids": [
+        "PAR-ENV-01",
+        "TBD-011"
+      ],
+      "impact": "「温湿度・結露・標高・汚損等の適用」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-23-02",
+      "question_id": "OQ-R6-23-02",
+      "chapter": 23,
+      "note": "chapters/23_Environment_EMC_Transport.md",
+      "group": "使用・保管環境",
+      "title": "屋外・防塵防水・日射・腐食・放熱",
+      "coverage_ids": [
+        "C25",
+        "C27"
+      ],
+      "fields": [
+        "屋外採用と設置保護",
+        "保護等級・日射/降雨/腐食等の適用",
+        "筐体開閉/配線部・放熱との関係"
+      ],
+      "question": "屋外設置を正式採用するか。防塵防水、日射、雨水、腐食等の必要条件と、配線・筐体開閉時の制限は何か。",
+      "closure": "屋内/屋外の製品構成別に適用範囲を決定し、保護等級等は根拠資料・検証方法とセットで確定する。",
+      "proposed_owner_role": "機構・製品企画・安全/環境担当",
+      "decision_gate": "G1",
+      "related_ids": [
+        "PAR-ENV-01"
+      ],
+      "impact": "「屋外・防塵防水・日射・腐食・放熱」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-23-03",
+      "question_id": "OQ-R6-23-03",
+      "chapter": 23,
+      "note": "chapters/23_Environment_EMC_Transport.md",
+      "group": "電磁環境・静電気・電源耐性",
+      "title": "EMC・ESD・サージ等の評価対象",
+      "coverage_ids": [
+        "C27",
+        "C31"
+      ],
+      "fields": [
+        "適用規格・ポート・接地・ケーブル",
+        "放射/伝導・静電気・過渡の適用",
+        "許容劣化・復旧・H/G制御への影響"
+      ],
+      "question": "各ポート・設置条件でEMC、静電気、サージ等のどの試験が必要か。通信停止・reset・制御への影響にどの性能判定基準を用いるか。",
+      "closure": "適用規格・版・試験レベル・結合条件・判定基準を評価担当と確定し、G側成立条件と矛盾しないことを確認する。",
+      "proposed_owner_role": "EMC評価・HW・認証担当",
+      "decision_gate": "G3",
+      "related_ids": [
+        "PAR-ENV-01",
+        "TBD-011"
+      ],
+      "impact": "「EMC・ESD・サージ等の評価対象」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-23-04",
+      "question_id": "OQ-R6-23-04",
+      "chapter": 23,
+      "note": "chapters/23_Environment_EMC_Transport.md",
+      "group": "輸送・保管・梱包",
+      "title": "振動・衝撃・保管・輸送後受入",
+      "coverage_ids": [
+        "C27",
+        "C28"
+      ],
+      "fields": [
+        "梱包状態・非梱包状態",
+        "振動/衝撃・温湿度・保管期限の適用",
+        "輸送後の外観/電気/通信/安全確認"
+      ],
+      "question": "輸送・保管で想定する荷姿・期間・振動/衝撃/環境条件は何か。輸送後に何が維持されれば合格とするか。",
+      "closure": "梱包・物流条件と評価対象/対象外を決定し、製造出荷/施工前確認の受入項目へ参照する。",
+      "proposed_owner_role": "機構・物流・製造品質",
+      "decision_gate": "G3",
+      "related_ids": [
+        "PAR-ENV-01"
+      ],
+      "impact": "「振動・衝撃・保管・輸送後受入」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-24-01",
+      "question_id": "OQ-R6-24-01",
+      "chapter": 24,
+      "note": "chapters/24_Product_Remote_Safety.md",
+      "group": "安全の適用範囲と危険源",
+      "title": "GW・PCS・負荷・利用者の危険源一覧",
+      "coverage_ids": [
+        "C26",
+        "C31"
+      ],
+      "fields": [
+        "GW電源/熱/誤配線",
+        "遠隔誤操作/誤登録/通信断/残留",
+        "PCS・負荷メーカー側との責任境界"
+      ],
+      "question": "GW自身と接続PCS/空調/給湯を含め、想定危険源・予見される誤使用は何か。安全責任と適用する評価方法・規格は誰が決定するか。",
+      "closure": "危険源→原因→影響→防護主体→対策→検証→残留リスクの表を作り、製品安全担当が適用範囲をレビューする。",
+      "proposed_owner_role": "製品安全・HW・機器メーカー",
+      "decision_gate": "G1",
+      "related_ids": [],
+      "impact": "「GW・PCS・負荷・利用者の危険源一覧」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5は系統連系保護と通常制御を分離している。これをGW・負荷・利用者を含む製品安全全体の評価完了とはしない。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-24-02",
+      "question_id": "OQ-R6-24-02",
+      "chapter": 24,
+      "note": "chapters/24_Product_Remote_Safety.md",
+      "group": "安全状態・危険操作・復帰",
+      "title": "故障・誤操作・通信断時の安全状態",
+      "coverage_ids": [
+        "C18",
+        "C26"
+      ],
+      "fields": [
+        "操作/機器ごとの許容継続・制限・停止",
+        "通信断と実機指令残留",
+        "再起動・復帰・再連系の権限"
+      ],
+      "question": "各機器・操作で危険を避ける状態は何か。全停止が不適切な場合を含め、通信断・H停止・再起動後にどの制限と復帰条件を使うか。",
+      "closure": "危険源と機器能力に対応した安全状態・失効/復帰表を定義する。GW内Leaseを機器側停止能力と同一視しない。",
+      "proposed_owner_role": "製品安全・制御・PCS/負荷メーカー",
+      "decision_gate": "G2",
+      "related_ids": [
+        "TBD-007",
+        "TBD-002",
+        "SYS-TBD-008"
+      ],
+      "impact": "「故障・誤操作・通信断時の安全状態」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-24-03",
+      "question_id": "OQ-R6-24-03",
+      "chapter": 24,
+      "note": "chapters/24_Product_Remote_Safety.md",
+      "group": "安全状態・危険操作・復帰",
+      "title": "遠隔操作・登録・変更の誤り防止",
+      "coverage_ids": [
+        "C10",
+        "C24",
+        "C26"
+      ],
+      "fields": [
+        "物理機器/回路同定・試運転",
+        "重要操作の確認・権限・手動介入",
+        "誤設定/復元・重複・旧要求の抑止"
+      ],
+      "question": "誤った住宅/機器への遠隔操作、計測点誤対応、設定復元後の意図しない再開を何で防ぐか。ローカル確認が必要な操作はどれか。",
+      "closure": "操作の危険度と防護条件をUI・設定・施工仕様へ配賦し、禁止/確認/限定操作の表と検証を定義する。",
+      "proposed_owner_role": "製品安全・UX・施工・設定設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-017",
+        "SYS-TBD-034"
+      ],
+      "impact": "「遠隔操作・登録・変更の誤り防止」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-24-04",
+      "question_id": "OQ-R6-24-04",
+      "chapter": 24,
+      "note": "chapters/24_Product_Remote_Safety.md",
+      "group": "安全根拠・残留リスク・情報提供",
+      "title": "安全検証・注意表示・残留リスク承認",
+      "coverage_ids": [
+        "C26",
+        "C29",
+        "C32"
+      ],
+      "fields": [
+        "防護の確認資料と検証方法",
+        "説明書/警告/施工条件への配賦",
+        "残留リスクの評価者・承認・変更時再評価"
+      ],
+      "question": "どの安全根拠をメーカー資料と社内試験で示すか。残留リスクは誰が承認し、利用者・施工者に何を通知するか。",
+      "closure": "安全要求と証拠・注意事項・承認者を対応付け、未解決の危険源をリリース可と扱わない判定条件を定める。",
+      "proposed_owner_role": "製品安全責任者・QA・製品企画",
+      "decision_gate": "G4",
+      "related_ids": [],
+      "impact": "「安全検証・注意表示・残留リスク承認」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-25-01",
+      "question_id": "OQ-R6-25-01",
+      "chapter": 25,
+      "note": "chapters/25_Reliability_Availability_Maintainability.md",
+      "group": "機能別のサービス品質",
+      "title": "可用性・許容停止・復旧・データ損失",
+      "coverage_ids": [
+        "C22",
+        "C23"
+      ],
+      "fields": [
+        "ローカル監視/通常制御/G制御/上位同期の別",
+        "計画停止/外部依存/共有故障",
+        "許容停止・復旧時間・許容データ損失"
+      ],
+      "question": "H側更新、クラウド断、WAN断、G側故障別に、機能停止と復旧・データ損失をどの範囲まで許容するか。計画停止や外部要因をどう区分するか。",
+      "closure": "機能別品質表に前提・測定点・停止/復旧/損失限界を確定し、障害仕様・受入条件へ対応付ける。",
+      "proposed_owner_role": "製品企画・信頼性・運用",
+      "decision_gate": "G3",
+      "related_ids": [
+        "PAR-UP-12",
+        "PAR-DATA-02",
+        "PAR-GRID-02"
+      ],
+      "impact": "「可用性・許容停止・復旧・データ損失」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-25-02",
+      "question_id": "OQ-R6-25-02",
+      "chapter": 25,
+      "note": "chapters/25_Reliability_Availability_Maintainability.md",
+      "group": "機能別のサービス品質",
+      "title": "連続稼働・劣化・資源枯渇",
+      "coverage_ids": [
+        "C23"
+      ],
+      "fields": [
+        "連続稼働期間・負荷系列",
+        "メモリ/ハンドル/保存の成長",
+        "故障率等の指標適用と観測条件"
+      ],
+      "question": "連続稼働と故障/劣化の品質を何の指標で評価するか。最大負荷・再接続を含む期間、資源増加の合否、計画再起動の許否は何か。",
+      "closure": "採用指標と長時間試験/解析条件を決める。MTBF等を根拠なく必須化せず、サービス別の成立条件を明記する。",
+      "proposed_owner_role": "信頼性・組込みQA",
+      "decision_gate": "G3",
+      "related_ids": [
+        "PAR-ISO-01",
+        "SYS-TBD-020"
+      ],
+      "impact": "「連続稼働・劣化・資源枯渇」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-25-03",
+      "question_id": "OQ-R6-25-03",
+      "chapter": 25,
+      "note": "chapters/25_Reliability_Availability_Maintainability.md",
+      "group": "保守性・診断・修理",
+      "title": "故障切分けと許可保守",
+      "coverage_ids": [
+        "C19",
+        "C23",
+        "C30"
+      ],
+      "fields": [
+        "必要診断・状態・版・証跡",
+        "現地/リモート・権限・部品交換",
+        "修復期限・交換単位・保守後確認"
+      ],
+      "question": "現地/リモートでどの故障を切り分け、何を交換可能にするか。保守担当が得られる情報・権限、復旧目標、保守後の確認範囲は何か。",
+      "closure": "故障別の診断・保守・交換・確認表と支援体制への依存を定義し、秘密・G側境界を保つ。",
+      "proposed_owner_role": "保守運用・品質・セキュリティ",
+      "decision_gate": "G3",
+      "related_ids": [
+        "TBD-014",
+        "SYS-TBD-017"
+      ],
+      "impact": "「故障切分けと許可保守」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-25-04",
+      "question_id": "OQ-R6-25-04",
+      "chapter": 25,
+      "note": "chapters/25_Reliability_Availability_Maintainability.md",
+      "group": "耐久性・製品寿命",
+      "title": "使用寿命・書込み寿命・消耗部品",
+      "coverage_ids": [
+        "C15",
+        "C23"
+      ],
+      "fields": [
+        "製品使用年数/稼働条件の目標",
+        "Flash/RTC電池等の適用",
+        "書込み回数・保持・交換・警報"
+      ],
+      "question": "目標使用期間と負荷は何か。採用ストレージ等の耐久根拠、計測/ログ/更新の書込予算、交換が必要な部品と期限は何か。",
+      "closure": "部品根拠・負荷/容量計算・必要試験を用いて寿命条件を定義し、保守・サービス支援期間と区別する。",
+      "proposed_owner_role": "HW・保存設計・製品企画",
+      "decision_gate": "G3",
+      "related_ids": [
+        "PAR-DATA-02",
+        "PAR-UP-10"
+      ],
+      "impact": "「使用寿命・書込み寿命・消耗部品」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-26-01",
+      "question_id": "OQ-R6-26-01",
+      "chapter": 26,
+      "note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "group": "製造・初期書込み",
+      "title": "個体識別・鍵投入・製造モード",
+      "coverage_ids": [
+        "C28",
+        "C21"
+      ],
+      "fields": [
+        "個体ID/型式/HW/FWの付与",
+        "初期資格情報・証跡・再作業",
+        "製造アクセス・閉鎖・秘密露出防止"
+      ],
+      "question": "個体IDと鍵/証明書をどの工程で投入し、再作業・不良品・重複をどう扱うか。出荷時に無効にする製造/開発機能と確認方法は何か。",
+      "closure": "製造プロファイルに投入主体・識別・秘密管理・再作業・閉鎖条件を記載し、手順書ID/版へ配賦する。",
+      "proposed_owner_role": "製造技術・セキュリティ・品質",
+      "decision_gate": "G2",
+      "related_ids": [],
+      "impact": "「個体識別・鍵投入・製造モード」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-26-02",
+      "question_id": "OQ-R6-26-02",
+      "chapter": 26,
+      "note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "group": "製造・初期書込み",
+      "title": "出荷状態・検査・校正・梱包",
+      "coverage_ids": [
+        "C25",
+        "C28"
+      ],
+      "fields": [
+        "工場設定・未登録状態・更新状態",
+        "出荷検査・校正要否・個体記録",
+        "ラベル/付属品/梱包と保管"
+      ],
+      "question": "出荷時の設定、運転可否、搭載FW・鍵、試験モード閉鎖を何で検査するか。GWが校正責任を持つ量はあるか。ラベル・付属品は何か。",
+      "closure": "出荷状態/検査/校正適用/記録/梱包の条件を確定し、機器が勝手に制御開始しない初期条件を起動仕様と整合する。",
+      "proposed_owner_role": "製造品質・HW・起動設計",
+      "decision_gate": "G3",
+      "related_ids": [
+        "PAR-ENV-01",
+        "SYS-TBD-017"
+      ],
+      "impact": "「出荷状態・検査・校正・梱包」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-26-03",
+      "question_id": "OQ-R6-26-03",
+      "chapter": 26,
+      "note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "group": "施工・登録・試運転・引渡し",
+      "title": "ネットワーク・機器・計測点の初期設定",
+      "coverage_ids": [
+        "C10",
+        "C29"
+      ],
+      "fields": [
+        "住宅/GW/利用者の登録",
+        "ルータ/直接Web/認証の設定",
+        "物理機器と回路/計測点/取得主体の照合"
+      ],
+      "question": "施工者はどの順序で住宅・GW・機器・計測点を登録するか。EL自律取得/RS-485 GW管理とルータ経路をどう確認し、未完了時に何を禁止するか。",
+      "closure": "施工UCを初期接続から構成承認まで完結させ、チェック項目・失敗時戻り先・記録・引渡し条件を定める。",
+      "proposed_owner_role": "施工・ネットワーク・機器担当",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-026",
+        "SYS-TBD-031",
+        "SYS-TBD-034"
+      ],
+      "impact": "「ネットワーク・機器・計測点の初期設定」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-26-04",
+      "question_id": "OQ-R6-26-04",
+      "chapter": 26,
+      "note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "group": "施工・登録・試運転・引渡し",
+      "title": "試運転・利用者引渡し・教育",
+      "coverage_ids": [
+        "C02",
+        "C29",
+        "C32"
+      ],
+      "fields": [
+        "観測・通常操作・取得状態の確認",
+        "異常/通信断・未公開情報の説明",
+        "利用者権限・説明資料・検収"
+      ],
+      "question": "現地試運転では何を確認し、どの記録で利用開始を許すか。非公開のPCS状態や通信断時制限を利用者へどう説明し、引渡しを確認するか。",
+      "closure": "試運転/引渡し条件表を安全・受入仕様へ対応付け、施工手順と利用者説明の文書ID/版を確定する。",
+      "proposed_owner_role": "施工・製品企画・QA",
+      "decision_gate": "G4",
+      "related_ids": [
+        "SYS-TBD-029",
+        "SYS-TBD-027"
+      ],
+      "impact": "「試運転・利用者引渡し・教育」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-26-05",
+      "question_id": "OQ-R6-26-05",
+      "chapter": 26,
+      "note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "group": "修理・交換・移設",
+      "title": "本体/機器交換と所有者変更",
+      "coverage_ids": [
+        "C16",
+        "C30",
+        "C34"
+      ],
+      "fields": [
+        "ID/履歴/設定の継承範囲",
+        "旧資格・待機要求・クラウド所属失効",
+        "新接続・認証構成・再試運転"
+      ],
+      "question": "GW/PCS/計測器交換、移設、所有者変更で、何のIDとデータを継承し何を失効させるか。G側構成・資格の再設定と検収は誰が行うか。",
+      "closure": "交換/移設/所有者変更のデータ・資格・接続移行表と再試運転条件を記録する。",
+      "proposed_owner_role": "保守・データ・セキュリティ・認証担当",
+      "decision_gate": "G3",
+      "related_ids": [
+        "SYS-TBD-016",
+        "SYS-TBD-023",
+        "SYS-TBD-034"
+      ],
+      "impact": "「本体/機器交換と所有者変更」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-26-06",
+      "question_id": "OQ-R6-26-06",
+      "chapter": 26,
+      "note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "group": "撤去・廃棄・サービス終了",
+      "title": "秘密・履歴の消去と廃止状態",
+      "coverage_ids": [
+        "C21",
+        "C30"
+      ],
+      "fields": [
+        "消去対象/残す記録・完了確認",
+        "FW/証明書/所有者/サーバ所属",
+        "電源不可/破損/オフライン時の扱い"
+      ],
+      "question": "廃棄・返却でどの秘密・履歴・所属情報を消すか。起動不能やオフラインで消去/失効ができない場合の隔離・確認・責任は何か。",
+      "closure": "消去・失効・廃止のシステム機能と完了記録を規定し、廃棄手順・プライバシー要求へ配賦する。",
+      "proposed_owner_role": "保守運用・セキュリティ・プライバシー担当",
+      "decision_gate": "G4",
+      "related_ids": [
+        "TBD-014",
+        "SYS-TBD-016"
+      ],
+      "impact": "「秘密・履歴の消去と廃止状態」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-26-07",
+      "question_id": "OQ-R6-26-07",
+      "chapter": 26,
+      "note": "chapters/26_Manufacturing_Commissioning_Retirement.md",
+      "group": "撤去・廃棄・サービス終了",
+      "title": "支援期間・クラウド終了後の機能",
+      "coverage_ids": [
+        "C23",
+        "C30"
+      ],
+      "fields": [
+        "FW/脆弱性/保守支援期間",
+        "上位/配信サービス終了と通知",
+        "ローカル監視/制御/G側機能の残存"
+      ],
+      "question": "製品支援とクラウド/FW配信をいつまで継続するか。終了後に残すローカル機能と出力制御の条件、利用者周知・移行手段は何か。",
+      "closure": "支援・サービス終了時の機能/制約/通知/移行を製品方針と結び、GW機能と外部運用責務を分けて記載する。",
+      "proposed_owner_role": "製品企画・サービス運用・セキュリティ",
+      "decision_gate": "G4",
+      "related_ids": [
+        "SYS-TBD-012",
+        "SYS-TBD-023",
+        "SYS-TBD-010"
+      ],
+      "impact": "「支援期間・クラウド終了後の機能」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-27-01",
+      "question_id": "OQ-R6-27-01",
+      "chapter": 27,
+      "note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "group": "資産・信頼境界・脅威と対策",
+      "title": "脅威分析と要求・検証の対応",
+      "coverage_ids": [
+        "C21",
+        "C31"
+      ],
+      "fields": [
+        "資産/主体/入口・H/G境界",
+        "脅威・悪用/誤用・対策",
+        "残留リスク・SYS/検証・適用基準"
+      ],
+      "question": "どの資産と脅威を評価対象にするか。宅内/直接無線/上位/EL/RS-485/製造/保守の入口ごとに、対策と検証と残留リスクを誰が承認するか。",
+      "closure": "脅威→資産/境界→対策→要求→確認方法の表を作成し、採用するJC-STAR等の項目と区別して対応付ける。",
+      "proposed_owner_role": "セキュリティ・システム・品質",
+      "decision_gate": "G1",
+      "related_ids": [
+        "TBD-012",
+        "SYS-TBD-010",
+        "PAR-SEC-01"
+      ],
+      "impact": "「脅威分析と要求・検証の対応」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-27-02",
+      "question_id": "OQ-R6-27-02",
+      "chapter": 27,
+      "note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "group": "資格情報・認証・認可",
+      "title": "生成・配布・更新・失効・漏えい復旧",
+      "coverage_ids": [
+        "C21",
+        "C28",
+        "C30"
+      ],
+      "fields": [
+        "利用者/サーバ/FW署名/G保守の資格区分",
+        "初期投入・保管・rotation・失効",
+        "時刻異常/オフライン/漏えい/復旧"
+      ],
+      "question": "各資格情報の生成者・保存先・寿命・更新・失効・漏えい復旧をどう定めるか。時刻無効・上位断中の検証とG側資格の独立管理はどうするか。",
+      "closure": "鍵/証明書/アカウントのライフサイクル表と失効・復旧試験条件を製造/運用文書へ対応付ける。",
+      "proposed_owner_role": "セキュリティ・製造・運用",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-016",
+        "SYS-TBD-018",
+        "PAR-UP-14",
+        "PAR-UP-15"
+      ],
+      "impact": "「生成・配布・更新・失効・漏えい復旧」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-27-03",
+      "question_id": "OQ-R6-27-03",
+      "chapter": 27,
+      "note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "group": "資格情報・認証・認可",
+      "title": "通信保護・Webセッション・機器混在",
+      "coverage_ids": [
+        "C12",
+        "C21"
+      ],
+      "fields": [
+        "TLS/暗号/接続先識別の適用プロファイル",
+        "セッション/委譲/CSRF等のWeb対策",
+        "未認証機器との共存・格下げ禁止"
+      ],
+      "question": "各IFの暗号・認証・接続先識別・セッション方式を何にするか。従来EL機器と認証対応機器の許可操作、復号後の文脈保持をどう規定するか。",
+      "closure": "IF別セキュリティプロファイルを確定し、失敗/混在/失効/セッションの受入条件を定義する。新たな標準暗号を全機器へ仮定しない。",
+      "proposed_owner_role": "セキュリティ・Web・機器IF設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "TBD-012",
+        "SYS-TBD-013",
+        "SYS-TBD-015",
+        "PAR-SEC-01"
+      ],
+      "impact": "「通信保護・Webセッション・機器混在」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-27-04",
+      "question_id": "OQ-R6-27-04",
+      "chapter": 27,
+      "note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "group": "保守・更新・脆弱性対応",
+      "title": "保守経路・製造アクセス・更新認証",
+      "coverage_ids": [
+        "C20",
+        "C21",
+        "C28"
+      ],
+      "fields": [
+        "量産でのSSH/デバッグ/診断の有無",
+        "一時有効化・操作許可・監査",
+        "FW署名/互換・G側書込禁止"
+      ],
+      "question": "量産機で残す保守・開発経路は何か。どの条件で一時有効化し、操作範囲・監査・自動無効化をどう制約するか。FW署名検証の失敗時は何を許すか。",
+      "closure": "保守経路台帳と許可操作/有効化/失効条件を定義し、任意shellやG設定への迂回を防ぐ検証へ結ぶ。",
+      "proposed_owner_role": "セキュリティ・製造・保守設計",
+      "decision_gate": "G2",
+      "related_ids": [
+        "SYS-TBD-017",
+        "SYS-TBD-018"
+      ],
+      "impact": "「保守経路・製造アクセス・更新認証」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-27-05",
+      "question_id": "OQ-R6-27-05",
+      "chapter": 27,
+      "note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "group": "保守・更新・脆弱性対応",
+      "title": "SBOM・脆弱性対応と機器の支援機能",
+      "coverage_ids": [
+        "C20",
+        "C21",
+        "C30",
+        "C31"
+      ],
+      "fields": [
+        "版/構成/依存部品識別",
+        "脆弱性受付・影響調査・配布の責任",
+        "支援期限・報告/診断と秘密除去"
+      ],
+      "question": "SBOMや脆弱性対応でGWが提供する識別・診断・更新状態は何か。組織の受付・対応期限・承認と、機器の機能をどの文書へ分担するか。",
+      "closure": "機器側支援機能と組織運用要求を対応付け、支援期限・通知・必要データの責任と正本を確定する。",
+      "proposed_owner_role": "セキュリティ運用・リリース・製品企画",
+      "decision_gate": "G4",
+      "related_ids": [
+        "SYS-TBD-010",
+        "SYS-TBD-023"
+      ],
+      "impact": "「SBOM・脆弱性対応と機器の支援機能」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    },
+    {
+      "id": "SLOT-R6-27-06",
+      "question_id": "OQ-R6-27-06",
+      "chapter": 27,
+      "note": "chapters/27_Security_Privacy_Lifecycle.md",
+      "group": "プライバシー・所有者・データ消去",
+      "title": "個人/住宅データの収集・利用・公開・消去",
+      "coverage_ids": [
+        "C15",
+        "C21",
+        "C30"
+      ],
+      "fields": [
+        "計測・生活履歴・識別情報の分類",
+        "目的/公開先/同意等の適用",
+        "保存・抽出・消去・返却・所有者変更"
+      ],
+      "question": "収集する住宅・利用者データの目的・公開先・保持期間は何か。所有者変更、端末紛失、修理、廃棄での消去・失効と必要な通知をどう規定するか。",
+      "closure": "データ用途/アクセス/保持/消去表をデータ辞書・ライフサイクル手順へ対応付け、適用要求を担当者が確認する。",
+      "proposed_owner_role": "プライバシー・製品運用・セキュリティ",
+      "decision_gate": "G2",
+      "related_ids": [
+        "TBD-014",
+        "SYS-TBD-016",
+        "SYS-TBD-023"
+      ],
+      "impact": "「個人/住宅データの収集・利用・公開・消去」を対象構成の確定保証・実装受入根拠として使用しない。",
+      "context": "R5の既存原則は保持するが、この項の全対象・具体条件・規範参照は未確定。",
+      "status": "OPEN",
+      "answer": null,
+      "owner": null,
+      "due_date": null,
+      "approver": null,
+      "decision_record": null
+    }
+  ]
+}

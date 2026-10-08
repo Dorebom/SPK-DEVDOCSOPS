@@ -1,0 +1,38 @@
+{
+  "schema": "spkgw.trace-check/v1",
+  "result": "PASS",
+  "scope": "STRUCTURAL_RECORD_CHECK_NOT_PRODUCT_APPROVAL",
+  "trace_profiles": 1,
+  "nodes": 0,
+  "edges": 0,
+  "warnings": [
+    {
+      "code": "TASK_NOT_IN_ARTIFACT_GRAPH",
+      "task_id": "TASK-SPKGW-000001",
+      "trace_id": "TRC-SPKGW-000001"
+    },
+    {
+      "code": "TASK_NOT_IN_ARTIFACT_GRAPH",
+      "task_id": "TASK-SPKGW-000002",
+      "trace_id": "TRC-SPKGW-000001"
+    },
+    {
+      "code": "TASK_NOT_IN_ARTIFACT_GRAPH",
+      "task_id": "TASK-SPKGW-000003",
+      "trace_id": "TRC-SPKGW-000001"
+    },
+    {
+      "code": "TASK_NOT_IN_ARTIFACT_GRAPH",
+      "task_id": "TASK-SPKGW-000004",
+      "trace_id": "TRC-SPKGW-000001"
+    }
+  ],
+  "inputs": {
+    "20_work/analysis/project/trace_graph.json": "b4a0787504e18130dc7560fdee15940d9259ccf926fa39607786b101d4bf11d8",
+    "00_governance/lifecycle_profile.json": "2fa12430912985013fc76bfc5f052c39179342fc974c1fa4164ec65b97e69265",
+    "00_governance/schemas/lifecycle-trace.schema.json": "68b57222d075dbd4ca4050f78e212628fd42b5d3aee382a756c068e5a2a70acd",
+    "20_work/analysis/project/control.json": "0b858af8de21330f691b7ab7778e5957f82a6312c735068b66ac29e226d2ddbc",
+    "tools/tracecheck.py": "291b03316ccbefbe156f0ceba5556133ed7804681f4fdc2875dadaf515b18437"
+  },
+  "checked_local_evidence": {}
+}

@@ -1,0 +1,918 @@
+{
+  "new_docs": {
+    "00_governance/STD_14_Requirements_Change_Impact.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "STD-GOV-014",
+      "project": "SPK-GW_HEMS",
+      "document_type": "STANDARD",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "要求・仕様・変更影響分析",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000027",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "REQAN",
+        "REQSPEC"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/STD_15_Design_Decisions.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "STD-GOV-015",
+      "project": "SPK-GW_HEMS",
+      "document_type": "STANDARD",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "設計・設計判断",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000028",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "SYSDES",
+        "ARCH",
+        "BASIC",
+        "DETAIL"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/STD_16_Implementation_C_Yocto.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "STD-GOV-016",
+      "project": "SPK-GW_HEMS",
+      "document_type": "STANDARD",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "実装・C／Yocto・変更差分",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000029",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "IMPL",
+        "UT",
+        "IT"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/STD_17_Security_Supplier.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "STD-GOV-017",
+      "project": "SPK-GW_HEMS",
+      "document_type": "STANDARD",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "情報保護・脆弱性・委託先技術回答",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000030",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "REQAN",
+        "IMPL",
+        "NFT",
+        "OPS"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/STD_18_AI_Measurement_Improvement.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "STD-GOV-018",
+      "project": "SPK-GW_HEMS",
+      "document_type": "STANDARD",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "人・AI協働の測定・改善",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000031",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "IMPROVE"
+      ],
+      "phase_scope": "PHASE_SPECIFIC",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/PROJECT_PROFILE.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "GOV-PROFILE-001",
+      "project": "SPK-GW_HEMS",
+      "document_type": "REPORT",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "開発ワークスペースの適用・正本参照プロファイル",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000032",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "IMPROVE"
+      ],
+      "phase_scope": "PHASE_SPECIFIC",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/Tool_Copilot.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "GOV-TOOL-COPILOT-001",
+      "project": "SPK-GW_HEMS",
+      "document_type": "REPORT",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "Copilot入口・プロンプトの条件付き利用",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000033",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "IMPROVE"
+      ],
+      "phase_scope": "PHASE_SPECIFIC",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/templates/Change_Impact.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "TPL-GOV-CHANGE-IMPACT",
+      "project": "SPK-GW_HEMS",
+      "document_type": "TEMPLATE",
+      "revision": "1.3.0",
+      "status": "TEMPLATE",
+      "title": "変更差分・影響分析",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-TEMPLATE-000015",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "REQSPEC",
+        "SYSDES"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/templates/Design_Note.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "TPL-GOV-DESIGN",
+      "project": "SPK-GW_HEMS",
+      "document_type": "TEMPLATE",
+      "revision": "1.3.0",
+      "status": "TEMPLATE",
+      "title": "設計・設計判断ノート",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-TEMPLATE-000016",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "SYSDES",
+        "ARCH",
+        "BASIC",
+        "DETAIL"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/templates/Supplier_Response.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "TPL-GOV-SUPPLIER",
+      "project": "SPK-GW_HEMS",
+      "document_type": "TEMPLATE",
+      "revision": "1.3.0",
+      "status": "TEMPLATE",
+      "title": "委託先技術回答・受入確認",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-TEMPLATE-000017",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "REQSPEC",
+        "DETAIL",
+        "OPS"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/templates/AI_Capability_Log.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "TPL-GOV-AI-CAPABILITY",
+      "project": "SPK-GW_HEMS",
+      "document_type": "TEMPLATE",
+      "revision": "1.3.0",
+      "status": "TEMPLATE",
+      "title": "人・AIのCapability観測ログ（任意）",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-TEMPLATE-000018",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "IMPROVE"
+      ],
+      "phase_scope": "PHASE_SPECIFIC",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/templates/Release.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "TPL-GOV-RELEASE",
+      "project": "SPK-GW_HEMS",
+      "document_type": "TEMPLATE",
+      "revision": "1.3.0",
+      "status": "TEMPLATE",
+      "title": "リリース候補・判定・復旧記録",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-TEMPLATE-000019",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "RELPREP",
+        "RELEASE"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/templates/Copilot_Environment_Check.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "TPL-GOV-COPILOT-ENV",
+      "project": "SPK-GW_HEMS",
+      "document_type": "TEMPLATE",
+      "revision": "1.3.0",
+      "status": "TEMPLATE",
+      "title": "AI入口ファイルの実環境確認",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-TEMPLATE-000020",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "IMPL",
+        "IMPROVE"
+      ],
+      "phase_scope": "CROSS_PHASE",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/R13_Change_Log.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "GOV-CHANGELOG-R13",
+      "project": "SPK-GW_HEMS",
+      "document_type": "REPORT",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "R13：AI_STD選択統合の変更記録",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000034",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "IMPROVE"
+      ],
+      "phase_scope": "PHASE_SPECIFIC",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    },
+    "00_governance/AI_STD_Integration.md": {
+      "schema": "spkgw.governance-note/v1",
+      "document_id": "GOV-AISTD-INTEGRATION-001",
+      "project": "SPK-GW_HEMS",
+      "document_type": "REPORT",
+      "revision": "1.3.0",
+      "status": "DRAFT_FOR_REVIEW",
+      "title": "AI_STD v1.0.0 選択採用・適合化・保留の記録",
+      "owner": null,
+      "document_trace_id": "DTR-SPKGW-GOV-000035",
+      "item_trace_ids": [],
+      "thread_id": "THR-SPKGW-GOV-000001",
+      "related_thread_ids": [],
+      "trace_contract": "spkgw.lifecycle-tags/v2",
+      "phase_ids": [
+        "IMPROVE"
+      ],
+      "phase_scope": "PHASE_SPECIFIC",
+      "activity_type": "UNSPECIFIED",
+      "created_on": "2026-10-08",
+      "updated_on": "2026-10-08",
+      "classification": "INTERNAL",
+      "source_baseline": "BL-R9-0001",
+      "related_ids": []
+    }
+  },
+  "edited_docs": [
+    "00_governance/STD_01_Authority_Ownership.md",
+    "00_governance/STD_04_Task_WBS.md",
+    "00_governance/STD_06_Execution_Review_Evidence.md",
+    "00_governance/STD_07_Progress_Schedule.md",
+    "00_governance/STD_08_Budget_Cost.md",
+    "00_governance/STD_09_Change_Risk.md",
+    "00_governance/STD_10_AI_Collaboration.md",
+    "00_governance/STD_11_Release_Baselines.md",
+    "00_governance/STD_12_Reports_Decisions.md",
+    "00_governance/templates/Task.md",
+    "00_governance/templates/Change.md",
+    "00_governance/templates/Execution.md",
+    "00_governance/templates/Review.md",
+    "00_governance/templates/Weekly_Report.md",
+    "00_governance/templates/AI_Work_Order.md",
+    "00_governance/templates/Plan.md",
+    "00_governance/templates/README.md",
+    "00_governance/Open_Questions.md",
+    "00_governance/STD_05_Process_Gates.md",
+    "00_governance/Validation_Coverage.md",
+    "00_governance/Tool_Governance.md",
+    "00_governance/00_MOC.md"
+  ],
+  "rules": [
+    {
+      "id": "AIM-01",
+      "source_files": [
+        "governance/STD/STD-01_GOVERNANCE.md"
+      ],
+      "source_sections": [
+        "1.",
+        "2.",
+        "4.",
+        "5.",
+        "6."
+      ],
+      "destination": "00_governance/STD_01_Authority_Ownership.md",
+      "anchor": "aim-01",
+      "title": "有効な認可・正本・独立性",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-02",
+      "source_files": [
+        "governance/STD/STD-03_WORK_CONTROL.md"
+      ],
+      "source_sections": [
+        "1.",
+        "2.",
+        "4.",
+        "5.",
+        "6.",
+        "7."
+      ],
+      "destination": "00_governance/STD_04_Task_WBS.md",
+      "anchor": "aim-02",
+      "title": "作業・並列・引継ぎの最小記録",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-03",
+      "source_files": [
+        "governance/STD/STD-03_WORK_CONTROL.md",
+        "governance/STD/STD-08_PROGRESS_MANAGEMENT.md"
+      ],
+      "source_sections": [
+        "3.",
+        "7."
+      ],
+      "destination": "00_governance/STD_04_Task_WBS.md",
+      "anchor": "aim-03",
+      "title": "旧タスク状態を現行へ併設しない",
+      "disposition": "ADAPTED",
+      "rationale": "PROPOSED/DONE/BLOCKEDの既存スキーマ・集計器と競合するため、添付の列挙値・impedimentモデルは不採用。意図を本文履歴へ対応付ける。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-04",
+      "source_files": [
+        "governance/STD/STD-07_VERIFICATION_AND_ACCEPTANCE.md",
+        "governance/STD/STD-06_IMPLEMENTATION.md"
+      ],
+      "source_sections": [
+        "2.",
+        "3.",
+        "4.",
+        "5.",
+        "6.",
+        "7.",
+        "8.",
+        "9."
+      ],
+      "destination": "00_governance/STD_06_Execution_Review_Evidence.md",
+      "anchor": "aim-04",
+      "title": "実行証拠・異常系・自己レビュー",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-05",
+      "source_files": [
+        "governance/STD/STD-07_VERIFICATION_AND_ACCEPTANCE.md"
+      ],
+      "source_sections": [
+        "3.",
+        "6.2"
+      ],
+      "destination": "00_governance/STD_06_Execution_Review_Evidence.md",
+      "anchor": "aim-05",
+      "title": "結果語彙と周期測定の境界",
+      "disposition": "ADAPTED",
+      "rationale": "試験BLOCKEDの列挙追加は行わず、既存resultと未実行理由へ対応する。周期式は記録方法であり新しい製品閾値ではない。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-06",
+      "source_files": [
+        "governance/STD/STD-08_PROGRESS_MANAGEMENT.md"
+      ],
+      "source_sections": [
+        "5.",
+        "6.",
+        "7.",
+        "8.",
+        "9."
+      ],
+      "destination": "00_governance/STD_07_Progress_Schedule.md",
+      "anchor": "aim-06",
+      "title": "同一時点の旧新分母比較と未受入量",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-07",
+      "source_files": [
+        "governance/STD/STD-12_MEASUREMENT_AND_IMPROVEMENT.md"
+      ],
+      "source_sections": [
+        "4.",
+        "7."
+      ],
+      "destination": "00_governance/STD_08_Budget_Cost.md",
+      "anchor": "aim-07",
+      "title": "実費・配賦・推定を区別する",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-08",
+      "source_files": [
+        "governance/STD/STD-01_GOVERNANCE.md",
+        "governance/STD/STD-11_RISK_AND_EXCEPTIONS.md",
+        "governance/STD/STD-04_REQUIREMENTS_AND_CHANGE.md"
+      ],
+      "source_sections": [
+        "3.",
+        "4.",
+        "5.",
+        "7.",
+        "8.",
+        "9."
+      ],
+      "destination": "00_governance/STD_09_Change_Risk.md",
+      "anchor": "aim-08",
+      "title": "R0／R1／R2は作業影響の補助分類",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-09",
+      "source_files": [
+        "governance/STD/STD-11_RISK_AND_EXCEPTIONS.md"
+      ],
+      "source_sections": [
+        "2.",
+        "6.",
+        "7.",
+        "8.",
+        "9.",
+        "10."
+      ],
+      "destination": "00_governance/STD_09_Change_Risk.md",
+      "anchor": "aim-09",
+      "title": "例外・緊急対応を限定する",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-10",
+      "source_files": [
+        "governance/STD/STD-02_COPILOT_USAGE.md"
+      ],
+      "source_sections": [
+        "1.",
+        "2.",
+        "3.",
+        "4.",
+        "6.",
+        "7."
+      ],
+      "destination": "00_governance/STD_10_AI_Collaboration.md",
+      "anchor": "aim-10",
+      "title": "指示ファイルは入口であり強制制御ではない",
+      "disposition": "ADAPTED",
+      "rationale": "入口の設計と代表作業での確認を採用。製品機能の時点依存断定・旧パス・状態は採用しない。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-11",
+      "source_files": [
+        "governance/STD/STD-09_CONFIGURATION_AND_RELEASE.md"
+      ],
+      "source_sections": [
+        "1.",
+        "2.",
+        "3.",
+        "4.",
+        "5.",
+        "6."
+      ],
+      "destination": "00_governance/STD_11_Release_Baselines.md",
+      "anchor": "aim-11",
+      "title": "ソース・ビルド・配布物・証拠を同一候補へ結ぶ",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-12",
+      "source_files": [
+        "governance/STD/STD-08_PROGRESS_MANAGEMENT.md",
+        "governance/STD/STD-12_MEASUREMENT_AND_IMPROVEMENT.md"
+      ],
+      "source_sections": [
+        "9.",
+        "10.",
+        "2.",
+        "3.",
+        "4.",
+        "11."
+      ],
+      "destination": "00_governance/STD_12_Reports_Decisions.md",
+      "anchor": "aim-12",
+      "title": "会話の報告と正本更新を区別する",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-13",
+      "source_files": [
+        "governance/STD/STD-04_REQUIREMENTS_AND_CHANGE.md"
+      ],
+      "source_sections": [
+        "1.",
+        "2.",
+        "3.",
+        "4."
+      ],
+      "destination": "00_governance/STD_14_Requirements_Change_Impact.md",
+      "anchor": "aim-13",
+      "title": "六つの質問と適用範囲",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-14",
+      "source_files": [
+        "governance/STD/STD-04_REQUIREMENTS_AND_CHANGE.md"
+      ],
+      "source_sections": [
+        "5.",
+        "5.1",
+        "10."
+      ],
+      "destination": "00_governance/STD_14_Requirements_Change_Impact.md",
+      "anchor": "aim-14",
+      "title": "観測可能な要求と根拠の区別",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-15",
+      "source_files": [
+        "governance/STD/STD-04_REQUIREMENTS_AND_CHANGE.md"
+      ],
+      "source_sections": [
+        "6.",
+        "7.",
+        "8.",
+        "9."
+      ],
+      "destination": "00_governance/STD_14_Requirements_Change_Impact.md",
+      "anchor": "aim-15",
+      "title": "実行経路と外部依存まで追う",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-16",
+      "source_files": [
+        "governance/STD/STD-05_DESIGN.md"
+      ],
+      "source_sections": [
+        "1.",
+        "2.",
+        "3.",
+        "4.",
+        "5."
+      ],
+      "destination": "00_governance/STD_15_Design_Decisions.md",
+      "anchor": "aim-16",
+      "title": "七つの確認と論理・実配置の分離",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-17",
+      "source_files": [
+        "governance/STD/STD-05_DESIGN.md"
+      ],
+      "source_sections": [
+        "6.",
+        "7.",
+        "7.1",
+        "8.",
+        "9."
+      ],
+      "destination": "00_governance/STD_15_Design_Decisions.md",
+      "anchor": "aim-17",
+      "title": "状態所有・競合・非同期結果の設計",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-18",
+      "source_files": [
+        "governance/STD/STD-05_DESIGN.md"
+      ],
+      "source_sections": [
+        "10.",
+        "11."
+      ],
+      "destination": "00_governance/STD_15_Design_Decisions.md",
+      "anchor": "aim-18",
+      "title": "選択理由・反証・引渡し条件",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-19",
+      "source_files": [
+        "governance/STD/STD-06_IMPLEMENTATION.md"
+      ],
+      "source_sections": [
+        "2.",
+        "3.",
+        "3.1",
+        "4."
+      ],
+      "destination": "00_governance/STD_16_Implementation_C_Yocto.md",
+      "anchor": "aim-19",
+      "title": "最小で再現可能な差分を作る",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-20",
+      "source_files": [
+        "governance/STD/STD-06_IMPLEMENTATION.md"
+      ],
+      "source_sections": [
+        "5."
+      ],
+      "destination": "00_governance/STD_16_Implementation_C_Yocto.md",
+      "anchor": "aim-20",
+      "title": "メモリ・数値・並行・資源・状態",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-21",
+      "source_files": [
+        "governance/STD/STD-06_IMPLEMENTATION.md"
+      ],
+      "source_sections": [
+        "6.",
+        "7.",
+        "8.",
+        "9.",
+        "10."
+      ],
+      "destination": "00_governance/STD_16_Implementation_C_Yocto.md",
+      "anchor": "aim-21",
+      "title": "ビルド対象・構成差・回帰の引渡し",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-22",
+      "source_files": [
+        "governance/STD/STD-10_SECURITY_AND_SUPPLIER.md"
+      ],
+      "source_sections": [
+        "1.",
+        "2.",
+        "3."
+      ],
+      "destination": "00_governance/STD_17_Security_Supplier.md",
+      "anchor": "aim-22",
+      "title": "必要最小限の入力と脅威確認",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-23",
+      "source_files": [
+        "governance/STD/STD-10_SECURITY_AND_SUPPLIER.md"
+      ],
+      "source_sections": [
+        "4.",
+        "5.",
+        "7."
+      ],
+      "destination": "00_governance/STD_17_Security_Supplier.md",
+      "anchor": "aim-23",
+      "title": "脆弱性対応と部品情報",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-24",
+      "source_files": [
+        "governance/STD/STD-10_SECURITY_AND_SUPPLIER.md"
+      ],
+      "source_sections": [
+        "6."
+      ],
+      "destination": "00_governance/STD_17_Security_Supplier.md",
+      "anchor": "aim-24",
+      "title": "ブラックボックスを推測で補わない",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-25",
+      "source_files": [
+        "governance/STD/STD-12_MEASUREMENT_AND_IMPROVEMENT.md"
+      ],
+      "source_sections": [
+        "1.",
+        "2.",
+        "3.",
+        "4.",
+        "5.",
+        "9."
+      ],
+      "destination": "00_governance/STD_18_AI_Measurement_Improvement.md",
+      "anchor": "aim-25",
+      "title": "分母・時点・欠測・比較条件",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    },
+    {
+      "id": "AIM-26",
+      "source_files": [
+        "governance/STD/STD-12_MEASUREMENT_AND_IMPROVEMENT.md"
+      ],
+      "source_sections": [
+        "6.",
+        "7.",
+        "8.",
+        "10.",
+        "11."
+      ],
+      "destination": "00_governance/STD_18_AI_Measurement_Improvement.md",
+      "anchor": "aim-26",
+      "title": "軽量な協働記録と将来接続",
+      "disposition": "ADAPTED",
+      "rationale": "既存R12のID・状態・編集正本を維持して規則の内容だけを反映。",
+      "normative_status": "DRAFT_FOR_REVIEW"
+    }
+  ],
+  "optional_entry_files": [
+    ".github/copilot-instructions.md",
+    ".github/instructions/development.instructions.md",
+    ".github/instructions/governance.instructions.md",
+    ".github/prompts/work-start.prompt.md",
+    ".github/prompts/work-review.prompt.md",
+    ".github/prompts/progress-update.prompt.md"
+  ],
+  "new_templates": [
+    "00_governance/templates/Change_Impact.md",
+    "00_governance/templates/Design_Note.md",
+    "00_governance/templates/Supplier_Response.md",
+    "00_governance/templates/AI_Capability_Log.md",
+    "00_governance/templates/Release.md",
+    "00_governance/templates/Copilot_Environment_Check.md"
+  ]
+}

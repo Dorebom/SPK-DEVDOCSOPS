@@ -1,0 +1,47 @@
+{
+  "revision": "R8",
+  "check": "repeat_sync_views",
+  "result": "PASS",
+  "files": [
+    {
+      "path": "90_All_In_One.md",
+      "sha256": "1ebfb70ce26edac12e3905e5f366ab6a64ff0125684caf6b85fdb00b40d63680",
+      "stable": true
+    },
+    {
+      "path": "chapters/I_System/I-03_System_Functions.md",
+      "sha256": "db8bd2e4579363934cfaf3d59c4fc02a9fc50b4d2b018174c4a4e74ba0aa84a9",
+      "stable": true
+    },
+    {
+      "path": "chapters/II_GW/II-02_GW_Functions.md",
+      "sha256": "cd8a34eb7bd76a6e0855b04074a68fbc5fd3b48a5e9c627a6bf5772d77afd8ec",
+      "stable": true
+    },
+    {
+      "path": "appendices/Requirements_Catalog.md",
+      "sha256": "3421fd8f21e1c6fb9b2bf68a441559a1f807e9708f44c74a7e7c2079a5c6cce4",
+      "stable": true
+    },
+    {
+      "path": "appendices/Open_Question_Register.md",
+      "sha256": "87bac4d81e4f6935d3d51d71437bb0d5d2605736bd5d5fdd0145a309b6c5c95e",
+      "stable": true
+    },
+    {
+      "path": "data/completion_items.json",
+      "sha256": "5541297ca6789f3f2917b2267896494b77c1b1c8b4dac5c7e94bbf5403c922c7",
+      "stable": true
+    },
+    {
+      "path": "data/view_generation.json",
+      "sha256": "7a7d1be22f99fe41081dabde680c2c1dbb72468c2a44e88564e251bdfdffc7a1",
+      "stable": true
+    },
+    {
+      "path": "data/note_question_bindings.json",
+      "sha256": "2c567e952d0a27b8e0a65de83e005a9c2bb8219856347a5a6425679b09298542",
+      "stable": true
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "schema": "spkgw.r13-change-inventory/v1",
+  "relative_to": "R12",
+  "modified_existing": [
+    {
+      "path": "README.md",
+      "operation": "MODIFIED",
+      "old_sha256": "c11e9bdce3218db9daf4ba75162161526590e27e016ab12648d67107b1da27ac",
+      "new_sha256": "c7c53597a7038afdd073c8222447a2b96ada8d36c622f85825c65ecc156aa341"
+    },
+    {
+      "path": "30_references/source_register.json",
+      "operation": "MODIFIED",
+      "old_sha256": "6ff0d62a01d8e89eb2d125a86d5dd5ceead859e410bc42e80c2b6e9b9977d075",
+      "new_sha256": "93d22db52d83c25a4668448992c08be0eb31af20730d5947724808af3677d46e"
+    },
+    {
+      "path": "00_governance/Open_Questions.md",
+      "operation": "MODIFIED",
+      "old_sha256": "88a47fea668571c0fda47c7647a7a6d880eb31ff4085426e08cf1b631d859a3f",
+      "new_sha256": "f92922f9cdbf49f4a8240c9a9dcb6cc5a5d4d48e08f597e9a4439d67bc9c0315"
+    },
+    {
+      "path": "00_governance/STD_09_Change_Risk.md",
+      "operation": "MODIFIED",
+      "old_sha256": "5358a372166eef1263b8fe520cff7b371bbc0063004820836fdea9f97eda4ddd",
+      "new_sha256": "d8e10f44015249ce006a2bc5826d9b1709c34b3b346a08679cb89390b54de8d0"
+    },
+    {
+      "path": "00_governance/STD_04_Task_WBS.md",
+      "operation": "MODIFIED",
+      "old_sha256": "4fc10a6804b6e0932f1330d2694eb4ccba4049b2598e25c5a1157984b9bd6f88",
+      "new_sha256": "3eb4031272a1e39226319c1badcbc0aa1966ff3f7bc59e1e3917db2a7efb2594"
+    },
+    {
+      "path": "00_governance/STD_12_Reports_Decisions.md",
+      "operation": "MODIFIED",
+      "old_sha256": "e623f8ef1674031425ab8432f814f79dd79a110ebc86f0a4c834022e857cf0b6",
+      "new_sha256": "c2573e37b594f5ec4c32da11c35fd5aff28dffe9d4ffe5416b700f912b35a60a"
+    },
+    {
+      "path": "00_governance/STD_01_Authority_Ownership.md",
+      "operation": "MODIFIED",
+      "old_sha256": "e0217e95e2287bb418366643e43f8787e59f0bde54be7f8d03ec93d7f62a42a1",
+      "new_sha256": "3e5e9364fbdd98d8d609f0efb4e1054cc0da951e6b3aee0de4fe98a514f41bac"
+    },
+    {
+      "path": "00_governance/00_MOC.md",
+      "operation": "MODIFIED",
+      "old_sha256": "b8813dbea5a65c5d0c2e5fbe88084a9198baccd0e9817673e7f129919a35e0a9",
+      "new_sha256": "d9b40d013572df3357909956aa65710975bf136b9ccc9907d959ae423e66c089"
+    },
+    {
+      "path": "00_governance/STD_08_Budget_Cost.md",
+      "operation": "MODIFIED",
+      "old_sha256": "6df3a70e5635b013850584c77082f65f9d23dc54e40c04bf6404cc508670c44b",
+      "new_sha256": "489910d82a33878dc515175e89827516adb37785552fc784a3f232e95be1183b"
+    },
+    {
+      "path": "00_governance/Validation_Coverage.md",
+      "operation": "MODIFIED",
+      "old_sha256": "6fea1e7b94e91d2dbbd9cefd9a02713a18fcc224195b01b8da8c58b4557da473",
+      "new_sha256": "b7bf6d41e7d2c91b083ff8f353a717990cc4c6d4e465487396f5c989c6521480"
+    },
+    {
+      "path": "00_governance/STD_05_Process_Gates.md",
+      "operation": "MODIFIED",
+      "old_sha256": "8fa833d6312519b5ca211d53c0927023b4c04034266fb01e4bb737cf6e820525",
+      "new_sha256": "d74c4c94ad33403394d075a1bbfe5a12eb24c4d338c3348af1ba93a4309b4aaf"
+    },
+    {
+      "path": "00_governance/STD_06_Execution_Review_Evidence.md",
+      "operation": "MODIFIED",
+      "old_sha256": "317ba91b12ed0b960c5b9088cd08a8a1cba1a40cc81dd4762098cf37c6adf79f",
+      "new_sha256": "048f8eed452ac4fe7c055248c15f16929bde8453344bf388516bd8f84c92ff5e"
+    },
+    {
+      "path": "00_governance/Tool_Governance.md",
+      "operation": "MODIFIED",
+      "old_sha256": "678fa9fba0e96436b693a3bcdf300dd23501b8fe99f3c3c9c1caaa9270a0a0b3",
+      "new_sha256": "0bf2990345d1abb64bc376ff986648a7133892e2b80e41dbb27416984b64fa61"
+    },
+    {
+      "path": "00_governance/STD_10_AI_Collaboration.md",
+      "operation": "MODIFIED",
+      "old_sha256": "34b205e3078c891cbb9ef617f03a37192aff5dc4f427d1d1d2bd85586d322be1",
+      "new_sha256": "446c10ddd001695c34568f2dd7c5d89bee9d820661eec31f418458f5e5a9f128"
+    },
+    {
+      "path": "00_governance/STD_07_Progress_Schedule.md",
+      "operation": "MODIFIED",
+      "old_sha256": "4f04fc9f40f32408c5fad7034907c49e95f5fe8b74a600f1b07a8ae5c0c7feab",
+      "new_sha256": "895bab5cb6bef53216ceaf93f6ee3104687639c544e8823b6a545a01409ecbc4"
+    },
+    {
+      "path": "00_governance/STD_11_Release_Baselines.md",
+      "operation": "MODIFIED",
+      "old_sha256": "7187fc6d6801c254f67f69d42addd3a53a7862fe173ee8cb36ca96ca0c09e60f",
+      "new_sha256": "223b1fd4b6d229366029176a890fe8795bf74abcc873ed5b7d8d6c4a2ac7af89"
+    },
+    {
+      "path": "00_governance/templates/AI_Work_Order.md",
+      "operation": "MODIFIED",
+      "old_sha256": "71146f317755a1c15c7e54e479c67d147ec5a88db298d6d122b8f764ed3e80fa",
+      "new_sha256": "c66df907b1663496753729a0433516efe7be5d7c134cf01c4da8e3d830fb08b6"
+    },
+    {
+      "path": "00_governance/templates/Change.md",
+      "operation": "MODIFIED",
+      "old_sha256": "ce98cb9194d8c7ee66cc90113560f61bcb5c1d91e8af18c4bcac74ca27f0858f",
+      "new_sha256": "ca067fc2f7f4dcbff4006eee4146aca2ba0b07a94c2fc2479cfd40d4feb37310"
+    },
+    {
+      "path": "00_governance/templates/Execution.md",
+      "operation": "MODIFIED",
+      "old_sha256": "7ce4a222b4c97b198f94e33d3fe90cdcb2c7fafda78b9b0e6d3022fa997c8b04",
+      "new_sha256": "3e5672c03005ca9c1320ce779ccac30696071ba125ff8b26f707082587d860bb"
+    },
+    {
+      "path": "00_governance/templates/Task.md",
+      "operation": "MODIFIED",
+      "old_sha256": "bf953744f4f497b8b757e792c46bf80e4a9686cffc12d3fdd2a384ae231438a6",
+      "new_sha256": "1dd3d98f1b1caca216f040a674d2720bac875a82c9616e7108e2918526754ef7"
+    },
+    {
+      "path": "00_governance/templates/Weekly_Report.md",
+      "operation": "MODIFIED",
+      "old_sha256": "60b5f861ca7576fa8fd66ac7f71419132590d9e8699f1117cdeff7e0a2fff533",
+      "new_sha256": "3af9d02f85c61d3cdeb083d4319f6d8013317949e12e98ade9ff5c68bb8b3af5"
+    },
+    {
+      "path": "00_governance/templates/Plan.md",
+      "operation": "MODIFIED",
+      "old_sha256": "117176a5809435fa77832cfb5c9a43cab3ab74a8a1fecbfbc166a4234b2ed4a0",
+      "new_sha256": "453b4335279652db7a8606a5c4491cb37160e8443d80d405ce7e0c71c47b02f4"
+    },
+    {
+      "path": "00_governance/templates/Review.md",
+      "operation": "MODIFIED",
+      "old_sha256": "cf9090b9263dcc0c30d55314435b638a2dc96452dda539d6bdba5a0c7e5cede9",
+      "new_sha256": "44d59f93061c7db4eeea0658cccbbf4e779fd7205b0df5de4d18ed7e29b6e03c"
+    },
+    {
+      "path": "00_governance/templates/README.md",
+      "operation": "MODIFIED",
+      "old_sha256": "680cee2938760c1aa645f1664c3297be029d685c66b159a6aabbb8f93b1d26bd",
+      "new_sha256": "9290b8c89d1a3cfd8498f9d071c698dd8aa17f20de9ffe0067d7df6d3a1200c6"
+    },
+    {
+      "path": "20_work/analysis/project/trace_graph.json",
+      "operation": "MODIFIED",
+      "old_sha256": "99b0c91b6b2fd7bcf137787a13a522143d832f80ea2a917fd34563bc95a9038f",
+      "new_sha256": "46f9ace70b42fbe01707c0d9b09f7dd4cb77a0a08e46ef37dd9855b03e39813d"
+    },
+    {
+      "path": "20_work/analysis/project/reports/TRACE_DOCUMENTS.md",
+      "operation": "MODIFIED",
+      "old_sha256": "09b72d9e563a2a2a543ce6c76f5ac590a0340b4c345b8d6da438eaef4f4d0263",
+      "new_sha256": "7b91bee215860823e38bb6402d79c816ea68c7a95eda61136f7b7a82c7d62a88"
+    },
+    {
+      "path": "20_work/analysis/project/reports/TRACE_ITEMS.md",
+      "operation": "MODIFIED",
+      "old_sha256": "3ebfe2210b7d2d590655a6c41911851fa065d52a3bef912e092866e29ffccc80",
+      "new_sha256": "665a965fb9fcbbd8d5e93eb92ded13e8a8c0a21cab49808dc9c62c01ced8f36e"
+    },
+    {
+      "path": "20_work/analysis/project/reports/TRACE_INDEX.md",
+      "operation": "MODIFIED",
+      "old_sha256": "2b17e86bb5b21e9fb3dd3f2a6ddf67e2e43c5a0275350f8020fe3f63945bfed9",
+      "new_sha256": "7208b88b47ccc8f1df7b52f26008b845c2f3efd9884f5e65c0841743c79ad2a7"
+    }
+  ],
+  "new_files_excluding_report_itself": [
+    "tools/verify_ai_std_integration.py",
+    ".github/copilot-instructions.md",
+    "00_governance/PROJECT_PROFILE.md",
+    "00_governance/STD_18_AI_Measurement_Improvement.md",
+    "00_governance/STD_15_Design_Decisions.md",
+    "00_governance/R13_Input_Provenance.json",
+    "00_governance/STD_16_Implementation_C_Yocto.md",
+    "00_governance/STD_14_Requirements_Change_Impact.md",
+    "00_governance/STD_17_Security_Supplier.md",
+    "00_governance/Tool_Copilot.md",
+    "00_governance/R13_Change_Log.md",
+    "00_governance/AI_STD_Integration.md",
+    "00_governance/templates/Design_Note.md",
+    "00_governance/templates/AI_Capability_Log.md",
+    "00_governance/templates/Supplier_Response.md",
+    "00_governance/templates/Release.md",
+    "00_governance/templates/Change_Impact.md",
+    "00_governance/templates/Copilot_Environment_Check.md",
+    ".github/instructions/development.instructions.md",
+    ".github/instructions/governance.instructions.md",
+    ".github/prompts/work-start.prompt.md",
+    ".github/prompts/work-review.prompt.md",
+    ".github/prompts/progress-update.prompt.md",
+    "30_references/decisions/CTX-R13-AI-STD.md",
+    "30_references/originals/SPK-GW_HEMS_AI_STD_v1.0.0.zip",
+    "30_references/standards/AI_STD_v1_0_0/MANIFEST_SHA256.txt",
+    "30_references/standards/AI_STD_v1_0_0/README_START_HERE.md",
+    "30_references/standards/AI_STD_v1_0_0/PACKAGE_CHECK.md",
+    "30_references/standards/AI_STD_v1_0_0/.github/copilot-instructions.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/PROJECT_PROFILE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/REFERENCES.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/OPERATION_GUIDE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-05_DESIGN.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-06_IMPLEMENTATION.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-10_SECURITY_AND_SUPPLIER.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-03_WORK_CONTROL.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-11_RISK_AND_EXCEPTIONS.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-01_GOVERNANCE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-09_CONFIGURATION_AND_RELEASE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-02_COPILOT_USAGE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-00_INDEX.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-07_VERIFICATION_AND_ACCEPTANCE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-04_REQUIREMENTS_AND_CHANGE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-08_PROGRESS_MANAGEMENT.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-12_MEASUREMENT_AND_IMPROVEMENT.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/examples/EX-02_PROGRESS_REPORT.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/examples/EX-01_WORK_TICKET.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-07_DECISION_RISK_EXCEPTION.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-05_PROGRESS_REPORT.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-10_AI_CAPABILITY_LOG.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-02_CHANGE_IMPACT.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-06_PLAN_BASELINE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-03_DESIGN_NOTE.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-08_RELEASE_RECORD.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-01_WORK_TICKET.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-04_VERIFICATION_RECORD.md",
+    "30_references/standards/AI_STD_v1_0_0/governance/templates/T-09_SUPPLIER_RESPONSE.md",
+    "30_references/standards/AI_STD_v1_0_0/.github/instructions/development.instructions.md",
+    "30_references/standards/AI_STD_v1_0_0/.github/instructions/governance.instructions.md",
+    "30_references/standards/AI_STD_v1_0_0/.github/prompts/work-start.prompt.md",
+    "30_references/standards/AI_STD_v1_0_0/.github/prompts/work-review.prompt.md",
+    "30_references/standards/AI_STD_v1_0_0/.github/prompts/progress-update.prompt.md",
+    "30_references/baselines/R12_changed/30_references/source_register.json",
+    "30_references/baselines/R12_changed/00_governance/Open_Questions.md",
+    "30_references/baselines/R12_changed/00_governance/STD_09_Change_Risk.md",
+    "30_references/baselines/R12_changed/00_governance/STD_04_Task_WBS.md",
+    "30_references/baselines/R12_changed/00_governance/STD_12_Reports_Decisions.md",
+    "30_references/baselines/R12_changed/00_governance/STD_01_Authority_Ownership.md",
+    "30_references/baselines/R12_changed/00_governance/00_MOC.md",
+    "30_references/baselines/R12_changed/00_governance/STD_08_Budget_Cost.md",
+    "30_references/baselines/R12_changed/00_governance/Validation_Coverage.md",
+    "30_references/baselines/R12_changed/00_governance/STD_05_Process_Gates.md",
+    "30_references/baselines/R12_changed/00_governance/STD_06_Execution_Review_Evidence.md",
+    "30_references/baselines/R12_changed/00_governance/Tool_Governance.md",
+    "30_references/baselines/R12_changed/00_governance/STD_10_AI_Collaboration.md",
+    "30_references/baselines/R12_changed/00_governance/STD_07_Progress_Schedule.md",
+    "30_references/baselines/R12_changed/00_governance/STD_11_Release_Baselines.md",
+    "30_references/baselines/R12_changed/00_governance/templates/AI_Work_Order.md",
+    "30_references/baselines/R12_changed/00_governance/templates/Change.md",
+    "30_references/baselines/R12_changed/00_governance/templates/Execution.md",
+    "30_references/baselines/R12_changed/00_governance/templates/Task.md",
+    "30_references/baselines/R12_changed/00_governance/templates/Weekly_Report.md",
+    "30_references/baselines/R12_changed/00_governance/templates/Plan.md",
+    "30_references/baselines/R12_changed/00_governance/templates/Review.md",
+    "30_references/baselines/R12_changed/00_governance/templates/README.md",
+    "30_references/baselines/R12_changed/20_work/analysis/project/trace_graph.json",
+    "tools/tests/test_ai_std_integration.py",
+    "20_work/analysis/project/ai_std_integration/build_plan.json",
+    "20_work/analysis/project/ai_std_integration/source_fragments.json",
+    "20_work/analysis/project/ai_std_integration/integration.json",
+    "20_work/analysis/project/ai_std_integration/trace_adoption_map.json",
+    "20_work/analysis/project/ai_std_integration/verification/trace_tests.log",
+    "20_work/analysis/project/ai_std_integration/verification/baseline_result.json",
+    "20_work/analysis/project/ai_std_integration/verification/spec_batch_16_23.log",
+    "20_work/analysis/project/ai_std_integration/verification/spec_batch_24_35.log",
+    "20_work/analysis/project/ai_std_integration/verification/spec_result.json",
+    "20_work/analysis/project/ai_std_integration/verification/integration_result.json",
+    "20_work/analysis/project/ai_std_integration/verification/newtests_final.log",
+    "20_work/analysis/project/ai_std_integration/verification/spec_batch_36_47.log",
+    "20_work/analysis/project/ai_std_integration/verification/trace_result.json",
+    "20_work/analysis/project/ai_std_integration/verification/all_test_results.json",
+    "20_work/analysis/project/ai_std_integration/verification/gov_result.json",
+    "20_work/analysis/project/ai_std_integration/verification/link_result.json",
+    "20_work/analysis/project/ai_std_integration/verification/regression.log"
+  ],
+  "note": "Root MANIFEST will be regenerated at final packaging; prior records kept in R12 source version snapshots. New QA and packaging reports may be added after this inventory; final ZIP manifest is complete-file authority."
+}

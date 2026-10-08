@@ -1,0 +1,46 @@
+{
+  "schema": "spkgw.document-inputs/v1",
+  "inputs": [
+    {
+      "filename": "SPK-GW_HEMS_ToBe_Architecture_2026-10-06_v1.0(1).zip",
+      "sha256": "b96db374b5171dc2cca0ae883aa2e6c0dea7635b49244e196d7764cdb6d801fd",
+      "size": 95927
+    },
+    {
+      "filename": "SPK-GW_HEMS_ToBe_20261006(1).md",
+      "sha256": "66d672085b096f4dc42be76451ba8ece8aa33594407a249ffbfbacf985a66426",
+      "size": 103509
+    },
+    {
+      "filename": "SPK-GW_HEMS_System_Spec_20261006_R1.zip",
+      "sha256": "dc356395cecc8c002d1ff8a985b44fc64d14120d62e36e4b6c578c84caf2c263",
+      "size": 270000,
+      "bundled_as": "sources/baseline/R1.zip"
+    },
+    {
+      "filename": "SPK-GW_HEMS_System_Spec_20261006_R2.zip",
+      "sha256": "599f57c78a632515279f6e2a9ae6ee0fe4506c654814a03c38217974cfdc0e54",
+      "size": 612084,
+      "bundled_as": "sources/baseline/R2.zip"
+    },
+    {
+      "filename": "SPK-GW_HEMS_System_Spec_20261006_R3.zip",
+      "sha256": "577d3852c8a3d0b7a075cc2bf1c2c8adaca2f84da1528a31ba110ef2048c8755",
+      "size": 1274002,
+      "bundled_as": "sources/baseline/R3.zip"
+    },
+    {
+      "filename": "SPK-GW_HEMS_System_Spec_20261006_R4.zip",
+      "sha256": "523d9799dc142dbd89c171d394b908175af828eda4be8836c3cb4ab30205722a",
+      "bundled_as": "sources/baseline/R4.zip",
+      "role": "IMMUTABLE_R4_BASELINE"
+    }
+  ],
+  "integrated_markdown_identical": true,
+  "source_manifest_entries_verified": 19,
+  "external_sources_reverified": false,
+  "source_originals_modified": false,
+  "r2_user_input_record": "sources/USER_CONTEXT_R2.md",
+  "r3_user_input_record": "sources/USER_CONTEXT_R3.md",
+  "r4_user_input_record": "sources/USER_CONTEXT_R4.md"
+}

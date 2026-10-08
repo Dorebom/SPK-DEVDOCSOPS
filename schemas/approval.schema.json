@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.adoption-approval/v1"
+    },
+    "decision": {
+      "const": "APPROVE_DOCUMENT_BASELINE"
+    },
+    "draft_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+    },
+    "prepared_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "base_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "toolchain_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "approved_by": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "approved_at": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "product_requirements_approved": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema",
+    "decision",
+    "draft_id",
+    "prepared_sha256",
+    "base_sha256",
+    "toolchain_sha256",
+    "approved_by",
+    "approved_at",
+    "rationale",
+    "product_requirements_approved"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "approval"
+}

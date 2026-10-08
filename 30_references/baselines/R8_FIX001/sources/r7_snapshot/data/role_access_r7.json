@@ -1,0 +1,350 @@
+{
+  "schema": "spkgw.role-access-draft/v1",
+  "human_roles": [
+    {
+      "id": "USER",
+      "name": "ユーザ",
+      "name_status": "USER_CONFIRMED",
+      "responsibility_proposal": "所有・利用する住宅の監視、許可された通常運転・利用者設定"
+    },
+    {
+      "id": "MAINTENANCE",
+      "name": "メンテナンス",
+      "name_status": "USER_CONFIRMED",
+      "responsibility_proposal": "委託された設備の施工・点検・診断・許可された復旧"
+    },
+    {
+      "id": "MANUFACTURER",
+      "name": "メーカー",
+      "name_status": "USER_CONFIRMED",
+      "responsibility_proposal": "製品個体・リリース・配信・承認された保守の管理"
+    },
+    {
+      "id": "DEVELOPER",
+      "name": "開発者",
+      "name_status": "USER_CONFIRMED",
+      "responsibility_proposal": "開発・試験環境の検証と、別途認可された限定診断"
+    }
+  ],
+  "hierarchy": "NOT_DEFINED_NO_AUTOMATIC_SUPERUSER",
+  "machine_actors_are_separate": true,
+  "permissions": [
+    {
+      "id": "ACCESS-DRAFT-01",
+      "operation": "住宅の状態・履歴閲覧",
+      "gw_function_ids": [
+        "GW-FN-008",
+        "GW-FN-009",
+        "GW-FN-018",
+        "GW-FN-019"
+      ],
+      "proposed_permissions": {
+        "USER": "自住宅",
+        "MAINTENANCE": "委託対象・必要範囲",
+        "MANUFACTURER": "承認対象・必要範囲",
+        "DEVELOPER": "試験データ／別途認可"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "主体と住宅・機器・データのscopeを確認。メーカー／開発者へ全住宅を開放しない",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-02",
+      "operation": "通常運転・利用者設定変更",
+      "gw_function_ids": [
+        "GW-FN-001",
+        "GW-FN-004",
+        "GW-FN-005",
+        "GW-FN-006",
+        "GW-FN-020"
+      ],
+      "proposed_permissions": {
+        "USER": "範囲限定で候補",
+        "MAINTENANCE": "委託・保守条件付き",
+        "MANUFACTURER": "個別委任時のみ候補",
+        "DEVELOPER": "開発環境のみ候補"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "本体操作と競合、契約条件、許可操作、現在状態を再確認",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-03",
+      "operation": "機器登録・通信設定・試運転",
+      "gw_function_ids": [
+        "GW-FN-010",
+        "GW-FN-021",
+        "GW-FN-029"
+      ],
+      "proposed_permissions": {
+        "USER": "案内された初期設定範囲",
+        "MAINTENANCE": "施工権限付き",
+        "MANUFACTURER": "製造／正規保守範囲",
+        "DEVELOPER": "試験環境のみ"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "電力計測対応・対象機器・変更世代を確認",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-04",
+      "operation": "診断ログの取得・出力",
+      "gw_function_ids": [
+        "GW-FN-025"
+      ],
+      "proposed_permissions": {
+        "USER": "利用者向け診断のみ",
+        "MAINTENANCE": "委託対象・秘密除去",
+        "MANUFACTURER": "承認された解析対象",
+        "DEVELOPER": "匿名化／試験環境"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "詳細ログ・住宅情報・資格情報の露出を別分類",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-05",
+      "operation": "H側サービス再起動・復旧",
+      "gw_function_ids": [
+        "GW-FN-022",
+        "GW-FN-026",
+        "GW-FN-032"
+      ],
+      "proposed_permissions": {
+        "USER": "公開済みの限定操作のみ",
+        "MAINTENANCE": "保守Job条件付き",
+        "MANUFACTURER": "正規保守条件付き",
+        "DEVELOPER": "開発環境のみ"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "G側を巻き込む操作をH限定と表示しない",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-06",
+      "operation": "GW通常FWの適用要求",
+      "gw_function_ids": [
+        "GW-FN-023",
+        "GW-FN-024"
+      ],
+      "proposed_permissions": {
+        "USER": "承認済み更新の操作候補",
+        "MAINTENANCE": "承認済み配布物のみ",
+        "MANUFACTURER": "管理・承認条件付き",
+        "DEVELOPER": "試験機のみ"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "リリース承認・署名・適用・復旧は異なる責務",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-07",
+      "operation": "本番FWリリースの承認・配布",
+      "gw_function_ids": [
+        "GW-FN-023",
+        "GW-FN-024"
+      ],
+      "proposed_permissions": {
+        "USER": "不可案",
+        "MAINTENANCE": "不可案",
+        "MANUFACTURER": "独立したリリース権限",
+        "DEVELOPER": "成果物提出のみ候補"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "開発者とリリース承認者の職務分離可否を決める。GWが署名秘密鍵を持つとはしない",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-08",
+      "operation": "設定バックアップ・リストア・初期化",
+      "gw_function_ids": [
+        "GW-FN-020",
+        "GW-FN-030"
+      ],
+      "proposed_permissions": {
+        "USER": "利用者範囲のみ候補",
+        "MAINTENANCE": "保守範囲・再確認",
+        "MANUFACTURER": "正規保守範囲",
+        "DEVELOPER": "試験環境のみ"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "所有者・系統設定・資格情報の移行を別確認",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-09",
+      "operation": "所有者変更・関連付け・消去",
+      "gw_function_ids": [
+        "GW-FN-027",
+        "GW-FN-030"
+      ],
+      "proposed_permissions": {
+        "USER": "本人確認・確認操作付き",
+        "MAINTENANCE": "委任と記録付き",
+        "MANUFACTURER": "承認された手続きのみ",
+        "DEVELOPER": "本番は原則不可案"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "旧セッション・待機要求・クラウド関連付けの失効条件を定義",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-10",
+      "operation": "製造個体ID・資格情報投入",
+      "gw_function_ids": [
+        "GW-FN-027",
+        "GW-FN-029"
+      ],
+      "proposed_permissions": {
+        "USER": "不可案",
+        "MAINTENANCE": "通常保守では不可案",
+        "MANUFACTURER": "製造専用権限",
+        "DEVELOPER": "試験値のみ"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "量産機の製造モード閉鎖と秘密取扱いを別定義",
+      "environment": "製造環境又は隔離された試験環境",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-11",
+      "operation": "開発診断・試験操作",
+      "gw_function_ids": [
+        "GW-FN-022",
+        "GW-FN-025",
+        "GW-FN-029"
+      ],
+      "proposed_permissions": {
+        "USER": "不可案",
+        "MAINTENANCE": "正規診断のみ",
+        "MANUFACTURER": "正規診断又は試験設備",
+        "DEVELOPER": "隔離環境・許可操作"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "開発者ロールを量産機の裏口にしない。shell等の有無自体も未決",
+      "environment": "開発／試験。量産環境の例外は個別認可",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-12",
+      "operation": "系統構成・G側設定・G側FW保守",
+      "gw_function_ids": [
+        "GW-FN-028"
+      ],
+      "proposed_permissions": {
+        "USER": "通常経路では不可",
+        "MAINTENANCE": "別経路・追加認可が必要",
+        "MANUFACTURER": "別経路・追加認可が必要",
+        "DEVELOPER": "通常経路では不可"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "4ロールの上下関係では解禁しない。IF-MAINT-01／IF-GRID-03の適用・資格・変更手続きを別確認",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    },
+    {
+      "id": "ACCESS-DRAFT-13",
+      "operation": "通常APIで系統制約・保護を解除",
+      "gw_function_ids": [
+        "GW-FN-028"
+      ],
+      "proposed_permissions": {
+        "USER": "禁止",
+        "MAINTENANCE": "禁止",
+        "MANUFACTURER": "禁止",
+        "DEVELOPER": "禁止"
+      },
+      "approved_permissions": {
+        "USER": null,
+        "MAINTENANCE": null,
+        "MANUFACTURER": null,
+        "DEVELOPER": null
+      },
+      "condition": "通常操作による迂回禁止は既存仕様。認可済み専用保守の設定変更を一律禁止する意味ではない",
+      "environment": "本番／開発等を個別指定",
+      "status": "PROPOSED_NOT_AUTHORIZATION",
+      "approval_record": null
+    }
+  ]
+}

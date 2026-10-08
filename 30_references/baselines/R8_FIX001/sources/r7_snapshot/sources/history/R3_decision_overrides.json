@@ -1,0 +1,44 @@
+{
+  "schema": "spkgw.decision-overrides/v1",
+  "revision": "R3",
+  "decisions": [
+    {
+      "id": "R3-DEC-001",
+      "status": "USER_REQUIREMENT_CONFIRMED",
+      "subject": "PCS直接方式とGW管理方式を両方選択対象にする",
+      "source": "CTX-R3",
+      "supersedes_current_policy": [
+        "DEC-004",
+        "R2.governing_deployment"
+      ],
+      "does_not_approve": [
+        "特定機種の対応",
+        "G側の物理実装",
+        "無停止切替",
+        "認証承認・試験免除"
+      ]
+    },
+    {
+      "id": "R3-DEC-002",
+      "status": "PROPOSED_FOR_REVIEW",
+      "subject": "scopeごとに一つの有効スケジュール適用主体とし、保守時に管理切替する",
+      "source": "SP-R3"
+    },
+    {
+      "id": "R3-DEC-003",
+      "status": "PROPOSED_FOR_REVIEW",
+      "subject": "通信断時の自動方式切替は既定で不採用",
+      "source": "SP-R3"
+    },
+    {
+      "id": "R3-DEC-004",
+      "status": "UNRESOLVED",
+      "subject": "GW_MANAGEDの別CPU／同一CPU等の実配置は独立性評価により確定",
+      "preserves": [
+        "DEC-009",
+        "TBD-011"
+      ],
+      "source": "SP-R3"
+    }
+  ]
+}

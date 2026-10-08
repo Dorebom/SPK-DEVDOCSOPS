@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "scope": "DOCUMENT_TEMPLATE_AND_SYNTHETIC_DATA_RULES_ONLY",
+  "templates_checked": 2,
+  "synthetic_cases": 12,
+  "results": [
+    {
+      "case": "synthetic_direct_shape",
+      "passed": true,
+      "observed_errors": []
+    },
+    {
+      "case": "synthetic_gw_shape",
+      "passed": true,
+      "observed_errors": []
+    },
+    {
+      "case": "unset_mode",
+      "passed": true,
+      "observed_errors": [
+        "MODE_NOT_SUPPORTED",
+        "UNKNOWN_MODE",
+        "WRONG_OWNER_DOMAIN"
+      ]
+    },
+    {
+      "case": "unsupported",
+      "passed": true,
+      "observed_errors": [
+        "MODE_NOT_SUPPORTED"
+      ]
+    },
+    {
+      "case": "no_scope",
+      "passed": true,
+      "observed_errors": [
+        "SCOPE_REQUIRED"
+      ]
+    },
+    {
+      "case": "two_active_owners",
+      "passed": true,
+      "observed_errors": [
+        "EXACTLY_ONE_ACTIVE_OWNER_REQUIRED"
+      ]
+    },
+    {
+      "case": "wrong_owner",
+      "passed": true,
+      "observed_errors": [
+        "WRONG_OWNER_DOMAIN"
+      ]
+    },
+    {
+      "case": "auto_switch",
+      "passed": true,
+      "observed_errors": [
+        "AUTOMATIC_MODE_FALLBACK_NOT_SUPPORTED"
+      ]
+    },
+    {
+      "case": "no_approval",
+      "passed": true,
+      "observed_errors": [
+        "APPROVAL_RECORD_REQUIRED"
+      ]
+    },
+    {
+      "case": "receipt_only",
+      "passed": true,
+      "observed_errors": [
+        "PHYSICAL_CONFIRMATION_REQUIRED"
+      ]
+    },
+    {
+      "case": "hems_dependency",
+      "passed": true,
+      "observed_errors": [
+        "HEMS_DEPENDENCY_PROHIBITED"
+      ]
+    },
+    {
+      "case": "no_link_failure_profile",
+      "passed": true,
+      "observed_errors": [
+        "REQUIRED_LINK_FAULT_PROFILE_REQUIRED"
+      ]
+    }
+  ],
+  "errors": [],
+  "no_device_operations": true,
+  "not_a_switch_or_certification_test": true
+}

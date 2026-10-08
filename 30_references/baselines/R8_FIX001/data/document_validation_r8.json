@@ -1,0 +1,163 @@
+{
+  "revision": "R8",
+  "result": "PASS",
+  "baseline_check": true,
+  "current_markdown_files": 76,
+  "local_links": 8665,
+  "checks": {
+    "five_parts_44_chapters": {
+      "pass": true,
+      "details": {
+        "parts": 5,
+        "chapters": 44,
+        "part_counts": [
+          8,
+          11,
+          10,
+          8,
+          7
+        ]
+      }
+    },
+    "chapter_paths_exist": {
+      "pass": true,
+      "details": null
+    },
+    "no_active_old_parts_or_27_chapter_layout": {
+      "pass": true,
+      "details": null
+    },
+    "single_moc_has_all_chapters": {
+      "pass": true,
+      "details": null
+    },
+    "markdown_links": {
+      "pass": true,
+      "details": {
+        "checked_local": 8665,
+        "external_not_fetched": 0,
+        "errors": []
+      }
+    },
+    "unique_explicit_anchors": {
+      "pass": true,
+      "details": []
+    },
+    "all_current_md_end_with_open_questions": {
+      "pass": true,
+      "details": {
+        "files": 76,
+        "errors": []
+      }
+    },
+    "balanced_fences": {
+      "pass": true,
+      "details": []
+    },
+    "json_syntax": {
+      "pass": true,
+      "details": []
+    },
+    "85_unique_oq_owners": {
+      "pass": true,
+      "details": null
+    },
+    "85_unique_completion_slots": {
+      "pass": true,
+      "details": null
+    },
+    "question_owner_and_slot_links": {
+      "pass": true,
+      "details": null
+    },
+    "259_source_sections_mapped_once": {
+      "pass": true,
+      "details": {
+        "source_sections": 259
+      }
+    },
+    "function_catalog_21_and_32": {
+      "pass": true,
+      "details": null
+    },
+    "bidirectional_function_allocation": {
+      "pass": true,
+      "details": {
+        "pairs": 94,
+        "mismatch": []
+      }
+    },
+    "function_requirement_question_refs": {
+      "pass": true,
+      "details": null
+    },
+    "requirement_owners_124": {
+      "pass": true,
+      "details": null
+    },
+    "69_test_refs": {
+      "pass": true,
+      "details": null
+    },
+    "50_parameters_48_issues_16_interfaces": {
+      "pass": true,
+      "details": null
+    },
+    "34_review_dimensions": {
+      "pass": true,
+      "details": null
+    },
+    "4_named_roles": {
+      "pass": true,
+      "details": null
+    },
+    "3_inherited_config_patterns": {
+      "pass": true,
+      "details": null
+    },
+    "router_and_fetcher_contract": {
+      "pass": true,
+      "details": null
+    },
+    "175_archived_inputs_unchanged": {
+      "pass": true,
+      "details": []
+    },
+    "6_diagram_assets_unchanged": {
+      "pass": true,
+      "details": null
+    },
+    "requirement_semantics_unchanged": {
+      "pass": true,
+      "details": []
+    },
+    "function_semantics_unchanged": {
+      "pass": true,
+      "details": []
+    },
+    "9_baseline_data_files_byte_identical": {
+      "pass": true,
+      "details": [
+        "test_catalog.json",
+        "parameters.json",
+        "open_issues.json",
+        "external_interfaces.json",
+        "role_access_r7.json",
+        "configuration_patterns_r7.json",
+        "grid_network_routes.json",
+        "grid_connection_profiles.json",
+        "echonet_normal_routes.json"
+      ]
+    },
+    "no_fabricated_test_or_permission_approval": {
+      "pass": true,
+      "details": null
+    }
+  },
+  "warnings": [
+    "文書構造・ID・参照・継承データの検査であり、技術仕様の完全性・実装・実機・セキュリティ・JET判断を検証しない。",
+    "外部URLは再取得していない。sources配下は保存ハッシュのみ検査し、歴史的リンクの修復はしない。",
+    "既存図6資産の不変性を検査した。Mermaid再描画・ネットワーク実測は未実施。"
+  ],
+  "errors": []
+}

@@ -1,0 +1,1209 @@
+{
+  "schema": "spkgw.source-register/v1",
+  "sources": [
+    {
+      "source_id": "A01",
+      "document_id": "A01",
+      "revision": "architecture-v1.0",
+      "sha256": "55138a4c1096e51fac8f643788376764ef33441a759a2621b174adbcdd9b78a0",
+      "bytes": 8155,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/01_Architecture.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A02",
+      "document_id": "A02",
+      "revision": "architecture-v1.0",
+      "sha256": "6f440c20a367881f789471f36aff84378d6b73d458666077b1df9f9def0e558c",
+      "bytes": 7247,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/02_Responsibilities.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A03",
+      "document_id": "A03",
+      "revision": "architecture-v1.0",
+      "sha256": "e67e4cadffc38368b75006adca99e24b31c3f5faf78cc4d4426918327528f279",
+      "bytes": 9482,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/03_Command_Flows.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A04",
+      "document_id": "A04",
+      "revision": "architecture-v1.0",
+      "sha256": "b0c0e0726b4673af28b29e810550d66df9f42210b39db707807e88883aa5c0ec",
+      "bytes": 7342,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/04_JET_Isolation.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A05",
+      "document_id": "A05",
+      "revision": "architecture-v1.0",
+      "sha256": "0457152061071b8041907e8e483ba52dfad93f056e18fe4f3fb4fbb0bee463a4",
+      "bytes": 8525,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/05_Device_Classes.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A06",
+      "document_id": "A06",
+      "revision": "architecture-v1.0",
+      "sha256": "d1b1d577b60fcb0815bb42ae6430eb68cfe3304e505afe928db3b32861669375",
+      "bytes": 8646,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/06_Contracts.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A07",
+      "document_id": "A07",
+      "revision": "architecture-v1.0",
+      "sha256": "9acc7aade76f1a3e0d1b888243ddcb2b388ec505fbecbc1b65b10d7134f6a963",
+      "bytes": 6779,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/07_Power_Constraints.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A08",
+      "document_id": "A08",
+      "revision": "architecture-v1.0",
+      "sha256": "3147b8ada99b580b06624434818dcbc798e78a467bbdb7630b382fb03ac43644",
+      "bytes": 8450,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/08_Deployment_Failures_OTA.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A09",
+      "document_id": "A09",
+      "revision": "architecture-v1.0",
+      "sha256": "f2c0d290d4a07ee31f5451b58c39ad4d1eb10f426915c4c3a7e4476b6333f96f",
+      "bytes": 6547,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/09_Risks_Alternatives.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A10",
+      "document_id": "A10",
+      "revision": "architecture-v1.0",
+      "sha256": "20d698a0074adf587688d4198f4c687e3cc58b4c508afbf313f74af9debf77f4",
+      "bytes": 8490,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/10_Requirements_Tests.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A11",
+      "document_id": "A11",
+      "revision": "architecture-v1.0",
+      "sha256": "ceba5762f9c34bad38805b7d5715621395bca407ae9516b43227ae12707f006a",
+      "bytes": 6750,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/11_Migration_Decisions.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "A12",
+      "document_id": "A12",
+      "revision": "architecture-v1.0",
+      "sha256": "2f08ee33dfea0e5bb84e14be6eb32bdd64e03bd33ff8cbe52bcdab26f0322da3",
+      "bytes": 10985,
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/12_Sources.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "継承文献ID。原資料内の段落/セル対応を新規に確定したものではない。"
+    },
+    {
+      "source_id": "CTX",
+      "document_id": "CTX",
+      "revision": "CTX",
+      "sha256": "95579e8917f9bb446bc451909782a43d82080637b069883b82fb545feb1af7ea",
+      "bytes": 2396,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R2",
+      "document_id": "CTX-R2",
+      "revision": "CTX-R2",
+      "sha256": "34b547e3c6f5d5c3c1768cced897fce744ae20383118ef0b5e29dde95437717f",
+      "bytes": 1877,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R2.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R3",
+      "document_id": "CTX-R3",
+      "revision": "CTX-R3",
+      "sha256": "b43e3c0424634546d7057ca7a989c886d02a8c3320c5f1876d6720e0cc8937c2",
+      "bytes": 1625,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R3.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R4",
+      "document_id": "CTX-R4",
+      "revision": "CTX-R4",
+      "sha256": "e4f680b55ec096e5071c18484aa817950fba20c46d99ed7f598320d1f7e27e2f",
+      "bytes": 2153,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R4.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R5",
+      "document_id": "CTX-R5",
+      "revision": "CTX-R5",
+      "sha256": "238b66e493ed6014df7677ba5b02c7bb140ecc73a5daf04cd61e3cd393899bf5",
+      "bytes": 1104,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R5.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R6",
+      "document_id": "CTX-R6",
+      "revision": "CTX-R6",
+      "sha256": "4f85825f20a99237e15121adc0cd4e7ab16f334fe94073d6e370a538a8598f32",
+      "bytes": 981,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R6.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R7",
+      "document_id": "CTX-R7",
+      "revision": "CTX-R7",
+      "sha256": "2466a7232c689c0a37ebdb732c9db34b8e15bea5add82e9daff08e4dc5b95966",
+      "bytes": 1292,
+      "path": "30_references/baselines/R8_FIX001/sources/USER_CONTEXT_R7.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "保存済みユーザー入力の記録。製品全体の承認ではない。"
+    },
+    {
+      "source_id": "SP",
+      "document_id": "SP",
+      "revision": "R8-FIX001",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "bytes": 50677,
+      "path": "30_references/baselines/R8_FIX001/data/revision_changes.json",
+      "format": "json",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧SYS台帳の提案由来IDをR8の改訂台帳へ接続した継承エイリアス。独立原資料ではなく当時の提案識別子。"
+    },
+    {
+      "source_id": "SP-R2",
+      "document_id": "SP-R2",
+      "revision": "R8-FIX001",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "bytes": 50677,
+      "path": "30_references/baselines/R8_FIX001/data/revision_changes.json",
+      "format": "json",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧SYS台帳の提案由来IDをR8の改訂台帳へ接続した継承エイリアス。独立原資料ではなく当時の提案識別子。"
+    },
+    {
+      "source_id": "SP-R3",
+      "document_id": "SP-R3",
+      "revision": "R8-FIX001",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "bytes": 50677,
+      "path": "30_references/baselines/R8_FIX001/data/revision_changes.json",
+      "format": "json",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧SYS台帳の提案由来IDをR8の改訂台帳へ接続した継承エイリアス。独立原資料ではなく当時の提案識別子。"
+    },
+    {
+      "source_id": "SP-R4",
+      "document_id": "SP-R4",
+      "revision": "R8-FIX001",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "bytes": 50677,
+      "path": "30_references/baselines/R8_FIX001/data/revision_changes.json",
+      "format": "json",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧SYS台帳の提案由来IDをR8の改訂台帳へ接続した継承エイリアス。独立原資料ではなく当時の提案識別子。"
+    },
+    {
+      "source_id": "EXT-FW-01",
+      "document_id": "EXT-FW-01",
+      "revision": "R8-FIX001",
+      "sha256": "0c3f60699fe1f3f9ec1dfb509ec5472a335aa0fa4a187eb2f3f6d064d50390d3",
+      "bytes": 1717,
+      "path": "30_references/baselines/R8_FIX001/sources/R2_External_References.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧参考資料の保存記録。外部サイトの再取得・規格適合確認ではない。"
+    },
+    {
+      "source_id": "EXT-FW-02",
+      "document_id": "EXT-FW-02",
+      "revision": "R8-FIX001",
+      "sha256": "0c3f60699fe1f3f9ec1dfb509ec5472a335aa0fa4a187eb2f3f6d064d50390d3",
+      "bytes": 1717,
+      "path": "30_references/baselines/R8_FIX001/sources/R2_External_References.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": "旧参考資料の保存記録。外部サイトの再取得・規格適合確認ではない。"
+    },
+    {
+      "source_id": "SRC-BASE-R8-FIX001",
+      "document_id": "SRC-BASE-R8-FIX001",
+      "revision": "R8-FIX001",
+      "sha256": "ff984bda9214c9d874640cf078087da40674b0eb379babb5c597fed8085481e2",
+      "bytes": 2483880,
+      "path": "30_references/originals/R8_FIX001.zip",
+      "format": "zip",
+      "basis": "BASELINE",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": ""
+    },
+    {
+      "source_id": "SRC-IMPORT-REVIEW",
+      "document_id": "SRC-IMPORT-REVIEW",
+      "revision": "A1",
+      "sha256": "17d6031c759b23ae59f5313e6dfce29a2a6591f5d7037d417212bcbb39e98790",
+      "bytes": 28930,
+      "path": "30_references/reviews/SPK-GW_HEMS_R8_FIX001_Import_USDM_Review_20261008.md",
+      "format": "md",
+      "basis": "REVIEW",
+      "approval_state": "UNVERIFIED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": ""
+    },
+    {
+      "source_id": "CTX-R9",
+      "document_id": "CTX-R9",
+      "revision": "2026-10-08",
+      "sha256": "c13ebd899b68d48471732a1d37befacf8394623def13c08ecb8f40be2e3a5150",
+      "bytes": 667,
+      "path": "30_references/decisions/CTX-R9.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "DOCUMENT_FLOW_CONFIRMED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "product": "SPK-GW_HEMS",
+        "applicability": "要確認"
+      },
+      "note": ""
+    },
+    {
+      "source_id": "AISTD1-SRC-001",
+      "document_id": "AISTD1-SRC-001",
+      "revision": "1.0.0",
+      "sha256": "aeba6e74159bdfd61bc9b9d1bf899bf10a7e3a51218caa8fd575fd6720043c09",
+      "bytes": 3498,
+      "path": "30_references/standards/AI_STD_v1_0_0/.github/copilot-instructions.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-002",
+      "document_id": "AISTD1-SRC-002",
+      "revision": "1.0.0",
+      "sha256": "ea8d14ed8df2ef123f499f34d4ee7b462e956e7919c523cf939b7245c7efd932",
+      "bytes": 2402,
+      "path": "30_references/standards/AI_STD_v1_0_0/.github/instructions/development.instructions.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-003",
+      "document_id": "AISTD1-SRC-003",
+      "revision": "1.0.0",
+      "sha256": "0ad8c51919385cc8fdda3c1c2748d031087b19c0612ab610002b1622633f2823",
+      "bytes": 2474,
+      "path": "30_references/standards/AI_STD_v1_0_0/.github/instructions/governance.instructions.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-004",
+      "document_id": "AISTD1-SRC-004",
+      "revision": "1.0.0",
+      "sha256": "500aca76ed410fb12bb2e629c85b4b924edbcdf84f7bc5028ad18d168e6f82c6",
+      "bytes": 3297,
+      "path": "30_references/standards/AI_STD_v1_0_0/.github/prompts/progress-update.prompt.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-005",
+      "document_id": "AISTD1-SRC-005",
+      "revision": "1.0.0",
+      "sha256": "29f95aeb18430a52a90d6aef374a0e527969703a2dfcbafa3ff386b1f9b859fa",
+      "bytes": 3221,
+      "path": "30_references/standards/AI_STD_v1_0_0/.github/prompts/work-review.prompt.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-006",
+      "document_id": "AISTD1-SRC-006",
+      "revision": "1.0.0",
+      "sha256": "7a0877aaaa7d6c6209b4812b0b732310380704a8950ed47e7015a41c25bb4c0b",
+      "bytes": 3064,
+      "path": "30_references/standards/AI_STD_v1_0_0/.github/prompts/work-start.prompt.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-007",
+      "document_id": "AISTD1-SRC-007",
+      "revision": "1.0.0",
+      "sha256": "9fbaddc5c15eeb8a7674ee64d531bc70396678c7d6afe00edb2246d725097dfa",
+      "bytes": 3843,
+      "path": "30_references/standards/AI_STD_v1_0_0/MANIFEST_SHA256.txt",
+      "format": "txt",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-008",
+      "document_id": "AISTD1-SRC-008",
+      "revision": "1.0.0",
+      "sha256": "7518e6b82235ac6114f44eeb89027c847b49cebba284143f79c1efc54e091ec3",
+      "bytes": 3288,
+      "path": "30_references/standards/AI_STD_v1_0_0/PACKAGE_CHECK.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-009",
+      "document_id": "AISTD1-SRC-009",
+      "revision": "1.0.0",
+      "sha256": "0aa0eba77ed5e109a750bdc064e8c88b99ca4617892652a6f93e999a7bf584d6",
+      "bytes": 7638,
+      "path": "30_references/standards/AI_STD_v1_0_0/README_START_HERE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-010",
+      "document_id": "AISTD1-SRC-010",
+      "revision": "1.0.0",
+      "sha256": "5c0d2882c3d2e59da2ded57112b342d7d9f6f0d7678bce268a0f667c1d55b9b7",
+      "bytes": 7151,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/OPERATION_GUIDE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-011",
+      "document_id": "AISTD1-SRC-011",
+      "revision": "1.0.0",
+      "sha256": "a1c71b33ecb94d76c17df8852ff8f8bad28b67e013ac5e698a63dca4bf180e3d",
+      "bytes": 9680,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/PROJECT_PROFILE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-012",
+      "document_id": "AISTD1-SRC-012",
+      "revision": "1.0.0",
+      "sha256": "4709826be0842349e0363c331e37a6685cde5baf5f45f94312289fc1711796fe",
+      "bytes": 5886,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/REFERENCES.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-013",
+      "document_id": "AISTD1-SRC-013",
+      "revision": "1.0.0",
+      "sha256": "71c74fbb6359cdcf142491909d6e5bb0ebdf4e02a3960512e6ddcaa07d5ddbd6",
+      "bytes": 5917,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-00_INDEX.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-014",
+      "document_id": "AISTD1-SRC-014",
+      "revision": "1.0.0",
+      "sha256": "a4b2e0e4d8909409fd8d7170d65354cbe3d1b0c5788555ec5e0a392cb695e1a3",
+      "bytes": 9348,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-01_GOVERNANCE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-015",
+      "document_id": "AISTD1-SRC-015",
+      "revision": "1.0.0",
+      "sha256": "814f7fe4f9ee5430c2c0781c94b60b387d82d1385b12c3ae607d2913f99b9ec5",
+      "bytes": 17865,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-02_COPILOT_USAGE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-016",
+      "document_id": "AISTD1-SRC-016",
+      "revision": "1.0.0",
+      "sha256": "f8bc27e1b9e89162c5e2f5af1a649e82a034bab232538cb0699da6d5b510101e",
+      "bytes": 7341,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-03_WORK_CONTROL.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-017",
+      "document_id": "AISTD1-SRC-017",
+      "revision": "1.0.0",
+      "sha256": "49894345709ec52514041ec0fc0212055cc164760340af5df30ecd7b7eb45c60",
+      "bytes": 12502,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-04_REQUIREMENTS_AND_CHANGE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-018",
+      "document_id": "AISTD1-SRC-018",
+      "revision": "1.0.0",
+      "sha256": "16af32c7a6e505aab5aa150f42134bd587401905c0e666d58d9d9b68e3b4eab8",
+      "bytes": 11772,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-05_DESIGN.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-019",
+      "document_id": "AISTD1-SRC-019",
+      "revision": "1.0.0",
+      "sha256": "847f667be42c29218de2ebdcf6c779a6e34c83dc243f4ccf1be16b65ac48b140",
+      "bytes": 11590,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-06_IMPLEMENTATION.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-020",
+      "document_id": "AISTD1-SRC-020",
+      "revision": "1.0.0",
+      "sha256": "7f0872e169dda0ff9204fd173d85f6437c6757c3440ed4959fc1fc177284cb8f",
+      "bytes": 11841,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-07_VERIFICATION_AND_ACCEPTANCE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-021",
+      "document_id": "AISTD1-SRC-021",
+      "revision": "1.0.0",
+      "sha256": "da60bbd3de59a61c1ee72efbde46969a2dde136bd3d3a9609674bd80af4db5d9",
+      "bytes": 11815,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-08_PROGRESS_MANAGEMENT.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-022",
+      "document_id": "AISTD1-SRC-022",
+      "revision": "1.0.0",
+      "sha256": "591b4fc41f0a28807b060c0e183c6f6fd980d34e447d3a54ea5a9230b7c7561c",
+      "bytes": 7577,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-09_CONFIGURATION_AND_RELEASE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-023",
+      "document_id": "AISTD1-SRC-023",
+      "revision": "1.0.0",
+      "sha256": "60104e2d1ea16ffb9fc754a9e3285cbd610683c2dd53024a13b49007846b7d36",
+      "bytes": 7984,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-10_SECURITY_AND_SUPPLIER.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-024",
+      "document_id": "AISTD1-SRC-024",
+      "revision": "1.0.0",
+      "sha256": "6e7451cbe6af3a91bb0fe80815c59fb61833e9ff0a3ac79951e80e063c1c1543",
+      "bytes": 10321,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-11_RISK_AND_EXCEPTIONS.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-025",
+      "document_id": "AISTD1-SRC-025",
+      "revision": "1.0.0",
+      "sha256": "05c1bf507faa72d760251e1453d09621186fdb515e92271939b5c172e09e35ae",
+      "bytes": 10823,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/STD/STD-12_MEASUREMENT_AND_IMPROVEMENT.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-026",
+      "document_id": "AISTD1-SRC-026",
+      "revision": "1.0.0",
+      "sha256": "6da5a0eb773560b67d3579e2e144927ca03240a0fa821b3949c344b92fcc439e",
+      "bytes": 4285,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/examples/EX-01_WORK_TICKET.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-027",
+      "document_id": "AISTD1-SRC-027",
+      "revision": "1.0.0",
+      "sha256": "49133c62a59876ab79914ad6da180848c1fc598c4d3f062aa6409a58a4d5a043",
+      "bytes": 8449,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/examples/EX-02_PROGRESS_REPORT.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-028",
+      "document_id": "AISTD1-SRC-028",
+      "revision": "1.0.0",
+      "sha256": "ec65951dea0c04e9052f95280580f07c760ba16cc594a1db4ad03630275dc0b0",
+      "bytes": 4668,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-01_WORK_TICKET.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-029",
+      "document_id": "AISTD1-SRC-029",
+      "revision": "1.0.0",
+      "sha256": "cf8a68d797f6eab23dc507d9698cbb775a1bcdb8013af1261984ee39783105c9",
+      "bytes": 5033,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-02_CHANGE_IMPACT.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-030",
+      "document_id": "AISTD1-SRC-030",
+      "revision": "1.0.0",
+      "sha256": "135eceebcab26063e61c324581beac3805ec1d285c6f6a9c4ef3d4310009779a",
+      "bytes": 5252,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-03_DESIGN_NOTE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-031",
+      "document_id": "AISTD1-SRC-031",
+      "revision": "1.0.0",
+      "sha256": "52ff5496c29cd4552d74bc4dfc71b6e47fdb702d7e2d15cf77fa79afa9b85729",
+      "bytes": 5858,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-04_VERIFICATION_RECORD.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-032",
+      "document_id": "AISTD1-SRC-032",
+      "revision": "1.0.0",
+      "sha256": "dfb9a58df8516764e9609ba3665937b199e0cf0436eda60b6d3445f8af877e31",
+      "bytes": 5639,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-05_PROGRESS_REPORT.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-033",
+      "document_id": "AISTD1-SRC-033",
+      "revision": "1.0.0",
+      "sha256": "e5c87f6074a9bcf3a3683382a7098152077dcefd4db444c2e68dabbce644501f",
+      "bytes": 5072,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-06_PLAN_BASELINE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-034",
+      "document_id": "AISTD1-SRC-034",
+      "revision": "1.0.0",
+      "sha256": "f1bdd381276fd4a756d7f91f18ad799c1a134e4fd42bf06c07aaf29131ff985a",
+      "bytes": 4895,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-07_DECISION_RISK_EXCEPTION.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-035",
+      "document_id": "AISTD1-SRC-035",
+      "revision": "1.0.0",
+      "sha256": "407efb4b97b5cfb9b8979d40ffbf03e769bd3f065e9976dbb4bbd158c15ff05f",
+      "bytes": 2474,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-08_RELEASE_RECORD.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-036",
+      "document_id": "AISTD1-SRC-036",
+      "revision": "1.0.0",
+      "sha256": "01206f3ab64d1dc72f4c39daf2b779d1e775c2172d7ee39c5d1426cbd5839cf9",
+      "bytes": 3166,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-09_SUPPLIER_RESPONSE.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-SRC-037",
+      "document_id": "AISTD1-SRC-037",
+      "revision": "1.0.0",
+      "sha256": "374765a55d85d0e034a1418862f50efd153ca58cc0f4ec297d87e1cec8fb3ce7",
+      "bytes": 4280,
+      "path": "30_references/standards/AI_STD_v1_0_0/governance/templates/T-10_AI_CAPABILITY_LOG.md",
+      "format": "md",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "project": "SPK-GW_HEMS",
+        "purpose": "selective_governance_integration"
+      },
+      "note": "ユーザー添付の原本。採用は規則ごとの適合化記録を参照。外部機能情報・例示値は未検証。"
+    },
+    {
+      "source_id": "AISTD1-ZIP",
+      "document_id": "AISTD1-ZIP",
+      "revision": "1.0.0",
+      "sha256": "d94bee24c3e33ed44dd57b6b0189cdc4e1255631d157c5d68e738eb5ffb98910",
+      "bytes": 124842,
+      "path": "30_references/originals/SPK-GW_HEMS_AI_STD_v1.0.0.zip",
+      "format": "zip",
+      "basis": "LEGACY_REFERENCE",
+      "approval_state": "SOURCE_DRAFT",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "purpose": "governance_integration_only"
+      },
+      "note": "製品仕様・予算・本人権限の承認ではない。"
+    },
+    {
+      "source_id": "CTX-R13-AI-STD",
+      "document_id": "CTX-R13-AI-STD",
+      "revision": "1",
+      "sha256": "aefd506adfc00090f9150ea9909e48b524d166c2711fd8d7f5d462508399796e",
+      "bytes": 471,
+      "path": "30_references/decisions/CTX-R13-AI-STD.md",
+      "format": "md",
+      "basis": "USER_CONTEXT",
+      "approval_state": "DOCUMENT_FLOW_CONFIRMED",
+      "received_at": "2026-10-08",
+      "access": "PROJECT_INTERNAL",
+      "scope": {
+        "purpose": "governance_integration_only"
+      },
+      "note": "製品仕様・予算・本人権限の承認ではない。"
+    }
+  ]
+}

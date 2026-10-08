@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.source-register/v1"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "document_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "revision": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "format": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "basis": {
+            "enum": [
+              "AS_IS",
+              "TO_BE",
+              "BASELINE",
+              "LEGACY_REFERENCE",
+              "USER_CONTEXT",
+              "REVIEW",
+              "UNKNOWN"
+            ]
+          },
+          "approval_state": {
+            "enum": [
+              "UNVERIFIED",
+              "SOURCE_APPROVED",
+              "SOURCE_DRAFT",
+              "DOCUMENT_FLOW_CONFIRMED"
+            ]
+          },
+          "received_at": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "access": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "scope": {
+            "type": "object"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_id",
+          "document_id",
+          "revision",
+          "sha256",
+          "bytes",
+          "path",
+          "format",
+          "basis",
+          "approval_state",
+          "received_at",
+          "access",
+          "scope",
+          "note"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "source_register"
+}

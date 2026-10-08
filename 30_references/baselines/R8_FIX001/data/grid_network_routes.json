@@ -1,0 +1,59 @@
+{
+  "schema": "spkgw.grid-network-routes/v1",
+  "revision": "R4",
+  "status": "DESIGN_MODEL_NOT_DEPLOYED",
+  "source": "CTX-R4",
+  "routes": [
+    {
+      "route_id": "GRID-EL-PCS",
+      "mode": "PCS_DIRECT",
+      "normal_connection_class": "ECHONET_LITE_PCS",
+      "fetcher": "PCS_GRID_CLIENT",
+      "request_path": [
+        "PCS_GRID_CLIENT",
+        "HOME_ROUTER",
+        "INTERNET",
+        "GRID_SERVER"
+      ],
+      "response_path": [
+        "GRID_SERVER",
+        "INTERNET",
+        "HOME_ROUTER",
+        "PCS_GRID_CLIENT"
+      ],
+      "gw_in_fetch_path": false,
+      "grid_instruction_path": [
+        "PCS_GRID_CLIENT",
+        "PCS_LOCAL_CONSTRAINT",
+        "PCS_POWER_STAGE"
+      ],
+      "normal_operation_contract": "IF-EL-01"
+    },
+    {
+      "route_id": "GRID-RS-GW",
+      "mode": "GW_MANAGED",
+      "normal_connection_class": "RS485_PCS",
+      "fetcher": "GW_GRID_CLIENT",
+      "request_path": [
+        "GW_GRID_CLIENT",
+        "HOME_ROUTER",
+        "INTERNET",
+        "GRID_SERVER"
+      ],
+      "response_path": [
+        "GRID_SERVER",
+        "INTERNET",
+        "HOME_ROUTER",
+        "GW_GRID_CLIENT"
+      ],
+      "gw_in_fetch_path": true,
+      "grid_instruction_path": [
+        "GW_GRID_CLIENT",
+        "GW_GRID_SCHEDULE",
+        "GW_PCS_LINK",
+        "RS485_PCS"
+      ],
+      "normal_operation_contract": "IF-RS-01"
+    }
+  ]
+}

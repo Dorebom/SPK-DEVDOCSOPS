@@ -1,0 +1,53 @@
+{
+  "basis": "R8 V-07 source table A01-A12 (01_Architecture through 12_Sources)",
+  "aliases": {
+    "A01": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/01_Architecture.md",
+      "sha256": "55138a4c1096e51fac8f643788376764ef33441a759a2621b174adbcdd9b78a0"
+    },
+    "A02": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/02_Responsibilities.md",
+      "sha256": "6f440c20a367881f789471f36aff84378d6b73d458666077b1df9f9def0e558c"
+    },
+    "A03": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/03_Command_Flows.md",
+      "sha256": "e67e4cadffc38368b75006adca99e24b31c3f5faf78cc4d4426918327528f279"
+    },
+    "A04": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/04_JET_Isolation.md",
+      "sha256": "b0c0e0726b4673af28b29e810550d66df9f42210b39db707807e88883aa5c0ec"
+    },
+    "A05": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/05_Device_Classes.md",
+      "sha256": "0457152061071b8041907e8e483ba52dfad93f056e18fe4f3fb4fbb0bee463a4"
+    },
+    "A06": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/06_Contracts.md",
+      "sha256": "d1b1d577b60fcb0815bb42ae6430eb68cfe3304e505afe928db3b32861669375"
+    },
+    "A07": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/07_Power_Constraints.md",
+      "sha256": "9acc7aade76f1a3e0d1b888243ddcb2b388ec505fbecbc1b65b10d7134f6a963"
+    },
+    "A08": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/08_Deployment_Failures_OTA.md",
+      "sha256": "3147b8ada99b580b06624434818dcbc798e78a467bbdb7630b382fb03ac43644"
+    },
+    "A09": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/09_Risks_Alternatives.md",
+      "sha256": "f2c0d290d4a07ee31f5451b58c39ad4d1eb10f426915c4c3a7e4476b6333f96f"
+    },
+    "A10": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/10_Requirements_Tests.md",
+      "sha256": "20d698a0074adf587688d4198f4c687e3cc58b4c508afbf313f74af9debf77f4"
+    },
+    "A11": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/11_Migration_Decisions.md",
+      "sha256": "ceba5762f9c34bad38805b7d5715621395bca407ae9516b43227ae12707f006a"
+    },
+    "A12": {
+      "path": "30_references/baselines/R8_FIX001/sources/architecture/12_Sources.md",
+      "sha256": "2f08ee33dfea0e5bb84e14be6eb32bdd64e03bd33ff8cbe52bcdab26f0322da3"
+    }
+  }
+}

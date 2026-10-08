@@ -1,0 +1,9 @@
+{
+  "schema": "spkgw.current-baseline/v1",
+  "baseline_id": "BL-R9-0001",
+  "path": "10_canonical/releases/BL-R9-0001",
+  "tree_sha256": "dccc9efd3413b2c43ce807be2cffc36cc3c9b001757ad8f9934c730c176124b1",
+  "receipt": "10_canonical/receipts/BL-R9-0001.json",
+  "content_status": "DRAFT_FOR_REVIEW",
+  "product_requirements_approved": false
+}

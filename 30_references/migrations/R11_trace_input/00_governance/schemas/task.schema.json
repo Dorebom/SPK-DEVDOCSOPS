@@ -1,0 +1,529 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.governance-note/v1"
+    },
+    "document_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+    },
+    "project": {
+      "const": "SPK-GW_HEMS"
+    },
+    "document_type": {
+      "enum": [
+        "STANDARD",
+        "MOC",
+        "TEMPLATE",
+        "TASK",
+        "PLAN",
+        "RISK",
+        "CHANGE",
+        "DECISION",
+        "REPORT",
+        "RUN",
+        "BUDGET",
+        "EVIDENCE",
+        "MEETING",
+        "RESEARCH",
+        "TRACE_PLAN",
+        "DESIGN"
+      ]
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "status": {
+      "enum": [
+        "DRAFT_FOR_REVIEW",
+        "IN_REVIEW",
+        "APPROVED",
+        "SUPERSEDED",
+        "WITHDRAWN",
+        "TEMPLATE",
+        "GENERATED"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "owner": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trace_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+    },
+    "created_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "classification": {
+      "enum": [
+        "PUBLIC",
+        "INTERNAL",
+        "CONFIDENTIAL",
+        "RESTRICTED"
+      ]
+    },
+    "source_baseline": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "related_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+    },
+    "state": {
+      "enum": [
+        "PROPOSED",
+        "READY",
+        "IN_PROGRESS",
+        "BLOCKED",
+        "ON_HOLD",
+        "IN_REVIEW",
+        "DONE",
+        "CANCELLED"
+      ]
+    },
+    "kind": {
+      "enum": [
+        "DISCRETE",
+        "LOE"
+      ]
+    },
+    "phase": {
+      "enum": [
+        "DISCOVERY",
+        "REQUIREMENTS",
+        "SPECIFICATION",
+        "ARCHITECTURE",
+        "DESIGN",
+        "IMPLEMENTATION",
+        "VERIFICATION",
+        "VALIDATION",
+        "RELEASE",
+        "OPERATIONS",
+        "MANAGEMENT",
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "UNASSIGNED",
+        "CROSS_CUTTING"
+      ]
+    },
+    "priority": {
+      "enum": [
+        "UNASSIGNED",
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    "wbs_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+    },
+    "milestone_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "parent_task_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "summary": {
+      "type": "boolean"
+    },
+    "depends_on": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    },
+    "assignees": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    },
+    "reviewers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    },
+    "linked_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1
+    },
+    "estimate_hours": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "remaining_hours": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "forecast_finish": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "baseline_plan_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "approval_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    },
+    "run_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    },
+    "acceptance": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "decision": {
+              "const": "ACCEPT"
+            },
+            "actor_id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+            },
+            "accepted_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "evidence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "decision",
+            "actor_id",
+            "accepted_at",
+            "evidence_ids"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "blocker": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "reason": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "owner": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+            },
+            "release_condition": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "next_review_on": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          "required": [
+            "reason",
+            "owner",
+            "release_condition",
+            "next_review_on"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cancellation": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "reason": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "decision_id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+            }
+          },
+          "required": [
+            "reason",
+            "decision_id"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trace_contract": {
+      "const": "spkgw.lifecycle-tags/v1"
+    },
+    "related_trace_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^TRC-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "phase_ids": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10",
+          "P11",
+          "P12",
+          "P13",
+          "P14",
+          "P15",
+          "P16",
+          "P17"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "phase_scope": {
+      "enum": [
+        "PHASE_SPECIFIC",
+        "CROSS_PHASE",
+        "UNASSIGNED"
+      ]
+    },
+    "activity_type": {
+      "enum": [
+        "ENGINEERING",
+        "RESEARCH",
+        "MEETING",
+        "REVIEW",
+        "PROJECT_MANAGEMENT",
+        "PROCUREMENT",
+        "REWORK",
+        "PROCESS_IMPROVEMENT",
+        "UNSPECIFIED"
+      ]
+    }
+  },
+  "required": [
+    "schema",
+    "document_id",
+    "project",
+    "document_type",
+    "revision",
+    "status",
+    "title",
+    "owner",
+    "trace_id",
+    "created_on",
+    "updated_on",
+    "classification",
+    "source_baseline",
+    "related_ids",
+    "task_id",
+    "state",
+    "kind",
+    "phase",
+    "priority",
+    "wbs_id",
+    "milestone_id",
+    "parent_task_id",
+    "summary",
+    "depends_on",
+    "assignees",
+    "reviewers",
+    "linked_ids",
+    "artifacts",
+    "acceptance_criteria",
+    "estimate_hours",
+    "remaining_hours",
+    "forecast_finish",
+    "baseline_plan_id",
+    "approval_refs",
+    "run_ids",
+    "evidence_ids",
+    "acceptance",
+    "blocker",
+    "cancellation"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "trace_contract"
+        ]
+      },
+      "then": {
+        "required": [
+          "related_trace_ids",
+          "phase_ids",
+          "phase_scope",
+          "activity_type"
+        ]
+      }
+    }
+  ]
+}

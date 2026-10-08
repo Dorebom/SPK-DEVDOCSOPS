@@ -1,0 +1,103 @@
+{
+  "revision": "R5",
+  "baseline": "R4",
+  "scope": "DOCUMENT_DIAGRAM_CLARIFICATION_NO_RUNTIME_REQUIREMENT_CHANGE",
+  "request_source": "sources/USER_CONTEXT_R5.md",
+  "changed_at_source_review": [
+    "00_MOC.md",
+    "90_All_In_One.md",
+    "README.md",
+    "appendices/Change_Summary.md",
+    "appendices/External_Interface_Register.md",
+    "appendices/Requirements_Catalog.md",
+    "chapters/02_System_Context.md",
+    "chapters/03_Responsibilities.md",
+    "chapters/07_DER_Connections.md",
+    "chapters/09_Measurement_Data.md",
+    "data/document_index.json",
+    "data/input_manifest.json",
+    "package_info.json",
+    "tools/rebuild_views.py",
+    "tools/validate_package.py"
+  ],
+  "added_at_source_review": [
+    "appendices/R5_Diagram_Changes.md",
+    "data/diagram_render_validation.json",
+    "data/echonet_normal_routes.json",
+    "diagrams/02_01_EL_Connections.mmd",
+    "diagrams/02_01_EL_Connections.png",
+    "diagrams/02_01_EL_Connections.svg",
+    "diagrams/02_01_System_Context.mmd",
+    "diagrams/02_01_System_Context.png",
+    "diagrams/02_01_System_Context.svg",
+    "diagrams/README.md",
+    "sources/USER_CONTEXT_R5.md",
+    "sources/baseline/R4.zip",
+    "sources/history/R4_document_validation.json",
+    "sources/history/R4_rebuild_validation.json",
+    "sources/history/R4_route_diagram_review.json",
+    "tools/export_context_diagrams.py",
+    "tools/validate_el_routes.py"
+  ],
+  "generated_validation_reports_excluded_from_file_diff": true,
+  "source_chapters_changed": [
+    "02_System_Context.md",
+    "03_Responsibilities.md",
+    "07_DER_Connections.md",
+    "09_Measurement_Data.md"
+  ],
+  "preserved_contract_registers": [
+    {
+      "file": "data/requirements.json",
+      "sha256": "7062ace954be4ce2245366a838dd47dce6c9d64c73acbb23f52e5651dc383148",
+      "same_as_r4": true
+    },
+    {
+      "file": "data/test_catalog.json",
+      "sha256": "2cc515c2f457d2d422496d4a284391e7dfa04f762ae4d71a3ee02f3babf38f86",
+      "same_as_r4": true
+    },
+    {
+      "file": "data/open_issues.json",
+      "sha256": "a4a97ac6ebabb142c1eba9bcc0fb4b2eb6824eb0405fcd07565f9e89fc3f4df0",
+      "same_as_r4": true
+    },
+    {
+      "file": "data/parameters.json",
+      "sha256": "b12893e3e40bd018b4581e1761f6d572dc40e558ebe95811245812c4eb4fdb88",
+      "same_as_r4": true
+    },
+    {
+      "file": "data/external_interfaces.json",
+      "sha256": "56c3afe2c19058eef0a9b94ba639b71425d931467db79fabf8cc019b97a6b103",
+      "same_as_r4": true
+    },
+    {
+      "file": "data/grid_connection_profiles.json",
+      "sha256": "1ead5b0b811aff779438b21aceab86b37ed3099d358f49bced05191f3419973f",
+      "same_as_r4": true
+    },
+    {
+      "file": "data/grid_network_routes.json",
+      "sha256": "0e88a64a3509ffe86b1c8ced117aa87aabb17572f876b089baf563b8e8a04449",
+      "same_as_r4": true
+    },
+    {
+      "file": "data/decision_overrides.json",
+      "sha256": "904d2e1dc6f67525c72767e7cd3b04d84c3697b4e5810eb4109850e1f1d5e14b",
+      "same_as_r4": true
+    },
+    {
+      "file": "data/revision_changes.json",
+      "sha256": "1302c066760e214f5fbae83c533388f5ff0be85a001d2eeed8a290c3c9387b52",
+      "same_as_r4": true
+    }
+  ],
+  "requirement_and_system_test_counts": {
+    "requirements": 124,
+    "system_tests": 69,
+    "new_requirements": 0,
+    "new_system_tests": 0
+  },
+  "not_certification_or_hardware_evidence": true
+}

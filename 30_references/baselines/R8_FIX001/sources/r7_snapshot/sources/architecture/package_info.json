@@ -1,0 +1,19 @@
+{
+  "package_id": "SPK-GW_HEMS_ToBe_v1_0_20261006",
+  "project": "SPK-GW_HEMS",
+  "version": "1.0",
+  "created": "2026-10-06",
+  "status": "recommended-draft-not-approved",
+  "language": "ja",
+  "entrypoint": "00_MOC.md",
+  "main_note": "01_Architecture.md",
+  "consolidated_note": "90_All_In_One.md",
+  "canonical_mermaid_diagrams": 14,
+  "canonical_json_examples": 4,
+  "implemented": false,
+  "hardware_tested": false,
+  "jet_approved": false,
+  "mermaid_rendered": false,
+  "original_project_files_modified": false,
+  "source_pdfs_bundled": false
+}

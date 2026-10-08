@@ -1,0 +1,43 @@
+{
+  "package_id": "SPK-GW_HEMS_Workspace_20261008_R10",
+  "source_baseline_sha256": "ff984bda9214c9d874640cf078087da40674b0eb379babb5c597fed8085481e2",
+  "revision": "R10",
+  "selected_document_baseline": {
+    "schema": "spkgw.current-baseline/v1",
+    "baseline_id": "BL-R9-0001",
+    "path": "10_canonical/releases/BL-R9-0001",
+    "tree_sha256": "dccc9efd3413b2c43ce807be2cffc36cc3c9b001757ad8f9934c730c176124b1",
+    "receipt": "10_canonical/receipts/BL-R9-0001.json",
+    "content_status": "DRAFT_FOR_REVIEW",
+    "product_requirements_approved": false
+  },
+  "current_counts": {
+    "chapters": 44,
+    "system_functions": 21,
+    "gw_functions": 32,
+    "requirements": 124,
+    "tests": 69,
+    "questions": 91,
+    "usdm_elements": 0,
+    "typed_links": 0,
+    "import_bindings": 0,
+    "local_links": 7558
+  },
+  "original_reference_files": 324,
+  "synthetic_tool_tests": 47,
+  "real_legacy_office_import": "NOT_PERFORMED_NO_INPUTS",
+  "usdm_external_schema_conformance": "NOT_CLAIMED",
+  "product_tests": "NOT_RUN",
+  "status": "DOCUMENT_FLOW_IMPLEMENTED_PRODUCT_SPEC_DRAFT",
+  "governance_revision": "GOV-1.0.0",
+  "product_document_revision": "R9",
+  "change_scope": "DEVELOPMENT_GOVERNANCE_ONLY_PRODUCT_BASELINE_UNCHANGED",
+  "governance_standards": 13,
+  "governance_tests": 44,
+  "r9_regression_tests_rerun": 47,
+  "bootstrap_tasks": 4,
+  "management_open_questions": 6,
+  "real_budget": "NOT_PROVIDED",
+  "real_project_task_inventory": "NOT_MIGRATED",
+  "actor_assignments": "NOT_ASSIGNED"
+}

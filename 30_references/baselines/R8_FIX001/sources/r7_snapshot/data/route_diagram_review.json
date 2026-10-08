@@ -1,0 +1,13 @@
+{
+  "revision": "R5",
+  "status": "PASS",
+  "scope": "CHAPTER_02_NORMAL_EL_CONNECTIVITY_CLARIFICATION",
+  "authoritative_text": "chapters/02_System_Context.md",
+  "source_exports": "diagrams/02_01_*.mmd",
+  "ordinary_routes": "data/echonet_normal_routes.json",
+  "existing_grid_routes_unchanged": true,
+  "two_diagrams_parsed_rendered_and_visually_reviewed": true,
+  "render_record": "data/diagram_render_validation.json",
+  "other_diagrams": "NOT_RENDERED_THIS_REVISION",
+  "device_tests": "NOT_RUN"
+}

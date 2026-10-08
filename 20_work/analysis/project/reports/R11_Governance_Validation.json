@@ -1,0 +1,33 @@
+{
+  "result": "PASS",
+  "checked_on": "2026-10-08",
+  "tasks": 4,
+  "governance_notes": 35,
+  "warnings": [
+    "TASK-SPKGW-000001: R10 phase requires explicit R11 lifecycle mapping",
+    "TASK-SPKGW-000001: owner/estimate not assigned; not ready",
+    "TASK-SPKGW-000002: R10 phase requires explicit R11 lifecycle mapping",
+    "TASK-SPKGW-000002: owner/estimate not assigned; not ready",
+    "TASK-SPKGW-000003: R10 phase requires explicit R11 lifecycle mapping",
+    "TASK-SPKGW-000003: owner/estimate not assigned; not ready",
+    "TASK-SPKGW-000004: R10 phase requires explicit R11 lifecycle mapping",
+    "TASK-SPKGW-000004: owner/estimate not assigned; not ready",
+    "PLAN_NOT_APPROVED: weighted progress unavailable",
+    "BUDGET_NOT_APPROVED: budget variance unavailable",
+    "ACTUALS_NOT_CONFIRMED: empty ledger is not proof of zero cost"
+  ],
+  "canonical_baseline": "BL-R9-0001",
+  "inputs": {
+    "20_work/analysis/project/control.json": "0b858af8de21330f691b7ab7778e5957f82a6312c735068b66ac29e226d2ddbc",
+    "10_canonical/CURRENT.json": "79151b7535716ba03e2156ec2059d5e53b4d22810d9dc3dd68c0a3b1e772cd6a",
+    "tools/govcheck.py": "be83533125c78896079a12a8e44ebc1cfcc96f15bb6e44d0215ce19b78513efc",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000001.md": "703f9bd9222839df8a73ced661973fef86f6d18c17c8fbd81d642d41a3fd9083",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000002.md": "2d3b67fa5b8908b6219f3928bc1f923a306f78d5c3a7ee8a283dc1566091675e",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000003.md": "04190c8730bc7d4d54ba323467b5844b848da42aa4cde4ad153cfcaf009f56e2",
+    "20_work/drafts/project/tasks/TASK-SPKGW-000004.md": "9d00e98bc05bfe9d7d56c49b816a012d6c6519120a5a19cdac6a62bfc46f0fb1",
+    "00_governance/schemas/frontmatter.schema.json": "0b05c23fcad0d632a4b309a6531398e0cd858e3c11e7a17a77af515cf44f8680",
+    "00_governance/schemas/lifecycle-trace.schema.json": "68b57222d075dbd4ca4050f78e212628fd42b5d3aee382a756c068e5a2a70acd",
+    "00_governance/schemas/project-control.schema.json": "91cc8b8e2e6a99454b9bf752a8e27d28af3c1020a32668aa5e78ab1dfe54e33e",
+    "00_governance/schemas/task.schema.json": "b26c7c608406925b89ada2593485d1784b8a338225c74e97904b0a96a56c11ea"
+  }
+}

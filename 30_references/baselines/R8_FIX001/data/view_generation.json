@@ -1,0 +1,13 @@
+{
+  "status": "GENERATED",
+  "revision": "R8",
+  "function_groups": {
+    "system": 21,
+    "gw": 32
+  },
+  "requirements": 124,
+  "questions": 85,
+  "chapters": 44,
+  "integrated_source_documents": 70,
+  "note": "生成ビューの作成結果。文書適合／実機試験の結果ではない。"
+}

@@ -1,0 +1,140 @@
+{
+  "input_zip": "SPK-GW_HEMS_Workspace_20261008_R10.zip",
+  "input_zip_sha256": "ab5888b9d4dac6f9512a302acbbe48e9c1e5774b3b29efd9c95809ffad145c5e",
+  "policy": "Save byte-exact snapshots of replaced files only; unchanged files remain at original paths. No recursive prior ZIP bundling. Root manifest is regenerated.",
+  "changed_existing_files": [
+    {
+      "path": "README.md",
+      "before_sha256": "f73b18eca7cbbd664bf7b1243707c7077a2e2b2d45c629750d6bc3155eb45da8",
+      "after_sha256": "bcd85d0024a62045aed0d7bd55633127618b76f37c8367abff1c888928fa21ff",
+      "original_snapshot": "30_references/governance/R10_snapshot/README.md"
+    },
+    {
+      "path": "00_governance/STD_11_Release_Baselines.md",
+      "before_sha256": "62e9dad74149f38dd2d9fba489338f72deb250c2e7a9a2710591b52c56839e59",
+      "after_sha256": "5edffbd06dae72584f88dc26a8b6bc8334eb8ef0c192912362962c80c40ba632",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_11_Release_Baselines.md"
+    },
+    {
+      "path": "00_governance/STD_05_Process_Gates.md",
+      "before_sha256": "3442036622e03ed96d1e5a41279cb1a811a5e19c1b57fc0853bcadd854afa237",
+      "after_sha256": "d4dbff3b2092bdaffeba3c9cc0e6929270f7c098b93cc65625ac131b6584e299",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_05_Process_Gates.md"
+    },
+    {
+      "path": "00_governance/STD_10_AI_Collaboration.md",
+      "before_sha256": "06ba7f584e3951774809e2db251b13fb7c1279cb3b407990c4d7de2283aa19da",
+      "after_sha256": "202664e9e33ad1fef47147d83ac52d350bd7b6e24ce547a39babcb3b471903c2",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_10_AI_Collaboration.md"
+    },
+    {
+      "path": "00_governance/STD_09_Change_Risk.md",
+      "before_sha256": "e436b915cb40d9d48b5ff697336a0920bb3c035cb3589c200bf01e4f7fec1c8b",
+      "after_sha256": "4136e21c4506ce12e9c7e5597fb52675110bb317f3011e46c03bbe33411ab2fd",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_09_Change_Risk.md"
+    },
+    {
+      "path": "00_governance/STD_02_FrontMatter.md",
+      "before_sha256": "a3f9e1801d96bf3254aa0e530995ff55c39d2dacbb98779377a51dab79fc5b00",
+      "after_sha256": "b27b0a5286fb8d8c665115585080834f1055e8b0411a4c4470c52dadcf95d677",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_02_FrontMatter.md"
+    },
+    {
+      "path": "00_governance/STD_07_Progress_Schedule.md",
+      "before_sha256": "e8d30aefe8ffea1f6bbca32c103950e10e2afc83080b17b863173d0526b4fdb2",
+      "after_sha256": "0b17a3c8b4f4b7012b387df3911f72d6716f5a38bd52fb0777e23aecdfbfb766",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_07_Progress_Schedule.md"
+    },
+    {
+      "path": "00_governance/STD_13_Validation_Migration.md",
+      "before_sha256": "267c068bc8d949ab58699ae7bfc424eeb84c56ac3790f99d297af2c983b64e37",
+      "after_sha256": "05af5f3f0a29c570824a0e60d91d4d860592274cb2500f42ed7023dec7e0b36f",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_13_Validation_Migration.md"
+    },
+    {
+      "path": "00_governance/00_MOC.md",
+      "before_sha256": "9ee8b2b8521014db0898499b12ecb4180060dbf0358b738ac71ab451ff494fc2",
+      "after_sha256": "00e97ddcebb15dce75c4542b79a9e9dc240fc6057fa5316594e3021d7fb42b30",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/00_MOC.md"
+    },
+    {
+      "path": "00_governance/Validation_Coverage.md",
+      "before_sha256": "afc33d4952eb6b56fba2b3f34e4388bcbdb37adab1bb280f78f2bd290f3719cf",
+      "after_sha256": "922d87f6bba4f44423a6785392bebef4525055e6aee028dc8d49b018ccfb7ae3",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/Validation_Coverage.md"
+    },
+    {
+      "path": "00_governance/STD_04_Task_WBS.md",
+      "before_sha256": "d7bf6b72e5efe8577a1a166c5f2946d0a68939a1cb7b6bd3038a2cc0e9116454",
+      "after_sha256": "19db18d4fc3f9e4d4745396df2e1e5cc9c1024d3559ec366d81f92f32765edef",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_04_Task_WBS.md"
+    },
+    {
+      "path": "00_governance/STD_06_Execution_Review_Evidence.md",
+      "before_sha256": "fe63b491e73b0957d9a1615ae77dcb80a3996c58cb51ec77d53018451a49e1bf",
+      "after_sha256": "1b5b03cae7fdb48ea97fda70d406a908ae08d1b65c5452a261b60db92b4e81bd",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_06_Execution_Review_Evidence.md"
+    },
+    {
+      "path": "00_governance/STD_03_TraceID.md",
+      "before_sha256": "5beca493491c5c8a274241ee1bcc6b980b60178263cd084953fc030793df61b5",
+      "after_sha256": "aba0da431c2ce8a2dfa474f09405e08872fc4395ef03e3b2916a2a55bdc2a8bc",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_03_TraceID.md"
+    },
+    {
+      "path": "00_governance/STD_08_Budget_Cost.md",
+      "before_sha256": "7c384e16be653e08b1d2e42f87e5b149a27437a0d557bfa67ee22e8c446df2e1",
+      "after_sha256": "eda64516fe390b0bc1ff0cb7afddcbadb2c0f8aae81e5b2c2d453d9635f7e083",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_08_Budget_Cost.md"
+    },
+    {
+      "path": "00_governance/STD_12_Reports_Decisions.md",
+      "before_sha256": "3a46c0d76d17cdbdb7ee5116ca8af8734d8baa5044bb928060ce0c995f096a21",
+      "after_sha256": "2d268f0acbd74db3bc0d8ed55ac54c3568f57e5f791ed63ca826cd9160ec3966",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/STD_12_Reports_Decisions.md"
+    },
+    {
+      "path": "00_governance/Tool_Governance.md",
+      "before_sha256": "868bc2699231ef52d3e724009034e3049648c8e290e82c2811c5b773dc17d3ab",
+      "after_sha256": "bad4a319b6331c1118814f501c4a4e11f1d025e28135bf0b92769a6668e2ff25",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/Tool_Governance.md"
+    },
+    {
+      "path": "00_governance/Open_Questions.md",
+      "before_sha256": "47dbcb3053acf5fc3bf907c1a965e448e3f355134018dbc399feeca9aac9e608",
+      "after_sha256": "a20361deddbdc5c4503f641c7c50a92e4542e9dbd7f98763ea91b693c4c76bd0",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/Open_Questions.md"
+    },
+    {
+      "path": "tools/govcheck.py",
+      "before_sha256": "9afc4923f1b1759890ea138e56151f2986917f11851780dd1960c8bab71f3244",
+      "after_sha256": "be83533125c78896079a12a8e44ebc1cfcc96f15bb6e44d0215ce19b78513efc",
+      "original_snapshot": "30_references/governance/R10_snapshot/tools/govcheck.py"
+    },
+    {
+      "path": "00_governance/templates/Task.md",
+      "before_sha256": "d7dfc8a738791013bf06b16989ee0f9885c22904997b2e53b33078c600f34937",
+      "after_sha256": "b4cca88ef32fccb361b101137ab5202b91e10c938bc71ebc55280bf12419f60a",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/templates/Task.md"
+    },
+    {
+      "path": "00_governance/templates/README.md",
+      "before_sha256": "e02d4ca762a58b09f3b162559c16db7e21e80c4138af6afe9a105868933f832d",
+      "after_sha256": "c66a78d2684fa1ad3cfef0107910b249936ceabe0415f7298579df761bf17375",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/templates/README.md"
+    },
+    {
+      "path": "00_governance/schemas/frontmatter.schema.json",
+      "before_sha256": "c0ee3d682c54bfda6db8bebce8a109a069e7beb8373e3f6ad5c34433c54164af",
+      "after_sha256": "0b05c23fcad0d632a4b309a6531398e0cd858e3c11e7a17a77af515cf44f8680",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/schemas/frontmatter.schema.json"
+    },
+    {
+      "path": "00_governance/schemas/task.schema.json",
+      "before_sha256": "1629fe9c0b500b0f76f6764fa74c64b9be4f1c0aa5906d82758f6555e05b12ec",
+      "after_sha256": "b26c7c608406925b89ada2593485d1784b8a338225c74e97904b0a96a56c11ea",
+      "original_snapshot": "30_references/governance/R10_snapshot/00_governance/schemas/task.schema.json"
+    }
+  ],
+  "user_context": "30_references/decisions/CTX-R11-TRACE.md"
+}

@@ -1,0 +1,294 @@
+{
+  "scope": "Synthetic document-management tooling only; no real Word/Excel/product/Windows tests",
+  "result": "PASS",
+  "run": 47,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "jsonschema": "4.26.0",
+  "tests": [
+    {
+      "test": "test_01_baseline_integrity_and_freshness",
+      "result": "PASS",
+      "seconds": 1.539,
+      "error": null
+    },
+    {
+      "test": "test_02_empty_requirement_rejected",
+      "result": "PASS",
+      "seconds": 0.086,
+      "error": null
+    },
+    {
+      "test": "test_03_wrong_status_type_rejected",
+      "result": "PASS",
+      "seconds": 0.081,
+      "error": null
+    },
+    {
+      "test": "test_04_duplicate_ids_rejected_before_render",
+      "result": "PASS",
+      "seconds": 0.12,
+      "error": null
+    },
+    {
+      "test": "test_05_unknown_source_rejected",
+      "result": "PASS",
+      "seconds": 0.124,
+      "error": null
+    },
+    {
+      "test": "test_06_unknown_usdm_rejected",
+      "result": "PASS",
+      "seconds": 0.148,
+      "error": null
+    },
+    {
+      "test": "test_07_requirement_test_asymmetry_rejected",
+      "result": "PASS",
+      "seconds": 0.172,
+      "error": null
+    },
+    {
+      "test": "test_08_stale_views_rejected",
+      "result": "PASS",
+      "seconds": 0.731,
+      "error": null
+    },
+    {
+      "test": "test_09_input_failure_never_changes_canonical",
+      "result": "PASS",
+      "seconds": 0.108,
+      "error": null
+    },
+    {
+      "test": "test_10_staged_render_failure_never_changes_canonical",
+      "result": "PASS",
+      "seconds": 0.451,
+      "error": null
+    },
+    {
+      "test": "test_11_pending_approval_rejected",
+      "result": "PASS",
+      "seconds": 1.146,
+      "error": null
+    },
+    {
+      "test": "test_12_publish_and_idempotent_republication",
+      "result": "PASS",
+      "seconds": 1.819,
+      "error": null
+    },
+    {
+      "test": "test_13_failure_before_pointer_retains_selected_baseline",
+      "result": "PASS",
+      "seconds": 2.549,
+      "error": null
+    },
+    {
+      "test": "test_14_prepared_tampering_rejected",
+      "result": "PASS",
+      "seconds": 1.373,
+      "error": null
+    },
+    {
+      "test": "test_15_wrong_approval_hash_rejected",
+      "result": "PASS",
+      "seconds": 1.121,
+      "error": null
+    },
+    {
+      "test": "test_16_stale_parent_baseline_rejected",
+      "result": "PASS",
+      "seconds": 3.077,
+      "error": null
+    },
+    {
+      "test": "test_17_original_tampering_detected",
+      "result": "PASS",
+      "seconds": 0.07,
+      "error": null
+    },
+    {
+      "test": "test_18_registration_and_extraction_idempotence",
+      "result": "PASS",
+      "seconds": 0.075,
+      "error": null
+    },
+    {
+      "test": "test_19_old_binary_format_is_blocked",
+      "result": "PASS",
+      "seconds": 0.074,
+      "error": null
+    },
+    {
+      "test": "test_20_docx_nested_table_revision_and_image_inventory",
+      "result": "PASS",
+      "seconds": 0.059,
+      "error": null
+    },
+    {
+      "test": "test_21_xlsx_formula_cache_hidden_merge_comments",
+      "result": "PASS",
+      "seconds": 0.055,
+      "error": null
+    },
+    {
+      "test": "test_22_unsafe_zip_path_rejected",
+      "result": "PASS",
+      "seconds": 0.055,
+      "error": null
+    },
+    {
+      "test": "test_23_dtd_rejected",
+      "result": "PASS",
+      "seconds": 0.054,
+      "error": null
+    },
+    {
+      "test": "test_24_unresolved_conflict_cannot_be_adopted",
+      "result": "PASS",
+      "seconds": 0.08,
+      "error": null
+    },
+    {
+      "test": "test_25_unreviewed_fragment_cannot_be_applied",
+      "result": "PASS",
+      "seconds": 0.1,
+      "error": null
+    },
+    {
+      "test": "test_26_125th_requirement_end_to_end",
+      "result": "PASS",
+      "seconds": 2.529,
+      "error": null
+    },
+    {
+      "test": "test_27_unbound_addition_cannot_prepare",
+      "result": "PASS",
+      "seconds": 0.077,
+      "error": null
+    },
+    {
+      "test": "test_28_deleting_old_id_is_rejected",
+      "result": "PASS",
+      "seconds": 0.067,
+      "error": null
+    },
+    {
+      "test": "test_29_usdm_unknown_reason_not_approved",
+      "result": "PASS",
+      "seconds": 0.206,
+      "error": null
+    },
+    {
+      "test": "test_30_usdm_cycle_rejected",
+      "result": "PASS",
+      "seconds": 0.207,
+      "error": null
+    },
+    {
+      "test": "test_31_bad_typed_endpoint_rejected",
+      "result": "PASS",
+      "seconds": 0.211,
+      "error": null
+    },
+    {
+      "test": "test_32_new_function_groups_have_no_fixed_count",
+      "result": "PASS",
+      "seconds": 0.818,
+      "error": null
+    },
+    {
+      "test": "test_33_new_interface_parameter_and_test_no_fixed_count",
+      "result": "PASS",
+      "seconds": 0.851,
+      "error": null
+    },
+    {
+      "test": "test_34_new_oq_id_is_not_r6_bound",
+      "result": "PASS",
+      "seconds": 0.859,
+      "error": null
+    },
+    {
+      "test": "test_35_compare_revision_detects_move_not_auto_delete",
+      "result": "PASS",
+      "seconds": 0.085,
+      "error": null
+    },
+    {
+      "test": "test_36_approved_binding_text_tampering_rejected",
+      "result": "PASS",
+      "seconds": 0.257,
+      "error": null
+    },
+    {
+      "test": "test_37_selected_snapshot_direct_edit_detected",
+      "result": "PASS",
+      "seconds": 0.052,
+      "error": null
+    },
+    {
+      "test": "test_38_duplicate_json_key_rejected",
+      "result": "PASS",
+      "seconds": 0.045,
+      "error": null
+    },
+    {
+      "test": "test_39_path_traversal_draft_rejected",
+      "result": "PASS",
+      "seconds": 0.047,
+      "error": null
+    },
+    {
+      "test": "test_40_tool_change_invalidates_approval",
+      "result": "PASS",
+      "seconds": 1.059,
+      "error": null
+    },
+    {
+      "test": "test_41_fragment_text_tampering_rejected",
+      "result": "PASS",
+      "seconds": 0.258,
+      "error": null
+    },
+    {
+      "test": "test_42_coverage_distinguishes_unclassified_and_selected",
+      "result": "PASS",
+      "seconds": 1.841,
+      "error": null
+    },
+    {
+      "test": "test_43_delete_oq_is_blocked_by_change_gate",
+      "result": "PASS",
+      "seconds": 0.077,
+      "error": null
+    },
+    {
+      "test": "test_44_preparation_diff_lists_all_modified_files",
+      "result": "PASS",
+      "seconds": 1.073,
+      "error": null
+    },
+    {
+      "test": "test_45_usdm_many_to_many_draft_roundtrip",
+      "result": "PASS",
+      "seconds": 1.756,
+      "error": null
+    },
+    {
+      "test": "test_46_legacy_source_alias_identity_checked",
+      "result": "PASS",
+      "seconds": 0.096,
+      "error": null
+    },
+    {
+      "test": "test_47_moc_cannot_redirect_current_view_to_history",
+      "result": "PASS",
+      "seconds": 0.214,
+      "error": null
+    }
+  ]
+}

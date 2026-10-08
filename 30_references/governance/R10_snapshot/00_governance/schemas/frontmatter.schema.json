@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.governance-note/v1"
+    },
+    "document_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+    },
+    "project": {
+      "const": "SPK-GW_HEMS"
+    },
+    "document_type": {
+      "enum": [
+        "STANDARD",
+        "MOC",
+        "TEMPLATE",
+        "TASK",
+        "PLAN",
+        "RISK",
+        "CHANGE",
+        "DECISION",
+        "REPORT",
+        "RUN",
+        "BUDGET",
+        "EVIDENCE"
+      ]
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "status": {
+      "enum": [
+        "DRAFT_FOR_REVIEW",
+        "IN_REVIEW",
+        "APPROVED",
+        "SUPERSEDED",
+        "WITHDRAWN",
+        "TEMPLATE",
+        "GENERATED"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "owner": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trace_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+    },
+    "created_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "classification": {
+      "enum": [
+        "PUBLIC",
+        "INTERNAL",
+        "CONFIDENTIAL",
+        "RESTRICTED"
+      ]
+    },
+    "source_baseline": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "related_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema",
+    "document_id",
+    "project",
+    "document_type",
+    "revision",
+    "status",
+    "title",
+    "owner",
+    "trace_id",
+    "created_on",
+    "updated_on",
+    "classification",
+    "source_baseline",
+    "related_ids"
+  ],
+  "additionalProperties": true
+}

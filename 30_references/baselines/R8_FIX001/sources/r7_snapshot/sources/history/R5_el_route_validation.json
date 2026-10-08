@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "DOCUMENT_MODEL_ONLY_NOT_DEVICE_CONNECTIVITY",
+  "checks": {
+    "two_mermaid_exports_match_chapter": true,
+    "diagram_1_ordinary_paths": 4,
+    "diagram_2_ordinary_paths": 4,
+    "grid_paths_preserved_with_router": true,
+    "h_domain_roles_and_response_paths": 3,
+    "ordinary_route_records": 4,
+    "meter_owned_by_measurement": true,
+    "rendered_source_hashes_verified": 2
+  },
+  "errors": []
+}

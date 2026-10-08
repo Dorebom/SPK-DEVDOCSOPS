@@ -1,0 +1,37 @@
+{
+  "result": "PASS",
+  "tests": {
+    "traceability": 40,
+    "governance_regression": 44,
+    "specflow_regression": 47,
+    "total": 131
+  },
+  "preserved_files": {
+    "10_canonical": 122,
+    "30_references": 331,
+    "20_work/drafts/project/tasks": 4
+  },
+  "control_json_unchanged": true,
+  "canonical_current_unchanged": true,
+  "snapshot_changed_files": 22,
+  "trace_initial_state": {
+    "profiles": 1,
+    "nodes": 0,
+    "edges": 0,
+    "phase_TBD": 17,
+    "record_chain_ready": false
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "PyYAML": "6.0.3",
+    "jsonschema": "4.26.0"
+  },
+  "limitations": [
+    "Synthetic tests only; no product/real lifecycle or JET validation.",
+    "No Windows/network-share/crash durability/identity authorization/external Git tests.",
+    "Only registered local artifacts and declared reviewers are checked; semantics require review.",
+    "Legacy tasks retain R10 metadata and migration warnings."
+  ],
+  "governance_local_links_checked": 105
+}

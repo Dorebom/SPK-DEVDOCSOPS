@@ -1,0 +1,1936 @@
+{
+  "schema": "spkgw.function-requirement-crosswalk/v1",
+  "rows": [
+    {
+      "requirement_id": "SYS-RESP-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-004"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [],
+      "review": "責務・依存図レビュー"
+    },
+    {
+      "requirement_id": "SYS-GRID-001",
+      "system_function_ids": [
+        "S-FN-012",
+        "S-FN-013"
+      ],
+      "gw_function_ids": [
+        "GW-FN-014"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T01",
+        "T02"
+      ],
+      "review": "T01、T02"
+    },
+    {
+      "requirement_id": "SYS-GRID-002",
+      "system_function_ids": [
+        "S-FN-014"
+      ],
+      "gw_function_ids": [],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T03"
+      ],
+      "review": "T03"
+    },
+    {
+      "requirement_id": "SYS-BOUND-001",
+      "system_function_ids": [
+        "S-FN-012",
+        "S-FN-013",
+        "S-FN-014",
+        "S-FN-019"
+      ],
+      "gw_function_ids": [
+        "GW-FN-028"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T04",
+        "T05"
+      ],
+      "review": "T04、T05"
+    },
+    {
+      "requirement_id": "SYS-GRID-003",
+      "system_function_ids": [
+        "S-FN-012"
+      ],
+      "gw_function_ids": [
+        "GW-FN-014"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T01",
+        "T06"
+      ],
+      "review": "T01、T06"
+    },
+    {
+      "requirement_id": "SYS-AUTH-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-006",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-002"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T07",
+        "T08"
+      ],
+      "review": "T07、T08"
+    },
+    {
+      "requirement_id": "SYS-AUTH-002",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-006",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-002"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T07"
+      ],
+      "review": "T07"
+    },
+    {
+      "requirement_id": "SYS-ORCH-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-003"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T09"
+      ],
+      "review": "T09"
+    },
+    {
+      "requirement_id": "SYS-ADAPT-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T07"
+      ],
+      "review": "コード・契約レビュー、T07"
+    },
+    {
+      "requirement_id": "SYS-CAP-001",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-008",
+        "S-FN-020",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-010",
+        "GW-FN-012",
+        "GW-FN-031"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T10",
+        "T11"
+      ],
+      "review": "T10、T11"
+    },
+    {
+      "requirement_id": "SYS-RESULT-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-004"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T12"
+      ],
+      "review": "T12"
+    },
+    {
+      "requirement_id": "SYS-TOPO-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T08",
+        "T13"
+      ],
+      "review": "T08、T13"
+    },
+    {
+      "requirement_id": "SYS-CONST-001",
+      "system_function_ids": [
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-006",
+        "GW-FN-007"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T06",
+        "T14"
+      ],
+      "review": "T06、T14"
+    },
+    {
+      "requirement_id": "SYS-CONST-002",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T13"
+      ],
+      "review": "T13"
+    },
+    {
+      "requirement_id": "SYS-ISO-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T15"
+      ],
+      "review": "T15"
+    },
+    {
+      "requirement_id": "SYS-OTA-001",
+      "system_function_ids": [
+        "S-FN-011",
+        "S-FN-012",
+        "S-FN-013",
+        "S-FN-014",
+        "S-FN-015",
+        "S-FN-019"
+      ],
+      "gw_function_ids": [
+        "GW-FN-024",
+        "GW-FN-028"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T04",
+        "T16"
+      ],
+      "review": "T04、T16"
+    },
+    {
+      "requirement_id": "SYS-OTA-002",
+      "system_function_ids": [
+        "S-FN-011",
+        "S-FN-015",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-024",
+        "GW-FN-032"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T16",
+        "T17"
+      ],
+      "review": "T16、T17"
+    },
+    {
+      "requirement_id": "SYS-EXPIRY-001",
+      "system_function_ids": [
+        "S-FN-007",
+        "S-FN-015",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-026"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T17"
+      ],
+      "review": "T17"
+    },
+    {
+      "requirement_id": "SYS-COEX-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-006",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-002"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T18"
+      ],
+      "review": "T18"
+    },
+    {
+      "requirement_id": "SYS-CERT-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T19"
+      ],
+      "review": "T19"
+    },
+    {
+      "requirement_id": "SYS-ISO-002",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T15",
+        "T16"
+      ],
+      "review": "T15、T16"
+    },
+    {
+      "requirement_id": "SYS-CHG-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T19"
+      ],
+      "review": "T19、変更影響評価"
+    },
+    {
+      "requirement_id": "SYS-TIME-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T02",
+        "T03",
+        "T13"
+      ],
+      "review": "T02、T03、T13"
+    },
+    {
+      "requirement_id": "SYS-LOG-001",
+      "system_function_ids": [
+        "S-FN-016",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-025"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T12",
+        "T19"
+      ],
+      "review": "T12、T19"
+    },
+    {
+      "requirement_id": "SYS-SCOPE-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-DEPLOY-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T01",
+        "SYS-T05"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-REQ-001",
+      "system_function_ids": [
+        "S-FN-002",
+        "S-FN-003",
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-019"
+      ],
+      "gw_function_ids": [
+        "GW-FN-001"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T10"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RS-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-008",
+        "S-FN-012"
+      ],
+      "gw_function_ids": [
+        "GW-FN-011"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T01"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RS-002",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-008",
+        "S-FN-012"
+      ],
+      "gw_function_ids": [
+        "GW-FN-011"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T01",
+        "SYS-T02"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RS-003",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-008",
+        "S-FN-012"
+      ],
+      "gw_function_ids": [
+        "GW-FN-011"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T05"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RS-004",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T01",
+        "SYS-T05"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RS-005",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-008",
+        "S-FN-012"
+      ],
+      "gw_function_ids": [
+        "GW-FN-011"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T01",
+        "T04",
+        "T07"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RS-006",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-008",
+        "S-FN-012"
+      ],
+      "gw_function_ids": [
+        "GW-FN-011"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T04",
+        "SYS-T05",
+        "T15"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-SEM-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-004"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T02"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-EL-001",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-008",
+        "S-FN-018"
+      ],
+      "gw_function_ids": [
+        "GW-FN-012",
+        "GW-FN-013"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T03"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-EL-002",
+      "system_function_ids": [
+        "S-FN-018"
+      ],
+      "gw_function_ids": [
+        "GW-FN-013"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T03",
+        "T12"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-ROUTE-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-008",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-010"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T07",
+        "T17"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-CAP-002",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-008",
+        "S-FN-015",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-010",
+        "GW-FN-032"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T10",
+        "T14"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RESULT-002",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-004",
+        "GW-FN-007"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T12",
+        "T18"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RESULT-003",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-004"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T02",
+        "T12"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-RETRY-001",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-003",
+        "GW-FN-026"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T09",
+        "T12"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-LOAD-001",
+      "system_function_ids": [
+        "S-FN-005",
+        "S-FN-006",
+        "S-FN-007"
+      ],
+      "gw_function_ids": [
+        "GW-FN-005"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T10",
+        "T13"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-EMS-001",
+      "system_function_ids": [
+        "S-FN-006",
+        "S-FN-007",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-006",
+        "GW-FN-007"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T10",
+        "T10",
+        "T14"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-MEAS-001",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-007",
+        "S-FN-016",
+        "S-FN-017"
+      ],
+      "gw_function_ids": [
+        "GW-FN-008"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T06",
+        "T12",
+        "SYS-T08"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-MEAS-002",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-007",
+        "S-FN-016",
+        "S-FN-017"
+      ],
+      "gw_function_ids": [
+        "GW-FN-008"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "T08",
+        "SYS-T04",
+        "SYS-T08"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-DATA-001",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-003",
+        "S-FN-016",
+        "S-FN-017"
+      ],
+      "gw_function_ids": [
+        "GW-FN-009"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T08"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-DATA-002",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-003",
+        "S-FN-016",
+        "S-FN-017"
+      ],
+      "gw_function_ids": [
+        "GW-FN-009"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T08"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-CFG-001",
+      "system_function_ids": [
+        "S-FN-009",
+        "S-FN-015",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-020"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T06"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-CFG-002",
+      "system_function_ids": [
+        "S-FN-009",
+        "S-FN-015",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-020"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T06",
+        "T04"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-CFG-003",
+      "system_function_ids": [
+        "S-FN-009",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-030"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T06",
+        "T16"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-PERF-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T11",
+        "SYS-T04"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-PERF-002",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T05",
+        "T11",
+        "T15"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-SEC-001",
+      "system_function_ids": [
+        "S-FN-008",
+        "S-FN-019",
+        "S-FN-020",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-027",
+        "GW-FN-031"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T09",
+        "T04"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-SEC-002",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-FAULT-001",
+      "system_function_ids": [
+        "S-FN-007",
+        "S-FN-015",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-026"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T05",
+        "T02",
+        "T06"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-CERT-002",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-MIG-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T01",
+        "T07"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-MIG-002",
+      "system_function_ids": [
+        "S-FN-008",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-031"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-BASE-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-VERIFY-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "T19"
+      ],
+      "review": "仕様・契約レビュー"
+    },
+    {
+      "requirement_id": "SYS-CTX-001",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T11"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-CTX-002",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T11",
+        "SYS-T13"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-NORTH-001",
+      "system_function_ids": [
+        "S-FN-002",
+        "S-FN-003",
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-016",
+        "S-FN-019"
+      ],
+      "gw_function_ids": [
+        "GW-FN-001",
+        "GW-FN-017"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T11",
+        "SYS-T17"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-NORTH-002",
+      "system_function_ids": [
+        "S-FN-002",
+        "S-FN-003",
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-016",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-001",
+        "GW-FN-017",
+        "GW-FN-027"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T14",
+        "SYS-T16"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-NORTH-003",
+      "system_function_ids": [
+        "S-FN-003",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-016",
+        "S-FN-019"
+      ],
+      "gw_function_ids": [
+        "GW-FN-017"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T16",
+        "SYS-T24"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-NORTH-004",
+      "system_function_ids": [
+        "S-FN-003",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-016",
+        "S-FN-019"
+      ],
+      "gw_function_ids": [
+        "GW-FN-017"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T16",
+        "SYS-T21"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-NORTH-005",
+      "system_function_ids": [
+        "S-FN-003",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-016",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-017",
+        "GW-FN-025"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T18",
+        "SYS-T25"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-NORTH-006",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-003",
+        "S-FN-016",
+        "S-FN-017"
+      ],
+      "gw_function_ids": [
+        "GW-FN-009",
+        "GW-FN-019"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T21",
+        "SYS-T28"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-NORTH-007",
+      "system_function_ids": [
+        "S-FN-002",
+        "S-FN-003",
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-001",
+        "GW-FN-027"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T14",
+        "SYS-T15",
+        "SYS-T21"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-CFG-004",
+      "system_function_ids": [
+        "S-FN-009",
+        "S-FN-015",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-020"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T15"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-CFG-005",
+      "system_function_ids": [
+        "S-FN-009",
+        "S-FN-015",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-020"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T15",
+        "SYS-T28"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-CFG-006",
+      "system_function_ids": [
+        "S-FN-009",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-021"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T13",
+        "SYS-T22"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-GWOP-001",
+      "system_function_ids": [
+        "S-FN-003",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-015",
+        "S-FN-016",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-017",
+        "GW-FN-022"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T17",
+        "SYS-T23"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-GWOP-002",
+      "system_function_ids": [
+        "S-FN-010",
+        "S-FN-015",
+        "S-FN-016",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-022"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T17",
+        "SYS-T20",
+        "SYS-T22"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-UI-001",
+      "system_function_ids": [
+        "S-FN-002"
+      ],
+      "gw_function_ids": [
+        "GW-FN-018"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T12"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-UI-002",
+      "system_function_ids": [
+        "S-FN-002"
+      ],
+      "gw_function_ids": [
+        "GW-FN-018"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T13"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-UI-003",
+      "system_function_ids": [
+        "S-FN-002"
+      ],
+      "gw_function_ids": [
+        "GW-FN-018"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T12",
+        "SYS-T13",
+        "SYS-T22"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-UI-004",
+      "system_function_ids": [
+        "S-FN-002"
+      ],
+      "gw_function_ids": [
+        "GW-FN-018"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T12",
+        "SYS-T23",
+        "SYS-T24"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-UI-005",
+      "system_function_ids": [
+        "S-FN-002"
+      ],
+      "gw_function_ids": [
+        "GW-FN-018"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T23",
+        "SYS-T27"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-APP-001",
+      "system_function_ids": [
+        "S-FN-003",
+        "S-FN-016"
+      ],
+      "gw_function_ids": [
+        "GW-FN-019"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T14",
+        "SYS-T24"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-APP-002",
+      "system_function_ids": [
+        "S-FN-003",
+        "S-FN-016"
+      ],
+      "gw_function_ids": [
+        "GW-FN-019"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T21",
+        "SYS-T24"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-APP-003",
+      "system_function_ids": [
+        "S-FN-009",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-027",
+        "GW-FN-030"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T14",
+        "SYS-T26"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-FW-001",
+      "system_function_ids": [
+        "S-FN-011"
+      ],
+      "gw_function_ids": [
+        "GW-FN-023"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T11",
+        "SYS-T19",
+        "SYS-T20"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-FW-002",
+      "system_function_ids": [
+        "S-FN-011"
+      ],
+      "gw_function_ids": [
+        "GW-FN-023"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T19"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-FW-003",
+      "system_function_ids": [
+        "S-FN-011",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-024"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T19",
+        "SYS-T20"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-FW-004",
+      "system_function_ids": [
+        "S-FN-011",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-024"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T20",
+        "SYS-T21"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-FW-005",
+      "system_function_ids": [
+        "S-FN-011"
+      ],
+      "gw_function_ids": [
+        "GW-FN-023"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T18",
+        "SYS-T25"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-STATE-001",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-003",
+        "S-FN-007",
+        "S-FN-009",
+        "S-FN-010",
+        "S-FN-016",
+        "S-FN-017",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-008",
+        "GW-FN-017",
+        "GW-FN-025"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T18",
+        "SYS-T23"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-STATE-002",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-003",
+        "S-FN-007",
+        "S-FN-016",
+        "S-FN-017"
+      ],
+      "gw_function_ids": [
+        "GW-FN-008",
+        "GW-FN-019"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T21",
+        "SYS-T28"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-SVC-001",
+      "system_function_ids": [
+        "S-FN-008",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-029"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T27"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-ISO-003",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T18",
+        "SYS-T22",
+        "SYS-T25"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-CHG-002",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T27"
+      ],
+      "review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。"
+    },
+    {
+      "requirement_id": "SYS-GSEL-001",
+      "system_function_ids": [
+        "S-FN-012"
+      ],
+      "gw_function_ids": [
+        "GW-FN-014"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T29",
+        "SYS-T30"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-002",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T31"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-003",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T32",
+        "SYS-T41"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-004",
+      "system_function_ids": [
+        "S-FN-012",
+        "S-FN-013",
+        "S-FN-014",
+        "S-FN-015",
+        "S-FN-019"
+      ],
+      "gw_function_ids": [
+        "GW-FN-015",
+        "GW-FN-028"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T29",
+        "SYS-T30",
+        "SYS-T39"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-005",
+      "system_function_ids": [
+        "S-FN-012",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-014",
+        "GW-FN-015"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T30",
+        "SYS-T35",
+        "SYS-T39"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-006",
+      "system_function_ids": [
+        "S-FN-012",
+        "S-FN-013",
+        "S-FN-014",
+        "S-FN-019"
+      ],
+      "gw_function_ids": [
+        "GW-FN-014",
+        "GW-FN-028"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T29",
+        "SYS-T30",
+        "SYS-T37",
+        "SYS-T38"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-007",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T31",
+        "SYS-T33",
+        "SYS-T40"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-008",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T33",
+        "SYS-T34"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-009",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T32",
+        "SYS-T34",
+        "SYS-T42"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-010",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T36"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-011",
+      "system_function_ids": [
+        "S-FN-012",
+        "S-FN-015",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-015",
+        "GW-FN-032"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T35",
+        "SYS-T36"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-012",
+      "system_function_ids": [
+        "S-FN-012",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-015"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T39"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-013",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-013",
+        "S-FN-014",
+        "S-FN-016"
+      ],
+      "gw_function_ids": [
+        "GW-FN-016"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T38"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-014",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-013",
+        "S-FN-014",
+        "S-FN-016"
+      ],
+      "gw_function_ids": [
+        "GW-FN-016"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T38"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-015",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T37",
+        "SYS-T40"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-016",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T40"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-017",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T41"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-018",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T34",
+        "SYS-T42"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-019",
+      "system_function_ids": [
+        "S-FN-008",
+        "S-FN-009",
+        "S-FN-019",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-029",
+        "GW-FN-030"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T31",
+        "SYS-T42"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GSEL-020",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T33",
+        "SYS-T38",
+        "SYS-T40",
+        "SYS-T42"
+      ],
+      "review": "方式別プロファイル・選択条件・機器動作のレビュー"
+    },
+    {
+      "requirement_id": "SYS-GNET-001",
+      "system_function_ids": [
+        "S-FN-012"
+      ],
+      "gw_function_ids": [
+        "GW-FN-014"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T43",
+        "SYS-T44"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-002",
+      "system_function_ids": [
+        "S-FN-013"
+      ],
+      "gw_function_ids": [],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T43",
+        "SYS-T45",
+        "SYS-T50"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-003",
+      "system_function_ids": [
+        "S-FN-012",
+        "S-FN-015"
+      ],
+      "gw_function_ids": [
+        "GW-FN-014",
+        "GW-FN-015"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T44",
+        "SYS-T48"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-004",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-008",
+        "S-FN-013",
+        "S-FN-014",
+        "S-FN-016"
+      ],
+      "gw_function_ids": [
+        "GW-FN-012",
+        "GW-FN-016"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T43",
+        "SYS-T45",
+        "SYS-T49"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-005",
+      "system_function_ids": [
+        "S-FN-007",
+        "S-FN-015",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-026"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T46",
+        "SYS-T48"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-006",
+      "system_function_ids": [
+        "S-FN-009",
+        "S-FN-021"
+      ],
+      "gw_function_ids": [
+        "GW-FN-021"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T47",
+        "SYS-T48"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-007",
+      "system_function_ids": [
+        "S-FN-001",
+        "S-FN-013",
+        "S-FN-014",
+        "S-FN-016"
+      ],
+      "gw_function_ids": [
+        "GW-FN-016"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T49"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-008",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T45",
+        "SYS-T50"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-009",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T43",
+        "SYS-T44",
+        "SYS-T46"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-010",
+      "system_function_ids": [
+        "S-FN-002"
+      ],
+      "gw_function_ids": [
+        "GW-FN-018"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T47"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-011",
+      "system_function_ids": [],
+      "gw_function_ids": [],
+      "classification": "CROSS_CUTTING_OR_ALLOCATION_REVIEW",
+      "verification_ids": [
+        "SYS-T47",
+        "SYS-T48"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    },
+    {
+      "requirement_id": "SYS-GNET-012",
+      "system_function_ids": [
+        "S-FN-004",
+        "S-FN-005",
+        "S-FN-008",
+        "S-FN-018",
+        "S-FN-020"
+      ],
+      "gw_function_ids": [
+        "GW-FN-010",
+        "GW-FN-013"
+      ],
+      "classification": "FUNCTION_RELATED_CANDIDATE_MAPPING",
+      "verification_ids": [
+        "SYS-T45",
+        "SYS-T50"
+      ],
+      "review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.extraction-run/v1"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "extractor_version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "extractor_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "status": {
+      "enum": [
+        "NEEDS_REVIEW",
+        "BLOCKED_MANUAL"
+      ]
+    },
+    "fragments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fragment_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "locator": {
+            "type": "object",
+            "minProperties": 1
+          },
+          "raw_text": {
+            "type": "string"
+          },
+          "context": {
+            "type": "object"
+          },
+          "extraction_status": {
+            "enum": [
+              "EXTRACTED",
+              "NEEDS_REVIEW",
+              "BLOCKED"
+            ]
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "verified_by": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "review_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "fragment_id",
+          "source_id",
+          "source_sha256",
+          "locator",
+          "raw_text",
+          "context",
+          "extraction_status",
+          "features",
+          "verified_by",
+          "review_note"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "unhandled_objects": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "run_id",
+    "source_id",
+    "source_sha256",
+    "extractor_version",
+    "extractor_sha256",
+    "status",
+    "fragments",
+    "unhandled_objects",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "extraction_run"
+}

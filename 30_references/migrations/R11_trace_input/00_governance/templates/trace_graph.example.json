@@ -1,0 +1,24 @@
+{
+  "schema": "spkgw.lifecycle-trace/v1",
+  "profiles": [],
+  "nodes": [
+    {
+      "node_id": "NODE-EXAMPLE-REQ-R1",
+      "artifact_id": "REQ-EXAMPLE-001",
+      "revision": "1.0.0",
+      "kind": "REQUIREMENT",
+      "title": "例：実際の要求と参照へ置換する",
+      "trace_id": "TRC-SPKGW-000001",
+      "related_trace_ids": [],
+      "phase_ids": [
+        "P03"
+      ],
+      "record_state": "PLANNED",
+      "selected": true,
+      "locator": null,
+      "review": null
+    }
+  ],
+  "edges": [],
+  "trace_relations": []
+}

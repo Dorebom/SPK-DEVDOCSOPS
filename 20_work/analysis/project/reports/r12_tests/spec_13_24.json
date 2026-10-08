@@ -1,0 +1,26 @@
+{
+  "module": "test_specflow",
+  "requested_slice": [
+    13,
+    24
+  ],
+  "tests_run": 12,
+  "total_module_tests": 47,
+  "success": true,
+  "errors": [],
+  "failures": [],
+  "test_ids": [
+    "test_specflow.WorkflowTests.test_13_failure_before_pointer_retains_selected_baseline",
+    "test_specflow.WorkflowTests.test_14_prepared_tampering_rejected",
+    "test_specflow.WorkflowTests.test_15_wrong_approval_hash_rejected",
+    "test_specflow.WorkflowTests.test_16_stale_parent_baseline_rejected",
+    "test_specflow.WorkflowTests.test_17_original_tampering_detected",
+    "test_specflow.WorkflowTests.test_18_registration_and_extraction_idempotence",
+    "test_specflow.WorkflowTests.test_19_old_binary_format_is_blocked",
+    "test_specflow.WorkflowTests.test_20_docx_nested_table_revision_and_image_inventory",
+    "test_specflow.WorkflowTests.test_21_xlsx_formula_cache_hidden_merge_comments",
+    "test_specflow.WorkflowTests.test_22_unsafe_zip_path_rejected",
+    "test_specflow.WorkflowTests.test_23_dtd_rejected",
+    "test_specflow.WorkflowTests.test_24_unresolved_conflict_cannot_be_adopted"
+  ]
+}

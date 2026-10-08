@@ -1,0 +1,423 @@
+{
+  "revision": "R8",
+  "moc": "00_MOC.md",
+  "parts": [
+    {
+      "id": "I",
+      "title": "システム全体仕様",
+      "question": "住宅エネルギーシステム全体として何を実現するか？",
+      "chapters": [
+        "I-01",
+        "I-02",
+        "I-03",
+        "I-04",
+        "I-05",
+        "I-06",
+        "I-07",
+        "I-08"
+      ]
+    },
+    {
+      "id": "II",
+      "title": "SPK-GW製品仕様",
+      "question": "GW自身が何を実現するか？",
+      "chapters": [
+        "II-01",
+        "II-02",
+        "II-03",
+        "II-04",
+        "II-05",
+        "II-06",
+        "II-07",
+        "II-08",
+        "II-09",
+        "II-10",
+        "II-11"
+      ]
+    },
+    {
+      "id": "III",
+      "title": "境界インターフェース仕様",
+      "question": "境界を越えて何を交換するか？",
+      "chapters": [
+        "III-01",
+        "III-02",
+        "III-03",
+        "III-04",
+        "III-05",
+        "III-06",
+        "III-07",
+        "III-08",
+        "III-09",
+        "III-10"
+      ]
+    },
+    {
+      "id": "IV",
+      "title": "横断品質・制約仕様",
+      "question": "どの品質・制約条件で成立させるか？",
+      "chapters": [
+        "IV-01",
+        "IV-02",
+        "IV-03",
+        "IV-04",
+        "IV-05",
+        "IV-06",
+        "IV-07",
+        "IV-08"
+      ]
+    },
+    {
+      "id": "V",
+      "title": "製品ライフサイクル・適合・検証",
+      "question": "どう成立を確認し、変更・運用するか？",
+      "chapters": [
+        "V-01",
+        "V-02",
+        "V-03",
+        "V-04",
+        "V-05",
+        "V-06",
+        "V-07"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "code": "I-01",
+      "title": "文書目的・適用範囲・システム境界",
+      "scope": "文書の正本、製品目的、保証境界、対象外、関連文書の優先関係",
+      "part": "I",
+      "path": "chapters/I_System/I-01_Purpose_Scope.md"
+    },
+    {
+      "code": "I-02",
+      "title": "システム利用者・運用概念・利用機能",
+      "scope": "ユーザ／メンテナンス／メーカー／開発者の4分類、利用場面、機能範囲の概要",
+      "part": "I",
+      "path": "chapters/I_System/I-02_Actors_Roles.md"
+    },
+    {
+      "code": "I-03",
+      "title": "システム全体の機能（要件）一覧",
+      "scope": "全体21機能群と、GW・PCS・クラウド・アプリ等への配賦",
+      "part": "I",
+      "path": "chapters/I_System/I-03_System_Functions.md"
+    },
+    {
+      "code": "I-04",
+      "title": "システムコンテキスト・ネットワーク接続",
+      "scope": "外部サービス、宅内ルータ、GW、両PCS、EL負荷・計測器の全体図と接続拡大図",
+      "part": "I",
+      "path": "chapters/I_System/I-04_System_Context.md"
+    },
+    {
+      "code": "I-05",
+      "title": "機器構成パターン・機能適用条件",
+      "scope": "代表3構成、機器分類、能力・版・台数等の構成軸、構成ごとの機能可否",
+      "part": "I",
+      "path": "chapters/I_System/I-05_Configurations.md"
+    },
+    {
+      "code": "I-06",
+      "title": "システムユースケース・横断振る舞い",
+      "scope": "正常・代替・異常・同時事象、上位から実機までのエンドツーエンド動作",
+      "part": "I",
+      "path": "chapters/I_System/I-06_Usecases.md"
+    },
+    {
+      "code": "I-07",
+      "title": "全体責務配分・電力制約・保護",
+      "scope": "全体の責任境界、出力制御と保護、連系点・変換グループ・計測範囲",
+      "part": "I",
+      "path": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "code": "I-08",
+      "title": "システム状態・可用機能・成立条件",
+      "scope": "H停止、GW停止、WAN断、ルータ停止等で全体として何を継続・制限するか",
+      "part": "I",
+      "path": "chapters/I_System/I-08_System_States.md"
+    },
+    {
+      "code": "II-01",
+      "title": "GW論理構成・H/G責務・状態所有者",
+      "scope": "GW内の配賦、状態の正本、固定送信所有者、配置未決事項",
+      "part": "II",
+      "path": "chapters/II_GW/II-01_GW_Architecture.md"
+    },
+    {
+      "code": "II-02",
+      "title": "SPK-GW製品の機能（要件）一覧",
+      "scope": "GW32機能群、全体機能への対応、既存・追加・将来の採否",
+      "part": "II",
+      "path": "chapters/II_GW/II-02_GW_Functions.md"
+    },
+    {
+      "code": "II-03",
+      "title": "要求受付・通常制御権・実行調整",
+      "scope": "用途別振分け、Arbiter、Orchestrator、世代・期限・受理と達成",
+      "part": "II",
+      "path": "chapters/II_GW/II-03_Control_Execution.md"
+    },
+    {
+      "code": "II-04",
+      "title": "DER制御・負荷制御・結果確認",
+      "scope": "DER Power Controller、Flexible Load Controller、操作系列と結果の意味",
+      "part": "II",
+      "path": "chapters/II_GW/II-04_DER_Load_Control.md"
+    },
+    {
+      "code": "II-05",
+      "title": "高度エネルギーマネジメント",
+      "scope": "採用戦略、計画、実績評価、再計画、入力不足時の縮退",
+      "part": "II",
+      "path": "chapters/II_GW/II-05_Advanced_EMS.md"
+    },
+    {
+      "code": "II-06",
+      "title": "機器探索・登録・識別・Capability管理",
+      "scope": "探索・登録・解除・交換、同一機器、多重IF、書込み解禁条件",
+      "part": "II",
+      "path": "chapters/II_GW/II-06_Device_Management.md"
+    },
+    {
+      "code": "II-07",
+      "title": "計測・状態・履歴・データ公開機能",
+      "scope": "Measurement、正規化、観測品質、保存・抽出・同期・状態コピー",
+      "part": "II",
+      "path": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "code": "II-08",
+      "title": "GW G側の出力制御機能",
+      "scope": "RS-485対象の取得・検証・保存・時刻適用・指示・必須監視",
+      "part": "II",
+      "path": "chapters/II_GW/II-08_GW_Grid_Control.md"
+    },
+    {
+      "code": "II-09",
+      "title": "設定・起動停止・内部機能操作",
+      "scope": "設定世代、反映・復元、起動条件、状態別許可、内部Job",
+      "part": "II",
+      "path": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "code": "II-10",
+      "title": "障害検出・縮退復旧・警報診断機能",
+      "scope": "障害コード、再送・再照合、残留要求、通知・確認・解除",
+      "part": "II",
+      "path": "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md"
+    },
+    {
+      "code": "II-11",
+      "title": "FW取得・検証・適用・復旧機能",
+      "scope": "配信と適用の分離、H/G更新、更新中断・起動不能からの復旧",
+      "part": "II",
+      "path": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "code": "III-01",
+      "title": "IF一覧・共通契約・H/G内部境界",
+      "scope": "既存16IFの配置、方向・責務・schema・時間・認可・互換性と内部境界",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-01_Boundary_Contracts.md"
+    },
+    {
+      "code": "III-02",
+      "title": "上位管理・監視サーバ—GWインターフェース",
+      "scope": "設定、GW内部操作、情報取得、通常要求配送、オフライン・重複・通知",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-02_Cloud_GW.md"
+    },
+    {
+      "code": "III-03",
+      "title": "FW配信サーバ—GWインターフェース",
+      "scope": "配布物・メタデータ配送と更新運用要求の区別",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-03_FW_Server.md"
+    },
+    {
+      "code": "III-04",
+      "title": "宅内Web UI—GWインターフェース",
+      "scope": "直接無線とルータ経由、画面資産・Local API、到達性と認可",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-04_Local_Web.md"
+    },
+    {
+      "code": "III-05",
+      "title": "スマートフォンアプリ—クラウド連携",
+      "scope": "アプリ—クラウド境界と、クラウド—GW境界を通した監視・操作",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-05_Remote_App.md"
+    },
+    {
+      "code": "III-06",
+      "title": "ECHONET Lite Controller／Deviceインターフェース",
+      "scope": "H側からPCS・空調・給湯・計測器への通常ELと、GWの機器側公開",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-06_ECHONET_Lite.md"
+    },
+    {
+      "code": "III-07",
+      "title": "RS-485 PCSインターフェース",
+      "scope": "通常指令と必須系統指令、通信所有、プロトコル・応答・状態取得",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-07_RS485_PCS.md"
+    },
+    {
+      "code": "III-08",
+      "title": "出力制御サーバ—取得クライアントインターフェース",
+      "scope": "GW G側とEL PCS自身の二つの通信終端、すべて宅内ルータ経由",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-08_Utility_Server.md"
+    },
+    {
+      "code": "III-09",
+      "title": "ネットワーク・無線・USB等の接続プロファイル",
+      "scope": "IPv4/IPv6・Wi-SUN・USB等の持越し要求、適用する物理接続条件",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-09_Network_Peripherals.md"
+    },
+    {
+      "code": "III-10",
+      "title": "製造・施工・保守・開発インターフェース",
+      "scope": "独立G保守、系統構成変更、通常APIと開発経路の区別",
+      "part": "III",
+      "path": "chapters/III_Interfaces/III-10_Maintenance_Interfaces.md"
+    },
+    {
+      "code": "IV-01",
+      "title": "性能・時間・精度・容量",
+      "scope": "計画／観測／設定／保護の時間、最大負荷・資源予算・飽和動作",
+      "part": "IV",
+      "path": "chapters/IV_Quality/IV-01_Performance_Capacity.md"
+    },
+    {
+      "code": "IV-02",
+      "title": "信頼性・可用性・保守性・耐久性",
+      "scope": "許容停止、復旧、データ損失、連続稼働、保守、使用・書込み寿命",
+      "part": "IV",
+      "path": "chapters/IV_Quality/IV-02_Reliability_Availability.md"
+    },
+    {
+      "code": "IV-03",
+      "title": "セキュリティ・プライバシー",
+      "scope": "脅威・資産・対策、認可・鍵ライフサイクル、通信保護、データ消去",
+      "part": "IV",
+      "path": "chapters/IV_Quality/IV-03_Security_Privacy.md"
+    },
+    {
+      "code": "IV-04",
+      "title": "製品安全・遠隔操作安全",
+      "scope": "GW・PCS・負荷・利用者の危険源、安全状態、誤操作防止、残留リスク",
+      "part": "IV",
+      "path": "chapters/IV_Quality/IV-04_Product_Safety.md"
+    },
+    {
+      "code": "IV-05",
+      "title": "物理・電気・機構・設置条件",
+      "scope": "電源、消費電力、端子・配線、外形、取付、放熱、本体表示",
+      "part": "IV",
+      "path": "chapters/IV_Quality/IV-05_Physical_Electrical.md"
+    },
+    {
+      "code": "IV-06",
+      "title": "環境・EMC・静電気・輸送保管",
+      "scope": "温湿度、屋外、防塵防水、EMC、ESD、サージ、輸送・保管",
+      "part": "IV",
+      "path": "chapters/IV_Quality/IV-06_Environment_EMC.md"
+    },
+    {
+      "code": "IV-07",
+      "title": "非干渉・認証影響分離・共有資源制約",
+      "scope": "H/G境界、CPU・時刻・保存・通信・電源・リセット・宅内ルータ",
+      "part": "IV",
+      "path": "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md"
+    },
+    {
+      "code": "IV-08",
+      "title": "データ完全性・ログ・UI品質",
+      "scope": "保存完全性、監査相関、UIの表示・操作性・対応端末の受入条件",
+      "part": "IV",
+      "path": "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+    },
+    {
+      "code": "V-01",
+      "title": "製造・初期書込み・出荷",
+      "scope": "個体識別、資格情報投入、製造モード閉鎖、出荷検査・校正",
+      "part": "V",
+      "path": "chapters/V_Lifecycle/V-01_Manufacturing_Shipping.md"
+    },
+    {
+      "code": "V-02",
+      "title": "施工・初期設定・試運転・引渡し",
+      "scope": "配線・登録・計測対応、構成有効化、切替中断、利用者引渡し",
+      "part": "V",
+      "path": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+    },
+    {
+      "code": "V-03",
+      "title": "運用保守・修理交換・廃棄・サービス終了",
+      "scope": "交換・所有者変更、秘密消去、支援期間、脆弱性対応との接続",
+      "part": "V",
+      "path": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md"
+    },
+    {
+      "code": "V-04",
+      "title": "適用規格・制度・認証構成",
+      "scope": "JET／EL・AIF／JC-STAR等の区別、版・条項・適用構成・根拠",
+      "part": "V",
+      "path": "chapters/V_Lifecycle/V-04_Compliance.md"
+    },
+    {
+      "code": "V-05",
+      "title": "変更影響・互換性・移行・リリース",
+      "scope": "既存維持、Legacy/Next、非干渉評価、変更手続きとリリースの別承認",
+      "part": "V",
+      "path": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+    },
+    {
+      "code": "V-06",
+      "title": "検証・妥当性確認・受入",
+      "scope": "既存69試験、型式・版・数値・測定方法、利用目的の成立確認",
+      "part": "V",
+      "path": "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+    },
+    {
+      "code": "V-07",
+      "title": "要求トレース・仕様完成・Open Question管理",
+      "scope": "SYS・機能・IF・構成・試験とOQ、未決事項の回答・責任・確定時点",
+      "part": "V",
+      "path": "chapters/V_Lifecycle/V-07_Trace_Open_Questions.md"
+    }
+  ],
+  "appendices": [
+    "appendices/Configuration_Patterns.md",
+    "appendices/Configuration_Register.md",
+    "appendices/Coverage_Completion_Map.md",
+    "appendices/Data_Dictionary.md",
+    "appendices/Deployment_Binding.md",
+    "appendices/Device_Profile_Extended.md",
+    "appendices/External_Interface_Register.md",
+    "appendices/Functional_Allocation.md",
+    "appendices/Grid_Connection_Profile.md",
+    "appendices/Interface_Contract_Detail.md",
+    "appendices/Normative_References_Glossary.md",
+    "appendices/Northbound_Operation_Catalog.md",
+    "appendices/Open_Issues.md",
+    "appendices/Open_Question_Register.md",
+    "appendices/Parameter_Register.md",
+    "appendices/Product_Function_Matrix.md",
+    "appendices/Quality_Acceptance_Profiles.md",
+    "appendices/Release_Impact_Addendum.md",
+    "appendices/Requirements_Catalog.md",
+    "appendices/Role_Function_Access.md",
+    "appendices/State_Permission_Matrix.md",
+    "appendices/Test_Profiles.md",
+    "appendices/Traceability.md",
+    "appendices/UI_Alarm_Register.md",
+    "appendices/Chapter_Migration_Map.md",
+    "appendices/R8_Structure_Decisions.md"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "markdown_files": 44,
+  "local_links": 84,
+  "errors": [],
+  "scope": "new governance/tasks/management plus root README; historical product links tested separately by specflow"
+}

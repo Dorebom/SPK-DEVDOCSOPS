@@ -1,0 +1,137 @@
+{
+  "schema": "spkgw.echonet-normal-routes/v1",
+  "revision": "R5",
+  "status": "DOCUMENT_CLARIFICATION_NOT_DEPLOYED",
+  "basis": [
+    "CTX-R5",
+    "R4 chapter 02",
+    "architecture chapter 02"
+  ],
+  "routes": [
+    {
+      "route_id": "EL-N01",
+      "target": "空調",
+      "semantic_owner": "Flexible Load Controller",
+      "interface_id": "IF-EL-01",
+      "request_path": [
+        "GW_H_EL_CONTROLLER",
+        "GW_H_LAN_INTERFACE",
+        "HOME_ROUTER_LAN_AP",
+        "AC_EL_IF"
+      ],
+      "response_path": [
+        "AC_EL_IF",
+        "HOME_ROUTER_LAN_AP",
+        "GW_H_LAN_INTERFACE",
+        "GW_H_EL_CONTROLLER"
+      ],
+      "notification_path": [
+        "AC_EL_IF",
+        "HOME_ROUTER_LAN_AP",
+        "GW_H_LAN_INTERFACE",
+        "GW_H_EL_CONTROLLER"
+      ],
+      "notification_support": "DEVICE_PROFILE_DEPENDENT",
+      "state_quality_owner": "Measurement / Device State Service",
+      "contains_internet": false,
+      "contains_grid_server": false,
+      "contains_gw_grid_domain": false,
+      "medium": "EXISTING_CONNECTION_PROFILE_NOT_FIXED_BY_R5"
+    },
+    {
+      "route_id": "EL-N02",
+      "target": "給湯",
+      "semantic_owner": "Flexible Load Controller",
+      "interface_id": "IF-EL-01",
+      "request_path": [
+        "GW_H_EL_CONTROLLER",
+        "GW_H_LAN_INTERFACE",
+        "HOME_ROUTER_LAN_AP",
+        "HOT_WATER_EL_IF"
+      ],
+      "response_path": [
+        "HOT_WATER_EL_IF",
+        "HOME_ROUTER_LAN_AP",
+        "GW_H_LAN_INTERFACE",
+        "GW_H_EL_CONTROLLER"
+      ],
+      "notification_path": [
+        "HOT_WATER_EL_IF",
+        "HOME_ROUTER_LAN_AP",
+        "GW_H_LAN_INTERFACE",
+        "GW_H_EL_CONTROLLER"
+      ],
+      "notification_support": "DEVICE_PROFILE_DEPENDENT",
+      "state_quality_owner": "Measurement / Device State Service",
+      "contains_internet": false,
+      "contains_grid_server": false,
+      "contains_gw_grid_domain": false,
+      "medium": "EXISTING_CONNECTION_PROFILE_NOT_FIXED_BY_R5"
+    },
+    {
+      "route_id": "EL-N03",
+      "target": "計測器",
+      "semantic_owner": "Measurement / Device State Service",
+      "interface_id": "IF-EL-01",
+      "request_path": [
+        "GW_H_EL_CONTROLLER",
+        "GW_H_LAN_INTERFACE",
+        "HOME_ROUTER_LAN_AP",
+        "METER_EL_IF"
+      ],
+      "response_path": [
+        "METER_EL_IF",
+        "HOME_ROUTER_LAN_AP",
+        "GW_H_LAN_INTERFACE",
+        "GW_H_EL_CONTROLLER"
+      ],
+      "notification_path": [
+        "METER_EL_IF",
+        "HOME_ROUTER_LAN_AP",
+        "GW_H_LAN_INTERFACE",
+        "GW_H_EL_CONTROLLER"
+      ],
+      "notification_support": "DEVICE_PROFILE_DEPENDENT",
+      "state_quality_owner": "Measurement / Device State Service",
+      "contains_internet": false,
+      "contains_grid_server": false,
+      "contains_gw_grid_domain": false,
+      "medium": "EXISTING_CONNECTION_PROFILE_NOT_FIXED_BY_R5"
+    },
+    {
+      "route_id": "EL-N04",
+      "target": "PV・蓄電池クラス等のPCS",
+      "semantic_owner": "DER Power Controller",
+      "interface_id": "IF-EL-01",
+      "request_path": [
+        "GW_H_EL_CONTROLLER",
+        "GW_H_LAN_INTERFACE",
+        "HOME_ROUTER_LAN_AP",
+        "PCS_LAN_INTERFACE",
+        "PCS_EL_IF"
+      ],
+      "response_path": [
+        "PCS_EL_IF",
+        "PCS_LAN_INTERFACE",
+        "HOME_ROUTER_LAN_AP",
+        "GW_H_LAN_INTERFACE",
+        "GW_H_EL_CONTROLLER"
+      ],
+      "notification_path": [
+        "PCS_EL_IF",
+        "PCS_LAN_INTERFACE",
+        "HOME_ROUTER_LAN_AP",
+        "GW_H_LAN_INTERFACE",
+        "GW_H_EL_CONTROLLER"
+      ],
+      "notification_support": "DEVICE_PROFILE_DEPENDENT",
+      "state_quality_owner": "Measurement / Device State Service",
+      "contains_internet": false,
+      "contains_grid_server": false,
+      "contains_gw_grid_domain": false,
+      "medium": "EXISTING_CONNECTION_PROFILE_NOT_FIXED_BY_R5"
+    }
+  ],
+  "pcs_grid_fetch_contract": "Separate GRID-EL-PCS in grid_network_routes.json; unchanged",
+  "scope_note": "Common home LAN representative topology. No forced rerouting of other existing transport profiles."
+}

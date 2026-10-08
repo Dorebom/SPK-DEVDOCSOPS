@@ -1,0 +1,26 @@
+{
+  "module": "test_specflow",
+  "requested_slice": [
+    1,
+    12
+  ],
+  "tests_run": 12,
+  "total_module_tests": 47,
+  "success": true,
+  "errors": [],
+  "failures": [],
+  "test_ids": [
+    "test_specflow.WorkflowTests.test_01_baseline_integrity_and_freshness",
+    "test_specflow.WorkflowTests.test_02_empty_requirement_rejected",
+    "test_specflow.WorkflowTests.test_03_wrong_status_type_rejected",
+    "test_specflow.WorkflowTests.test_04_duplicate_ids_rejected_before_render",
+    "test_specflow.WorkflowTests.test_05_unknown_source_rejected",
+    "test_specflow.WorkflowTests.test_06_unknown_usdm_rejected",
+    "test_specflow.WorkflowTests.test_07_requirement_test_asymmetry_rejected",
+    "test_specflow.WorkflowTests.test_08_stale_views_rejected",
+    "test_specflow.WorkflowTests.test_09_input_failure_never_changes_canonical",
+    "test_specflow.WorkflowTests.test_10_staged_render_failure_never_changes_canonical",
+    "test_specflow.WorkflowTests.test_11_pending_approval_rejected",
+    "test_specflow.WorkflowTests.test_12_publish_and_idempotent_republication"
+  ]
+}

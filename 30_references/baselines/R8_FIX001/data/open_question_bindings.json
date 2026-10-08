@@ -1,0 +1,515 @@
+{
+  "revision": "R8",
+  "questions": [
+    {
+      "id": "OQ-R6-01-01",
+      "owner_note": "chapters/I_System/I-02_Actors_Roles.md",
+      "slot_anchor": "slot-r6-01-01",
+      "anchor": "oq-r6-01-01"
+    },
+    {
+      "id": "OQ-R6-01-02",
+      "owner_note": "chapters/I_System/I-01_Purpose_Scope.md",
+      "slot_anchor": "slot-r6-01-02",
+      "anchor": "oq-r6-01-02"
+    },
+    {
+      "id": "OQ-R6-01-03",
+      "owner_note": "chapters/I_System/I-01_Purpose_Scope.md",
+      "slot_anchor": "slot-r6-01-03",
+      "anchor": "oq-r6-01-03"
+    },
+    {
+      "id": "OQ-R6-01-04",
+      "owner_note": "chapters/I_System/I-01_Purpose_Scope.md",
+      "slot_anchor": "slot-r6-01-04",
+      "anchor": "oq-r6-01-04"
+    },
+    {
+      "id": "OQ-R6-02-01",
+      "owner_note": "chapters/I_System/I-04_System_Context.md",
+      "slot_anchor": "slot-r6-02-01",
+      "anchor": "oq-r6-02-01"
+    },
+    {
+      "id": "OQ-R6-02-02",
+      "owner_note": "chapters/I_System/I-04_System_Context.md",
+      "slot_anchor": "slot-r6-02-02",
+      "anchor": "oq-r6-02-02"
+    },
+    {
+      "id": "OQ-R6-03-01",
+      "owner_note": "chapters/II_GW/II-01_GW_Architecture.md",
+      "slot_anchor": "slot-r6-03-01",
+      "anchor": "oq-r6-03-01"
+    },
+    {
+      "id": "OQ-R6-03-02",
+      "owner_note": "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+      "slot_anchor": "slot-r6-03-02",
+      "anchor": "oq-r6-03-02"
+    },
+    {
+      "id": "OQ-R6-04-01",
+      "owner_note": "chapters/II_GW/II-02_GW_Functions.md",
+      "slot_anchor": "slot-r6-04-01",
+      "anchor": "oq-r6-04-01"
+    },
+    {
+      "id": "OQ-R6-04-02",
+      "owner_note": "chapters/I_System/I-05_Configurations.md",
+      "slot_anchor": "slot-r6-04-02",
+      "anchor": "oq-r6-04-02"
+    },
+    {
+      "id": "OQ-R6-04-03",
+      "owner_note": "chapters/II_GW/II-06_Device_Management.md",
+      "slot_anchor": "slot-r6-04-03",
+      "anchor": "oq-r6-04-03"
+    },
+    {
+      "id": "OQ-R6-05-01",
+      "owner_note": "chapters/II_GW/II-03_Control_Execution.md",
+      "slot_anchor": "slot-r6-05-01",
+      "anchor": "oq-r6-05-01"
+    },
+    {
+      "id": "OQ-R6-05-02",
+      "owner_note": "chapters/II_GW/II-03_Control_Execution.md",
+      "slot_anchor": "slot-r6-05-02",
+      "anchor": "oq-r6-05-02"
+    },
+    {
+      "id": "OQ-R6-06-01",
+      "owner_note": "chapters/I_System/I-06_Usecases.md",
+      "slot_anchor": "slot-r6-06-01",
+      "anchor": "oq-r6-06-01"
+    },
+    {
+      "id": "OQ-R6-06-02",
+      "owner_note": "chapters/I_System/I-06_Usecases.md",
+      "slot_anchor": "slot-r6-06-02",
+      "anchor": "oq-r6-06-02"
+    },
+    {
+      "id": "OQ-R6-07-01",
+      "owner_note": "chapters/III_Interfaces/III-07_RS485_PCS.md",
+      "slot_anchor": "slot-r6-07-01",
+      "anchor": "oq-r6-07-01"
+    },
+    {
+      "id": "OQ-R6-07-02",
+      "owner_note": "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+      "slot_anchor": "slot-r6-07-02",
+      "anchor": "oq-r6-07-02"
+    },
+    {
+      "id": "OQ-R6-07-03",
+      "owner_note": "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+      "slot_anchor": "slot-r6-07-03",
+      "anchor": "oq-r6-07-03"
+    },
+    {
+      "id": "OQ-R6-08-01",
+      "owner_note": "chapters/II_GW/II-05_Advanced_EMS.md",
+      "slot_anchor": "slot-r6-08-01",
+      "anchor": "oq-r6-08-01"
+    },
+    {
+      "id": "OQ-R6-08-02",
+      "owner_note": "chapters/II_GW/II-05_Advanced_EMS.md",
+      "slot_anchor": "slot-r6-08-02",
+      "anchor": "oq-r6-08-02"
+    },
+    {
+      "id": "OQ-R6-08-03",
+      "owner_note": "chapters/II_GW/II-04_DER_Load_Control.md",
+      "slot_anchor": "slot-r6-08-03",
+      "anchor": "oq-r6-08-03"
+    },
+    {
+      "id": "OQ-R6-09-01",
+      "owner_note": "chapters/II_GW/II-07_Measurement_Data.md",
+      "slot_anchor": "slot-r6-09-01",
+      "anchor": "oq-r6-09-01"
+    },
+    {
+      "id": "OQ-R6-09-02",
+      "owner_note": "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+      "slot_anchor": "slot-r6-09-02",
+      "anchor": "oq-r6-09-02"
+    },
+    {
+      "id": "OQ-R6-09-03",
+      "owner_note": "chapters/II_GW/II-07_Measurement_Data.md",
+      "slot_anchor": "slot-r6-09-03",
+      "anchor": "oq-r6-09-03"
+    },
+    {
+      "id": "OQ-R6-10-01",
+      "owner_note": "chapters/V_Lifecycle/V-04_Compliance.md",
+      "slot_anchor": "slot-r6-10-01",
+      "anchor": "oq-r6-10-01"
+    },
+    {
+      "id": "OQ-R6-10-02",
+      "owner_note": "chapters/I_System/I-07_Responsibilities_Constraints.md",
+      "slot_anchor": "slot-r6-10-02",
+      "anchor": "oq-r6-10-02"
+    },
+    {
+      "id": "OQ-R6-11-01",
+      "owner_note": "chapters/I_System/I-07_Responsibilities_Constraints.md",
+      "slot_anchor": "slot-r6-11-01",
+      "anchor": "oq-r6-11-01"
+    },
+    {
+      "id": "OQ-R6-11-02",
+      "owner_note": "chapters/I_System/I-07_Responsibilities_Constraints.md",
+      "slot_anchor": "slot-r6-11-02",
+      "anchor": "oq-r6-11-02"
+    },
+    {
+      "id": "OQ-R6-12-01",
+      "owner_note": "chapters/II_GW/II-09_Settings_Lifecycle.md",
+      "slot_anchor": "slot-r6-12-01",
+      "anchor": "oq-r6-12-01"
+    },
+    {
+      "id": "OQ-R6-12-02",
+      "owner_note": "chapters/II_GW/II-09_Settings_Lifecycle.md",
+      "slot_anchor": "slot-r6-12-02",
+      "anchor": "oq-r6-12-02"
+    },
+    {
+      "id": "OQ-R6-12-03",
+      "owner_note": "chapters/II_GW/II-09_Settings_Lifecycle.md",
+      "slot_anchor": "slot-r6-12-03",
+      "anchor": "oq-r6-12-03"
+    },
+    {
+      "id": "OQ-R6-12-04",
+      "owner_note": "chapters/II_GW/II-09_Settings_Lifecycle.md",
+      "slot_anchor": "slot-r6-12-04",
+      "anchor": "oq-r6-12-04"
+    },
+    {
+      "id": "OQ-R6-13-01",
+      "owner_note": "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+      "slot_anchor": "slot-r6-13-01",
+      "anchor": "oq-r6-13-01"
+    },
+    {
+      "id": "OQ-R6-13-02",
+      "owner_note": "chapters/II_GW/II-11_Firmware_Update.md",
+      "slot_anchor": "slot-r6-13-02",
+      "anchor": "oq-r6-13-02"
+    },
+    {
+      "id": "OQ-R6-14-01",
+      "owner_note": "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+      "slot_anchor": "slot-r6-14-01",
+      "anchor": "oq-r6-14-01"
+    },
+    {
+      "id": "OQ-R6-14-02",
+      "owner_note": "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+      "slot_anchor": "slot-r6-14-02",
+      "anchor": "oq-r6-14-02"
+    },
+    {
+      "id": "OQ-R6-15-01",
+      "owner_note": "chapters/II_GW/II-01_GW_Architecture.md",
+      "slot_anchor": "slot-r6-15-01",
+      "anchor": "oq-r6-15-01"
+    },
+    {
+      "id": "OQ-R6-15-02",
+      "owner_note": "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+      "slot_anchor": "slot-r6-15-02",
+      "anchor": "oq-r6-15-02"
+    },
+    {
+      "id": "OQ-R6-16-01",
+      "owner_note": "chapters/V_Lifecycle/V-04_Compliance.md",
+      "slot_anchor": "slot-r6-16-01",
+      "anchor": "oq-r6-16-01"
+    },
+    {
+      "id": "OQ-R6-16-02",
+      "owner_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+      "slot_anchor": "slot-r6-16-02",
+      "anchor": "oq-r6-16-02"
+    },
+    {
+      "id": "OQ-R6-17-01",
+      "owner_note": "chapters/V_Lifecycle/V-06_Verification_Validation.md",
+      "slot_anchor": "slot-r6-17-01",
+      "anchor": "oq-r6-17-01"
+    },
+    {
+      "id": "OQ-R6-17-02",
+      "owner_note": "chapters/V_Lifecycle/V-06_Verification_Validation.md",
+      "slot_anchor": "slot-r6-17-02",
+      "anchor": "oq-r6-17-02"
+    },
+    {
+      "id": "OQ-R6-17-03",
+      "owner_note": "chapters/V_Lifecycle/V-06_Verification_Validation.md",
+      "slot_anchor": "slot-r6-17-03",
+      "anchor": "oq-r6-17-03"
+    },
+    {
+      "id": "OQ-R6-18-01",
+      "owner_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+      "slot_anchor": "slot-r6-18-01",
+      "anchor": "oq-r6-18-01"
+    },
+    {
+      "id": "OQ-R6-18-02",
+      "owner_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+      "slot_anchor": "slot-r6-18-02",
+      "anchor": "oq-r6-18-02"
+    },
+    {
+      "id": "OQ-R6-19-01",
+      "owner_note": "chapters/V_Lifecycle/V-07_Trace_Open_Questions.md",
+      "slot_anchor": "slot-r6-19-01",
+      "anchor": "oq-r6-19-01"
+    },
+    {
+      "id": "OQ-R6-19-02",
+      "owner_note": "chapters/V_Lifecycle/V-07_Trace_Open_Questions.md",
+      "slot_anchor": "slot-r6-19-02",
+      "anchor": "oq-r6-19-02"
+    },
+    {
+      "id": "OQ-R6-19-03",
+      "owner_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+      "slot_anchor": "slot-r6-19-03",
+      "anchor": "oq-r6-19-03"
+    },
+    {
+      "id": "OQ-R6-20-01",
+      "owner_note": "chapters/III_Interfaces/III-02_Cloud_GW.md",
+      "slot_anchor": "slot-r6-20-01",
+      "anchor": "oq-r6-20-01"
+    },
+    {
+      "id": "OQ-R6-20-02",
+      "owner_note": "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+      "slot_anchor": "slot-r6-20-02",
+      "anchor": "oq-r6-20-02"
+    },
+    {
+      "id": "OQ-R6-20-03",
+      "owner_note": "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+      "slot_anchor": "slot-r6-20-03",
+      "anchor": "oq-r6-20-03"
+    },
+    {
+      "id": "OQ-R6-20-04",
+      "owner_note": "chapters/II_GW/II-11_Firmware_Update.md",
+      "slot_anchor": "slot-r6-20-04",
+      "anchor": "oq-r6-20-04"
+    },
+    {
+      "id": "OQ-R6-20-05",
+      "owner_note": "chapters/III_Interfaces/III-02_Cloud_GW.md",
+      "slot_anchor": "slot-r6-20-05",
+      "anchor": "oq-r6-20-05"
+    },
+    {
+      "id": "OQ-R6-21-01",
+      "owner_note": "chapters/I_System/I-05_Configurations.md",
+      "slot_anchor": "slot-r6-21-01",
+      "anchor": "oq-r6-21-01"
+    },
+    {
+      "id": "OQ-R6-21-02",
+      "owner_note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+      "slot_anchor": "slot-r6-21-02",
+      "anchor": "oq-r6-21-02"
+    },
+    {
+      "id": "OQ-R6-22-01",
+      "owner_note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "slot_anchor": "slot-r6-22-01",
+      "anchor": "oq-r6-22-01"
+    },
+    {
+      "id": "OQ-R6-22-02",
+      "owner_note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "slot_anchor": "slot-r6-22-02",
+      "anchor": "oq-r6-22-02"
+    },
+    {
+      "id": "OQ-R6-22-03",
+      "owner_note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "slot_anchor": "slot-r6-22-03",
+      "anchor": "oq-r6-22-03"
+    },
+    {
+      "id": "OQ-R6-22-04",
+      "owner_note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "slot_anchor": "slot-r6-22-04",
+      "anchor": "oq-r6-22-04"
+    },
+    {
+      "id": "OQ-R6-22-05",
+      "owner_note": "chapters/IV_Quality/IV-05_Physical_Electrical.md",
+      "slot_anchor": "slot-r6-22-05",
+      "anchor": "oq-r6-22-05"
+    },
+    {
+      "id": "OQ-R6-23-01",
+      "owner_note": "chapters/IV_Quality/IV-06_Environment_EMC.md",
+      "slot_anchor": "slot-r6-23-01",
+      "anchor": "oq-r6-23-01"
+    },
+    {
+      "id": "OQ-R6-23-02",
+      "owner_note": "chapters/IV_Quality/IV-06_Environment_EMC.md",
+      "slot_anchor": "slot-r6-23-02",
+      "anchor": "oq-r6-23-02"
+    },
+    {
+      "id": "OQ-R6-23-03",
+      "owner_note": "chapters/IV_Quality/IV-06_Environment_EMC.md",
+      "slot_anchor": "slot-r6-23-03",
+      "anchor": "oq-r6-23-03"
+    },
+    {
+      "id": "OQ-R6-23-04",
+      "owner_note": "chapters/IV_Quality/IV-06_Environment_EMC.md",
+      "slot_anchor": "slot-r6-23-04",
+      "anchor": "oq-r6-23-04"
+    },
+    {
+      "id": "OQ-R6-24-01",
+      "owner_note": "chapters/IV_Quality/IV-04_Product_Safety.md",
+      "slot_anchor": "slot-r6-24-01",
+      "anchor": "oq-r6-24-01"
+    },
+    {
+      "id": "OQ-R6-24-02",
+      "owner_note": "chapters/IV_Quality/IV-04_Product_Safety.md",
+      "slot_anchor": "slot-r6-24-02",
+      "anchor": "oq-r6-24-02"
+    },
+    {
+      "id": "OQ-R6-24-03",
+      "owner_note": "chapters/IV_Quality/IV-04_Product_Safety.md",
+      "slot_anchor": "slot-r6-24-03",
+      "anchor": "oq-r6-24-03"
+    },
+    {
+      "id": "OQ-R6-24-04",
+      "owner_note": "chapters/IV_Quality/IV-04_Product_Safety.md",
+      "slot_anchor": "slot-r6-24-04",
+      "anchor": "oq-r6-24-04"
+    },
+    {
+      "id": "OQ-R6-25-01",
+      "owner_note": "chapters/IV_Quality/IV-02_Reliability_Availability.md",
+      "slot_anchor": "slot-r6-25-01",
+      "anchor": "oq-r6-25-01"
+    },
+    {
+      "id": "OQ-R6-25-02",
+      "owner_note": "chapters/IV_Quality/IV-02_Reliability_Availability.md",
+      "slot_anchor": "slot-r6-25-02",
+      "anchor": "oq-r6-25-02"
+    },
+    {
+      "id": "OQ-R6-25-03",
+      "owner_note": "chapters/IV_Quality/IV-02_Reliability_Availability.md",
+      "slot_anchor": "slot-r6-25-03",
+      "anchor": "oq-r6-25-03"
+    },
+    {
+      "id": "OQ-R6-25-04",
+      "owner_note": "chapters/IV_Quality/IV-02_Reliability_Availability.md",
+      "slot_anchor": "slot-r6-25-04",
+      "anchor": "oq-r6-25-04"
+    },
+    {
+      "id": "OQ-R6-26-01",
+      "owner_note": "chapters/V_Lifecycle/V-01_Manufacturing_Shipping.md",
+      "slot_anchor": "slot-r6-26-01",
+      "anchor": "oq-r6-26-01"
+    },
+    {
+      "id": "OQ-R6-26-02",
+      "owner_note": "chapters/V_Lifecycle/V-01_Manufacturing_Shipping.md",
+      "slot_anchor": "slot-r6-26-02",
+      "anchor": "oq-r6-26-02"
+    },
+    {
+      "id": "OQ-R6-26-03",
+      "owner_note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+      "slot_anchor": "slot-r6-26-03",
+      "anchor": "oq-r6-26-03"
+    },
+    {
+      "id": "OQ-R6-26-04",
+      "owner_note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+      "slot_anchor": "slot-r6-26-04",
+      "anchor": "oq-r6-26-04"
+    },
+    {
+      "id": "OQ-R6-26-05",
+      "owner_note": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md",
+      "slot_anchor": "slot-r6-26-05",
+      "anchor": "oq-r6-26-05"
+    },
+    {
+      "id": "OQ-R6-26-06",
+      "owner_note": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md",
+      "slot_anchor": "slot-r6-26-06",
+      "anchor": "oq-r6-26-06"
+    },
+    {
+      "id": "OQ-R6-26-07",
+      "owner_note": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md",
+      "slot_anchor": "slot-r6-26-07",
+      "anchor": "oq-r6-26-07"
+    },
+    {
+      "id": "OQ-R6-27-01",
+      "owner_note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "slot_anchor": "slot-r6-27-01",
+      "anchor": "oq-r6-27-01"
+    },
+    {
+      "id": "OQ-R6-27-02",
+      "owner_note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "slot_anchor": "slot-r6-27-02",
+      "anchor": "oq-r6-27-02"
+    },
+    {
+      "id": "OQ-R6-27-03",
+      "owner_note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "slot_anchor": "slot-r6-27-03",
+      "anchor": "oq-r6-27-03"
+    },
+    {
+      "id": "OQ-R6-27-04",
+      "owner_note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "slot_anchor": "slot-r6-27-04",
+      "anchor": "oq-r6-27-04"
+    },
+    {
+      "id": "OQ-R6-27-05",
+      "owner_note": "chapters/V_Lifecycle/V-03_Maintenance_Retirement.md",
+      "slot_anchor": "slot-r6-27-05",
+      "anchor": "oq-r6-27-05"
+    },
+    {
+      "id": "OQ-R6-27-06",
+      "owner_note": "chapters/IV_Quality/IV-03_Security_Privacy.md",
+      "slot_anchor": "slot-r6-27-06",
+      "anchor": "oq-r6-27-06"
+    }
+  ]
+}

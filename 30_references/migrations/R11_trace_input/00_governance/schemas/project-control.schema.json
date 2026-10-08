@@ -1,0 +1,807 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.project-control/v1"
+    },
+    "project": {
+      "const": "SPK-GW_HEMS"
+    },
+    "actors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "kind": {
+            "enum": [
+              "HUMAN",
+              "AI",
+              "SERVICE"
+            ]
+          },
+          "responsibilities": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "responsibilities"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "traces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "source_path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "source_path"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "work_packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "parent_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "parent_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "plan": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+            },
+            "approval": {
+              "type": "object",
+              "properties": {
+                "actor_id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+                },
+                "approved_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "evidence_id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+                }
+              },
+              "required": [
+                "actor_id",
+                "approved_at",
+                "evidence_id"
+              ],
+              "additionalProperties": false
+            },
+            "lines": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "task_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+                  },
+                  "weight_hours": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "kind": {
+                    "enum": [
+                      "DISCRETE",
+                      "LOE"
+                    ]
+                  },
+                  "start_on": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "finish_on": {
+                    "type": "string",
+                    "format": "date"
+                  }
+                },
+                "required": [
+                  "task_id",
+                  "weight_hours",
+                  "kind",
+                  "start_on",
+                  "finish_on"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "approval",
+            "lines"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "budget": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+            },
+            "approval": {
+              "type": "object",
+              "properties": {
+                "actor_id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+                },
+                "approved_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "evidence_id": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+                }
+              },
+              "required": [
+                "actor_id",
+                "approved_at",
+                "evidence_id"
+              ],
+              "additionalProperties": false
+            },
+            "currency": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "tax_basis": {
+              "enum": [
+                "EXCLUSIVE",
+                "INCLUSIVE",
+                "NON_TAXABLE"
+              ]
+            },
+            "amount": {
+              "type": "string",
+              "pattern": "^\\d+(?:\\.\\d+)?$"
+            },
+            "scope": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "id",
+            "approval",
+            "currency",
+            "tax_basis",
+            "amount",
+            "scope"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "effort": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "task_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "actor_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "worked_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "hours": {
+            "type": "string",
+            "pattern": "^\\d+(?:\\.\\d+)?$"
+          },
+          "source_key": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          }
+        },
+        "required": [
+          "id",
+          "task_id",
+          "actor_id",
+          "worked_on",
+          "hours",
+          "source_key",
+          "evidence_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "costs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "task_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "incurred_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "amount": {
+            "type": "string",
+            "pattern": "^-?\\d+(?:\\.\\d+)?$"
+          },
+          "currency": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "tax_basis": {
+            "enum": [
+              "EXCLUSIVE",
+              "INCLUSIVE",
+              "NON_TAXABLE"
+            ]
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "source_key": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "commitment_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reverses_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "task_id",
+          "incurred_on",
+          "amount",
+          "currency",
+          "tax_basis",
+          "category",
+          "source_key",
+          "evidence_id",
+          "commitment_id",
+          "reverses_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "commitments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "task_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "amount": {
+            "type": "string",
+            "pattern": "^\\d+(?:\\.\\d+)?$"
+          },
+          "currency": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "tax_basis": {
+            "enum": [
+              "EXCLUSIVE",
+              "INCLUSIVE",
+              "NON_TAXABLE"
+            ]
+          },
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "committed_on": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": [
+          "id",
+          "task_id",
+          "amount",
+          "currency",
+          "tax_basis",
+          "evidence_id",
+          "committed_on"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "forecasts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "task_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "as_of": {
+            "type": "string",
+            "format": "date"
+          },
+          "etc_amount": {
+            "type": "string",
+            "pattern": "^\\d+(?:\\.\\d+)?$"
+          },
+          "currency": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "tax_basis": {
+            "enum": [
+              "EXCLUSIVE",
+              "INCLUSIVE",
+              "NON_TAXABLE"
+            ]
+          },
+          "includes_open_commitments": {
+            "const": true
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "id",
+          "task_id",
+          "as_of",
+          "etc_amount",
+          "currency",
+          "tax_basis",
+          "includes_open_commitments",
+          "basis"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "run_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "path",
+          "sha256",
+          "description",
+          "run_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "runs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "task_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "trace_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "actor_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "role": {
+            "enum": [
+              "EXECUTION",
+              "ASSESSMENT"
+            ]
+          },
+          "started_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "finished_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "input_baseline": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_RUN",
+              "NOT_APPLICABLE",
+              "INCONCLUSIVE"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "task_id",
+          "trace_id",
+          "actor_id",
+          "role",
+          "started_at",
+          "finished_at",
+          "input_baseline",
+          "result",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "actor_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "decision": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "decided_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "evidence_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          }
+        },
+        "required": [
+          "id",
+          "actor_id",
+          "decision",
+          "scope",
+          "decided_at",
+          "evidence_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "from_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "relation": {
+            "enum": [
+              "related_to",
+              "derives_from",
+              "implements",
+              "verifies",
+              "evidence_for",
+              "blocked_by",
+              "supersedes"
+            ]
+          },
+          "to_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]{2,100}$"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "id",
+          "from_id",
+          "relation",
+          "to_id",
+          "rationale"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "actuals_complete_through": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cost_basis": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tax_basis": {
+          "anyOf": [
+            {
+              "enum": [
+                "EXCLUSIVE",
+                "INCLUSIVE",
+                "NON_TAXABLE"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "currency",
+        "tax_basis"
+      ],
+      "additionalProperties": false
+    },
+    "notes": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "actuals_confirmation": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "actor_id",
+            "evidence_id"
+          ],
+          "properties": {
+            "actor_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "evidence_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema",
+    "project",
+    "actors",
+    "traces",
+    "work_packages",
+    "plan",
+    "budget",
+    "effort",
+    "costs",
+    "commitments",
+    "forecasts",
+    "evidence",
+    "runs",
+    "decisions",
+    "edges",
+    "actuals_complete_through",
+    "cost_basis",
+    "notes",
+    "actuals_confirmation"
+  ],
+  "additionalProperties": false
+}

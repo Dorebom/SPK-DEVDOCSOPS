@@ -1,0 +1,251 @@
+{
+  "schema": "spkgw.lifecycle-profile/v1",
+  "revision": "1.0.0",
+  "phase_source": "30_references/decisions/CTX-R11-TRACE.md",
+  "phases": [
+    {
+      "id": "P01",
+      "order": 1,
+      "name": "企画・構想",
+      "user_scope": "課題定義、目的、対象ユーザー、事業要求、開発範囲",
+      "example_artifact_kind": "CONCEPT",
+      "suggested_outputs": "企画意図・対象・成功条件・範囲"
+    },
+    {
+      "id": "P02",
+      "order": 2,
+      "name": "要求分析",
+      "user_scope": "ユーザー要求、ステークホルダー要求、ユースケース、制約整理",
+      "example_artifact_kind": "REQUIREMENT_ANALYSIS",
+      "suggested_outputs": "利用者要求・UC・制約と原資料"
+    },
+    {
+      "id": "P03",
+      "order": 3,
+      "name": "要求仕様策定",
+      "user_scope": "機能要求、非機能要求、外部仕様、受入条件",
+      "example_artifact_kind": "REQUIREMENT",
+      "suggested_outputs": "要求／USDM・仕様・受入条件と版"
+    },
+    {
+      "id": "P04",
+      "order": 4,
+      "name": "システム設計",
+      "user_scope": "システム構成、責務分割、HW/SW分割、インターフェース",
+      "example_artifact_kind": "SYSTEM_DESIGN",
+      "suggested_outputs": "システム構成・HW/SW配賦・境界IF"
+    },
+    {
+      "id": "P05",
+      "order": 5,
+      "name": "アーキテクチャ設計",
+      "user_scope": "プロセス構成、レイヤ構成、データフロー、通信方式、状態管理",
+      "example_artifact_kind": "ARCHITECTURE",
+      "suggested_outputs": "プロセス・レイヤ・データ／制御経路と設計判断"
+    },
+    {
+      "id": "P06",
+      "order": 6,
+      "name": "基本／構造設計",
+      "user_scope": "モジュール構成、コンポーネント、API、状態遷移、DB／データモデル",
+      "example_artifact_kind": "STRUCTURAL_DESIGN",
+      "suggested_outputs": "構成要素・API・状態／データモデル"
+    },
+    {
+      "id": "P07",
+      "order": 7,
+      "name": "詳細設計",
+      "user_scope": "クラス、関数、アルゴリズム、通信シーケンス、例外処理",
+      "example_artifact_kind": "DETAIL_DESIGN",
+      "suggested_outputs": "関数・アルゴリズム・例外・通信系列"
+    },
+    {
+      "id": "P08",
+      "order": 8,
+      "name": "実装",
+      "user_scope": "コーディング、静的解析、コードレビュー",
+      "example_artifact_kind": "IMPLEMENTATION",
+      "suggested_outputs": "リポジトリ・commit・対象ファイル／シンボル・ビルド条件"
+    },
+    {
+      "id": "P09",
+      "order": 9,
+      "name": "単体テスト",
+      "user_scope": "関数・クラス・モジュール単位の検証",
+      "example_artifact_kind": "TEST_RESULT",
+      "suggested_outputs": "単体試験仕様と対象版付き実行結果"
+    },
+    {
+      "id": "P10",
+      "order": 10,
+      "name": "結合テスト",
+      "user_scope": "モジュール間、プロセス間、通信インターフェースの検証",
+      "example_artifact_kind": "TEST_RESULT",
+      "suggested_outputs": "IF／プロセス結合試験仕様と対象版付き結果"
+    },
+    {
+      "id": "P11",
+      "order": 11,
+      "name": "システム／機能テスト",
+      "user_scope": "システム全体として要求仕様を満たすか確認",
+      "example_artifact_kind": "TEST_RESULT",
+      "suggested_outputs": "SYS／機能を確認する試験仕様・実行結果"
+    },
+    {
+      "id": "P12",
+      "order": 12,
+      "name": "非機能テスト",
+      "user_scope": "性能、負荷、耐久性、セキュリティ、障害耐性",
+      "example_artifact_kind": "TEST_RESULT",
+      "suggested_outputs": "品質要求・条件・負荷／環境・結果"
+    },
+    {
+      "id": "P13",
+      "order": 13,
+      "name": "受入・妥当性確認",
+      "user_scope": "ユーザー要求・製品要求に対するValidation",
+      "example_artifact_kind": "VALIDATION",
+      "suggested_outputs": "利用目的・受入条件・対象構成・判断記録"
+    },
+    {
+      "id": "P14",
+      "order": 14,
+      "name": "リリース準備",
+      "user_scope": "リリース判定、成果物整理、マニュアル、移行計画",
+      "example_artifact_kind": "RELEASE_PLAN",
+      "suggested_outputs": "リリース候補・マニュアル・移行／復旧計画・判断"
+    },
+    {
+      "id": "P15",
+      "order": 15,
+      "name": "リリース／導入",
+      "user_scope": "製品・サービスへの展開、現場導入",
+      "example_artifact_kind": "DEPLOYMENT",
+      "suggested_outputs": "実配布版・導入個体／環境・導入確認"
+    },
+    {
+      "id": "P16",
+      "order": 16,
+      "name": "運用・保守",
+      "user_scope": "障害対応、監視、改善、アップデート",
+      "example_artifact_kind": "OPERATION",
+      "suggested_outputs": "運用事象・障害・該当導入版・修正／更新"
+    },
+    {
+      "id": "P17",
+      "order": 17,
+      "name": "振り返り・改善",
+      "user_scope": "開発プロセス、品質、設計、組織運営の改善",
+      "example_artifact_kind": "IMPROVEMENT",
+      "suggested_outputs": "結果・教訓・採否・次の改善TASK／企画への接続"
+    }
+  ],
+  "activity_types": [
+    "ENGINEERING",
+    "RESEARCH",
+    "MEETING",
+    "REVIEW",
+    "PROJECT_MANAGEMENT",
+    "PROCUREMENT",
+    "REWORK",
+    "PROCESS_IMPROVEMENT",
+    "UNSPECIFIED"
+  ],
+  "relations": {
+    "derives_from": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "要求・設計等が根拠／上流成果から導出された"
+    },
+    "refines": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "下位項目が上位項目を詳細化する"
+    },
+    "allocated_from": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "要素要求／設計の上位配賦元"
+    },
+    "implements": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "実装が設計／仕様を実現する"
+    },
+    "verifies": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "試験仕様が要求／設計／実装の適合を確認する。合格を意味しない"
+    },
+    "validates": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "受入検証が利用目的／上位要求を確認する。承認を意味しない"
+    },
+    "result_of": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "試験結果／調査結果が特定の試験／実行／作業に対応する"
+    },
+    "evidence_for": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "根拠資料が当該判断又は成果を裏付ける。十分性は別レビュー"
+    },
+    "reviews": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": false,
+      "description": "レビュー対象"
+    },
+    "decides_on": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "決定が扱う対象・版"
+    },
+    "investigates": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "調査が扱う要求・課題・候補"
+    },
+    "discusses": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": false,
+      "description": "会議／議題が扱う対象。設計や検証の代用ではない"
+    },
+    "action_from": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "派生タスク／変更の起点となった会議・決定・障害"
+    },
+    "fixes": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "変更／実装が修正する不具合・課題"
+    },
+    "includes": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "リリース等が収容する特定版の成果"
+    },
+    "deployment_of": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "導入記録が示す実配布リリース"
+    },
+    "observed_in": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "運用事象が観測された導入版・環境"
+    },
+    "supersedes": {
+      "direction": "dependent_to_basis",
+      "counts_for_connectivity": true,
+      "description": "新しい成果版が置き換える旧版。旧証拠を消去しない"
+    },
+    "related_to": {
+      "direction": "association",
+      "counts_for_connectivity": false,
+      "description": "参考の関連。導出・実装・検証関係に換算しない"
+    }
+  }
+}

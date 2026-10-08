@@ -1,0 +1,25 @@
+{
+  "module": "test_specflow",
+  "requested_slice": [
+    37,
+    47
+  ],
+  "tests_run": 11,
+  "total_module_tests": 47,
+  "success": true,
+  "errors": [],
+  "failures": [],
+  "test_ids": [
+    "test_specflow.WorkflowTests.test_37_selected_snapshot_direct_edit_detected",
+    "test_specflow.WorkflowTests.test_38_duplicate_json_key_rejected",
+    "test_specflow.WorkflowTests.test_39_path_traversal_draft_rejected",
+    "test_specflow.WorkflowTests.test_40_tool_change_invalidates_approval",
+    "test_specflow.WorkflowTests.test_41_fragment_text_tampering_rejected",
+    "test_specflow.WorkflowTests.test_42_coverage_distinguishes_unclassified_and_selected",
+    "test_specflow.WorkflowTests.test_43_delete_oq_is_blocked_by_change_gate",
+    "test_specflow.WorkflowTests.test_44_preparation_diff_lists_all_modified_files",
+    "test_specflow.WorkflowTests.test_45_usdm_many_to_many_draft_roundtrip",
+    "test_specflow.WorkflowTests.test_46_legacy_source_alias_identity_checked",
+    "test_specflow.WorkflowTests.test_47_moc_cannot_redirect_current_view_to_history"
+  ]
+}

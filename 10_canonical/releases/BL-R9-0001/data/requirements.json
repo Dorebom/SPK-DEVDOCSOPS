@@ -1,0 +1,3954 @@
+{
+  "schema": "spkgw.system-spec.requirements/v1",
+  "document_revision": "R9",
+  "status": "DRAFT_FOR_REVIEW",
+  "requirements": [
+    {
+      "id": "SYS-RESP-001",
+      "title": "DER実行責務の名称",
+      "requirement": "HEMS側のDER操作実行責務をDER Power Controllerとし、家庭全体の最適化・負荷実行・機器側最終制約／保護から分離すること。",
+      "chapter": "II-04",
+      "allocation": "H側DPC／構造設計",
+      "verification_ids": [],
+      "verification_review": "責務・依存図レビュー",
+      "source_ids": [
+        "A01",
+        "A02"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-001"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "HEMS側のDER操作実行責務をDER Power Controllerとして定義する",
+      "legacy_chapter": 3,
+      "related_current_notes": [
+        "chapters/II_GW/II-04_DER_Load_Control.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/I_System/I-04_System_Context.md"
+      ],
+      "primary_note": "chapters/II_GW/II-04_DER_Load_Control.md"
+    },
+    {
+      "id": "SYS-GRID-001",
+      "title": "独立した出力制御経路",
+      "requirement": "一般送配電事業者のスケジュール実行をHEMSのArbiter／Orchestrator／通常更新に依存させないこと。全サーバ通信は宅内ルータ経由とし、ECHONET Lite接続PCSではPCS内の出力制御機能、RS-485接続PCSではGW G側の取得・管理・PCS指示へ配賦すること。",
+      "chapter": "I-07",
+      "allocation": "ECHONET Lite接続PCS内OCU／RS-485用GW G側",
+      "verification_ids": [
+        "T01",
+        "T02"
+      ],
+      "verification_review": "T01、T02",
+      "source_ids": [
+        "A01",
+        "A03",
+        "A08",
+        "CTX-R3",
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-002"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "電力会社のスケジュール実行経路をHEMSのArbiter／Orchestratorに依存させない",
+      "last_modified_revision": "R4",
+      "legacy_chapter": 10,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-04_Compliance.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-GRID-002",
+      "title": "独立した系統連系保護",
+      "requirement": "必要な機器側計測と保護動作をHEMSの動作・応答・承認に依存させず、通常APIから規定の復帰条件を迂回できないこと。",
+      "chapter": "I-07",
+      "allocation": "機器側保護構成",
+      "verification_ids": [
+        "T03"
+      ],
+      "verification_review": "T03",
+      "source_ids": [
+        "A01",
+        "A03",
+        "A07"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-003"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "系統連系保護はHEMSの動作・応答・承認に依存しない",
+      "legacy_chapter": 10,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-04_Compliance.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-BOUND-001",
+      "title": "通常APIの禁止操作",
+      "requirement": "通常HEMSのAPIから保護設定、出力制御原本、G側時計、対象ID・容量根拠、認証側FWを直接変更できないこと。必要な保守は独立経路で扱うこと。",
+      "chapter": "III-01",
+      "allocation": "H側API／機器側通常受付／保守境界",
+      "verification_ids": [
+        "T04",
+        "T05"
+      ],
+      "verification_review": "T04、T05",
+      "source_ids": [
+        "A01",
+        "A04",
+        "A06"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-004"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "通常運転APIから系統制約・保護設定・G側時刻等を書き換えられない",
+      "legacy_chapter": 5,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/II_GW/II-03_Control_Execution.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-01_Boundary_Contracts.md"
+    },
+    {
+      "id": "SYS-GRID-003",
+      "title": "必須計測・時刻・保存の独立性",
+      "requirement": "系統制御に必要な計測・時刻・保存・復旧をHEMSの停止・更新時にも適用プロファイル内で成立させ、HEMS用観測の欠損を無断代替しないこと。",
+      "chapter": "I-07",
+      "allocation": "PCS側／GW G側（選択プロファイルによる）",
+      "verification_ids": [
+        "T01",
+        "T06"
+      ],
+      "verification_review": "T01、T06",
+      "source_ids": [
+        "A04",
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-005"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "系統制御に必要な計測・保存・時刻・復旧はHEMS停止時にも成立する",
+      "legacy_chapter": 10,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-04_Compliance.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-AUTH-001",
+      "title": "資源と変換グループの権威",
+      "requirement": "通常制御権をresourceと競合するconversion_groupへ結び付け、同一scopeに一つの論理的権威と有効な実行系列を定めること。",
+      "chapter": "II-03",
+      "allocation": "Control Arbiter／Orchestrator",
+      "verification_ids": [
+        "T07",
+        "T08"
+      ],
+      "verification_review": "T07、T08",
+      "source_ids": [
+        "A02",
+        "A05",
+        "A06"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-006"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "通常運転の制御権を対象資源と変換グループに結び付ける",
+      "legacy_chapter": 3,
+      "related_current_notes": [
+        "chapters/II_GW/II-03_Control_Execution.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/I_System/I-04_System_Context.md"
+      ],
+      "primary_note": "chapters/II_GW/II-03_Control_Execution.md"
+    },
+    {
+      "id": "SYS-AUTH-002",
+      "title": "最後の送信境界の再検査",
+      "requirement": "送信境界でepoch・対象・期限を再検査し旧待機操作を送信しないこと。すでに送信された操作の完全取消しを仮定せず実機状態を照合すること。",
+      "chapter": "II-03",
+      "allocation": "DPC／共通送信境界",
+      "verification_ids": [
+        "T07"
+      ],
+      "verification_review": "T07",
+      "source_ids": [
+        "A02",
+        "A06"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-007"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "送信時に要求期限と権威世代を検査し、古い待ち要求を破棄する",
+      "legacy_chapter": 5,
+      "related_current_notes": [
+        "chapters/II_GW/II-03_Control_Execution.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md"
+      ],
+      "primary_note": "chapters/II_GW/II-03_Control_Execution.md"
+    },
+    {
+      "id": "SYS-ORCH-001",
+      "title": "ワークフローと補償の所有",
+      "requirement": "複数機器の順序・並行度・進行・部分失敗をOrchestratorが所有し、機器単位実行と上位再計画を分離すること。補償は現権威・現制約で再評価すること。",
+      "chapter": "II-03",
+      "allocation": "Energy Orchestrator／EMS／DPC",
+      "verification_ids": [
+        "T09"
+      ],
+      "verification_review": "T09",
+      "source_ids": [
+        "A02",
+        "A03"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-008"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "複数機器計画のWorkflow ownerと部分失敗時の動作を定める",
+      "legacy_chapter": 6,
+      "related_current_notes": [
+        "chapters/II_GW/II-03_Control_Execution.md",
+        "chapters/I_System/I-06_Usecases.md"
+      ],
+      "primary_note": "chapters/II_GW/II-03_Control_Execution.md"
+    },
+    {
+      "id": "SYS-ADAPT-001",
+      "title": "Adapterの政策非所有",
+      "requirement": "Adapterがactorごとの独自優先度や代替計画を判断せず、機器変換・通信・通常権威の契約検査を担うこと。",
+      "chapter": "II-04",
+      "allocation": "Device Adapter／Transport",
+      "verification_ids": [
+        "T07"
+      ],
+      "verification_review": "コード・契約レビュー、T07",
+      "source_ids": [
+        "A02",
+        "A06",
+        "A09"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-009"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "ECHONET Lite Adapterが独自の運転優先度を持たない",
+      "legacy_chapter": 3,
+      "related_current_notes": [
+        "chapters/II_GW/II-04_DER_Load_Control.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/I_System/I-04_System_Context.md"
+      ],
+      "primary_note": "chapters/II_GW/II-04_DER_Load_Control.md"
+    },
+    {
+      "id": "SYS-CAP-001",
+      "title": "機器別の実能力",
+      "requirement": "操作の有無、値域、モード、更新間隔、機器内失効、結果確認を型式・FW・操作ごとのプロファイルで管理し、クラスだけから対応を推定しないこと。",
+      "chapter": "II-06",
+      "allocation": "Device Registry／DPC／Adapter",
+      "verification_ids": [
+        "T10",
+        "T11"
+      ],
+      "verification_review": "T10、T11",
+      "source_ids": [
+        "A05",
+        "A06"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-010"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "機器能力・操作頻度・対応するモードを機器プロファイルで管理する",
+      "legacy_chapter": 4,
+      "related_current_notes": [
+        "chapters/II_GW/II-06_Device_Management.md",
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/II_GW/II-02_GW_Functions.md",
+        "chapters/I_System/I-05_Configurations.md"
+      ],
+      "primary_note": "chapters/II_GW/II-06_Device_Management.md"
+    },
+    {
+      "id": "SYS-RESULT-001",
+      "title": "受理と達成の区別",
+      "requirement": "Received、Authorized、Sent、DeviceAccepted、Verified、Limited、Unmet、Unknown等の意味を区別し、受理応答だけで物理目標達成を通知しないこと。",
+      "chapter": "II-03",
+      "allocation": "DPC／Orchestrator／外部公開",
+      "verification_ids": [
+        "T12"
+      ],
+      "verification_review": "T12",
+      "source_ids": [
+        "A03",
+        "A06"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-011"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "受理・物理動作・目標達成・不明を区別して通知する",
+      "legacy_chapter": 5,
+      "related_current_notes": [
+        "chapters/II_GW/II-03_Control_Execution.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md"
+      ],
+      "primary_note": "chapters/II_GW/II-03_Control_Execution.md"
+    },
+    {
+      "id": "SYS-TOPO-001",
+      "title": "制約scopeの分離",
+      "requirement": "resource、conversion_group、connection_point、protection_domainを区別し、制御・排他・容量・計測を適切なscopeへ関連付けること。",
+      "chapter": "I-07",
+      "allocation": "Domain Model／機器プロファイル",
+      "verification_ids": [
+        "T08",
+        "T13"
+      ],
+      "verification_review": "T08、T13",
+      "source_ids": [
+        "A05",
+        "A07"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-012"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "機器単体・変換グループ・連系点制約を別のscopeで扱う",
+      "legacy_chapter": 11,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-CONST-001",
+      "title": "古い制約コピー",
+      "requirement": "HEMS参照用制約の欠損・失効を無制限へ変換せず、機器側の制約原本とHEMS側の品質を別々に管理すること。",
+      "chapter": "I-07",
+      "allocation": "EMS／Measurement／機器側制約",
+      "verification_ids": [
+        "T06",
+        "T14"
+      ],
+      "verification_review": "T06、T14",
+      "source_ids": [
+        "A06",
+        "A07"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-013"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "制約情報の欠損・期限切れを無制限として扱わない",
+      "legacy_chapter": 8,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md",
+        "chapters/II_GW/II-05_Advanced_EMS.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-CONST-002",
+      "title": "負荷急変時の制約成立",
+      "requirement": "負荷遮断・EV離脱・機器離脱時にも適用条件を満たす独立制約構成を確認し、HEMSの負荷継続だけを成立条件にしないこと。",
+      "chapter": "I-07",
+      "allocation": "機器側／サイト側制約構成",
+      "verification_ids": [
+        "T13"
+      ],
+      "verification_review": "T13",
+      "source_ids": [
+        "A07",
+        "A09"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-014"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "負荷の急変・EV離脱でも、適用する系統条件を満たす構成を採用する",
+      "legacy_chapter": 11,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-ISO-001",
+      "title": "実行資源非干渉",
+      "requirement": "契約で許したHEMS負荷・要求頻度・異常入力の範囲でG側の性能・失敗時動作を維持し、共有CPU・メモリ・通信等を評価すること。",
+      "chapter": "IV-07",
+      "allocation": "配置設計／共有資源所有者",
+      "verification_ids": [
+        "T15"
+      ],
+      "verification_review": "T15",
+      "source_ids": [
+        "A04",
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-015"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "HEMSのCPU・通信・メモリ等の負荷でG側の性能を破らない",
+      "legacy_chapter": 15,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/II_GW/II-01_GW_Architecture.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md"
+    },
+    {
+      "id": "SYS-OTA-001",
+      "title": "更新と書込み権限の分離",
+      "requirement": "HEMS更新成果物と権限からG側FW・保護設定等を変更できず、必要な更新・署名検証・復旧境界を分離すること。",
+      "chapter": "II-11",
+      "allocation": "OTA／権限設計／機器側",
+      "verification_ids": [
+        "T04",
+        "T16"
+      ],
+      "verification_review": "T04、T16",
+      "source_ids": [
+        "A04",
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-016"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "HEMS OTAの署名・権限・イメージからG側を書き換えられない",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "id": "SYS-OTA-002",
+      "title": "復帰後の再照合",
+      "requirement": "HEMS再起動後は現在の機器状態・時計・プロファイル・権威を再確認し、旧ログや旧Leaseからコマンドを盲目的に再生しないこと。",
+      "chapter": "II-11",
+      "allocation": "Orchestrator／DPC／Arbiter",
+      "verification_ids": [
+        "T16",
+        "T17"
+      ],
+      "verification_review": "T16、T17",
+      "source_ids": [
+        "A03",
+        "A06",
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-017"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "HEMS再起動後に旧要求を盲目的に再送しない",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "id": "SYS-EXPIRY-001",
+      "title": "機器内保持と利用者期限",
+      "requirement": "通常要求の機器内保持・失効を実機能力として確認し、系統制約維持と利用者の終了条件を別々の受入項目とすること。",
+      "chapter": "II-10",
+      "allocation": "機器プロファイル／DPC／製品仕様",
+      "verification_ids": [
+        "T17"
+      ],
+      "verification_review": "T17",
+      "source_ids": [
+        "A06",
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-018"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "通常要求の機器側保持・失効を仕様として明示する",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md"
+    },
+    {
+      "id": "SYS-COEX-001",
+      "title": "別操作元との共存",
+      "requirement": "本体・別HEMS・メーカーサービスの操作と共存する条件を定義し、内部Single Writerで外部排他を保証したとせず、無限上書きを防ぐこと。",
+      "chapter": "II-10",
+      "allocation": "設置構成／Arbiter／DPC",
+      "verification_ids": [
+        "T18"
+      ],
+      "verification_review": "T18",
+      "source_ids": [
+        "A03",
+        "A09"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-019"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "本体操作・別制御元との共存を定義し、無条件な設定綱引きを防ぐ",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md"
+    },
+    {
+      "id": "SYS-CERT-001",
+      "title": "認証・接続・版の構成台帳",
+      "requirement": "JETの登録構成・申請主体・適用版、接続条件、AIF等の実装版、機器・HEMS・G側の版を関連付け、別評価を一語で取得済みとしないこと。",
+      "chapter": "V-04",
+      "allocation": "構成管理／認証主体",
+      "verification_ids": [
+        "T19"
+      ],
+      "verification_review": "T19",
+      "source_ids": [
+        "A04",
+        "A05",
+        "A10"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-020"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "JET・接続条件・AIF・ソフトウェア版の対応を構成台帳で追跡する",
+      "legacy_chapter": 16,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-04_Compliance.md",
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-04_Compliance.md"
+    },
+    {
+      "id": "SYS-ISO-002",
+      "title": "共通原因の評価",
+      "requirement": "HEMSとG側の共通電源・reset・時計・通信・熱を評価し、別CPUや筐体分離だけで非干渉完了と判定しないこと。",
+      "chapter": "IV-07",
+      "allocation": "HW／OS／配置設計",
+      "verification_ids": [
+        "T15",
+        "T16"
+      ],
+      "verification_review": "T15、T16",
+      "source_ids": [
+        "A04",
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-021"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "HEMS／G側の共通電源・reset・通信・熱の影響を評価する",
+      "legacy_chapter": 15,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/II_GW/II-01_GW_Architecture.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md"
+    },
+    {
+      "id": "SYS-CHG-001",
+      "title": "通常更新の前提確認",
+      "requirement": "HEMS変更ごとにAPIの意味・値・モード・頻度・機器構成・共通基盤を比較し、社内非影響判断とメーカー／JET判断・製品リリースを分離すること。",
+      "chapter": "V-05",
+      "allocation": "変更影響評価／製品承認",
+      "verification_ids": [
+        "T19"
+      ],
+      "verification_review": "T19、変更影響評価",
+      "source_ids": [
+        "A04",
+        "A09",
+        "A10"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-022"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "HEMSの変更について、境界内の契約と動作前提を逸脱しないことを確認する",
+      "legacy_chapter": 16,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+        "chapters/V_Lifecycle/V-04_Compliance.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+    },
+    {
+      "id": "SYS-TIME-001",
+      "title": "保護と出力制御の時間分離",
+      "requirement": "保護動作、遠隔出力制御、通常計画・観測・指令の周期・期限を分け、特定経路の停止時間や特定プロパティ間隔を全体へ流用しないこと。",
+      "chapter": "IV-01",
+      "allocation": "時間仕様／機器プロファイル",
+      "verification_ids": [
+        "T02",
+        "T03",
+        "T13"
+      ],
+      "verification_review": "T02、T03、T13",
+      "source_ids": [
+        "A01",
+        "A06",
+        "A07",
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-023"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "保護動作と遠隔出力制御の時間条件を別々に定義する",
+      "legacy_chapter": 14,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+        "chapters/IV_Quality/IV-03_Security_Privacy.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-01_Performance_Capacity.md"
+    },
+    {
+      "id": "SYS-LOG-001",
+      "title": "相関を持つ証跡",
+      "requirement": "要求ID、correlation、権威世代、時刻、対象scope、観測品質、プロファイル版、実行結果を対応付けて記録し、未取得理由を推測で確定しないこと。",
+      "chapter": "IV-08",
+      "allocation": "ログ／全責務",
+      "verification_ids": [
+        "T12",
+        "T19"
+      ],
+      "verification_review": "T12、T19",
+      "source_ids": [
+        "A03",
+        "A06",
+        "A10"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [
+        "ARCH-024"
+      ],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "source_requirement_text": "ログに要求ID、権威世代、計測品質、時刻、対象scopeを残す",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/II_GW/II-07_Measurement_Data.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+    },
+    {
+      "id": "SYS-SCOPE-001",
+      "title": "製品と接続依存の範囲",
+      "requirement": "GW製品の責務、機器側契約、設置システム全体の受入を分け、外部依存要求をGW内実装の指示と混同しないこと。",
+      "chapter": "I-01",
+      "allocation": "仕様管理",
+      "verification_ids": [],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A01",
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 1,
+      "related_current_notes": [
+        "chapters/I_System/I-01_Purpose_Scope.md",
+        "chapters/I_System/I-02_Actors_Roles.md"
+      ],
+      "primary_note": "chapters/I_System/I-01_Purpose_Scope.md"
+    },
+    {
+      "id": "SYS-DEPLOY-001",
+      "title": "接続種別に制約された二方式の配備",
+      "requirement": "PCS_DIRECTはECHONET Lite接続PCSの自律取得に、GW_MANAGEDはRS-485接続PCSのGW管理に割り当て、いずれも宅内ルータ経由のサーバ接続を必須とすること。型式・FW・取得能力・接続／認証プロファイルを確認し、方式を通信種別と無関係に自由選択できる仕様としないこと。",
+      "chapter": "II-01",
+      "allocation": "アーキテクチャレビュー",
+      "verification_ids": [
+        "T01",
+        "SYS-T05"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A01",
+        "A08",
+        "A11",
+        "CTX-R3",
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "last_modified_revision": "R4",
+      "legacy_chapter": 15,
+      "related_current_notes": [
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md"
+      ],
+      "primary_note": "chapters/II_GW/II-01_GW_Architecture.md"
+    },
+    {
+      "id": "SYS-REQ-001",
+      "title": "要求経路の統一",
+      "requirement": "EnergyGoalは必要ならEMS計画を経由し、機器指定要求も通常Arbiter→Orchestrator→実行Controllerの経路を通すこと。",
+      "chapter": "II-03",
+      "allocation": "要求受付／Arbiter／Orchestrator",
+      "verification_ids": [
+        "SYS-T10"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A02",
+        "A03"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 6,
+      "related_current_notes": [
+        "chapters/II_GW/II-03_Control_Execution.md",
+        "chapters/I_System/I-06_Usecases.md"
+      ],
+      "primary_note": "chapters/II_GW/II-03_Control_Execution.md"
+    },
+    {
+      "id": "SYS-RS-001",
+      "title": "RS-485既存機能の独立扱い",
+      "requirement": "RS-485接続PCSの既存通常制御・観測を中核機能として定義し、自律HEMS機能の無効化と一括で停止する依存を既定にしないこと。例外は適用構成で明示すること。",
+      "chapter": "III-07",
+      "allocation": "既存PCS制御／機能設定",
+      "verification_ids": [
+        "SYS-T01"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 7,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+        "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-07_RS485_PCS.md"
+    },
+    {
+      "id": "SYS-RS-002",
+      "title": "RS-485通信仕様プロファイル",
+      "requirement": "メーカー・型式・FW・採用PCS通信文書・局番・操作・応答の意味を特定し、未提示のプロトコルやレジスタを推定で固定しないこと。",
+      "chapter": "III-07",
+      "allocation": "RS-485接続仕様",
+      "verification_ids": [
+        "SYS-T01",
+        "SYS-T02"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 7,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+        "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-07_RS485_PCS.md"
+    },
+    {
+      "id": "SYS-RS-003",
+      "title": "RS-485通信役割の台帳",
+      "requirement": "既存RS-485について通常操作専用・系統制御必須・共用要評価・不明を区別し、所有者・全書込み元・reset・更新範囲を台帳化すること。",
+      "chapter": "III-07",
+      "allocation": "構成管理／既存実装調査",
+      "verification_ids": [
+        "SYS-T05"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A08",
+        "A11"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 4,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/II_GW/II-02_GW_Functions.md",
+        "chapters/II_GW/II-06_Device_Management.md",
+        "chapters/I_System/I-05_Configurations.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-07_RS485_PCS.md"
+    },
+    {
+      "id": "SYS-RS-004",
+      "title": "方式名で配置を決めない",
+      "requirement": "通常専用RS-485はH側Adapterを候補にできる一方、必須出力制御通信はHEMS停止に依存させないこと。方式名だけで一律G側又は認証影響外と決定しないこと。",
+      "chapter": "III-07",
+      "allocation": "配置設計",
+      "verification_ids": [
+        "T01",
+        "SYS-T05"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A01",
+        "A08"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 15,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-07_RS485_PCS.md"
+    },
+    {
+      "id": "SYS-RS-005",
+      "title": "生電文の迂回防止",
+      "requirement": "RS-485通常指令は認可されたPort／Adapterと送信所有者を通し、既存Poller・診断・新機能からの無管理の二重Setや保護操作の迂回を防ぐこと。",
+      "chapter": "III-07",
+      "allocation": "通常送信境界／既存移行",
+      "verification_ids": [
+        "SYS-T01",
+        "T04",
+        "T07"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A02",
+        "A09"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 7,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+        "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-07_RS485_PCS.md"
+    },
+    {
+      "id": "SYS-RS-006",
+      "title": "共有バス負荷と読出し",
+      "requirement": "共用RS-485では通常指令だけでなく状態読出し・再試行・再初期化の影響を含めて、必須系統通信の時間・継続条件を評価すること。",
+      "chapter": "III-07",
+      "allocation": "RS-485所有者／性能設計",
+      "verification_ids": [
+        "SYS-T04",
+        "SYS-T05",
+        "T15"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A08"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 14,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+        "chapters/IV_Quality/IV-03_Security_Privacy.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-07_RS485_PCS.md"
+    },
+    {
+      "id": "SYS-SEM-001",
+      "title": "経路間の意味同等性",
+      "requirement": "RS-485とECHONET Liteで操作の意味・単位・符号・結果を対応付けるが、能力・待ち時間を同じと仮定せず、目標電力を上限制限へ黙って変換しないこと。",
+      "chapter": "II-04",
+      "allocation": "DPC／両Adapter",
+      "verification_ids": [
+        "SYS-T02"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A06"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 7,
+      "related_current_notes": [
+        "chapters/II_GW/II-04_DER_Load_Control.md",
+        "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-09_Network_Peripherals.md"
+      ],
+      "primary_note": "chapters/II_GW/II-04_DER_Load_Control.md"
+    },
+    {
+      "id": "SYS-EL-001",
+      "title": "Controller／Device役割の区別",
+      "requirement": "GWから他社機器を操作するController側と、外部HEMSへ公開するDevice側を区別し、公開対象と実資源の対応を明示すること。",
+      "chapter": "III-06",
+      "allocation": "ECHONET Lite接続／外部公開",
+      "verification_ids": [
+        "SYS-T03"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 7,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-06_ECHONET_Lite.md"
+    },
+    {
+      "id": "SYS-EL-002",
+      "title": "公開応答の意味",
+      "requirement": "外部HEMSへの応答と内部の長時間の達成確認を区別し、採用規格の応答意味・時間を守ること。内部状態を独自の標準電文として追加しないこと。",
+      "chapter": "III-06",
+      "allocation": "ECHONET Lite公開仕様",
+      "verification_ids": [
+        "SYS-T03",
+        "T12"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A06"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 7,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-06_ECHONET_Lite.md"
+    },
+    {
+      "id": "SYS-ROUTE-001",
+      "title": "経路同一性と切替",
+      "requirement": "同一機器の複数経路は同一性・操作同等性・旧権威・残留要求を確認して管理し、未確認の自動フェイルオーバーを必須機能にしないこと。",
+      "chapter": "II-06",
+      "allocation": "Device Registry／Arbiter／DPC",
+      "verification_ids": [
+        "SYS-T07",
+        "T17"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A05",
+        "A06"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 7,
+      "related_current_notes": [
+        "chapters/II_GW/II-06_Device_Management.md",
+        "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md"
+      ],
+      "primary_note": "chapters/II_GW/II-06_Device_Management.md"
+    },
+    {
+      "id": "SYS-CAP-002",
+      "title": "UNKNOWNの限定運転",
+      "requirement": "未知の能力・制約適用は確認済み操作又は読取専用等へ用途別に限定し、未知を無制限や対応済みにしないこと。一律停止指令にも置き換えないこと。",
+      "chapter": "II-06",
+      "allocation": "機器対応判定／EMS",
+      "verification_ids": [
+        "T10",
+        "T14"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A05",
+        "A06"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 4,
+      "related_current_notes": [
+        "chapters/II_GW/II-06_Device_Management.md",
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/II_GW/II-02_GW_Functions.md",
+        "chapters/I_System/I-05_Configurations.md"
+      ],
+      "primary_note": "chapters/II_GW/II-06_Device_Management.md"
+    },
+    {
+      "id": "SYS-RESULT-002",
+      "title": "原因不明の保持",
+      "requirement": "出力が目標より小さいだけで電力会社抑制・熱・SoC等の原因を断定せず、取得できる根拠がなければreason=UNKNOWNとして扱うこと。",
+      "chapter": "II-03",
+      "allocation": "DPC／外部公開",
+      "verification_ids": [
+        "T12",
+        "T18"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A03",
+        "A09"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 5,
+      "related_current_notes": [
+        "chapters/II_GW/II-03_Control_Execution.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md"
+      ],
+      "primary_note": "chapters/II_GW/II-03_Control_Execution.md"
+    },
+    {
+      "id": "SYS-RESULT-003",
+      "title": "値の段階分離",
+      "requirement": "要求値・送信値・確認できた設定値・実運転状態・実測を分け、取得不能な段階を未確認として公開・記録すること。",
+      "chapter": "II-03",
+      "allocation": "DPC／Measurement／ログ",
+      "verification_ids": [
+        "SYS-T02",
+        "T12"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A06",
+        "CTX"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 5,
+      "related_current_notes": [
+        "chapters/II_GW/II-03_Control_Execution.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md"
+      ],
+      "primary_note": "chapters/II_GW/II-03_Control_Execution.md"
+    },
+    {
+      "id": "SYS-RETRY-001",
+      "title": "再送と再計画の責任",
+      "requirement": "通信再送、機器操作の再実行、複数機器補償、再計画を責務で分け、多層の無制限再送や二重補償を行わないこと。",
+      "chapter": "II-10",
+      "allocation": "Transport／DPC／Orchestrator／EMS",
+      "verification_ids": [
+        "T09",
+        "T12"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A02",
+        "A09"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md"
+    },
+    {
+      "id": "SYS-LOAD-001",
+      "title": "負荷実行とDER実行",
+      "requirement": "充電専用EV・給湯・空調等はFLCの責務とし、EV充放電等のDER操作と能力を区別して計画・実行すること。",
+      "chapter": "II-04",
+      "allocation": "Flexible Load Controller／DPC",
+      "verification_ids": [
+        "SYS-T10",
+        "T13"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A01",
+        "A02",
+        "A05"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 8,
+      "related_current_notes": [
+        "chapters/II_GW/II-04_DER_Load_Control.md",
+        "chapters/II_GW/II-05_Advanced_EMS.md"
+      ],
+      "primary_note": "chapters/II_GW/II-04_DER_Load_Control.md"
+    },
+    {
+      "id": "SYS-EMS-001",
+      "title": "利用可能能力での計画",
+      "requirement": "計画は利用可能Capability・観測品質・利用者条件・有効な参照制約に基づき、未対応機能を推測しないこと。内部自律要求も通常権威の対象とすること。",
+      "chapter": "II-05",
+      "allocation": "EMS／Arbiter",
+      "verification_ids": [
+        "SYS-T10",
+        "T10",
+        "T14"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A03",
+        "A06"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 8,
+      "related_current_notes": [
+        "chapters/II_GW/II-05_Advanced_EMS.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md"
+      ],
+      "primary_note": "chapters/II_GW/II-05_Advanced_EMS.md"
+    },
+    {
+      "id": "SYS-MEAS-001",
+      "title": "観測基準と品質",
+      "requirement": "計測点、AC/DC、単位・符号、観測元、品質、実機時刻／受信時刻を区別し、古い値・不明値を新鮮な実測として扱わないこと。",
+      "chapter": "II-07",
+      "allocation": "Measurement Service",
+      "verification_ids": [
+        "T06",
+        "T12",
+        "SYS-T08"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A02",
+        "A07"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-MEAS-002",
+      "title": "経路・オブジェクトの二重計上防止",
+      "requirement": "同一Hybrid PCS、家庭全体と分岐、同一機器の異経路の計測をscopeで整理し、同じ物理量を独立出力として重複集計しないこと。",
+      "chapter": "II-07",
+      "allocation": "Measurement／Topology",
+      "verification_ids": [
+        "T08",
+        "SYS-T04",
+        "SYS-T08"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A05",
+        "A07",
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-DATA-001",
+      "title": "用途別保存",
+      "requirement": "短期制御データ、エネルギー実績、監査記録、G側原本を用途別に定義し、保存期間・粒度・容量を未確認の一律値にしないこと。",
+      "chapter": "II-07",
+      "allocation": "データ仕様／製品運用",
+      "verification_ids": [
+        "SYS-T08"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A11"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-DATA-002",
+      "title": "欠測を含む抽出",
+      "requirement": "計測の欠測、機器交換、時刻異常、集計基準を保った抽出方式を定義し、取得不能を0として偽装しないこと。具体形式は適用要件で確定すること。",
+      "chapter": "II-07",
+      "allocation": "データ仕様／外部公開",
+      "verification_ids": [
+        "SYS-T08"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "CTX",
+        "A07"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-CFG-001",
+      "title": "運転調停と設定調停の分離",
+      "requirement": "設定更新の反映可能状態・設定世代と通常制御権を区別し、設定RPCの受付だけでシステム全体の適用完了としないこと。",
+      "chapter": "II-09",
+      "allocation": "設定Usecase／状態所有者",
+      "verification_ids": [
+        "SYS-T06"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A02",
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 12,
+      "related_current_notes": [
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+      ],
+      "primary_note": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "id": "SYS-CFG-002",
+      "title": "通常変更と緊急復旧",
+      "requirement": "高優先度実行に影響する通常設定は保留・拒否・定義済み反映を行い、緊急復旧は独立Usecaseで認可すること。通常priorityでG側権限を取得できないこと。",
+      "chapter": "II-09",
+      "allocation": "設定調停／復旧Usecase",
+      "verification_ids": [
+        "SYS-T06",
+        "T04"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A02",
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 12,
+      "related_current_notes": [
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+      ],
+      "primary_note": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "id": "SYS-CFG-003",
+      "title": "復元境界",
+      "requirement": "バックアップ復元時は型式・FW・機器識別・プロファイル・設定世代を照合し、一般HEMS復元でG側設定・時計・FWを上書きしないこと。",
+      "chapter": "II-09",
+      "allocation": "保守／設定管理",
+      "verification_ids": [
+        "SYS-T06",
+        "T16"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A08",
+        "CTX"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 12,
+      "related_current_notes": [
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+      ],
+      "primary_note": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "id": "SYS-PERF-001",
+      "title": "操作ごとの時間契約",
+      "requirement": "1秒周期要求を対象機器・操作・同時台数・保証段階に結び付け、計画演算周期から全機器の毎秒設定を導かないこと。",
+      "chapter": "IV-01",
+      "allocation": "性能設計／DPC／接続仕様",
+      "verification_ids": [
+        "T11",
+        "SYS-T04"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A06",
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 14,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+        "chapters/IV_Quality/IV-03_Security_Privacy.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-01_Performance_Capacity.md"
+    },
+    {
+      "id": "SYS-PERF-002",
+      "title": "有限な資源上限",
+      "requirement": "キュー、最大頻度・バースト、再接続、保存容量等の上限と飽和時動作を定義すること。置換可能な要求だけを整理し、権威・期限を再検査すること。",
+      "chapter": "IV-01",
+      "allocation": "Runtime／送信境界",
+      "verification_ids": [
+        "T05",
+        "T11",
+        "T15"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A06",
+        "A09"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 14,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+        "chapters/IV_Quality/IV-03_Security_Privacy.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-01_Performance_Capacity.md"
+    },
+    {
+      "id": "SYS-SEC-001",
+      "title": "接続セキュリティ文脈",
+      "requirement": "従来接続と認証・暗号化接続の識別を維持し、復号後も機器識別・認証状態・経路・鮮度を許可操作へ結び付けること。",
+      "chapter": "IV-03",
+      "allocation": "Security／Transport Adapter",
+      "verification_ids": [
+        "SYS-T09",
+        "T04"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 14,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-03_Security_Privacy.md",
+        "chapters/IV_Quality/IV-01_Performance_Capacity.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-03_Security_Privacy.md"
+    },
+    {
+      "id": "SYS-SEC-002",
+      "title": "評価体系の分離",
+      "requirement": "JC-STAR等のセキュリティ・製品運用の評価を系統連系やECHONET Lite評価と別管理し、本添付にないレベル・適用版・運用期限を確定済みとしないこと。",
+      "chapter": "IV-03",
+      "allocation": "セキュリティ要求／製品運用",
+      "verification_ids": [],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A04",
+        "A08",
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 14,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-03_Security_Privacy.md",
+        "chapters/IV_Quality/IV-01_Performance_Capacity.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-03_Security_Privacy.md"
+    },
+    {
+      "id": "SYS-FAULT-001",
+      "title": "通信断位置の区別",
+      "requirement": "通常HEMSリンク、上位スケジュール通信、G側必須通信、G側計測・時刻の異常を分け、各適用プロファイルの動作で評価すること。",
+      "chapter": "I-08",
+      "allocation": "接続プロファイル／障害管理",
+      "verification_ids": [
+        "SYS-T05",
+        "T02",
+        "T06"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A08"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md"
+      ],
+      "primary_note": "chapters/I_System/I-08_System_States.md"
+    },
+    {
+      "id": "SYS-CERT-002",
+      "title": "試験免除の非保証",
+      "requirement": "分離構造や固定APIを将来のJET試験免除・手続き不要の保証にせず、原典の先行説明補正と個別確認の限界を保持すること。",
+      "chapter": "V-04",
+      "allocation": "認証影響管理",
+      "verification_ids": [],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A04",
+        "A12"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 16,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-04_Compliance.md",
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-04_Compliance.md"
+    },
+    {
+      "id": "SYS-MIG-001",
+      "title": "既存経路の棚卸し",
+      "requirement": "As-Isの全書込み点・権威・workflow owner・必須系統通信を調査し、中央集約を既定解にせず、資源ごとに移行所有者を切り替えること。",
+      "chapter": "V-05",
+      "allocation": "移行設計／既存調査",
+      "verification_ids": [
+        "SYS-T01",
+        "T07"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A11",
+        "CTX"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 18,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+    },
+    {
+      "id": "SYS-MIG-002",
+      "title": "Legacy適用差",
+      "requirement": "Domain／Port／テストを共通化しても、Legacyが分離条件を満たさなければNextと同じ非干渉・更新・運転保証を適用しないこと。",
+      "chapter": "V-05",
+      "allocation": "製品構成管理／移行",
+      "verification_ids": [],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A11"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 18,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+    },
+    {
+      "id": "SYS-BASE-001",
+      "title": "ドラフトと評価状態",
+      "requirement": "原典のDEC・TBD・ARCH・T番号を維持し、本書の追加提案を識別すること。文書QA、実装、実機、認証判断を別状態で記録すること。",
+      "chapter": "I-01",
+      "allocation": "文書・構成管理",
+      "verification_ids": [],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A10",
+        "A11"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 1,
+      "related_current_notes": [
+        "chapters/I_System/I-01_Purpose_Scope.md",
+        "chapters/I_System/I-02_Actors_Roles.md"
+      ],
+      "primary_note": "chapters/I_System/I-01_Purpose_Scope.md"
+    },
+    {
+      "id": "SYS-VERIFY-001",
+      "title": "検証条件と証拠",
+      "requirement": "要求・型式・版・接続・profile・測定点・閾値・評価窓・注入位置をrun_idへ関連付け、未確定又は未実施をPASSにしないこと。",
+      "chapter": "V-06",
+      "allocation": "検証責任者",
+      "verification_ids": [
+        "T19"
+      ],
+      "verification_review": "仕様・契約レビュー",
+      "source_ids": [
+        "A10"
+      ],
+      "basis": "SOURCE_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "全適用構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "legacy_chapter": 17,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+    },
+    {
+      "id": "SYS-CTX-001",
+      "title": "外部役割の分離",
+      "requirement": "一般送配電事業者、FW配信、上位管理・監視、宅内Web UI、リモートアプリ、宅内ルータを論理的に識別し、同一物理基盤であっても通信・権限・障害・更新の責任を区別すること。",
+      "chapter": "I-04",
+      "allocation": "システム構成／サービス責任者",
+      "verification_ids": [
+        "SYS-T11"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 2,
+      "related_current_notes": [
+        "chapters/I_System/I-04_System_Context.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/I_System/I-07_Responsibilities_Constraints.md"
+      ],
+      "primary_note": "chapters/I_System/I-04_System_Context.md"
+    },
+    {
+      "id": "SYS-CTX-002",
+      "title": "GWと外部サービスの保証境界",
+      "requirement": "GW製品機能とクラウド・アプリ・ルータ・接続機器への依存条件を分け、接続開始方向、対象版、可用性、責任者を接続プロファイルで管理すること。",
+      "chapter": "I-04",
+      "allocation": "製品・サービスIF管理",
+      "verification_ids": [
+        "SYS-T11",
+        "SYS-T13"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 2,
+      "related_current_notes": [
+        "chapters/I_System/I-04_System_Context.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/I_System/I-07_Responsibilities_Constraints.md"
+      ],
+      "primary_note": "chapters/I_System/I-04_System_Context.md"
+    },
+    {
+      "id": "SYS-NORTH-001",
+      "title": "用途別Usecaseへの振分け",
+      "requirement": "上位と宅内からの要求を情報取得、通常運転、設定変更、GW内部操作、FW更新へ分類し、認可・相関を共通化しつつ各状態所有者へ配賦すること。通常運転以外を一律DPCへ通さないこと。",
+      "chapter": "III-02",
+      "allocation": "要求受付／各Usecase",
+      "verification_ids": [
+        "SYS-T11",
+        "SYS-T17"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-02_Cloud_GW.md"
+    },
+    {
+      "id": "SYS-NORTH-002",
+      "title": "操作者と配送主体の認可",
+      "requirement": "上位接続主体と委譲された操作者、住宅・GW・所属世代、操作scopeを認証・認可し、自己申告のactorやpriorityだけで権限を付与しないこと。",
+      "chapter": "III-02",
+      "allocation": "境界認可／上位サービス",
+      "verification_ids": [
+        "SYS-T14",
+        "SYS-T16"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-02_Cloud_GW.md"
+    },
+    {
+      "id": "SYS-NORTH-003",
+      "title": "オフライン要求の有限性",
+      "requirement": "操作別にオフライン時の拒否又は明示的な期限付き保留を規定し、配送・実行時に期限、権限、所属・設定世代を再検査すること。旧要求を再接続だけで復活させないこと。",
+      "chapter": "III-02",
+      "allocation": "上位キュー／GW受付",
+      "verification_ids": [
+        "SYS-T16",
+        "SYS-T24"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-02_Cloud_GW.md"
+    },
+    {
+      "id": "SYS-NORTH-004",
+      "title": "重複排除と結果照合",
+      "requirement": "要求の主体・対象・世代・種別をscopeに重複を管理し、同じキーで異なる内容を拒否すること。結果不明時は追跡IDで照合し、保証期間外の完全exactly-onceを主張しないこと。",
+      "chapter": "III-02",
+      "allocation": "GW要求記録／上位配送",
+      "verification_ids": [
+        "SYS-T16",
+        "SYS-T21"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-02_Cloud_GW.md"
+    },
+    {
+      "id": "SYS-NORTH-005",
+      "title": "有限な監視・診断負荷",
+      "requirement": "宅内・上位・アプリの監視を公開Viewへ集約し、Fresh Read・履歴・診断の取得量、頻度、並行度と中断条件を制限すること。端末増加に比例する無制限の実機ポーリングを生じさせないこと。",
+      "chapter": "III-02",
+      "allocation": "Query／Telemetry／資源管理",
+      "verification_ids": [
+        "SYS-T18",
+        "SYS-T25"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-02_Cloud_GW.md"
+    },
+    {
+      "id": "SYS-NORTH-006",
+      "title": "イベントの欠落と再同期",
+      "requirement": "stream・起動世代・順序を識別し、重複・逆転・欠落・バッファあふれを検知して品質表示と状態再同期を行うこと。操作結果・設定監査と計測の保持方針を区別すること。",
+      "chapter": "III-02",
+      "allocation": "Telemetry／上位保存",
+      "verification_ids": [
+        "SYS-T21",
+        "SYS-T28"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-02_Cloud_GW.md"
+    },
+    {
+      "id": "SYS-NORTH-007",
+      "title": "チャネル非依存の操作権限と監査",
+      "requirement": "宅内・上位・アプリの入口だけで優先度・管理権限を決めず、認可された操作者とscopeを用いること。要求、設定版、Job、配送主体、結果を相関して監査できること。",
+      "chapter": "III-02",
+      "allocation": "認可／監査／通常調停",
+      "verification_ids": [
+        "SYS-T14",
+        "SYS-T15",
+        "SYS-T21"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-02_Cloud_GW.md"
+    },
+    {
+      "id": "SYS-CFG-004",
+      "title": "設定世代の競合検査",
+      "requirement": "同じ設定scopeに対する基準世代の検査と予約・commitを設定所有者で整合させ、古い世代の同時変更を競合又は明示的調整として処理すること。",
+      "chapter": "II-09",
+      "allocation": "Configuration Service",
+      "verification_ids": [
+        "SYS-T15"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 12,
+      "related_current_notes": [
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+      ],
+      "primary_note": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "id": "SYS-CFG-005",
+      "title": "希望・保存・有効設定の分離",
+      "requirement": "クラウド希望値、GWの受理・保存設定、各反映先の有効設定を区別し、部分反映を公開すること。再接続・リストアで古いクラウド希望値を無条件適用しないこと。",
+      "chapter": "II-09",
+      "allocation": "Configuration Service／上位同期",
+      "verification_ids": [
+        "SYS-T15",
+        "SYS-T28"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 12,
+      "related_current_notes": [
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+      ],
+      "primary_note": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "id": "SYS-CFG-006",
+      "title": "ネットワーク設定の到達性確認",
+      "requirement": "経路を変更する設定について、事前検証、反映Job、確認チャネル、確定条件、認可された復旧を規定し、G側共有経路への影響を評価してから許可すること。",
+      "chapter": "II-09",
+      "allocation": "接続管理／設定調停",
+      "verification_ids": [
+        "SYS-T13",
+        "SYS-T22"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 12,
+      "related_current_notes": [
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+      ],
+      "primary_note": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "id": "SYS-GWOP-001",
+      "title": "内部機能操作の許可リスト",
+      "requirement": "GW内部機能操作を対象・パラメータ・状態・scope・権限・結果を持つ明示Usecaseとして公開し、任意shell・DB・メモリ・PCS生電文等の書込みへ拡張しないこと。",
+      "chapter": "II-09",
+      "allocation": "Lifecycle・Operation Service",
+      "verification_ids": [
+        "SYS-T17",
+        "SYS-T23"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "id": "SYS-GWOP-002",
+      "title": "高影響操作と変更の排他",
+      "requirement": "GW内部再起動・停止・設定反映・FW適用の共有影響scopeを調整し、前提状態、取消し、結果不明、復帰を管理すること。リセットや復元がG側へ及ぶものをH側操作として無条件許可しないこと。",
+      "chapter": "II-09",
+      "allocation": "ライフサイクル／設定／更新管理",
+      "verification_ids": [
+        "SYS-T17",
+        "SYS-T20",
+        "SYS-T22"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 12,
+      "related_current_notes": [
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+      ],
+      "primary_note": "chapters/II_GW/II-09_Settings_Lifecycle.md"
+    },
+    {
+      "id": "SYS-UI-001",
+      "title": "直接無線の宅内Web UI",
+      "requirement": "端末ブラウザからGWへ直接無線で接続する宅内監視・許可操作の利用構成を定義し、到達先、認証、開始・終了条件、クラウド不通時の利用範囲を規定すること。",
+      "chapter": "III-04",
+      "allocation": "Local Web UI／無線管理",
+      "verification_ids": [
+        "SYS-T12"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-04_Local_Web.md"
+    },
+    {
+      "id": "SYS-UI-002",
+      "title": "ルータ経由の宅内Web UI",
+      "requirement": "端末から宅内ルータを介した無線接続でGWのWeb UIを利用する構成を定義し、端末隔離、セグメント、発見・到達、クラウド不要の条件を示すこと。",
+      "chapter": "III-04",
+      "allocation": "Local Web UI／接続プロファイル",
+      "verification_ids": [
+        "SYS-T13"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-04_Local_Web.md"
+    },
+    {
+      "id": "SYS-UI-003",
+      "title": "直接接続とWANの独立した可用性",
+      "requirement": "直接無線接続、ルータ接続、AP／STA同時動作、WAN到達、上位同期を別属性とし、直接接続をインターネット共有又は同時動作保証へ読み替えないこと。",
+      "chapter": "III-04",
+      "allocation": "製品構成／無線管理",
+      "verification_ids": [
+        "SYS-T12",
+        "SYS-T13",
+        "SYS-T22"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 2,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/I_System/I-04_System_Context.md",
+        "chapters/I_System/I-07_Responsibilities_Constraints.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-04_Local_Web.md"
+    },
+    {
+      "id": "SYS-UI-004",
+      "title": "クラウド非依存のローカル利用",
+      "requirement": "基本画面・必要なローカルAPI・事前に確立したローカル認可を用い、外部サービス断でも条件内で宅内監視を可能とすること。クラウド不要を認証不要にせず、初回登録・失効条件を別定義すること。",
+      "chapter": "III-04",
+      "allocation": "Local Web UI／認可",
+      "verification_ids": [
+        "SYS-T12",
+        "SYS-T23",
+        "SYS-T24"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-04_Local_Web.md"
+    },
+    {
+      "id": "SYS-UI-005",
+      "title": "Web境界と互換性",
+      "requirement": "直接・LAN接続でも接続先識別・暗号化・セッション・Origin等を保護し、CSRF・不正クロスオリジン・名前解決悪用等への対策と試験を定めること。Web資産とAPI非互換時の動作を規定すること。",
+      "chapter": "III-04",
+      "allocation": "Web／セキュリティ／リリース",
+      "verification_ids": [
+        "SYS-T23",
+        "SYS-T27"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 14,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+        "chapters/IV_Quality/IV-03_Security_Privacy.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-04_Local_Web.md"
+    },
+    {
+      "id": "SYS-APP-001",
+      "title": "クラウド経由リモートアプリ",
+      "requirement": "スマートフォンアプリと上位クラウド及び対象GWを結ぶ監視・操作経路を定義し、対象住宅・GW、役割、操作結果を対応付けること。GWの直接WAN公開やスマートフォン中継を必須にしないこと。",
+      "chapter": "III-05",
+      "allocation": "アプリ／上位サービス／GW",
+      "verification_ids": [
+        "SYS-T14",
+        "SYS-T24"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-05_Remote_App.md"
+    },
+    {
+      "id": "SYS-APP-002",
+      "title": "受付段階と鮮度の表示",
+      "requirement": "アプリ・Web・上位でクラウド受付、GW受付、設定反映、内部Job完了、機器受理と達成、FW稼働確認を区別し、古い情報・接続不能・結果不明を明示すること。",
+      "chapter": "III-05",
+      "allocation": "公開API／Web／アプリ",
+      "verification_ids": [
+        "SYS-T21",
+        "SYS-T24"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-05_Remote_App.md"
+    },
+    {
+      "id": "SYS-APP-003",
+      "title": "所属変更と資格失効",
+      "requirement": "所有者変更・GW再登録・紛失端末等の処理で所属世代、上位・ローカル資格、待機要求、履歴のアクセスを整合させること。失効通知を受信できない期間の権限寿命と制限を明示すること。",
+      "chapter": "III-05",
+      "allocation": "認可／登録／上位アプリ",
+      "verification_ids": [
+        "SYS-T14",
+        "SYS-T26"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-05_Remote_App.md"
+    },
+    {
+      "id": "SYS-FW-001",
+      "title": "配信と承認と適用の分離",
+      "requirement": "FW配布物の承認・認証、配送、対象・適用時期の運用要求、GWでの検証・適用・復帰を別責務とし、配送成功を適用許可・更新成功と扱わないこと。",
+      "chapter": "II-11",
+      "allocation": "リリース管理／FWサーバ／Update Manager",
+      "verification_ids": [
+        "SYS-T11",
+        "SYS-T19",
+        "SYS-T20"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2",
+        "EXT-FW-01",
+        "EXT-FW-02"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "id": "SYS-FW-002",
+      "title": "配布物の対象・完全性・系列確認",
+      "requirement": "FWと保護されたメタデータの真正性・完全性、対象機種・HW・依存版・領域・サイズ・許可更新系列・現在状態を検査し、検証不適合な配布物を通常経路から適用しないこと。",
+      "chapter": "II-11",
+      "allocation": "Update Manager／更新権限",
+      "verification_ids": [
+        "SYS-T19"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2",
+        "EXT-FW-01",
+        "EXT-FW-02"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "id": "SYS-FW-003",
+      "title": "H/G更新権限と認可復旧",
+      "requirement": "H側の配布物・キー・書込み経路からG側FW・設定へ到達できないこと。復旧用の版と設定schemaを認可し、任意ダウングレードと管理された復旧を区別すること。",
+      "chapter": "II-11",
+      "allocation": "更新・起動機構／権限境界",
+      "verification_ids": [
+        "SYS-T19",
+        "SYS-T20"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2",
+        "EXT-FW-01",
+        "EXT-FW-02"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "id": "SYS-FW-004",
+      "title": "更新段階と永続復旧情報",
+      "requirement": "取得、検証、適用待ち、適用、起動、稼働確認、復旧を別状態として記録・通知し、段階別に中断・取消し・再開を定義すること。正常終了前処理だけをG側継続の根拠にしないこと。",
+      "chapter": "II-11",
+      "allocation": "Update Manager／ライフサイクル",
+      "verification_ids": [
+        "SYS-T20",
+        "SYS-T21"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2",
+        "EXT-FW-01",
+        "EXT-FW-02"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "id": "SYS-FW-005",
+      "title": "配信障害と更新転送負荷の限定",
+      "requirement": "FW配信断・取得失敗だけで現行の通常運転・監視を停止させないこと。転送・再試行・保存・CPUの上限とG側共有経路への非干渉条件を規定すること。",
+      "chapter": "II-11",
+      "allocation": "更新通信／資源管理",
+      "verification_ids": [
+        "SYS-T18",
+        "SYS-T25"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2",
+        "EXT-FW-01",
+        "EXT-FW-02"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 14,
+      "related_current_notes": [
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-01_Performance_Capacity.md",
+        "chapters/IV_Quality/IV-03_Security_Privacy.md"
+      ],
+      "primary_note": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "id": "SYS-STATE-001",
+      "title": "内部情報の選択的公開",
+      "requirement": "GW内部情報・状態を許可された公開Viewとして提供し、主体と住宅・GWのscopeで制限すること。秘密鍵・資格情報・不要な個人情報等を診断・ログに混入させないこと。",
+      "chapter": "II-07",
+      "allocation": "Query／診断／情報管理",
+      "verification_ids": [
+        "SYS-T18",
+        "SYS-T23"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-STATE-002",
+      "title": "観測とクラウドコピーの区別",
+      "requirement": "実機観測、GW取得、クラウド受信、表示の時刻・品質と版を区別し、時刻不明を偽装しないこと。クラウドコピーを機器実状態又はGW有効設定の正本としないこと。",
+      "chapter": "II-07",
+      "allocation": "Measurement／上位保存／UI",
+      "verification_ids": [
+        "SYS-T21",
+        "SYS-T28"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 9,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-SVC-001",
+      "title": "サービス・UI・FW互換性の管理",
+      "requirement": "GW、Web/API、上位API、アプリ、設定schema、FW配布物、機器プロファイルの互換範囲をリリースへ関連付け、未知操作・非互換時の拒否又は限定動作を定義すること。",
+      "chapter": "V-05",
+      "allocation": "リリース・構成管理",
+      "verification_ids": [
+        "SYS-T27"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 16,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+        "chapters/V_Lifecycle/V-04_Compliance.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+    },
+    {
+      "id": "SYS-ISO-003",
+      "title": "外部接続追加時の共有影響",
+      "requirement": "ルータ、無線、NIC、帯域、clock、reset、電源等の共有依存を台帳化し、Web・上位設定・FW・内部操作による変更がG側独立性を壊さないことを確認すること。",
+      "chapter": "IV-07",
+      "allocation": "配置／共有資源／検証",
+      "verification_ids": [
+        "SYS-T18",
+        "SYS-T22",
+        "SYS-T25"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 15,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/II_GW/II-01_GW_Architecture.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md"
+    },
+    {
+      "id": "SYS-CHG-002",
+      "title": "クラウド・UI変更の非影響判定",
+      "requirement": "クラウド・Web・アプリだけの変更でも、通常要求の頻度・モード・値域・対象・設定・共有資源の前提変化を評価し、名称だけで認証影響外又は試験不要と判断しないこと。",
+      "chapter": "V-05",
+      "allocation": "変更管理／認証主体との確認",
+      "verification_ids": [
+        "SYS-T27"
+      ],
+      "verification_review": "R2接続・権限・状態・負荷プロファイルで検証。閾値未確定で包括的PASSを付けない。",
+      "source_ids": [
+        "CTX-R2",
+        "SP-R2"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "対応する上位・宅内・更新・製品構成",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R2",
+      "legacy_chapter": 16,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+        "chapters/V_Lifecycle/V-04_Compliance.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+    },
+    {
+      "id": "SYS-GSEL-001",
+      "title": "機器接続別の取得・適用契約",
+      "requirement": "ECHONET Lite接続PCSではPCS_DIRECTとしてPCS内機能が宅内ルータ経由で取得・検証・保存・時刻適用を行うこと。RS-485接続PCSではGW_MANAGEDとしてGW G側が宅内ルータ経由で取得・管理し、RS-485によるPCS指示・必要監視を担うこと。後者を透過中継に縮めないこと。",
+      "chapter": "I-05",
+      "allocation": "プロファイル・PCS／GW G側",
+      "verification_ids": [
+        "SYS-T29",
+        "SYS-T30"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3",
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "last_modified_revision": "R4",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/I_System/I-05_Configurations.md"
+    },
+    {
+      "id": "SYS-GSEL-002",
+      "title": "確認済み構成からの選択",
+      "requirement": "方式をR4の機器接続別対応表と型式・HW/FW・取得能力・接続契約・認証構成へ結び付けること。RS-485接続PCSのPCS_DIRECT、ECHONET Lite接続PCSのGW_MANAGED、非PCSのPCS_DIRECT及び未確認の構成を現行対応範囲として自動有効化しないこと。",
+      "chapter": "I-05",
+      "allocation": "製品構成管理",
+      "verification_ids": [
+        "SYS-T31"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3",
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "last_modified_revision": "R4",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/I_System/I-05_Configurations.md"
+    },
+    {
+      "id": "SYS-GSEL-003",
+      "title": "scopeと適用主体の一意性",
+      "requirement": "同じスケジュール適用scopeの能動主体を一つとし、重複対象と共有変換グループを検査すること。PCSの保護・機器制限をこの排他に含めて無効化しないこと。",
+      "chapter": "I-07",
+      "allocation": "G側構成管理・PCS",
+      "verification_ids": [
+        "SYS-T32",
+        "SYS-T41"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-GSEL-004",
+      "title": "通常要求経路の非迂回",
+      "requirement": "両方式で通常Arbiter・Orchestrator・DPCの役割を維持し、通常要求がPCS側又はG側の系統制約強制を迂回できないこと。",
+      "chapter": "III-01",
+      "allocation": "H側DPC・G側・PCS",
+      "verification_ids": [
+        "SYS-T29",
+        "SYS-T30",
+        "SYS-T39"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-01_Boundary_Contracts.md"
+    },
+    {
+      "id": "SYS-GSEL-005",
+      "title": "GW管理方式のH側非依存",
+      "requirement": "GW_MANAGEDの取得・保存・時計・PCS指示・必要監視をH側停止・更新・高負荷に依存させないこと。実行配置と共有driver・resetを証拠化すること。",
+      "chapter": "II-08",
+      "allocation": "GW G側・配置設計",
+      "verification_ids": [
+        "SYS-T30",
+        "SYS-T35",
+        "SYS-T39"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/II_GW/II-08_GW_Grid_Control.md"
+    },
+    {
+      "id": "SYS-GSEL-006",
+      "title": "正本と資格情報の領域分離",
+      "requirement": "スケジュール・時刻・対象情報・資格情報の正本を選択されたPCS側又はGW G側に保持し、H側は必要な読取コピーのみを利用すること。",
+      "chapter": "II-08",
+      "allocation": "PCS／GW G側・公開サービス",
+      "verification_ids": [
+        "SYS-T29",
+        "SYS-T30",
+        "SYS-T37",
+        "SYS-T38"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/II_GW/II-08_GW_Grid_Control.md"
+    },
+    {
+      "id": "SYS-GSEL-007",
+      "title": "適用条件内の施工保守による構成変更",
+      "requirement": "方式に影響する変更を機器・接続構成の管理変更とし、独立認可・期待設定世代・R4適用表・必要手続き・実機確認を満たすこと。認可された保守であっても適用外の方式組合せを許可しないこと。同一PCSの任意切替を必須機能としないこと。",
+      "chapter": "V-02",
+      "allocation": "系統保守・構成管理",
+      "verification_ids": [
+        "SYS-T31",
+        "SYS-T33",
+        "SYS-T40"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3",
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "last_modified_revision": "R4",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+    },
+    {
+      "id": "SYS-GSEL-008",
+      "title": "制約を維持する引継ぎ",
+      "requirement": "新主体を非能動で準備し、切替中の確認済み制約保持又は必要停止を成立させ、旧適用主体の停止・フェンスを確認してから新主体を有効化すること。保護・最終制約を解除しないこと。",
+      "chapter": "V-02",
+      "allocation": "G側保守・PCS",
+      "verification_ids": [
+        "SYS-T33",
+        "SYS-T34"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+    },
+    {
+      "id": "SYS-GSEL-009",
+      "title": "古い経路と残留指令の無効化",
+      "requirement": "切替で系統構成世代を更新し、旧送信元・キュー・遅延応答・PCS残留を確認すること。PCS非対応の世代番号だけで実機の排他を保証しないこと。",
+      "chapter": "V-02",
+      "allocation": "最終通信境界・PCS",
+      "verification_ids": [
+        "SYS-T32",
+        "SYS-T34",
+        "SYS-T42"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+    },
+    {
+      "id": "SYS-GSEL-010",
+      "title": "自動方式切替の非採用",
+      "requirement": "通信断・監視断・時刻異常を理由とする無条件の他方式への自動切替を行わず、同じ方式で保持情報と適用プロファイルの縮退・復旧に従うこと。",
+      "chapter": "I-05",
+      "allocation": "PCS／GW G側・運用",
+      "verification_ids": [
+        "SYS-T36"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/I_System/I-05_Configurations.md"
+    },
+    {
+      "id": "SYS-GSEL-011",
+      "title": "H停止とGW全体喪失の区別",
+      "requirement": "GW_MANAGEDでH側限定停止とGW全体電源断を区別し、後者ではPCSの必須通信喪失時動作を評価すること。H/G分離から全筐体無停止を保証しないこと。",
+      "chapter": "I-08",
+      "allocation": "G側・PCS・障害管理",
+      "verification_ids": [
+        "SYS-T35",
+        "SYS-T36"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/I_System/I-08_System_States.md"
+    },
+    {
+      "id": "SYS-GSEL-012",
+      "title": "共用PCS通信の所有",
+      "requirement": "共用ポート・設定を二主体が独立書込みしないこと。G側最終送信所有又は確認済みの機器側独立チャネルで制約を維持し、通常読出し・FW転送で必須通信を阻害しないこと。",
+      "chapter": "III-07",
+      "allocation": "G側通信・Adapter・PCS",
+      "verification_ids": [
+        "SYS-T39"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-07_RS485_PCS.md"
+    },
+    {
+      "id": "SYS-GSEL-013",
+      "title": "表示状態と実適用の分離",
+      "requirement": "desired/configured/active mode、機器接続種別、宅内ルータ経路、取得主体、scope、適用状態、観測時刻・品質、構成変更Jobを区別すること。PCS_DIRECTの表示をPCS自律取得方式（宅内ルータ経由・GW非経由）とし、GWのWAN到達やECHONET Lite応答からPCSのサーバ取得成功を推定しないこと。",
+      "chapter": "II-07",
+      "allocation": "Query・Telemetry・上位／Web／アプリ",
+      "verification_ids": [
+        "SYS-T38"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3",
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "last_modified_revision": "R4",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-GSEL-014",
+      "title": "非公開状態の扱い",
+      "requirement": "PCS_DIRECTで取得できないスケジュール版・制限理由等をUNKNOWN又はNOT_EXPOSEDとして扱い、推定を原本又は確定原因として公開しないこと。",
+      "chapter": "II-07",
+      "allocation": "公開サービス",
+      "verification_ids": [
+        "SYS-T38"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-GSEL-015",
+      "title": "H更新と方式bindingの不変",
+      "requirement": "H側FW更新・一般バックアップ／リストアから方式binding、G側原本・資格・時刻・FWを変更しないこと。G側更新は独立した対象・認可・評価・復旧で管理すること。",
+      "chapter": "II-11",
+      "allocation": "H/G更新管理",
+      "verification_ids": [
+        "SYS-T37",
+        "SYS-T40"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/II_GW/II-11_Firmware_Update.md"
+    },
+    {
+      "id": "SYS-GSEL-016",
+      "title": "方式別の認証構成評価",
+      "requirement": "二方式それぞれの機器・GW G側・計測・通信・FW・設定・適用版を評価し、一方の認証確認又は社内PASSを他方式へ無条件転用しないこと。",
+      "chapter": "V-04",
+      "allocation": "認証主体・変更管理",
+      "verification_ids": [
+        "SYS-T40"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-04_Compliance.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-04_Compliance.md"
+    },
+    {
+      "id": "SYS-GSEL-017",
+      "title": "共有scopeの全体制約",
+      "requirement": "RS-485接続PCSのGW管理とECHONET Lite接続PCSの自律取得が同一住宅に混在する場合、各経路は宅内ルータを共有してよいが、重複するスケジュール適用scopeと共有PCS・連系点の容量配分を確認すること。HEMS最適化やルータを全体制約の唯一の適用主体にしないこと。",
+      "chapter": "I-07",
+      "allocation": "トポロジー・G側構成",
+      "verification_ids": [
+        "SYS-T41"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3",
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "last_modified_revision": "R4",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-GSEL-018",
+      "title": "切替中断時の永続復旧",
+      "requirement": "切替中のJobと構成世代を永続記録し、電断・再起動後は有効主体と実機状態を照合してから復旧すること。結果不明時の盲目的な旧方式復元又は新旧同時適用を禁止すること。",
+      "chapter": "V-02",
+      "allocation": "系統構成管理・PCS",
+      "verification_ids": [
+        "SYS-T34",
+        "SYS-T42"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+    },
+    {
+      "id": "SYS-GSEL-019",
+      "title": "機器交換と再登録",
+      "requirement": "PCS又はGW交換・工場初期化・対象登録変更で旧資格・旧scope・旧設定を無条件に復元せず、対応プロファイルと現在の制約成立を再確認すること。",
+      "chapter": "V-02",
+      "allocation": "保守・登録・移行",
+      "verification_ids": [
+        "SYS-T31",
+        "SYS-T42"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-02_Commissioning_Handover.md"
+    },
+    {
+      "id": "SYS-GSEL-020",
+      "title": "選択と適用結果の監査",
+      "requirement": "方式選択・変更の主体、理由、旧新mode・設定世代・scope、検証／切替各段階、認証等の確認記録、実機確認結果を相関付け、未完了・不明と完了を区別して保持すること。",
+      "chapter": "IV-08",
+      "allocation": "監査・構成管理",
+      "verification_ids": [
+        "SYS-T33",
+        "SYS-T38",
+        "SYS-T40",
+        "SYS-T42"
+      ],
+      "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+      "source_ids": [
+        "CTX-R3",
+        "SP-R3"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R3",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md"
+    },
+    {
+      "id": "SYS-GNET-001",
+      "title": "宅内ルータ必須経路",
+      "requirement": "出力制御サーバ向けのPCS又はGW G側の取得要求と取得応答は、すべて宅内ルータを経由すること。ルータを省いた経路、GW経由のPCS代理取得、スマートフォンのテザリング等を自動的な代替経路として追加しないこと。",
+      "chapter": "I-04",
+      "allocation": "通信構成・PCS／GW G側",
+      "verification_ids": [
+        "SYS-T43",
+        "SYS-T44"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 2,
+      "related_current_notes": [
+        "chapters/I_System/I-04_System_Context.md",
+        "chapters/III_Interfaces/III-01_Boundary_Contracts.md",
+        "chapters/II_GW/II-01_GW_Architecture.md",
+        "chapters/I_System/I-07_Responsibilities_Constraints.md"
+      ],
+      "primary_note": "chapters/I_System/I-04_System_Context.md"
+    },
+    {
+      "id": "SYS-GNET-002",
+      "title": "PCS自律取得の対象限定",
+      "requirement": "GW非経由のPCS自律取得はECHONET Lite接続PCSだけを対象とし、GW H側・G側をアプリケーション代理取得者又は必須のIP転送・NAT・ブリッジとして介在させないこと。非PCS機器やGWの仮想公開オブジェクトへ自律取得権限を一般化しないこと。",
+      "chapter": "I-05",
+      "allocation": "機器プロファイル・ネットワーク配置",
+      "verification_ids": [
+        "SYS-T43",
+        "SYS-T45",
+        "SYS-T50"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/I_System/I-05_Configurations.md"
+    },
+    {
+      "id": "SYS-GNET-003",
+      "title": "RS-485のGW管理経路",
+      "requirement": "RS-485接続PCSのスケジュール取得・管理は宅内ルータ経由でGW G側が担い、適用する制約又は制約適用済み指令をRS-485へ送出し、必要な監視を継続すること。PCS自身が出力制御サーバへ接続する経路を当該構成へ設けないこと。",
+      "chapter": "II-08",
+      "allocation": "GW G側・PCS通信所有者",
+      "verification_ids": [
+        "SYS-T44",
+        "SYS-T48"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "USER_CONTEXT_DERIVED",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 21,
+      "related_current_notes": [
+        "chapters/II_GW/II-08_GW_Grid_Control.md",
+        "chapters/III_Interfaces/III-08_Utility_Server.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/V_Lifecycle/V-02_Commissioning_Handover.md",
+        "chapters/V_Lifecycle/V-06_Verification_Validation.md"
+      ],
+      "primary_note": "chapters/II_GW/II-08_GW_Grid_Control.md"
+    },
+    {
+      "id": "SYS-GNET-004",
+      "title": "通常EL通信と出力制御サーバ通信の分離",
+      "requirement": "ECHONET LiteによるGW–PCSの通常操作・観測と、PCS–出力制御サーバの取得通信を別契約として識別すること。後者のプロトコル・資格情報・時刻・保存は機器プロファイルで確認し、ECHONET Liteクラス検出だけで取得能力を認定しないこと。",
+      "chapter": "III-06",
+      "allocation": "Device Registry・EL Adapter・PCS",
+      "verification_ids": [
+        "SYS-T43",
+        "SYS-T45",
+        "SYS-T49"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 7,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-06_ECHONET_Lite.md",
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/III_Interfaces/III-09_Network_Peripherals.md",
+        "chapters/II_GW/II-04_DER_Load_Control.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-06_ECHONET_Lite.md"
+    },
+    {
+      "id": "SYS-GNET-005",
+      "title": "ルータ共有障害と保持動作",
+      "requirement": "WAN断、宅内ルータ全停止、片側LAN到達喪失、出力制御サーバ到達不能を、H側単独停止及びRS-485必須通信断から区別すること。PCS側又はGW G側は保持済み情報と適用プロファイルに従い縮退し、通信喪失を制約なし又は無制限出力へ変換しないこと。",
+      "chapter": "I-08",
+      "allocation": "障害管理・PCS／GW G側",
+      "verification_ids": [
+        "SYS-T46",
+        "SYS-T48"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 13,
+      "related_current_notes": [
+        "chapters/I_System/I-08_System_States.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md"
+      ],
+      "primary_note": "chapters/I_System/I-08_System_States.md"
+    },
+    {
+      "id": "SYS-GNET-006",
+      "title": "ルータ混雑と変更影響",
+      "requirement": "宅内ルータ・無線・WANをFW転送、上位監視、Web利用、両PCS経路で共有する影響を評価し、GW側で管理できる負荷を制限すること。家庭用ルータのQoS等を無条件保証せず、SSID・DHCP・DNS・経路・AP/STA変更で取得又は通常監視を失う条件を記録すること。",
+      "chapter": "IV-07",
+      "allocation": "ネットワーク・更新・配置評価",
+      "verification_ids": [
+        "SYS-T47",
+        "SYS-T48"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 15,
+      "related_current_notes": [
+        "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md",
+        "chapters/II_GW/II-01_GW_Architecture.md"
+      ],
+      "primary_note": "chapters/IV_Quality/IV-07_Isolation_Shared_Resources.md"
+    },
+    {
+      "id": "SYS-GNET-007",
+      "title": "経路別の可観測性",
+      "requirement": "router到達、GWの上位到達、PCSの通常EL到達、PCSのサーバ取得、スケジュール保持・適用を別の状態・時刻・品質として公開すること。取得不能なPCS情報はUNKNOWN又はNOT_EXPOSEDとし、GWのpingやEL応答だけをPCS取得成功の根拠にしないこと。",
+      "chapter": "II-07",
+      "allocation": "Query・Web UI・クラウド・アプリ",
+      "verification_ids": [
+        "SYS-T49"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/II_GW/II-07_Measurement_Data.md"
+    },
+    {
+      "id": "SYS-GNET-008",
+      "title": "旧方式設定の再評価",
+      "requirement": "R3以前のPCS_DIRECT／GW_MANAGED設定をR4へ移行する際、実機PCS・確認済み接続種別・宅内ルータ経路を照合すること。PCS_DIRECT識別子は互換のため保持しても意味と許可範囲を再評価し、不適合設定を黙って別方式へ変更又は再有効化しないこと。",
+      "chapter": "V-05",
+      "allocation": "構成移行・独立保守",
+      "verification_ids": [
+        "SYS-T45",
+        "SYS-T50"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 18,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+    },
+    {
+      "id": "SYS-GNET-009",
+      "title": "混在構成の独立所有",
+      "requirement": "同一ルータ配下にRS-485用GW G側とECHONET Lite接続PCSが存在する場合、対象scope・取得主体・資格情報・スケジュール原本を分離し、GWがEL接続PCSの代理取得・代理適用を追加しないこと。共有連系点の適合は別途評価すること。",
+      "chapter": "I-07",
+      "allocation": "系統構成・PCS／GW G側",
+      "verification_ids": [
+        "SYS-T43",
+        "SYS-T44",
+        "SYS-T46"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 11,
+      "related_current_notes": [
+        "chapters/I_System/I-07_Responsibilities_Constraints.md"
+      ],
+      "primary_note": "chapters/I_System/I-07_Responsibilities_Constraints.md"
+    },
+    {
+      "id": "SYS-GNET-010",
+      "title": "直接Web接続の非代替",
+      "requirement": "端末–GWの直接無線Web接続は維持するが、出力制御サーバへのルータ非経由回線やEL接続PCSへの中継経路とみなさないこと。Web接続モード変更がG側のルータ接続に及ぼす影響を事前確認すること。",
+      "chapter": "III-04",
+      "allocation": "Local Web・無線管理",
+      "verification_ids": [
+        "SYS-T47"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 20,
+      "related_current_notes": [
+        "chapters/III_Interfaces/III-04_Local_Web.md",
+        "chapters/III_Interfaces/III-02_Cloud_GW.md",
+        "chapters/III_Interfaces/III-05_Remote_App.md",
+        "chapters/II_GW/II-07_Measurement_Data.md",
+        "chapters/II_GW/II-09_Settings_Lifecycle.md",
+        "chapters/II_GW/II-10_Fault_Alarm_Diagnostics.md",
+        "chapters/II_GW/II-11_Firmware_Update.md",
+        "chapters/IV_Quality/IV-08_Data_Log_UI_Quality.md",
+        "chapters/I_System/I-06_Usecases.md",
+        "chapters/I_System/I-08_System_States.md"
+      ],
+      "primary_note": "chapters/III_Interfaces/III-04_Local_Web.md"
+    },
+    {
+      "id": "SYS-GNET-011",
+      "title": "経路を含む変更証拠",
+      "requirement": "H側更新の非干渉評価に、実ルータ経路、端点、共有NIC・設定・負荷・電源・時刻・必須PCS通信を含めること。GW非経由でも共有ルータ故障を無影響と扱わず、文書上の分離をJET判断・試験不要の保証へ読み替えないこと。",
+      "chapter": "V-05",
+      "allocation": "リリース評価・認証主体",
+      "verification_ids": [
+        "SYS-T47",
+        "SYS-T48"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 16,
+      "related_current_notes": [
+        "chapters/V_Lifecycle/V-05_Change_Migration_Release.md",
+        "chapters/V_Lifecycle/V-04_Compliance.md"
+      ],
+      "primary_note": "chapters/V_Lifecycle/V-05_Change_Migration_Release.md"
+    },
+    {
+      "id": "SYS-GNET-012",
+      "title": "多重IF・仮想機器の分類",
+      "requirement": "物理PCSが複数IFを持つ場合、選択済みの接続構成・物理ID・変換グループ・取得主体を一つのbindingで管理すること。GWがRS-485機器をELオブジェクトとして公開してもその実機をEL自律取得へ変更せず、異なる経路に同一scopeを重複登録しないこと。",
+      "chapter": "I-05",
+      "allocation": "機器登録・構成管理",
+      "verification_ids": [
+        "SYS-T45",
+        "SYS-T50"
+      ],
+      "verification_review": "R4のルータ経路・機器接続別契約を資料・シミュレータ・実機で分けて確認。静的検査を実機試験と扱わない。",
+      "source_ids": [
+        "CTX-R4",
+        "SP-R4"
+      ],
+      "basis": "SYSTEM_SPEC_PROPOSAL",
+      "source_arch_ids": [],
+      "applicability": "R4のPCS自律取得／RS-485 GW管理と共有宅内ネットワーク",
+      "status": "DRAFT_FOR_REVIEW",
+      "usdm_id": null,
+      "usdm_status": "TBD_FORMAL_MAPPING",
+      "introduced_revision": "R4",
+      "legacy_chapter": 4,
+      "related_current_notes": [
+        "chapters/I_System/I-05_Configurations.md",
+        "chapters/III_Interfaces/III-07_RS485_PCS.md",
+        "chapters/II_GW/II-02_GW_Functions.md",
+        "chapters/II_GW/II-06_Device_Management.md"
+      ],
+      "primary_note": "chapters/I_System/I-05_Configurations.md"
+    }
+  ],
+  "source_record_revision": "R4"
+}

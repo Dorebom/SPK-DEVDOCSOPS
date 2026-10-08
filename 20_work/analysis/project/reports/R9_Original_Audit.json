@@ -1,0 +1,6 @@
+{
+  "result": "PASS",
+  "scope": "R8-FIX001 original archive + exact extracted tree",
+  "files": 324,
+  "sha256": "ff984bda9214c9d874640cf078087da40674b0eb379babb5c597fed8085481e2"
+}

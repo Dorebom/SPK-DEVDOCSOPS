@@ -1,0 +1,12 @@
+{
+  "revision": "R7",
+  "answers": [
+    {
+      "question_id": "OQ-R6-01-01",
+      "confirmed": "人の利用者分類はユーザ／メンテナンス／メーカー／開発者の4種類。",
+      "source": "sources/USER_CONTEXT_R7.md",
+      "remaining": "機能ごとの権限、対象範囲、役割付与・兼任、委譲、環境、期限、本人確認、承認は未確定。",
+      "closure_status": "PARTIALLY_ANSWERED_KEEP_ORIGINAL_OPEN"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "input_package_sha256": "4a0620d60c9d4ef3191154892fb7a50d599d8f5804361e51416ffc3926d5d8d6",
+  "input_files": 495,
+  "missing_original_files": [],
+  "modified_original_files": [
+    "package_info.json",
+    "README.md"
+  ],
+  "unchanged_original_files": 492,
+  "retained_by_prefix": {
+    "10_canonical/": 121,
+    "30_references/": 330,
+    "00_governance/": 6,
+    "schemas/": 16,
+    "tools/": 9
+  },
+  "manifest_policy": "root distribution manifest regenerated; historical manifests retained",
+  "selected_baseline": {
+    "schema": "spkgw.current-baseline/v1",
+    "baseline_id": "BL-R9-0001",
+    "path": "10_canonical/releases/BL-R9-0001",
+    "tree_sha256": "dccc9efd3413b2c43ce807be2cffc36cc3c9b001757ad8f9934c730c176124b1",
+    "receipt": "10_canonical/receipts/BL-R9-0001.json",
+    "content_status": "DRAFT_FOR_REVIEW",
+    "product_requirements_approved": false
+  }
+}

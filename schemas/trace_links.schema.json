@@ -1,0 +1,129 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.trace-links/v1"
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "from": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "SYS",
+                  "USDM",
+                  "FUNCTION",
+                  "TEST",
+                  "FRAGMENT",
+                  "OQ",
+                  "SOURCE"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+              },
+              "revision": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          },
+          "to": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "SYS",
+                  "USDM",
+                  "FUNCTION",
+                  "TEST",
+                  "FRAGMENT",
+                  "OQ",
+                  "SOURCE"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+              },
+              "revision": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          },
+          "relation": {
+            "enum": [
+              "DERIVED_FROM",
+              "SATISFIES",
+              "REFINES",
+              "ALLOCATED_TO",
+              "VERIFIED_BY",
+              "SUPERSEDES"
+            ]
+          },
+          "state": {
+            "enum": [
+              "UNREVIEWED",
+              "REVIEWED",
+              "SUSPECT"
+            ]
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "reviewed_by": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "from",
+          "to",
+          "relation",
+          "state",
+          "basis",
+          "reviewed_by"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "links"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "trace_links"
+}

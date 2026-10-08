@@ -1,0 +1,532 @@
+{
+  "schema": "spkgw.system-spec.parameters/v1",
+  "parameters": [
+    {
+      "id": "PAR-PLAN-01",
+      "name": "計画演算周期・期限",
+      "value": null,
+      "unit": "s",
+      "scope": "strategy",
+      "basis_to_confirm": "対象の1秒要求と製品保証段階",
+      "issue_id": "SYS-TBD-006",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-MEAS-01",
+      "name": "取得周期と機器内更新周期",
+      "value": null,
+      "unit": "s",
+      "scope": "device/quantity",
+      "basis_to_confirm": "メーカー仕様と実測",
+      "issue_id": "TBD-008",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-MEAS-02",
+      "name": "制御に用いる最大鮮度",
+      "value": null,
+      "unit": "s",
+      "scope": "operation/quantity",
+      "basis_to_confirm": "遅延・時計品質・用途",
+      "issue_id": "SYS-TBD-006",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-CMD-01",
+      "name": "最小設定更新間隔",
+      "value": null,
+      "unit": "s",
+      "scope": "device/operation/profile",
+      "basis_to_confirm": "適用AIF又はPCS仕様とFW",
+      "issue_id": "TBD-008",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-CMD-02",
+      "name": "最大バースト・同時要求",
+      "value": null,
+      "unit": "count",
+      "scope": "route/operation",
+      "basis_to_confirm": "負荷・機器状態遷移",
+      "issue_id": "SYS-TBD-006",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-CMD-03",
+      "name": "応答期限",
+      "value": null,
+      "unit": "s",
+      "scope": "transaction/profile",
+      "basis_to_confirm": "プロトコルと最悪応答",
+      "issue_id": "SYS-TBD-002",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-CMD-04",
+      "name": "再試行回数・間隔",
+      "value": null,
+      "unit": "count/s",
+      "scope": "transaction/operation",
+      "basis_to_confirm": "機器内実行・残留・応答",
+      "issue_id": "SYS-TBD-002",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-RESULT-01",
+      "name": "達成確認窓・許容差",
+      "value": null,
+      "unit": "s/W or quantity unit",
+      "scope": "operation/measurement point",
+      "basis_to_confirm": "測定基準と物理応答",
+      "issue_id": "TBD-008",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-RESULT-02",
+      "name": "Unknownの再確認期限・保持",
+      "value": null,
+      "unit": "s",
+      "scope": "operation/usecase",
+      "basis_to_confirm": "機器確認能力と利用者契約",
+      "issue_id": "SYS-TBD-008",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-AUTH-01",
+      "name": "Lease・冪等情報の期間",
+      "value": null,
+      "unit": "s",
+      "scope": "authority/request",
+      "basis_to_confirm": "再起動・時計・機器保持",
+      "issue_id": "TBD-007",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-RS-01",
+      "name": "接続条件・局数",
+      "value": null,
+      "unit": "profile/count",
+      "scope": "bus",
+      "basis_to_confirm": "採用PCS通信仕様・台帳",
+      "issue_id": "SYS-TBD-002",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-RS-02",
+      "name": "制御・監視・必須通信のバス予算",
+      "value": null,
+      "unit": "ratio/time",
+      "scope": "bus/route_role",
+      "basis_to_confirm": "全電文種と最悪時再試行",
+      "issue_id": "SYS-TBD-006",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-EL-01",
+      "name": "接続台数・探索・取得予算",
+      "value": null,
+      "unit": "count/time",
+      "scope": "network/profile",
+      "basis_to_confirm": "接続版と混在・実機確認",
+      "issue_id": "SYS-TBD-006",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-GRID-01",
+      "name": "スケジュール取得・適用・有効期限",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "grid_connection_profile",
+      "basis_to_confirm": "一般送配電事業者・機器仕様",
+      "issue_id": "TBD-003",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-GRID-02",
+      "name": "G側必須通信異常時動作・時間",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "grid_required_route",
+      "basis_to_confirm": "適用構成と正式仕様",
+      "issue_id": "TBD-004",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-GRID-03",
+      "name": "系統連系保護の条件・動作時間",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "protection_domain",
+      "basis_to_confirm": "対象機器・認証構成",
+      "issue_id": "TBD-004",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-GRID-04",
+      "name": "過渡応答・許容差・評価窓",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "scope/quantity",
+      "basis_to_confirm": "適用プロファイル",
+      "issue_id": "TBD-003",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-GRID-05",
+      "name": "制約の容量基準・対象scope",
+      "value": null,
+      "unit": "W/profile",
+      "scope": "resource/group/PCC",
+      "basis_to_confirm": "契約・配線・対象設備",
+      "issue_id": "TBD-003",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-CFG-01",
+      "name": "設定反映状態・保留期限",
+      "value": null,
+      "unit": "state/s",
+      "scope": "configuration usecase",
+      "basis_to_confirm": "高優先度実行と復旧契約",
+      "issue_id": "SYS-TBD-009",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-DATA-01",
+      "name": "短期・長期・監査の保持期間",
+      "value": null,
+      "unit": "duration",
+      "scope": "dataset",
+      "basis_to_confirm": "製品／制度／運用要求",
+      "issue_id": "SYS-TBD-010",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-DATA-02",
+      "name": "保存粒度・容量・書込み予算",
+      "value": null,
+      "unit": "time/bytes",
+      "scope": "dataset/device",
+      "basis_to_confirm": "データ定義・容量・寿命",
+      "issue_id": "SYS-TBD-010",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-ISO-01",
+      "name": "CPU・メモリ・キュー・帯域予算",
+      "value": null,
+      "unit": "resource-specific",
+      "scope": "H/G/shared",
+      "basis_to_confirm": "配置と最大負荷評価",
+      "issue_id": "TBD-011",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-ENV-01",
+      "name": "温度・電源・reset・設置条件",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "product/configuration",
+      "basis_to_confirm": "HW・共有故障評価",
+      "issue_id": "TBD-011",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-SEC-01",
+      "name": "認証・暗号化・資格情報・保守許可",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "connection/security",
+      "basis_to_confirm": "メーカー・脅威分析・採用規格",
+      "issue_id": "TBD-012",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED"
+    },
+    {
+      "id": "PAR-UP-01",
+      "name": "上位要求・イベント・再接続の頻度とburst",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "upper-connection",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-020",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-02",
+      "name": "オフライン要求のTTLと保留上限",
+      "value": null,
+      "unit": "s/count",
+      "scope": "operation-kind",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-019",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-03",
+      "name": "重複排除・結果照会の保持期間",
+      "value": null,
+      "unit": "s",
+      "scope": "principal/target/operation",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-019",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-04",
+      "name": "監視取得・報告・画面更新周期と鮮度",
+      "value": null,
+      "unit": "s",
+      "scope": "measurement/view",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-020",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-05",
+      "name": "Web/アプリの同時セッション数・認可寿命",
+      "value": null,
+      "unit": "count/s",
+      "scope": "access-profile",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-016",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-06",
+      "name": "履歴/診断のページサイズ・容量・同時Job上限",
+      "value": null,
+      "unit": "bytes/count",
+      "scope": "query-job",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-020",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-07",
+      "name": "イベント保存量・監査優先度・再同期窓",
+      "value": null,
+      "unit": "bytes/s",
+      "scope": "event-stream",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-019",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-08",
+      "name": "直接無線の稼働条件・有効時間・接続数",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "local-direct",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-014",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-09",
+      "name": "ネットワーク変更の確認期限・復旧猶予",
+      "value": null,
+      "unit": "s",
+      "scope": "network-config",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-021",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-10",
+      "name": "FW画像/一時保存/復旧領域の必要容量",
+      "value": null,
+      "unit": "bytes",
+      "scope": "update-target",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-018",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-11",
+      "name": "FW転送帯域・再試行・CPU予算",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "update-session",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-020",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-12",
+      "name": "FW適用・起動・稼働確認・復旧期限",
+      "value": null,
+      "unit": "s",
+      "scope": "update-phase",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-018",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-13",
+      "name": "高影響内部Jobの期限・並行実行・取消し条件",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "gw-operation",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-017",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-14",
+      "name": "オフライン認可・失効伝達・所有者変更の期限",
+      "value": null,
+      "unit": "s",
+      "scope": "authorization-scope",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-016",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-15",
+      "name": "TLS/鍵/接続先識別/ローカル名前解決プロファイル",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "local-and-cloud",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-015",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-UP-16",
+      "name": "GW/Web/API/クラウド/アプリの互換範囲",
+      "value": null,
+      "unit": "version-profile",
+      "scope": "release",
+      "basis_to_confirm": "R2の対象構成・採用IF・製品運用と負荷/復旧評価",
+      "issue_id": "SYS-TBD-023",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R2"
+    },
+    {
+      "id": "PAR-GSEL-01",
+      "name": "方式切替準備・旧主体停止確認・適用確認の各期限",
+      "value": null,
+      "unit": "s",
+      "scope": "grid-scope/switch-phase",
+      "basis_to_confirm": "方式ごとの適用仕様・機器・実行配置・保守手順の確認",
+      "issue_id": "SYS-TBD-026",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R3"
+    },
+    {
+      "id": "PAR-GSEL-02",
+      "name": "スケジュール保持・期限・時刻許容差",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "mode/utility/device",
+      "basis_to_confirm": "方式ごとの適用仕様・機器・実行配置・保守手順の確認",
+      "issue_id": "SYS-TBD-028",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R3"
+    },
+    {
+      "id": "PAR-GSEL-03",
+      "name": "G側PCS指示・監視周期と通信断時動作条件",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "mode/required-route",
+      "basis_to_confirm": "方式ごとの適用仕様・機器・実行配置・保守手順の確認",
+      "issue_id": "SYS-TBD-028",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R3"
+    },
+    {
+      "id": "PAR-GSEL-04",
+      "name": "切替中の制約保持・必要停止・復旧条件",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "grid-scope",
+      "basis_to_confirm": "方式ごとの適用仕様・機器・実行配置・保守手順の確認",
+      "issue_id": "SYS-TBD-026",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R3"
+    },
+    {
+      "id": "PAR-GSEL-05",
+      "name": "GW G側のCPU・通信・保存・バス負荷上限",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "deployment",
+      "basis_to_confirm": "方式ごとの適用仕様・機器・実行配置・保守手順の確認",
+      "issue_id": "SYS-TBD-025",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R3"
+    },
+    {
+      "id": "PAR-GSEL-06",
+      "name": "方式・適用状態の公開項目と最大観測経過時間",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "mode/device",
+      "basis_to_confirm": "方式ごとの適用仕様・機器・実行配置・保守手順の確認",
+      "issue_id": "SYS-TBD-029",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R3"
+    },
+    {
+      "id": "PAR-GNET-01",
+      "name": "宅内ルータ経路の必須LAN/WAN・名前解決・アドレス条件",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "router/GW/EL_PCS",
+      "basis_to_confirm": "R4の実配線・機器仕様・ネットワーク条件と受入試験で決定",
+      "issue_id": "SYS-TBD-031",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R4"
+    },
+    {
+      "id": "PAR-GNET-02",
+      "name": "取得経路断の検出・再接続・再取得条件",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "mode/device/network",
+      "basis_to_confirm": "R4の実配線・機器仕様・ネットワーク条件と受入試験で決定",
+      "issue_id": "SYS-TBD-032",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R4"
+    },
+    {
+      "id": "PAR-GNET-03",
+      "name": "FW・監視の送信量／並行数と取得通信の共存予算",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "shared_router/NIC/WAN",
+      "basis_to_confirm": "R4の実配線・機器仕様・ネットワーク条件と受入試験で決定",
+      "issue_id": "SYS-TBD-032",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R4"
+    },
+    {
+      "id": "PAR-GNET-04",
+      "name": "PCS独立取得状態の公開項目と鮮度・不明判定",
+      "value": null,
+      "unit": "profile-specific",
+      "scope": "EL_PCS/UI/cloud",
+      "basis_to_confirm": "R4の実配線・機器仕様・ネットワーク条件と受入試験で決定",
+      "issue_id": "SYS-TBD-033",
+      "status": "TBD_NOT_ZERO_OR_UNLIMITED",
+      "introduced_revision": "R4"
+    }
+  ],
+  "revision": "R4"
+}

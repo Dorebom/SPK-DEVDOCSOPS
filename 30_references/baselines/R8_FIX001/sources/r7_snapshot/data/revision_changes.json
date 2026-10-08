@@ -1,0 +1,1248 @@
+{
+  "schema": "spkgw.document-changes/v1",
+  "from_revision": "R3",
+  "to_revision": "R4",
+  "source": "CTX-R4",
+  "changes": [
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GRID-001",
+      "before": {
+        "id": "SYS-GRID-001",
+        "title": "独立した出力制御経路",
+        "requirement": "一般送配電事業者のスケジュール実行をHEMSのArbiter／Orchestrator／通常更新に依存させないこと。PCS_DIRECTではPCS内出力制御機能への依存契約、GW_MANAGEDではGW G側の取得・管理・PCS指示の実装要求へ配賦すること。",
+        "chapter": 10,
+        "allocation": "PCS内OCU／GW G側（選択プロファイルによる）",
+        "verification_ids": [
+          "T01",
+          "T02"
+        ],
+        "verification_review": "T01、T02",
+        "source_ids": [
+          "A01",
+          "A03",
+          "A08",
+          "CTX-R3"
+        ],
+        "basis": "SOURCE_DERIVED",
+        "source_arch_ids": [
+          "ARCH-002"
+        ],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "source_requirement_text": "電力会社のスケジュール実行経路をHEMSのArbiter／Orchestratorに依存させない"
+      },
+      "after": {
+        "id": "SYS-GRID-001",
+        "title": "独立した出力制御経路",
+        "requirement": "一般送配電事業者のスケジュール実行をHEMSのArbiter／Orchestrator／通常更新に依存させないこと。全サーバ通信は宅内ルータ経由とし、ECHONET Lite接続PCSではPCS内の出力制御機能、RS-485接続PCSではGW G側の取得・管理・PCS指示へ配賦すること。",
+        "chapter": 10,
+        "allocation": "ECHONET Lite接続PCS内OCU／RS-485用GW G側",
+        "verification_ids": [
+          "T01",
+          "T02"
+        ],
+        "verification_review": "T01、T02",
+        "source_ids": [
+          "A01",
+          "A03",
+          "A08",
+          "CTX-R3",
+          "CTX-R4",
+          "SP-R4"
+        ],
+        "basis": "SOURCE_DERIVED",
+        "source_arch_ids": [
+          "ARCH-002"
+        ],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "source_requirement_text": "電力会社のスケジュール実行経路をHEMSのArbiter／Orchestratorに依存させない",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-DEPLOY-001",
+      "before": {
+        "id": "SYS-DEPLOY-001",
+        "title": "出力制御二方式の選択と配備確認",
+        "requirement": "PCS_DIRECTとGW_MANAGEDの両方を選択可能な構成として定義し、機器・HW/FW・通信役割・共有資源・接続／認証プロファイルを確認した範囲で有効化すること。原典の案A優先を全製品共通の既定とせず、実配備の成立確認を省略しないこと。",
+        "chapter": 15,
+        "allocation": "アーキテクチャレビュー",
+        "verification_ids": [
+          "T01",
+          "SYS-T05"
+        ],
+        "verification_review": "仕様・契約レビュー",
+        "source_ids": [
+          "A01",
+          "A08",
+          "A11",
+          "CTX-R3"
+        ],
+        "basis": "USER_CONTEXT_DERIVED",
+        "source_arch_ids": [],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING"
+      },
+      "after": {
+        "id": "SYS-DEPLOY-001",
+        "title": "接続種別に制約された二方式の配備",
+        "requirement": "PCS_DIRECTはECHONET Lite接続PCSの自律取得に、GW_MANAGEDはRS-485接続PCSのGW管理に割り当て、いずれも宅内ルータ経由のサーバ接続を必須とすること。型式・FW・取得能力・接続／認証プロファイルを確認し、方式を通信種別と無関係に自由選択できる仕様としないこと。",
+        "chapter": 15,
+        "allocation": "アーキテクチャレビュー",
+        "verification_ids": [
+          "T01",
+          "SYS-T05"
+        ],
+        "verification_review": "仕様・契約レビュー",
+        "source_ids": [
+          "A01",
+          "A08",
+          "A11",
+          "CTX-R3",
+          "CTX-R4",
+          "SP-R4"
+        ],
+        "basis": "USER_CONTEXT_DERIVED",
+        "source_arch_ids": [],
+        "applicability": "全適用構成",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GSEL-001",
+      "before": {
+        "id": "SYS-GSEL-001",
+        "title": "両方式の機能契約",
+        "requirement": "PCS_DIRECTではPCS内機能、GW_MANAGEDではGW G側がスケジュール取得・検証・保存・時刻管理・適用を担い、後者はPCS指示と必要監視まで担当すること。単なる透過中継として実装範囲を縮めないこと。",
+        "chapter": 21,
+        "allocation": "プロファイル・PCS／GW G側",
+        "verification_ids": [
+          "SYS-T29",
+          "SYS-T30"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3"
+        ],
+        "basis": "USER_CONTEXT_DERIVED",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-GSEL-001",
+        "title": "機器接続別の取得・適用契約",
+        "requirement": "ECHONET Lite接続PCSではPCS_DIRECTとしてPCS内機能が宅内ルータ経由で取得・検証・保存・時刻適用を行うこと。RS-485接続PCSではGW_MANAGEDとしてGW G側が宅内ルータ経由で取得・管理し、RS-485によるPCS指示・必要監視を担うこと。後者を透過中継に縮めないこと。",
+        "chapter": 21,
+        "allocation": "プロファイル・PCS／GW G側",
+        "verification_ids": [
+          "SYS-T29",
+          "SYS-T30"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3",
+          "CTX-R4",
+          "SP-R4"
+        ],
+        "basis": "USER_CONTEXT_DERIVED",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GSEL-002",
+      "before": {
+        "id": "SYS-GSEL-002",
+        "title": "確認済み構成からの選択",
+        "requirement": "方式を対応型式・HW/FW・接続契約・認証構成プロファイルへ結び付け、未対応・未確認・未選択の構成を自動有効化しないこと。",
+        "chapter": 21,
+        "allocation": "製品構成管理",
+        "verification_ids": [
+          "SYS-T31"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3"
+        ],
+        "basis": "SYSTEM_SPEC_PROPOSAL",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-GSEL-002",
+        "title": "確認済み構成からの選択",
+        "requirement": "方式をR4の機器接続別対応表と型式・HW/FW・取得能力・接続契約・認証構成へ結び付けること。RS-485接続PCSのPCS_DIRECT、ECHONET Lite接続PCSのGW_MANAGED、非PCSのPCS_DIRECT及び未確認の構成を現行対応範囲として自動有効化しないこと。",
+        "chapter": 21,
+        "allocation": "製品構成管理",
+        "verification_ids": [
+          "SYS-T31"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3",
+          "CTX-R4",
+          "SP-R4"
+        ],
+        "basis": "SYSTEM_SPEC_PROPOSAL",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GSEL-007",
+      "before": {
+        "id": "SYS-GSEL-007",
+        "title": "施工保守による方式変更",
+        "requirement": "方式変更を系統構成に影響する管理変更とし、独立認可・期待設定世代・対応確認・必要手続き・実機確認を満たすこと。通常の運転設定権限だけで変更しないこと。",
+        "chapter": 21,
+        "allocation": "系統保守・構成管理",
+        "verification_ids": [
+          "SYS-T31",
+          "SYS-T33",
+          "SYS-T40"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3"
+        ],
+        "basis": "SYSTEM_SPEC_PROPOSAL",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-GSEL-007",
+        "title": "適用条件内の施工保守による構成変更",
+        "requirement": "方式に影響する変更を機器・接続構成の管理変更とし、独立認可・期待設定世代・R4適用表・必要手続き・実機確認を満たすこと。認可された保守であっても適用外の方式組合せを許可しないこと。同一PCSの任意切替を必須機能としないこと。",
+        "chapter": 21,
+        "allocation": "系統保守・構成管理",
+        "verification_ids": [
+          "SYS-T31",
+          "SYS-T33",
+          "SYS-T40"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3",
+          "CTX-R4",
+          "SP-R4"
+        ],
+        "basis": "SYSTEM_SPEC_PROPOSAL",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GSEL-013",
+      "before": {
+        "id": "SYS-GSEL-013",
+        "title": "表示状態と実適用の分離",
+        "requirement": "desired/configured/active mode、scope、所有者、適用状態、観測時刻・品質、切替Jobを区別し、設定受付やサーバ疎通を切替完了・実出力適合として表示しないこと。",
+        "chapter": 21,
+        "allocation": "Query・Telemetry・上位／Web／アプリ",
+        "verification_ids": [
+          "SYS-T38"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3"
+        ],
+        "basis": "SYSTEM_SPEC_PROPOSAL",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-GSEL-013",
+        "title": "表示状態と実適用の分離",
+        "requirement": "desired/configured/active mode、機器接続種別、宅内ルータ経路、取得主体、scope、適用状態、観測時刻・品質、構成変更Jobを区別すること。PCS_DIRECTの表示をPCS自律取得方式（宅内ルータ経由・GW非経由）とし、GWのWAN到達やECHONET Lite応答からPCSのサーバ取得成功を推定しないこと。",
+        "chapter": 21,
+        "allocation": "Query・Telemetry・上位／Web／アプリ",
+        "verification_ids": [
+          "SYS-T38"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3",
+          "CTX-R4",
+          "SP-R4"
+        ],
+        "basis": "SYSTEM_SPEC_PROPOSAL",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GSEL-017",
+      "before": {
+        "id": "SYS-GSEL-017",
+        "title": "共有scopeの全体制約",
+        "requirement": "異なる機器に二方式が混在する場合、共有PCS・連系点・容量配分の制約を確認した構成だけ採用し、HEMS最適化を全体制約の唯一の保証にしないこと。",
+        "chapter": 21,
+        "allocation": "トポロジー・G側構成",
+        "verification_ids": [
+          "SYS-T41"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3"
+        ],
+        "basis": "SYSTEM_SPEC_PROPOSAL",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-GSEL-017",
+        "title": "共有scopeの全体制約",
+        "requirement": "RS-485接続PCSのGW管理とECHONET Lite接続PCSの自律取得が同一住宅に混在する場合、各経路は宅内ルータを共有してよいが、重複するスケジュール適用scopeと共有PCS・連系点の容量配分を確認すること。HEMS最適化やルータを全体制約の唯一の適用主体にしないこと。",
+        "chapter": 21,
+        "allocation": "トポロジー・G側構成",
+        "verification_ids": [
+          "SYS-T41"
+        ],
+        "verification_review": "方式別プロファイル・選択条件・機器動作のレビュー",
+        "source_ids": [
+          "CTX-R3",
+          "SP-R3",
+          "CTX-R4",
+          "SP-R4"
+        ],
+        "basis": "SYSTEM_SPEC_PROPOSAL",
+        "source_arch_ids": [],
+        "applicability": "PCS_DIRECT／GW_MANAGEDの該当する配備・切替条件",
+        "status": "DRAFT_FOR_REVIEW",
+        "usdm_id": null,
+        "usdm_status": "TBD_FORMAL_MAPPING",
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T29",
+      "before": {
+        "id": "SYS-T29",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "PCS_DIRECTでPCS内取得・適用中にGWの通常操作・H停止を実施",
+        "expected": "PCS側が対象スケジュールを取得・適用し、通常要求で制約が解除されず、公開情報は確認可能な品質で報告する",
+        "status": "NOT_RUN",
+        "source_id": "SP-R3",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-001",
+          "SYS-GSEL-004",
+          "SYS-GSEL-006"
+        ],
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-T29",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "EL接続PCSが宅内ルータ経由で自律取得・適用中にGW通常操作・H停止・GW全停止を分けて実施",
+        "expected": "PCSがGWをアプリケーション中継又は必須IP転送に使わず取得・適用し、GW通常要求で制約が解除されない。ルータ及びPCS電源が維持された試験条件を明記する",
+        "status": "NOT_RUN",
+        "source_id": "SP-R4",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-001",
+          "SYS-GSEL-004",
+          "SYS-GSEL-006"
+        ],
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T30",
+      "before": {
+        "id": "SYS-T30",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "GW_MANAGEDでGWが取得・保存・適用・PCS指示し、H側の計画と監視を停止",
+        "expected": "G側の取得・時計・保存・PCS指示・必須監視が成立し、H側を単なる中継経路として必須化していない",
+        "status": "NOT_RUN",
+        "source_id": "SP-R3",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-001",
+          "SYS-GSEL-004",
+          "SYS-GSEL-005",
+          "SYS-GSEL-006"
+        ],
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-T30",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "RS-485接続PCSに対しGW G側が宅内ルータ経由で取得・保存・適用・指示し、H側を停止",
+        "expected": "G側の取得・時計・保存・RS-485指示・必須監視が成立し、H側を必須中継にしない。実行配置が未成立なら分離試験を合格にしない",
+        "status": "NOT_RUN",
+        "source_id": "SP-R4",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-001",
+          "SYS-GSEL-004",
+          "SYS-GSEL-005",
+          "SYS-GSEL-006"
+        ],
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T31",
+      "before": {
+        "id": "SYS-T31",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "未選択・未対応PCS・不一致FW・旧設定世代・認可不足・必要確認未完了で選択要求",
+        "expected": "有効化せず理由を返す。自動PCS_DIRECTや無制限へ補完しない。既存の適用状態を無断変更しない",
+        "status": "NOT_RUN",
+        "source_id": "SP-R3",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-002",
+          "SYS-GSEL-007",
+          "SYS-GSEL-019"
+        ],
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-T31",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "R4適用表外の組合せ、未選択・未対応PCS・不一致FW・旧世代・認可不足で有効化要求",
+        "expected": "RS-485のPCS_DIRECT、EL接続PCSのGW_MANAGED、非PCS自律取得、ルータ無しを拒否する。既存適用を無断変更せず、自動PCS_DIRECTや無制限へ補完しない",
+        "status": "NOT_RUN",
+        "source_id": "SP-R4",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-002",
+          "SYS-GSEL-007",
+          "SYS-GSEL-019"
+        ],
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T33",
+      "before": {
+        "id": "SYS-T33",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "対応確認済み構成で両方向の管理切替を実施",
+        "expected": "新経路準備、制約保持、旧主体フェンス、新主体適用確認、監査を行う。認証等の確認と技術的完了を分離する",
+        "status": "NOT_RUN",
+        "source_id": "SP-R3",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-007",
+          "SYS-GSEL-008",
+          "SYS-GSEL-020"
+        ],
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-T33",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "R4適用表を満たす初期配備又は承認済み機器・接続構成変更を実施",
+        "expected": "変更後の実機接続種別と方式を照合し、制約保持、旧主体フェンス、適用確認、監査を行う。同一PCSの自由な両方向切替を合格条件としない。切替非対応構成では手順を限定する",
+        "status": "NOT_RUN",
+        "source_id": "SP-R4",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-007",
+          "SYS-GSEL-008",
+          "SYS-GSEL-020"
+        ],
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T39",
+      "before": {
+        "id": "SYS-T39",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "共用RS-485又は他の確認済み必須経路へ通常Set・読出し・FW転送負荷を集中",
+        "expected": "最終送信所有者と資源契約が機能し、通常書込みで制約を上書きせず、必須監視・指示の期限を満たす",
+        "status": "NOT_RUN",
+        "source_id": "SP-R3",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-004",
+          "SYS-GSEL-005",
+          "SYS-GSEL-012"
+        ],
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-T39",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "condition": "GW管理のRS-485必須経路に通常Set・読出し負荷を集中し、共有ルータにFW転送負荷を加える",
+        "expected": "最終送信所有者と資源契約が制約の上書きを防ぎ、規定の指示・監視・取得条件又は縮退条件を満たす。ルータ側の未知のQoS能力を前提にしない",
+        "status": "NOT_RUN",
+        "source_id": "SP-R4",
+        "acceptance_profile": "TBD_PER_MODE_AND_CONFIGURATION",
+        "system_requirement_ids": [
+          "SYS-GSEL-004",
+          "SYS-GSEL-005",
+          "SYS-GSEL-012"
+        ],
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/open_issues.json",
+      "id": "SYS-TBD-003",
+      "before": {
+        "id": "SYS-TBD-003",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "subject": "既存RS-485構成が各選択方式の独立性を成立させるか",
+        "resolution": "PCS_DIRECTでは通常経路の非迂回とPCS側独立性、GW_MANAGEDではG側取得・管理・必須PCS通信とH側停止／更新の非干渉を確認して、対応可能なプロファイルを記録する",
+        "status": "OPEN",
+        "owner_role": "アーキテクチャ・認証主体",
+        "source_id": "SP"
+      },
+      "after": {
+        "id": "SYS-TBD-003",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "subject": "RS-485 GW管理構成のG側独立性が現行実装で成立するか",
+        "resolution": "RS-485はGW_MANAGEDへ配賦する要求を確定済みとし、既存取得・管理・必須通信がH側停止／更新に依存しない実装かをコード・配線・メーカー資料で確認する。PCS_DIRECT適用可否をRS-485の選択肢として再開しない",
+        "status": "OPEN",
+        "owner_role": "アーキテクチャ・認証主体",
+        "source_id": "SP-R4",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/open_issues.json",
+      "id": "SYS-TBD-024",
+      "before": {
+        "id": "SYS-TBD-024",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "subject": "両方式に対応するPCS型式・HW/FW・接続プロファイル",
+        "resolution": "PCS内取得能力、GW指示契約、旧取得停止・切替条件をメーカー資料・実機で確認し対応表に登録",
+        "status": "OPEN",
+        "owner_role": "製品・PCSメーカー",
+        "source_id": "SP-R3",
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-TBD-024",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "subject": "R4のEL自律取得／RS-485 GW管理に対応する型式・HW/FW",
+        "resolution": "EL接続PCSの独立サーバ取得能力・ルータ接続と、RS-485 PCSのGW指示契約を各機器で確認する。二方式の自由な全組合せを求めない",
+        "status": "OPEN",
+        "owner_role": "製品・PCSメーカー",
+        "source_id": "SP-R4",
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/open_issues.json",
+      "id": "SYS-TBD-026",
+      "before": {
+        "id": "SYS-TBD-026",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "subject": "施工・保守の方式切替と認可・有効化・復旧手順",
+        "resolution": "初期設定のみか保守変更可能か、利用チャネル、旧主体のフェンス、新主体適用確認、結果不明の安全状態・復旧を定義",
+        "status": "OPEN",
+        "owner_role": "保守・セキュリティ・PCSメーカー",
+        "source_id": "SP-R3",
+        "introduced_revision": "R3"
+      },
+      "after": {
+        "id": "SYS-TBD-026",
+        "origin": "SYSTEM_SPEC_ADDITION",
+        "subject": "接続構成に制約された施工・保守変更の認可と復旧",
+        "resolution": "R4適用表を満たす機器交換・接続構成変更について初期設定のみか保守変更可能かを確認する。適用外の方式を認可だけで開放せず、旧主体の停止・適用確認・失敗復旧を定義する",
+        "status": "OPEN",
+        "owner_role": "保守・セキュリティ・PCSメーカー",
+        "source_id": "SP-R4",
+        "introduced_revision": "R3",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/external_interfaces.json",
+      "id": "IF-RS-01",
+      "before": {
+        "id": "IF-RS-01",
+        "introduced_revision": "R1",
+        "name": "RS-485 PCS接続",
+        "actor": "GW通信所有者",
+        "peer": "RS-485接続PCS",
+        "information": "電文・応答・計測",
+        "conditions": "route_roleを個別確認",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD"
+      },
+      "after": {
+        "id": "IF-RS-01",
+        "introduced_revision": "R1",
+        "name": "RS-485 PCS接続",
+        "actor": "GW通信所有者",
+        "peer": "RS-485接続PCS",
+        "information": "電文・応答・計測",
+        "conditions": "本構成ではGW G側の必須系統指示・監視を含む。通常指令との共用、バス所有、再初期化範囲、具体プロトコルを確認",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/external_interfaces.json",
+      "id": "IF-EL-01",
+      "before": {
+        "id": "IF-EL-01",
+        "introduced_revision": "R1",
+        "name": "ECHONET Lite機器操作",
+        "actor": "GW Controller Role",
+        "peer": "他社機器",
+        "information": "規格・プロファイルの操作と観測",
+        "conditions": "対応版・機器能力を確認",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD"
+      },
+      "after": {
+        "id": "IF-EL-01",
+        "introduced_revision": "R1",
+        "name": "ECHONET Lite機器操作",
+        "actor": "GW Controller Role",
+        "peer": "他社機器",
+        "information": "規格・プロファイルの操作と観測",
+        "conditions": "GWの通常操作・観測用契約。対象PCSのサーバ取得は別のIF-GRID-01でPCS自身が実施。非PCS機器に取得機能を一般化しない",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/external_interfaces.json",
+      "id": "IF-GRID-01",
+      "before": {
+        "id": "IF-GRID-01",
+        "introduced_revision": "R1",
+        "name": "出力制御取得",
+        "actor": "選択されたPCS内OCU又はGW G側",
+        "peer": "一般送配電事業者",
+        "information": "スケジュール等の取得・応答",
+        "conditions": "PCS_DIRECT／GW_MANAGEDの該当主体が取得。同一scopeで二重に能動適用しない。H側を必須中継としない",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD"
+      },
+      "after": {
+        "id": "IF-GRID-01",
+        "introduced_revision": "R1",
+        "name": "宅内ルータ経由の出力制御取得",
+        "actor": "EL接続PCS内OCU又はRS-485用GW G側",
+        "peer": "一般送配電事業者 出力制御サーバ",
+        "information": "スケジュール等の取得・応答",
+        "conditions": "全通信は宅内ルータ経由。EL接続PCSだけがGW非経由で自律取得。RS-485 PCSはGW G側が取得・管理。同一scopeの二重能動適用を禁止",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": "PCS_GRID_CLIENT_OR_GW_GRID_CLIENT",
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD",
+        "network_intermediaries": [
+          "HOME_ROUTER",
+          "INTERNET"
+        ],
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/external_interfaces.json",
+      "id": "IF-GRID-02",
+      "before": {
+        "id": "IF-GRID-02",
+        "introduced_revision": "R3",
+        "name": "GW G側からPCSへの出力制御契約",
+        "actor": "GW G側",
+        "peer": "PCSの確認済み出力制御受付",
+        "information": "scope付き制約又は制約適用済み指令・応答・適用監視",
+        "conditions": "GW_MANAGED。通常操作との非迂回・通信所有・異常時動作を確認。RS-485等の具体方式はプロファイル別",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD"
+      },
+      "after": {
+        "id": "IF-GRID-02",
+        "introduced_revision": "R3",
+        "name": "GW G側からPCSへの出力制御契約",
+        "actor": "GW G側",
+        "peer": "RS-485接続PCSの確認済み出力制御受付",
+        "information": "scope付き制約又は制約適用済み指令・応答・適用監視",
+        "conditions": "RS-485 PCSのGW_MANAGED専用。最終指令所有・通常操作非迂回・通信断時動作を確認。電文プロトコルは未確定",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD",
+        "transport_medium": "RS485",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    },
+    {
+      "file": "data/external_interfaces.json",
+      "id": "IF-GRID-03",
+      "before": {
+        "id": "IF-GRID-03",
+        "introduced_revision": "R3",
+        "name": "出力制御方式の保守選択・適用確認",
+        "actor": "認可された系統保守主体",
+        "peer": "系統構成の所有者／PCS・GW G側",
+        "information": "方式変更要求・期待世代・切替Job・実適用確認",
+        "conditions": "一般設定APIとは別認可。配送チャネル未確定。設定受付を適用完了としない",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD"
+      },
+      "after": {
+        "id": "IF-GRID-03",
+        "introduced_revision": "R3",
+        "name": "R4対応表内の系統構成選択・適用確認",
+        "actor": "認可された系統保守主体",
+        "peer": "系統構成の所有者／PCS・GW G側",
+        "information": "方式変更要求・期待世代・切替Job・実適用確認",
+        "conditions": "機器・接続構成に整合する選択のみ。一般設定APIとは別認可。適用外の方式を保守権限だけで許可しない。配送チャネル未確定",
+        "transport_protocol": null,
+        "port": null,
+        "connection_initiator": null,
+        "authentication_profile": null,
+        "availability_profile": null,
+        "status": "DRAFT_PROFILE_TBD",
+        "last_modified_revision": "R4"
+      },
+      "reason": "CTX-R4: 全取得経路の宅内ルータ化と機器接続別対応表への限定。関連する責務・試験・未確定事項・IFの同期。"
+    }
+  ],
+  "additions": [
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-001",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-002",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-003",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-004",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-005",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-006",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-007",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-008",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-009",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-010",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-011",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/requirements.json",
+      "id": "SYS-GNET-012",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T43",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T44",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T45",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T46",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T47",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T48",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T49",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "id": "SYS-T50",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/open_issues.json",
+      "id": "SYS-TBD-031",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/open_issues.json",
+      "id": "SYS-TBD-032",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/open_issues.json",
+      "id": "SYS-TBD-033",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/open_issues.json",
+      "id": "SYS-TBD-034",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/parameters.json",
+      "id": "PAR-GNET-01",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/parameters.json",
+      "id": "PAR-GNET-02",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/parameters.json",
+      "id": "PAR-GNET-03",
+      "introduced_revision": "R4"
+    },
+    {
+      "file": "data/parameters.json",
+      "id": "PAR-GNET-04",
+      "introduced_revision": "R4"
+    }
+  ],
+  "record_counts": {
+    "requirements": {
+      "preserved": 105,
+      "modified": 7,
+      "added": 12,
+      "modified_ids": [
+        "SYS-GRID-001",
+        "SYS-DEPLOY-001",
+        "SYS-GSEL-001",
+        "SYS-GSEL-002",
+        "SYS-GSEL-007",
+        "SYS-GSEL-013",
+        "SYS-GSEL-017"
+      ]
+    },
+    "tests": {
+      "preserved": 56,
+      "modified": 5,
+      "added": 8,
+      "modified_ids": [
+        "SYS-T29",
+        "SYS-T30",
+        "SYS-T31",
+        "SYS-T33",
+        "SYS-T39"
+      ]
+    },
+    "issues": {
+      "preserved": 41,
+      "modified": 3,
+      "added": 4,
+      "modified_ids": [
+        "SYS-TBD-003",
+        "SYS-TBD-024",
+        "SYS-TBD-026"
+      ]
+    },
+    "parameters": {
+      "preserved": 46,
+      "modified": 0,
+      "added": 4,
+      "modified_ids": []
+    },
+    "interfaces": {
+      "preserved": 11,
+      "modified": 5,
+      "added": 0,
+      "modified_ids": [
+        "IF-RS-01",
+        "IF-EL-01",
+        "IF-GRID-01",
+        "IF-GRID-02",
+        "IF-GRID-03"
+      ]
+    }
+  },
+  "baseline_files_changed": [
+    {
+      "file": "00_MOC.md",
+      "baseline_sha256": "bcf71e6969213011130201209353cdbe56b849241d47e3e89c3e4bd286525cdd"
+    },
+    {
+      "file": "90_All_In_One.md",
+      "baseline_sha256": "d5a050f0ecf722d4f0043bb6ded8b46e0316c379a37300ee2435e5df41e1a3d3"
+    },
+    {
+      "file": "README.md",
+      "baseline_sha256": "6017f981254668d4842dcf3318574c1617d51bd39891da15f6fd754af2f0a10d"
+    },
+    {
+      "file": "appendices/Change_Summary.md",
+      "baseline_sha256": "29c0dddf9ced5ba3b35f780a1818003f64f1d24909389e5a26707cbd15d14b93"
+    },
+    {
+      "file": "appendices/Deployment_Binding.md",
+      "baseline_sha256": "dce8ca888c29c9c7fcab09d9bb8c0dcab7c15f60bb054fc408dcbcea7ee8065d"
+    },
+    {
+      "file": "appendices/Device_Profile_Extended.md",
+      "baseline_sha256": "8e87bb2f90affc664a548a0f35ace7ca6ac8e1bed03e58365fc477cb035292ef"
+    },
+    {
+      "file": "appendices/External_Interface_Register.md",
+      "baseline_sha256": "13076b82f7a058c374a8290017a0c94fa9fb3ae37e9572b670288a1debd8e440"
+    },
+    {
+      "file": "appendices/Grid_Connection_Profile.md",
+      "baseline_sha256": "7f70cd17ee3bf849a03eddc80e101fd3428b423dc445640016239abfc5064e30"
+    },
+    {
+      "file": "appendices/Northbound_Operation_Catalog.md",
+      "baseline_sha256": "fab6a6bb3b52e1ffcae787bd1b037a567bc7de92ea524271ab5c4b5bcd1593c2"
+    },
+    {
+      "file": "appendices/Open_Issues.md",
+      "baseline_sha256": "dc0452b121366fbfb238df7f251c2022de21d8e5443c9fdc11bb9d2cd178b401"
+    },
+    {
+      "file": "appendices/Parameter_Register.md",
+      "baseline_sha256": "0871b003014192856cd77739785a7922f7609f39d2cf913b9183a41cb85868ab"
+    },
+    {
+      "file": "appendices/R2_Review_Checklist.md",
+      "baseline_sha256": "60130463e0c562409a01e5f63cecaac5d138efc2e6537e26638e672500583e89"
+    },
+    {
+      "file": "appendices/R3_Decision_Changes.md",
+      "baseline_sha256": "509468c27761311146bc5a20f5ab4c0ea85021bcda1a1cd6ac551fa285d6fc9b"
+    },
+    {
+      "file": "appendices/R3_Review_Checklist.md",
+      "baseline_sha256": "114b4faf47795012a12be6f9b7692584a6280dad54e8b9fdb052bb35f2c2192e"
+    },
+    {
+      "file": "appendices/Release_Impact_Addendum.md",
+      "baseline_sha256": "f43ea54060b8260e5b16b924670231d67ca19b848e51d2d9ec1811751b974864"
+    },
+    {
+      "file": "appendices/Requirements_Catalog.md",
+      "baseline_sha256": "bbae1af2013c827bba2778fb6b4240797c5ea098e3adbba01c916794111f7a17"
+    },
+    {
+      "file": "appendices/Test_Profiles.md",
+      "baseline_sha256": "4952572f2362b88c48474e92d76d4bd8d5e3313c8a73db7031779b8a630ef837"
+    },
+    {
+      "file": "appendices/Traceability.md",
+      "baseline_sha256": "2124262a587459ed2d7dab3ddaee0b6b032173d6fa668d3b5d262cc84d4d54a4"
+    },
+    {
+      "file": "chapters/01_Scope_Baseline.md",
+      "baseline_sha256": "c5d5df8b9412abc7b73fe8b678138e19233e2d614e175684abb9e7d210948289"
+    },
+    {
+      "file": "chapters/02_System_Context.md",
+      "baseline_sha256": "28869d67351ade30cee0b2b96b7b6617c6456af5f2e599abfe549edcb9fecab1"
+    },
+    {
+      "file": "chapters/03_Responsibilities.md",
+      "baseline_sha256": "044bc8514458fe74a5ac204e107335e1b2fd3cd581ebe80c185e129129dee0a1"
+    },
+    {
+      "file": "chapters/04_Configurations_Profiles.md",
+      "baseline_sha256": "3ee5e3a16715d37ea3401863f32189dcaf8c9fac8c0dc62656ac59d797e4491e"
+    },
+    {
+      "file": "chapters/05_Control_Contracts.md",
+      "baseline_sha256": "93a722626c5ce07848438da74ec344cafa91feb4ca80fdff18e47ff4417fd678"
+    },
+    {
+      "file": "chapters/06_Usecases.md",
+      "baseline_sha256": "9b60bd24018c49047e6d701de60ffd40e45f6127a6f8a1bdb54ad16f0ec2cf97"
+    },
+    {
+      "file": "chapters/07_DER_Connections.md",
+      "baseline_sha256": "50020bf017f6121cf5f293abf77ee3d70fa5649a2764d7a3f239d6e0f6f751e0"
+    },
+    {
+      "file": "chapters/08_Advanced_EMS_Loads.md",
+      "baseline_sha256": "f1ce416a66476f5324af9c2d63f97bded21331209c26d11031ce1011302941bc"
+    },
+    {
+      "file": "chapters/09_Measurement_Data.md",
+      "baseline_sha256": "91cb6fcdeecd3e63bc9ec7ba4614d79cb396f4dde82b799eb1385a7c84642d92"
+    },
+    {
+      "file": "chapters/10_Grid_Protection.md",
+      "baseline_sha256": "736ac65ef9092af0fbed7031328236b639cba2481d2800face36f1a329e44ee9"
+    },
+    {
+      "file": "chapters/11_Power_Constraints.md",
+      "baseline_sha256": "5971b010363052b2426889050f8f81e09e21a938165674a2fd809060dda4de17"
+    },
+    {
+      "file": "chapters/12_Configuration_Lifecycle.md",
+      "baseline_sha256": "dd196b0fc71f32b7bae31a7d149bbe3cd05650ab5155eb7b76058bebb26110c6"
+    },
+    {
+      "file": "chapters/13_Fault_Recovery_OTA.md",
+      "baseline_sha256": "8810f8535c1cb78308054d8a46738c4c4e81bb3b32bf0040aacbb8250814c640"
+    },
+    {
+      "file": "chapters/14_Performance_Security.md",
+      "baseline_sha256": "729856235d46b067e0a4b1159162dcc28333a13ab91bb58bf0c99945cec4bdc8"
+    },
+    {
+      "file": "chapters/15_Deployment_Isolation.md",
+      "baseline_sha256": "319305476b77c26b6595a64be9b12d6f5c18692a9ecf69861ef25c3f485614c2"
+    },
+    {
+      "file": "chapters/16_Certification_Change.md",
+      "baseline_sha256": "efadcfc1153ef4694a78fc320fcdd46db15a3ac53484855630e6de8c1b8e2977"
+    },
+    {
+      "file": "chapters/17_Verification.md",
+      "baseline_sha256": "8a11baed34ad665126b493d05ec035041b76cf0821b76a26a8b818f5b066ea65"
+    },
+    {
+      "file": "chapters/18_Migration.md",
+      "baseline_sha256": "d9fde8aa82f43a6c9773ae68be0c22026757392c10069c883bc7348b690401fa"
+    },
+    {
+      "file": "chapters/19_Open_Issues_Sources.md",
+      "baseline_sha256": "80d99647c08deb553c8f7387fe75e1d5f28abf86d69694016f51a5d823d1fa82"
+    },
+    {
+      "file": "chapters/20_Northbound_Monitoring_FW.md",
+      "baseline_sha256": "a986f6117f96866517fcc713efd1a2fc3685756a5ddf34b49639092da6c5d2f0"
+    },
+    {
+      "file": "chapters/21_Grid_Connection_Selection.md",
+      "baseline_sha256": "7e03443906ef002eea0ea335921942615df9d8fa0955f4e72c41f94d429ed958"
+    },
+    {
+      "file": "data/decision_overrides.json",
+      "baseline_sha256": "952a72df12a021f95ef7e23e818097e73cc2c3395d8a2b2b643c6d383dd0323e"
+    },
+    {
+      "file": "data/document_index.json",
+      "baseline_sha256": "029ee5a1f446b3d15f27481a5d8fda9ca9a362c99bee973e9bc873ba1a620ac7"
+    },
+    {
+      "file": "data/external_interfaces.json",
+      "baseline_sha256": "240b344b64d8a9f26de6302608f7c14bbd3fbf8a17f3e517650cd0ead0e3f05e"
+    },
+    {
+      "file": "data/grid_connection_profiles.json",
+      "baseline_sha256": "1ae07e12afb67c850c3999a0c32a0126c66c620040a87a9aafa6439fedbdd4c9"
+    },
+    {
+      "file": "data/grid_selection_validation.json",
+      "baseline_sha256": "cdfa494821ef03afb267923ff8929ab78e17a4239359d9280ace4ee08f5aa091"
+    },
+    {
+      "file": "data/input_manifest.json",
+      "baseline_sha256": "dcc201cfd7302004da85ddfa1cbf732e46a8ef488ad3116f1cedd496d625973c"
+    },
+    {
+      "file": "data/open_issues.json",
+      "baseline_sha256": "1c80b9809d02726220309034a3c565f77e0da1422647d19c48cd471fedc5161e"
+    },
+    {
+      "file": "data/parameters.json",
+      "baseline_sha256": "1894860d5e35fdfc2c95d89de164b5a4dde7a7b59687b1c09a1d2424b43aabaa"
+    },
+    {
+      "file": "data/requirements.json",
+      "baseline_sha256": "97e904266c8fcef6fd615b0960356c832577ff6a78efed9bbd4a8cac628c03d0"
+    },
+    {
+      "file": "data/test_catalog.json",
+      "baseline_sha256": "822ef8b063c9608df3188aab0bd5b22661e12ae17695b444dc752d758502fda8"
+    },
+    {
+      "file": "package_info.json",
+      "baseline_sha256": "fb89b045f9af752ee7dad1f36afd56cc76301052072ffb426a446d51d6328c91"
+    },
+    {
+      "file": "tools/rebuild_views.py",
+      "baseline_sha256": "ab0085d2d3e00f75f60396b97ec4db2f84444abe3d72f6b1d007c2a42e44a7ae"
+    },
+    {
+      "file": "tools/validate_grid_selection.py",
+      "baseline_sha256": "2c8fab37a0d82eac4ba5b634422c150b31986dc409481f349cb19bc2127dd061"
+    },
+    {
+      "file": "tools/validate_package.py",
+      "baseline_sha256": "eb9ec2518c6e932d492b20f206deb6c32bdd71b30df464f1a5c1e39a733e9fc3"
+    }
+  ],
+  "note": "旧版原典は不変。before/afterは機械可読のレコード差分。本文・図は同梱R3と現行本文で比較可能。"
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "spkgw.lifecycle-record-report/v1",
+  "thread_id": "THR-SPKGW-GOV-000001",
+  "assessment_scope": "ガバナンス導入テーマ。4候補TASKの実工程は未割当。製品要求の主テーマを代行しない。",
+  "record_chain_ready": false,
+  "product_progress": null,
+  "phases": [
+    {
+      "phase_id": "CONCEPT",
+      "phase": "企画・構想",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "REQAN",
+      "phase": "要求分析",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "REQSPEC",
+      "phase": "要求仕様策定",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "SYSDES",
+      "phase": "システム設計",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "ARCH",
+      "phase": "アーキテクチャ設計",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "BASIC",
+      "phase": "基本／構造設計",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "DETAIL",
+      "phase": "詳細設計",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "IMPL",
+      "phase": "実装",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "UT",
+      "phase": "単体テスト",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "IT",
+      "phase": "結合テスト",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "ST",
+      "phase": "システム／機能テスト",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "NFT",
+      "phase": "非機能テスト",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "VALID",
+      "phase": "受入・妥当性確認",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "RELPREP",
+      "phase": "リリース準備",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "RELEASE",
+      "phase": "リリース／導入",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "OPS",
+      "phase": "運用・保守",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    },
+    {
+      "phase_id": "IMPROVE",
+      "phase": "振り返り・改善",
+      "applicability": "TBD",
+      "record_status": "TBD",
+      "required_kinds": [],
+      "missing_kinds": [],
+      "selected_nodes": [],
+      "linked_nodes": []
+    }
+  ],
+  "context_unconnected_nodes": [
+    "ITR-SPKGW-TASK-000001_V_1_2_0",
+    "ITR-SPKGW-TASK-000002_V_1_2_0",
+    "ITR-SPKGW-TASK-000003_V_1_2_0",
+    "ITR-SPKGW-TASK-000004_V_1_2_0"
+  ],
+  "context_linked_nodes": [],
+  "selected_unconnected_nodes": [
+    "ITR-SPKGW-TASK-000001_V_1_2_0",
+    "ITR-SPKGW-TASK-000002_V_1_2_0",
+    "ITR-SPKGW-TASK-000003_V_1_2_0",
+    "ITR-SPKGW-TASK-000004_V_1_2_0"
+  ],
+  "warnings": [
+    {
+      "code": "ITEM_PHASE_UNASSIGNED",
+      "count": 164
+    },
+    {
+      "code": "ITEM_THREAD_UNASSIGNED",
+      "count": 337
+    },
+    {
+      "code": "ITEM_RELATION_REVIEW_PENDING",
+      "count": 341
+    }
+  ],
+  "inputs": {
+    "20_work/analysis/project/trace_graph.json": "99b0c91b6b2fd7bcf137787a13a522143d832f80ea2a917fd34563bc95a9038f",
+    "00_governance/lifecycle_profile.json": "3e146f0309a646e178b0841b9dcdbc9837fcec49c1dec27ec2b273f377670c84",
+    "00_governance/schemas/lifecycle-trace.schema.json": "f4c8b3e686e68e0da6029f6df06a0bffb42bbd37b201aaf2af4dbafd922325a6",
+    "20_work/analysis/project/control.json": "f59758d585a39d7b45d37049aec1cf814682627d93abe1d7267a0b859483b5b3",
+    "tools/tracecheck.py": "41df9612319caa2f0bbf61ffa0a9e6dd06a12b6d06793993891feeb2ef7ad7b8"
+  },
+  "limitations": [
+    "Linked records are not test PASS, phase approval, release authorization or assurance of semantic correctness.",
+    "No external repository fetch, ACL/identity proof or cost allocation. Only registered local hash-bound records are checked.",
+    "17-phase tailoring is not a requirement to execute every phase for each task. Unknown remains TBD."
+  ]
+}

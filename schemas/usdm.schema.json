@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "spkgw.usdm-model/v1"
+    },
+    "official_schema_adoption": {
+      "const": "NOT_CLAIMED"
+    },
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+          },
+          "kind": {
+            "enum": [
+              "REQUIREMENT",
+              "SPECIFICATION",
+              "EXPLANATION"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "reason": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "state": {
+                "enum": [
+                  "ORIGINAL",
+                  "HUMAN_CONFIRMED",
+                  "HYPOTHESIS",
+                  "UNKNOWN"
+                ]
+              },
+              "fragment_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+                },
+                "uniqueItems": true
+              },
+              "confirmed_by": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "text",
+              "state",
+              "fragment_ids",
+              "confirmed_by"
+            ],
+            "additionalProperties": false
+          },
+          "parent_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+            },
+            "uniqueItems": true
+          },
+          "source_fragment_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+            },
+            "uniqueItems": true
+          },
+          "applicability": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "status": {
+            "enum": [
+              "DRAFT_FOR_REVIEW",
+              "PROPOSED",
+              "IN_REVIEW",
+              "APPROVED",
+              "REJECTED",
+              "SUPERSEDED",
+              "RETIRED"
+            ]
+          },
+          "approved_by": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "approval_record": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "text",
+          "reason",
+          "parent_ids",
+          "source_fragment_ids",
+          "applicability",
+          "status",
+          "approved_by",
+          "approval_record"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "official_schema_adoption",
+    "elements"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "usdm"
+}

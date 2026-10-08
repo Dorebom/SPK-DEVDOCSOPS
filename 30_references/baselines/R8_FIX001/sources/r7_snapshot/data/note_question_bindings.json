@@ -1,0 +1,174 @@
+{
+  "revision": "R6",
+  "note_bindings": {
+    "appendices/Product_Function_Matrix.md": [
+      "OQ-R6-04-01",
+      "OQ-R6-04-02",
+      "OQ-R6-08-01",
+      "OQ-R6-18-01"
+    ],
+    "appendices/Normative_References_Glossary.md": [
+      "OQ-R6-01-03",
+      "OQ-R6-01-04",
+      "OQ-R6-16-01"
+    ],
+    "appendices/Interface_Contract_Detail.md": [
+      "OQ-R6-03-02",
+      "OQ-R6-07-01",
+      "OQ-R6-07-02",
+      "OQ-R6-20-01",
+      "OQ-R6-21-01"
+    ],
+    "appendices/Data_Dictionary.md": [
+      "OQ-R6-09-01",
+      "OQ-R6-09-02",
+      "OQ-R6-09-03",
+      "OQ-R6-11-01",
+      "OQ-R6-27-06"
+    ],
+    "appendices/Configuration_Register.md": [
+      "OQ-R6-12-02",
+      "OQ-R6-12-03",
+      "OQ-R6-12-04",
+      "OQ-R6-26-05"
+    ],
+    "appendices/State_Permission_Matrix.md": [
+      "OQ-R6-12-01",
+      "OQ-R6-12-03",
+      "OQ-R6-13-01",
+      "OQ-R6-22-02",
+      "OQ-R6-21-02"
+    ],
+    "appendices/UI_Alarm_Register.md": [
+      "OQ-R6-20-02",
+      "OQ-R6-20-03",
+      "OQ-R6-13-01",
+      "OQ-R6-24-03"
+    ],
+    "appendices/Quality_Acceptance_Profiles.md": [
+      "OQ-R6-17-01",
+      "OQ-R6-17-02",
+      "OQ-R6-17-03",
+      "OQ-R6-14-01",
+      "OQ-R6-25-01"
+    ],
+    "appendices/Change_Summary.md": [
+      "OQ-R6-19-03"
+    ],
+    "appendices/Deployment_Binding.md": [
+      "OQ-R6-15-01",
+      "OQ-R6-15-02"
+    ],
+    "appendices/Device_Profile_Extended.md": [
+      "OQ-R6-04-02",
+      "OQ-R6-07-01",
+      "OQ-R6-07-02",
+      "OQ-R6-21-01"
+    ],
+    "appendices/External_Interface_Register.md": [
+      "OQ-R6-03-02",
+      "OQ-R6-20-01",
+      "OQ-R6-07-01",
+      "OQ-R6-07-02"
+    ],
+    "appendices/Grid_Connection_Profile.md": [
+      "OQ-R6-21-01",
+      "OQ-R6-21-02"
+    ],
+    "appendices/Northbound_Operation_Catalog.md": [
+      "OQ-R6-20-01",
+      "OQ-R6-12-02",
+      "OQ-R6-20-02",
+      "OQ-R6-20-04"
+    ],
+    "appendices/Open_Issues.md": [
+      "OQ-R6-19-02",
+      "OQ-R6-19-01"
+    ],
+    "appendices/Parameter_Register.md": [
+      "OQ-R6-14-01",
+      "OQ-R6-14-02",
+      "OQ-R6-22-01",
+      "OQ-R6-23-01",
+      "OQ-R6-25-01"
+    ],
+    "appendices/Release_Impact_Addendum.md": [
+      "OQ-R6-16-02",
+      "OQ-R6-15-02",
+      "OQ-R6-20-04"
+    ],
+    "appendices/Requirements_Catalog.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-04-01",
+      "OQ-R6-17-01"
+    ],
+    "appendices/Test_Profiles.md": [
+      "OQ-R6-17-01",
+      "OQ-R6-17-02",
+      "OQ-R6-17-03"
+    ],
+    "appendices/Traceability.md": [
+      "OQ-R6-19-01",
+      "OQ-R6-17-03"
+    ],
+    "appendices/R2_Review_Checklist.md": [
+      "OQ-R6-20-01",
+      "OQ-R6-20-02",
+      "OQ-R6-20-04"
+    ],
+    "appendices/R3_Decision_Changes.md": [
+      "OQ-R6-19-03",
+      "OQ-R6-21-02"
+    ],
+    "appendices/R3_Review_Checklist.md": [
+      "OQ-R6-21-01",
+      "OQ-R6-19-03"
+    ],
+    "appendices/R4_Decision_Changes.md": [
+      "OQ-R6-19-03",
+      "OQ-R6-21-01"
+    ],
+    "appendices/R4_Review_Checklist.md": [
+      "OQ-R6-02-01",
+      "OQ-R6-21-01",
+      "OQ-R6-21-02"
+    ],
+    "appendices/R5_Diagram_Changes.md": [
+      "OQ-R6-02-01",
+      "OQ-R6-07-02"
+    ],
+    "README.md": [
+      "OQ-R6-19-02"
+    ],
+    "00_MOC.md": [
+      "OQ-R6-19-02"
+    ],
+    "01_Completion_Guide.md": [
+      "OQ-R6-19-02",
+      "OQ-R6-19-01"
+    ],
+    "DOCUMENT_QA.md": [
+      "OQ-R6-17-01",
+      "OQ-R6-19-03"
+    ],
+    "diagrams/README.md": [
+      "OQ-R6-02-01",
+      "OQ-R6-07-02"
+    ],
+    "90_All_In_One.md": [
+      "OQ-R6-19-02",
+      "OQ-R6-17-01"
+    ],
+    "appendices/R6_Change_Summary.md": [
+      "OQ-R6-19-03"
+    ],
+    "appendices/Coverage_Completion_Map.md": [
+      "OQ-R6-19-02",
+      "OQ-R6-19-01"
+    ],
+    "appendices/Open_Question_Register.md": [
+      "OQ-R6-19-02",
+      "OQ-R6-19-01"
+    ]
+  }
+}

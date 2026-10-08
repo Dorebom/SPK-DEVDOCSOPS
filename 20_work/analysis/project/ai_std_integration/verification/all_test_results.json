@@ -1,0 +1,947 @@
+{
+  "tests": [
+    {
+      "test": "test_governance.GovernanceTests.test_01_initial_state_is_incomplete_not_approved",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_02_duplicate_yaml_key",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_03_empty_title",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_04_wrong_state_type",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_05_unknown_trace",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_06_unknown_requirement",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_07_duplicate_task",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_08_dependency_cycle",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_09_missing_dependency",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_10_ready_without_owner",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_11_active_without_estimate",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_12_active_without_authorization",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_13_ready_unfinished_dependency",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_14_done_no_evidence",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_15_done_remaining_work",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_16_done_ai_acceptance",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_17_done_with_evidence_and_review",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_18_hash_tampering",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_19_path_escape",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_20_blocker_contract",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_21_cancel_without_decision",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_22_summary_not_counted_in_cost",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_23_budget_doublecount_avoided",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_24_etc_below_commitment",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_25_duplicate_invoice",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_26_mixed_currency",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_27_mixed_tax",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_28_decimal_no_float_artifact",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_29_unconfirmed_actuals_no_eac",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_30_missing_forecast_no_eac",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_31_future_cost",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_32_ai_time_not_human_effort",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_33_duplicate_effort",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_34_reversal_no_doublecount",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_35_negative_cost_requires_source",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_36_progress_fixed_denominator",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_37_extend_tasks_without_fixed_count",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_38_current_unchanged",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_39_run_reverse_link",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_40_actual_confirmation_required",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_41_wbs_cycle",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_42_invalid_date",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_43_unknown_actor",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_44_commitment_overrun",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_governance.GovernanceTests.test_45_document_thread_is_optional",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_01_baseline_integrity_and_freshness",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_02_empty_requirement_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_03_wrong_status_type_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_04_duplicate_ids_rejected_before_render",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_05_unknown_source_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_06_unknown_usdm_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_07_requirement_test_asymmetry_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_08_stale_views_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_09_input_failure_never_changes_canonical",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_10_staged_render_failure_never_changes_canonical",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_11_pending_approval_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_12_publish_and_idempotent_republication",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_13_failure_before_pointer_retains_selected_baseline",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_14_prepared_tampering_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_15_wrong_approval_hash_rejected",
+      "outcome": "ok",
+      "log": "regression.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_16_stale_parent_baseline_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_16_23.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_17_original_tampering_detected",
+      "outcome": "ok",
+      "log": "spec_batch_16_23.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_18_registration_and_extraction_idempotence",
+      "outcome": "ok",
+      "log": "spec_batch_16_23.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_19_old_binary_format_is_blocked",
+      "outcome": "ok",
+      "log": "spec_batch_16_23.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_20_docx_nested_table_revision_and_image_inventory",
+      "outcome": "ok",
+      "log": "spec_batch_16_23.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_21_xlsx_formula_cache_hidden_merge_comments",
+      "outcome": "ok",
+      "log": "spec_batch_16_23.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_22_unsafe_zip_path_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_16_23.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_23_dtd_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_16_23.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_24_unresolved_conflict_cannot_be_adopted",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_25_unreviewed_fragment_cannot_be_applied",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_26_125th_requirement_end_to_end",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_27_unbound_addition_cannot_prepare",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_28_deleting_old_id_is_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_29_usdm_unknown_reason_not_approved",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_30_usdm_cycle_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_31_bad_typed_endpoint_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_32_new_function_groups_have_no_fixed_count",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_33_new_interface_parameter_and_test_no_fixed_count",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_34_new_oq_id_is_not_r6_bound",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_35_compare_revision_detects_move_not_auto_delete",
+      "outcome": "ok",
+      "log": "spec_batch_24_35.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_36_approved_binding_text_tampering_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_37_selected_snapshot_direct_edit_detected",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_38_duplicate_json_key_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_39_path_traversal_draft_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_40_tool_change_invalidates_approval",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_41_fragment_text_tampering_rejected",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_42_coverage_distinguishes_unclassified_and_selected",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_43_delete_oq_is_blocked_by_change_gate",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_44_preparation_diff_lists_all_modified_files",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_45_usdm_many_to_many_draft_roundtrip",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_46_legacy_source_alias_identity_checked",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_specflow.WorkflowTests.test_47_moc_cannot_redirect_current_view_to_history",
+      "outcome": "ok",
+      "log": "spec_batch_36_47.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_01_one_document_contains_two_distinct_items",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_02_document_id_is_not_item_id",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_03_item_id_is_not_document_id",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_04_unknown_document",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_05_exact_locator_required",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_06_wrong_document_path",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_07_wrong_native_id_selector",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_08_no_document_to_item_verifies_shortcut",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_09_citation_is_not_verification",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_10_unknown_reference_document",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_11_duplicate_document_version",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_12_duplicate_current_native_item",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_13_ordinal_phase_not_current",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_14_unknown_phase",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_15_document_hash_change_detected",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_16_no_floating_document_version",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_17_no_floating_item_version",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_18_one_item_moves_to_new_document_keeps_identity",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_19_two_selected_versions_rejected",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_20_document_report_not_whole_document_verified",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_21_native_lookup",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_22_unknown_lookup_no_fake_identity",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_23_thread_alias_resolves_as_thread_only",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_24_parent_document_rename_not_item_rename",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_25_many_phases_do_not_clone_an_item",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_26_new_view_has_same_item_id",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_27_missing_view_anchor",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_28_unverified_office_selector_rejected",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_29_subject_review_invalidates_after_change",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_30_impact_targets_only_related_item",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_31_readonly_queries",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_32_changed_source_native_alias_rejected",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_33_document_relation_cannot_target_item",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_34_unassigned_is_not_a_guessed_phase",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_trace_identity.IdentityTests.test_35_duplicate_document_path_rejected",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_01_full_17_phase_example",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_02_pending_phase_is_not_complete",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_03_missing_phase_plan",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_04_duplicate_phase_plan",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_05_unknown_trace",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_06_unknown_related_trace",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_07_duplicate_node",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_08_same_artifact_revision_not_cloned",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_09_missing_endpoint",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_10_unknown_relation",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_11_hash_tampering",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_12_path_escape",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_13_floating_revision",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_14_two_selected_versions",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_15_review_unknown_actor",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_16_no_evidence_for_confirmed",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_17_na_without_decision",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_18_na_with_evidence_allowed",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_19_discussion_is_not_implementation",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_20_meeting_cannot_be_test_case",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_21_planned_not_evidence",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_22_derivation_cycle",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_23_trace_lineage_cycle",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_24_shared_research_and_multi_trace_meeting",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_25_old_revision_impact_warning",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_26_change_impact_reaches_tests_and_deployment",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_27_report_is_read_only",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_28_unknown_json_pointer",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_29_explicit_anchor",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_30_missing_review_reports_pending",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_31_lifecycle_active_needs_phase",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_32_lifecycle_cross_phase_meeting",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_33_lifecycle_primary_must_be_member",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_34_duplicate_json_key",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_35_task_done_is_not_lifecycle_completion",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_36_invalid_verifies_target",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_37_changed_node_invalidates_review",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_38_changed_edge_invalidates_review",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_39_orphaned_meeting_is_reported",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_traceability.TraceTests.test_40_context_link_does_not_replace_technical_evidence",
+      "outcome": "ok",
+      "log": "trace_tests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_01_current_integration",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_02_missing_original",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_03_original_tampering",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_04_missing_target",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_05_wrong_excerpt",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_06_invalid_source_range",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_07_missing_rule_anchor",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_08_duplicate_rule",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_09_invalid_source_document",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_10_canonical_tampering",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_11_actual_task_tampering",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_12_existing_tool_tampering",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_13_citation_is_not_implements",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_14_existing_item_unchanged",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_15_existing_edges_unchanged",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_16_prior_document_snapshot_required",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_17_current_revised_document_hash_required",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_18_no_old_authority_path",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_19_no_implicit_product_approval",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_20_previous_source_register_rows_preserved",
+      "outcome": "ok",
+      "log": "newtests.log"
+    },
+    {
+      "test": "test_ai_std_integration.IntegrationTests.test_21_read_only_audit",
+      "outcome": "ok",
+      "log": "newtests.log"
+    }
+  ],
+  "count": 188,
+  "all_pass": true,
+  "note": "Initial combined invocation timed out during specflow16; all completed cases retained, remaining cases rerun to completion in bounded batches. No skipped cases counted as PASS."
+}

@@ -1,0 +1,32 @@
+flowchart TB
+    subgraph GW["SPK-GW筐体"]
+        subgraph H["H側：通常操作・観測"]
+            DPC["DER Power Controller<br/>PV・蓄電池の通常操作"]
+            FLC["Flexible Load Controller<br/>空調・給湯の通常操作"]
+            MS["Measurement／Device State<br/>計測・状態・品質管理"]
+            EL["ECHONET Lite Controller<br/>機器別Port／Adapter・通信"]
+            HNET["H側宅内LAN接続"]
+            DPC <-->|"通常操作・結果確認"| EL
+            FLC <-->|"通常操作・結果確認"| EL
+            MS <-->|"読出要求・応答／通知"| EL
+            EL <-->|"ECHONET Lite送受信"| HNET
+        end
+    end
+    subgraph R["共通宅内ルータ・無線AP"]
+        LAN["LAN側スイッチ／無線AP<br/>この通常通信ではWANへ出ない"]
+    end
+    HNET <-->|"通常EL要求・応答・通知"| LAN
+    AC["空調のEL機器IF<br/>通常操作・状態"]
+    HW["給湯のEL機器IF<br/>通常操作・状態"]
+    METER["計測器のEL機器IF<br/>読出・計測応答／通知"]
+    LAN <-->|"EL-N01"| AC
+    LAN <-->|"EL-N02"| HW
+    LAN <-->|"EL-N03"| METER
+    subgraph PCS["ECHONET Lite接続PCS"]
+        PN["PCS宅内LAN接続"]
+        EI["ECHONET Lite機器IF<br/>住宅用太陽光発電・蓄電池クラス等"]
+        PF["機器内の運転・制約整合<br/>電力変換・独立保護"]
+        PN <-->|"通常EL通信"| EI
+        EI <--> PF
+    end
+    LAN <-->|"EL-N04"| PN
